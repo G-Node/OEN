@@ -1,0 +1,6 @@
+ontology;neurolex;OBI;NEMO;ERO;;;;
+endpoint;http://rdf-stage.neuinfo.org/ds/query;http://sparql.hegroup.org/sparql;http://sparql.bioontology.org/sparql;http://sparql.hegroup.org/sparql;;;;
+mandatory;label;id;;;;;;
+optional;comment;isDefinedBy;seeAlso;;;;;
+optional;definition;definition source;editor preferred label;alternative term;example of usage;editor note;curator note;term replaced by
+optional;example;synonym;;;;;;

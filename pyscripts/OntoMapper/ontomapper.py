@@ -19,12 +19,12 @@ using a list of labels.
 
 from SPARQLWrapper import SPARQLWrapper, JSON
 
-neurolex_endpoint= "http://rdf-stage.neuinfo.org/ds/query"
-bioportal_endpoint= "http://sparql.bioontology.org/sparql"
-ontofox_endpoint="http://sparql.hegroup.org/sparql"
+neurolex_endpoint  = "http://rdf-stage.neuinfo.org/ds/query"
+bioportal_endpoint = "http://sparql.bioontology.org/sparql"
+ontofox_endpoint   = "http://sparql.hegroup.org/sparql"
 
 def format_SPARQL_Query(endpoint, ontology):
-	
+
 	if endpoint==neurolex_endpoint:
 		
 #		endpoint="http://rdf-stage.neuinfo.org/ds/query"
@@ -50,12 +50,12 @@ def format_SPARQL_Query(endpoint, ontology):
 	           prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     	           prefix owl: <http://www.w3.org/2002/07/owl#>
     	           prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-		"""
-		
+		"""		
 		from_uri="<http://purl.obolibrary.org/obo/merged/"+ontology+">"
+		
 	else:
 		
-		print("This endpoint is not defined")	
+		print("This endpoint is not defined")
 	
 #	return endpoint, prefixes, from_uri
 	return prefixes, from_uri
@@ -67,11 +67,17 @@ def generate_SPARQL_Query(prefixes, from_uri, term):
 	
 	if from_uri!="":
 		sparql_query= prefixes+"""
-		select ?x ?label
+		select ?x ?label ?def ?defsrc ?comment ?preflabel ?altterm
 		from """+from_uri+"""
 		where {
 		?x rdfs:label ?label.
-		filter REGEX(?label, "%s")}""" % term
+		filter REGEX(?label, "%s")
+		OPTIONAL{ ?x <http://purl.obolibrary.org/obo/IAO_0000115> ?def.       }
+                OPTIONAL{ ?x <http://purl.obolibrary.org/obo/IAO_0000119> ?defsrc.    }
+                OPTIONAL{ ?x <http://purl.obolibrary.org/obo/IAO_0000116> ?comment.   }
+                OPTIONAL{ ?x <http://purl.obolibrary.org/obo/IAO_0000111> ?preflabel. }
+                OPTIONAL{ ?x <http://purl.obolibrary.org/obo/IAO_0000118> ?altterm.   }
+		}""" % term
 
 	else: #SPARQL Query for Neurolex
 		
@@ -105,6 +111,7 @@ def getData(endpoint, ontology, term):
 	sparql.setReturnFormat(JSON)
 	
 	results=sparql.query().convert()
+	
 	print(type(results))
 	
 	return results
