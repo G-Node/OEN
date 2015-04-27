@@ -35,7 +35,7 @@ def format_SPARQL_Query(endpoint, ontology):
 	
 	elif endpoint==bioportal_endpoint:
 
-#		endpoint="http://rdf-stage.neuinfo.org/ds/query"
+#		endpoint="http://sparql.bioontology.org/sparql"
 		prefixes="""
 	           prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     	           prefix owl: <http://www.w3.org/2002/07/owl#>
@@ -50,7 +50,7 @@ def format_SPARQL_Query(endpoint, ontology):
 	           prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     	           prefix owl: <http://www.w3.org/2002/07/owl#>
     	           prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-		"""		
+		"""
 		from_uri="<http://purl.obolibrary.org/obo/merged/"+ontology+">"
 		
 	else:
@@ -60,39 +60,87 @@ def format_SPARQL_Query(endpoint, ontology):
 #	return endpoint, prefixes, from_uri
 	return prefixes, from_uri
 	
-def generate_SPARQL_Query(prefixes, from_uri, term):
+def generate_SPARQL_Query(prefixes, from_uri, term, qscope={}):
 	"""
 	Generate a generic SPARQL Query to gather the term_id based on the label
 	"""
 	
 	if from_uri!="":
+		#sparql_query = prefixes+"""
+		#select ?x ?label ?def ?defsrc ?comment ?preflabel ?altterm
+		#from """+from_uri+"""
+		#where{
+		#  ?x rdfs:label ?label.
+		#  filter REGEX(?label, "%s")""" %term
+        	#sparql_query += """OPTIONAL{ ?x <http://purl.obolibrary.org/obo/IAO_0000115> ?%s }""" %"def"
+        	#sparql_query += """OPTIONAL{ ?x <http://purl.obolibrary.org/obo/IAO_0000119> ?%s }""" %"defsrc"
+        	#sparql_query += """OPTIONAL{ ?x <http://purl.obolibrary.org/obo/IAO_0000116> ?%s }""" %"comment"
+        	#sparql_query += """OPTIONAL{ ?x <http://purl.obolibrary.org/obo/IAO_0000111> ?%s }""" %"preflabel"
+        	#sparql_query += """OPTIONAL{ ?x <http://purl.obolibrary.org/obo/IAO_0000118> ?%s }""" %"altterm"
+		#sparql_query += """}"""
+                
 		sparql_query= prefixes+"""
-		select ?x ?label ?def ?defsrc ?comment ?preflabel ?altterm
+		select ?id ?label """
+		if "optional" in qscope.keys():
+          		for opt in qscope["optional"]:
+                                opt = formatAsRDFSpropertyLabel( opt )
+                                sparql_query += """?%s """ %opt
+		sparql_query += """
 		from """+from_uri+"""
-		where {
-		?x rdfs:label ?label.
-		filter REGEX(?label, "%s")
-		OPTIONAL{ ?x <http://purl.obolibrary.org/obo/IAO_0000115> ?def.       }
-                OPTIONAL{ ?x <http://purl.obolibrary.org/obo/IAO_0000119> ?defsrc.    }
-                OPTIONAL{ ?x <http://purl.obolibrary.org/obo/IAO_0000116> ?comment.   }
-                OPTIONAL{ ?x <http://purl.obolibrary.org/obo/IAO_0000111> ?preflabel. }
-                OPTIONAL{ ?x <http://purl.obolibrary.org/obo/IAO_0000118> ?altterm.   }
-		}""" % term
+		where{
+		  ?id rdfs:label ?label.
+		  filter REGEX(?label, "%s")
+		""" %term
+        	if "noprefix" in qscope.keys():
+        	       for opt in qscope["noprefix"].keys():
+        	               sparql_query += """OPTIONAL{ ?id <""" + qscope["noprefix"][opt] +"""> ?%s }
+        	               """ %formatAsRDFSpropertyLabel( opt )
+		if "optional" in qscope.keys():
+        	       for opt in qscope["optional"]:
+        	               opt = formatAsRDFSpropertyLabel( opt )
+        	               #sparql_query += """OPTIONAL{ ?id  rdf:""" + opt +""" ?%s }
+        	               #""" %opt
+        	               #sparql_query += """OPTIONAL{ ?id  owl:""" + opt +""" ?%s }
+        	               #""" %opt
+        	               sparql_query += """OPTIONAL{ ?id rdfs:""" + opt +""" ?%s }
+        	               """ %opt
+		sparql_query += """}"""
 
 	else: #SPARQL Query for Neurolex
 		
 		term=term.capitalize()
 		
 		sparql_query= prefixes+"""
-		select ?x ?label
+		select ?id ?label """
+		if "optional" in qscope.keys():
+          		for opt in qscope["optional"]:
+                                opt = formatAsRDFSpropertyLabel( opt )
+                                sparql_query += """?%s """ %opt
+		sparql_query += """	
 		where {
-		?x property:Label ?label
-		filter REGEX(?label, "%s")}""" % term
+		  ?id property:Label ?label
+		  filter REGEX(?label, "%s")
+		""" % term
+		if "optional" in qscope.keys():
+        	       for opt in qscope["optional"]:
+        	               opt = formatAsRDFSpropertyLabel( opt )
+        	               if len(opt)>1: nlxopt = opt[0].upper() + opt[1:]
+  #      	               #sparql_query += """OPTIONAL{ ?id  rdf:""" + opt +""" ?%s }
+  #      	               #""" %opt
+  #      	               #sparql_query += """OPTIONAL{ ?id  owl:""" + opt +""" ?%s }
+  #      	               #""" %opt
+  #      	               #sparql_query += """OPTIONAL{ ?id  rdfs:""" + opt +""" ?%s }
+  #      	               #""" %opt
+        	               sparql_query += """OPTIONAL{ ?id property:""" + nlxopt +""" ?%s }
+        	               """ %opt
+		sparql_query += """}"""		
 		print("Je suis dans la condition Neurolex avec from_uri empty")
 		
 	return sparql_query
 
-def getData(endpoint, ontology, term):
+def getData(qscope, ontology, term):
+        
+        endpoint = qscope["endpoint"][qscope["ontology"].index(ontology)]
 
 	sparql=SPARQLWrapper(endpoint)
 
@@ -102,7 +150,7 @@ def getData(endpoint, ontology, term):
 			
 	[prefixes, from_uri]=format_SPARQL_Query(endpoint, ontology)
 	
-	sparql_query=generate_SPARQL_Query(prefixes, from_uri, term)
+	sparql_query=generate_SPARQL_Query(prefixes, from_uri, term, qscope)
 	
 	print(sparql_query)
 	
@@ -112,10 +160,24 @@ def getData(endpoint, ontology, term):
 	
 	results=sparql.query().convert()
 	
-	print(type(results))
+	#print(type(results))
 	
 	return results
-	
+
+
+def formatAsRDFSpropertyLabel( charstr ):
+    opt = charstr.split()
+    op  = opt[0]
+    if len(opt)>1:
+        op = opt[0].lower()
+        for o in opt[1:]:
+            if len(o)==1:
+                o = o.upper()
+            elif len(o)>1:
+                o = o[0].upper() + o[1:].lower()
+            op = op + o
+    return op
+
 	
 if __name__ == "__main__":
     sparql_service = "http://sparql.bioontology.org/sparql/"

@@ -1,7 +1,10 @@
-OntoMapper_20150422	(ant1b contrib)
+OntoMapper_20150424	(ant1b contrib)
 
 
-Archived at the onset of script generalising, see openQscopeFile() function.
-	Ontology queries should be processed in batch according to parameters stored in a separate file,
+Early generalised script.
+	Ontology queries processed in batch according to parameters stored in a separate file,
 	specifying which ontology to query from, which endpoint to use for each one, and what property to 
 	seek (see onto_and_props.csv)
+	Requires testing, refining, and full generalising.
+	Tag "provenance", read from file, made availabel for each term to track term list construction.
+	
