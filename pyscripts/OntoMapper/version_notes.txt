@@ -1,4 +1,7 @@
-OntoMapper_20150409	(ant1b contrib)
+OntoMapper_20150417	(ant1b contrib)
 
 
-Reconstituting original files received by Yann Lefranc based on reverse modifs on early modified OntoMapper_20150417.
+Ontmain.py > storeResults:
+	intended to discard doublon ids for compatibility with original "csvdict" data structure.
+	Which does not comply with script aim = store all matching results.
+	Instead following versions shall use a csvdict data structure that allows storing of multiple uris per label for reference and possible subsequent disambiguation by each particular ontology team...

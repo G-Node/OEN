@@ -7,12 +7,33 @@ test=openCSVFile(file_path)
 
 test2=getSPARQLResults(test, "nlx")
 
-for k in test2.keys():
-    print k
-    if "results" in test2[k]:
-        if "bindings" in test2[k]["results"]:
-            for kk in test2[k]["results"]["bindings"]:
-                if "label" in kk.keys() and "value" in kk["label"]:
-                    print "\t", kk["label"]["value"]
-                if "x" in kk.keys() and "value" in kk["x"]:
-                    print "\t", kk["x"]["value"]
+test3=storeResults(test, test2)
+
+#Display "csvdict" data structure contents:
+for i in test3.keys():
+    #csvdict key
+    print i
+    if test3[i]["neurolex_label"]!="" or test3[i]["neurolex_id"]!="":
+        #Label & onto-ID
+        print "\t", test3[i]["neurolex_label"]
+        print "\t", test3[i]["neurolex_id"]
+    if len(test3[i]["neurolex_related"])>0:
+        #Related entries onto-IDs
+        for j in test3[i]["neurolex_related"]:
+            print "\tNLX\t", j
+        print
+    if test3[i]["OBI_label"]!="" or test3[i]["OBI_id"]!="":
+        print "\t", test3[i]["OBI_label"]
+        print "\t", test3[i]["OBI_id"]
+    if len(test3[i]["OBI_related"])>0:
+        for j in test3[i]["OBI_related"]:
+            print "\tOBI\t", j
+        print
+    if test3[i]["NEMO_label"]!="" or test3[i]["NEMO_id"]!="":    
+        print "\t", test3[i]["NEMO_label"]
+        print "\t", test3[i]["NEMO_id"]
+    if len(test3[i]["NEMO_related"])>0:
+        for j in test3[i]["NEMO_related"]:
+            print "\tNEMO\t", j
+        print
+    
