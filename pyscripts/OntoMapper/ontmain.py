@@ -33,19 +33,30 @@ def openQscopeFile(file_path,option=""):
                         
                         #keep ontologies whose name contains charstr "option"
                         if type(option) is str and len(option)>2:
-                                
-                                if "endpoint" in Qscope.keys():
-                                    
-                                        Qscope["endpoint"][:] = [Qscope["endpoint"][Qscope["ontology"].index(tup)] \
-                                        for tup in Qscope["ontology"] if option in tup]
-                                
+                            
+                                for onto_param in ["endpoint", "prefixes", "from_uri"]:
+                                        
+                                        if onto_param in Qscope.keys():
+                                                
+                                                Qscope[onto_param][:] = [Qscope[onto_param][Qscope["ontology"].index(tup)] \
+                                                for tup in Qscope["ontology"] if option in tup]
+                                        
                                 Qscope["ontology"][:] = [tup for tup in Qscope["ontology"] if option in tup]
+                        
+
+                        #Duplicate of Qscope, truncated for querying only the labels
+                        # and ids of annotation properties of interest from each ontology
+                        qscope_noopt = {}                        
+                        for k in Qscope.keys():
+                                if k != "optional": 
+                                        qscope_noopt[k] = Qscope[k]
+                        
                         
                         for onto in Qscope["ontology"]:
                         
                                 for putativ_annot in Qscope["optional"]:
                                     
-                                    newdata = getData( Qscope, onto, putativ_annot )
+                                    newdata = getData( qscope_noopt, onto, putativ_annot )
                                     
                                     for result in newdata["results"]["bindings"]:
                                         
@@ -111,14 +122,16 @@ def openCSVFile(file_path,qscope):
 			if len(decomp)>1:
 			    
 			         for subterm in decomp:
+			                 
+			                 if type(subterm) is str and len(subterm)>2:
 			             
-			                 if subterm not in csvdict.keys():
+			                         if subterm not in csvdict.keys():
 			         
-    			                         csvdict[subterm]=copy.deepcopy(ontostruct)
-    			                         csvdict[subterm]["provenance"] = []
+    			                                 csvdict[subterm]=copy.deepcopy(ontostruct)
+    			                                 csvdict[subterm]["provenance"] = []
     			                 
-    			                 csvdict[subterm]["provenance"].append("is split of: " + row[0])
-				
+    			                         csvdict[subterm]["provenance"].append("is split of: " + row[0])
+
 	except IOError:
 
 		pass

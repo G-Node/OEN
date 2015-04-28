@@ -1,7 +1,16 @@
-ontology;neurolex;OBI;NEMO;ERO;;;;
-endpoint;http://rdf-stage.neuinfo.org/ds/query;http://sparql.hegroup.org/sparql;http://sparql.bioontology.org/sparql;http://sparql.hegroup.org/sparql;;;;
-mandatory;label;id;;;;;;
-optional;comment;isDefinedBy;seeAlso;;;;;
-optional;definition;definition source;editor preferred label;alternative term;example of usage;editor note;curator note;term replaced by
-optional;example;synonym;abbrev;EditorialNote;DefiningCitation;RelatedTo;;
-optional;related;;;;;;;
+ontology;neurolex;OBI;NEMO;ERO;;
+endpoint;http://rdf-stage.neuinfo.org/ds/query;http://sparql.hegroup.org/sparql;http://sparql.bioontology.org/sparql;http://sparql.hegroup.org/sparql;;
+prefixes;prefix property: <http://neurolex.org/wiki/Property-3A>;"prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>";"prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>";"prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>";;
+from_uri;_;http://purl.obolibrary.org/obo/merged/;http://bioportal.bioontology.org/ontologies/;http://purl.obolibrary.org/obo/merged/;;
+mandatory;label;id;;;;
+optional;seeAlso;alternative term;example of usage;editor note;curator note;term replaced by
+optional;comment;isDefinedBy;editor preferred label;EditorialNote;DefiningCitation;RelatedTo
+optional;definition;definition source;abbrev;;;
+optional;example;synonym;;;;
+optional;related;;;;;

@@ -41,7 +41,7 @@ def format_SPARQL_Query(endpoint, ontology):
     	           prefix owl: <http://www.w3.org/2002/07/owl#>
 	           prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 		"""
-		from_uri="<http://bioportal.bioontology.org/ontologies/"+ontology+">"
+		from_uri="http://bioportal.bioontology.org/ontologies/"+ontology+">"
 		
 	elif endpoint==ontofox_endpoint:
 
@@ -51,7 +51,7 @@ def format_SPARQL_Query(endpoint, ontology):
     	           prefix owl: <http://www.w3.org/2002/07/owl#>
     	           prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 		"""
-		from_uri="<http://purl.obolibrary.org/obo/merged/"+ontology+">"
+		from_uri="http://purl.obolibrary.org/obo/merged/"+ontology+">"
 		
 	else:
 		
@@ -86,29 +86,42 @@ def generate_SPARQL_Query(prefixes, from_uri, term, qscope={}):
                                 opt = formatAsRDFSpropertyLabel( opt )
                                 sparql_query += """?%s """ %opt
 		sparql_query += """
-		from """+from_uri+"""
-		where{
-		  ?id rdfs:label ?label.
-		  filter REGEX(?label, "%s")
-		""" %term
+		from <"""+from_uri+""">
+		where{"""
+		if "noprefix" not in qscope.keys() and "optional" not in qscope.keys():
+		      sparql_query += """?id rdfs:label ?label.
+		      filter REGEX(?label, "%s")
+		      """ %term
         	if "noprefix" in qscope.keys():
-        	       for opt in qscope["noprefix"].keys():
-        	               sparql_query += """OPTIONAL{ ?id <""" + qscope["noprefix"][opt] +"""> ?%s }
-        	               """ %formatAsRDFSpropertyLabel( opt )
+        	       if "optional" in qscope.keys(): sparql_query += """ { """
+        	       sparql_query += """?id rdfs:label ?label.
+        	       filter REGEX(?label, "%s")
+        	       """ %term                	       
+            	       for opt in qscope["noprefix"].keys():
+            	               sparql_query += """OPTIONAL{ ?id <""" + qscope["noprefix"][opt] +"""> ?%s }
+            	               """ %formatAsRDFSpropertyLabel( opt )
 		if "optional" in qscope.keys():
-        	       for opt in qscope["optional"]:
-        	               opt = formatAsRDFSpropertyLabel( opt )
-        	               #sparql_query += """OPTIONAL{ ?id  rdf:""" + opt +""" ?%s }
-        	               #""" %opt
-        	               #sparql_query += """OPTIONAL{ ?id  owl:""" + opt +""" ?%s }
-        	               #""" %opt
-        	               sparql_query += """OPTIONAL{ ?id rdfs:""" + opt +""" ?%s }
-        	               """ %opt
+		      if "noprefix" in qscope.keys(): sparql_query += """ } UNION { """
+		      sparql_query += """?id rdfs:label ?label.
+		      filter REGEX(?label, "%s")
+		      """ %term
+		      for opt in qscope["optional"]:
+		              opt = formatAsRDFSpropertyLabel( opt )
+		              #sparql_query += """OPTIONAL{ ?id  rdf:""" + opt +""" ?%s }
+		              #""" %opt
+		              #sparql_query += """OPTIONAL{ ?id  owl:""" + opt +""" ?%s }
+		              #""" %opt
+		              sparql_query += """OPTIONAL{ ?id rdfs:""" + opt +""" ?%s }
+		              """ %opt
+		      if "noprefix" in qscope.keys(): sparql_query += """ } """
 		sparql_query += """}"""
 
 	else: #SPARQL Query for Neurolex
 		
-		term=term.capitalize()
+		if type(term) is str and len(term)>1:
+		      term = term[0].upper() + term[1:]
+
+		#term=term.capitalize()
 		
 		sparql_query= prefixes+"""
 		select ?id ?label """
@@ -123,16 +136,13 @@ def generate_SPARQL_Query(prefixes, from_uri, term, qscope={}):
 		""" % term
 		if "optional" in qscope.keys():
         	       for opt in qscope["optional"]:
+        	           
         	               opt = formatAsRDFSpropertyLabel( opt )
         	               if len(opt)>1: nlxopt = opt[0].upper() + opt[1:]
-  #      	               #sparql_query += """OPTIONAL{ ?id  rdf:""" + opt +""" ?%s }
-  #      	               #""" %opt
-  #      	               #sparql_query += """OPTIONAL{ ?id  owl:""" + opt +""" ?%s }
-  #      	               #""" %opt
-  #      	               #sparql_query += """OPTIONAL{ ?id  rdfs:""" + opt +""" ?%s }
-  #      	               #""" %opt
+        	               
         	               sparql_query += """OPTIONAL{ ?id property:""" + nlxopt +""" ?%s }
         	               """ %opt
+        	               
 		sparql_query += """}"""		
 		print("Je suis dans la condition Neurolex avec from_uri empty")
 		
@@ -140,29 +150,67 @@ def generate_SPARQL_Query(prefixes, from_uri, term, qscope={}):
 
 def getData(qscope, ontology, term):
         
-        endpoint = qscope["endpoint"][qscope["ontology"].index(ontology)]
-
-	sparql=SPARQLWrapper(endpoint)
-
-	if endpoint==bioportal_endpoint:
+        results  = {}
+        
+        onto_ind = qscope["ontology"].index(ontology)
+        
+        endpoint = ""
+        
+        if "endpoint" in qscope.keys():
+                
+                if len(qscope["endpoint"])>onto_ind:
+                                            
+                        endpoint = qscope["endpoint"][onto_ind]
+                
+        if endpoint != "":
+                
+                sparql=SPARQLWrapper(endpoint)
+                
+                if endpoint==bioportal_endpoint:
+                        
+                        sparql.addCustomParameter("apikey", "de9357da-d547-40be-ba80-24a3a995ffbf")
+                        
+                #[prefixes, from_uri]=format_SPARQL_Query(endpoint, ontology)
+                
+                prefixes = ""
+                
+                if "prefixes" in qscope.keys():
+                        
+                        if len(qscope["prefixes"])>onto_ind:
+                                
+                                prefixes = qscope["prefixes"][onto_ind]
+                        
+                if prefixes != "":
+                        
+                        from_uri = ""
+                        
+                        if "from_uri" in qscope.keys():
+                                
+                                if len(qscope["from_uri"])>onto_ind:
+                                
+                                        from_uri = qscope["from_uri"][onto_ind]
+                       
+                        if len(from_uri)>len("http://") and from_uri[:len("http://")] == "http://":
+                                                                
+                                from_uri = from_uri + ontology
+                                
+                        else:
+                                
+                                from_uri = ""
+                                
+                        sparql_query=generate_SPARQL_Query(prefixes, from_uri, term, qscope)
+                
+                        print(sparql_query)
+                        
+                        sparql.setQuery(sparql_query)
+                        
+                        sparql.setReturnFormat(JSON)
+                        
+                        results=sparql.query().convert()
+                        
+                        #print(type(results))
 	
-		sparql.addCustomParameter("apikey", "de9357da-d547-40be-ba80-24a3a995ffbf")
-			
-	[prefixes, from_uri]=format_SPARQL_Query(endpoint, ontology)
-	
-	sparql_query=generate_SPARQL_Query(prefixes, from_uri, term, qscope)
-	
-	print(sparql_query)
-	
-	sparql.setQuery(sparql_query)
-	
-	sparql.setReturnFormat(JSON)
-	
-	results=sparql.query().convert()
-	
-	#print(type(results))
-	
-	return results
+        return results
 
 
 def formatAsRDFSpropertyLabel( charstr ):
