@@ -246,6 +246,49 @@ def storeResults(csvdict, crossonto_output):
      	
         return csvdict
 
+
+def dictToCSVfile(csvdict,file_path="csvdict.csv",verbose=False):
+    
+    print "Writing dictionary down."
+
+    with open(file_path, 'wb') as csvfile:
+            
+            fieldnames = ['term', 'property', 'content']
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames, dialect='excel', delimiter=';')    
+            writer.writeheader()
+
+            for k in csvdict.keys():
+                    
+                    newp = True
+                   
+                    for p in csvdict[k].keys():
+                            
+                            newi = True
+                            
+                            for i in csvdict[k][p]:
+                                    
+                                    if newp and newi:
+                                            
+                                            writer.writerow({'term': k, 'property': p, 'content': i})
+                                            if verbose: print "> ", k, "\t", p, "\t", i
+                                            newp = False
+                                            newi = False
+                                    
+                                    elif newi:
+                                    
+                                            writer.writerow({'property': p, 'content': i})
+                                            if verbose: print "> " + " "*len(k) + "\t", p, "\t", i
+                                            newi = False
+                                            
+                                    else:
+                                            
+                                            writer.writerow({'content': i})
+                                            if verbose: print "> " + " "*len(k) + "\t" + " "*len(p) + "\t", i
+
+    print "Dictionary finished writing down."
+
+
+
 #                        for result in nlx_output["results"]["bindings"]:
 #        
 #                            labels.append(result['label']['value'])
