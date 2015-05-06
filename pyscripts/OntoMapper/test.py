@@ -45,7 +45,7 @@ for i in test3.keys():
         test4[i] = test3[i]
         print i, "  \thas no exact label match within specified ontologies."
 
-print "\n", len(test4), "labels were not referenced within specified ontologies." + "\n\n"
+print "\n", len(test4), "terms were not previsouly referenced within specified ontologies.\n"
 
 dictToCSVfile( test4, "neverseenbeforeterms.csv", False)
 

@@ -15,6 +15,7 @@
 from ontomapper import *
 import csv
 import copy
+import difflib
 
 def openQscopeFile(file_path,option=""):
         """
@@ -257,33 +258,75 @@ def dictToCSVfile(csvdict,file_path="csvdict.csv",verbose=False):
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames, dialect='excel', delimiter=';')    
             writer.writeheader()
 
+            # terms
             for k in csvdict.keys():
                     
                     newp = True
-                   
+                    
+                    # Establish annotations writing order
+                    match_score = {}
+                    
                     for p in csvdict[k].keys():
-                            
-                            newi = True
-                            
-                            for i in csvdict[k][p]:
+                        
+                            for q in csvdict[k].keys():
                                     
-                                    if newp and newi:
+                                    a = p
+                                    b = q
                                             
-                                            writer.writerow({'term': k, 'property': p, 'content': i})
-                                            if verbose: print "> ", k, "\t", p, "\t", i
-                                            newp = False
-                                            newi = False
-                                    
-                                    elif newi:
-                                    
-                                            writer.writerow({'property': p, 'content': i})
-                                            if verbose: print "> " + " "*len(k) + "\t", p, "\t", i
-                                            newi = False
+                                    if '_' in a: a = a[a.index('_')+1:]
+                                    if '_' in b: b = b[b.index('_')+1:]
                                             
+                                    if a in match_score.keys():
+                                            match_score[a] += difflib.SequenceMatcher(None, a, b).ratio()
                                     else:
+                                            match_score[a]  = difflib.SequenceMatcher(None, a, b).ratio()
+                            
+                    match_score = sorted(match_score, key=match_score.get, reverse=True)
+                            
+                    # Write down in established order
+                    monitorlist = []
+                                        
+                    for w in match_score:
+                            
+                            for p in csvdict[k].keys():
+                                    
+                                    a = p
+                                    if '_' in a: a = a[a.index('_')+1:]
+                                    
+                                    if w==a:
                                             
-                                            writer.writerow({'content': i})
-                                            if verbose: print "> " + " "*len(k) + "\t" + " "*len(p) + "\t", i
+                                            monitorlist.append( p )
+                                            newi = True
+
+                                            for i in csvdict[k][p]:
+                                            
+                                                    if newp and newi:
+                                                            
+                                                            writer.writerow({'term': k, 'property': p, 'content': i})
+                                                            if verbose: print "> ", k, "\t", p, "\t", i
+                                                            newp = False
+                                                            newi = False
+                                                    
+                                                    elif newi:
+                                                    
+                                                            writer.writerow({'property': p, 'content': i})
+                                                            if verbose: print "> " + " "*len(k) + "\t", p, "\t", i
+                                                            newi = False
+                                                            
+                                                    else:
+                                                            
+                                                            writer.writerow({'content': i})
+                                                            if verbose: print "> " + " "*len(k) + "\t" + " "*len(p) + "\t", i
+
+                    #Consistency checks
+                    for w in monitorlist:
+                            if monitorlist.count(w)>1:
+                                    print " !!! ", w, "  repeated annotation, term =", k, "  !!! "
+                            if w not in csvdict[k].keys():
+                                    print " !!! ", w, "  de novo annotation, term =", k, "  !!! "
+                    for p in csvdict[k].keys():
+                            if p not in monitorlist:
+                                    print " !!! ", p, "  annotation was dropped, term =", k, "  !!! "
 
     print "Dictionary finished writing down."
 
