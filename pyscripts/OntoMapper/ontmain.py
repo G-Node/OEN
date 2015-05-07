@@ -250,7 +250,13 @@ def storeResults(csvdict, crossonto_output):
 
 def dictToCSVfile(csvdict,file_path="csvdict.csv",verbose=False):
     
-    print "Writing dictionary down."
+    filename = file_path
+    if "/" in file_path:
+            filename = filename[::-1]
+            filename = filename[:filename.index("/")]
+            filename = filename[::-1]
+    
+    print " Writing down dictionary:", filename
 
     with open(file_path, 'wb') as csvfile:
             
@@ -288,6 +294,7 @@ def dictToCSVfile(csvdict,file_path="csvdict.csv",verbose=False):
                                         
                     for w in match_score:
                             
+                            # annotations
                             for p in csvdict[k].keys():
                                     
                                     a = p
@@ -297,7 +304,8 @@ def dictToCSVfile(csvdict,file_path="csvdict.csv",verbose=False):
                                             
                                             monitorlist.append( p )
                                             newi = True
-
+                                            
+                                            # content
                                             for i in csvdict[k][p]:
                                             
                                                     if newp and newi:
@@ -328,7 +336,7 @@ def dictToCSVfile(csvdict,file_path="csvdict.csv",verbose=False):
                             if p not in monitorlist:
                                     print " !!! ", p, "  annotation was dropped, term =", k, "  !!! "
 
-    print "Dictionary finished writing down."
+    print " Finished writing down dictionary:", filename, "\n"
 
 
 

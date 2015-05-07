@@ -10,7 +10,7 @@ prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>";;;;
 from_uri;_;http://purl.obolibrary.org/obo/merged/;http://bioportal.bioontology.org/ontologies/;http://purl.obolibrary.org/obo/merged/;;;;
 mandatory;label;id;;;;;;
 optional;definition;abbrev;example;synonym;related;EditorialNote;DefiningCitation;RelatedTo
-temp_disabl;editor preferred label;example of usage;comment;alternative term;definition source;editor note;curator note;term replaced by
-temp_disabl;isDefinedBy;seeAlso;;;;;;
-temp_disabl;definition_source;pref_label;;;;;;
+optional;editor preferred label;example of usage;comment;alternative term;definition source;editor note;curator note;term replaced by
+optional;isDefinedBy;seeAlso;;;;;;
+optional;definition_source;pref_label;;;;;;
 optional;related;;;;;;;
