@@ -1,6 +1,217 @@
-microscope
-amplifier
-Acetyl Coenzyme A
-firing frequency
-electrode
-person
+analysis;odML terminology
+peristimulus time histogram;odML terminology
+power spectrum;odML terminology
+cell;odML terminology
+dataset;odML terminology
+electrode;odML terminology
+event;odML terminology
+event list;odML terminology
+experiment;odML terminology
+behavior;odML terminology
+electrophysiology;odML terminology
+imaging;odML terminology
+psychophysics;odML terminology
+hardware properties;odML terminology
+hardware settings;odML terminology
+amplifier;odML terminology
+attenuator;odML terminology
+camera objective;odML terminology
+data acquisition;odML terminology
+eye tracker;odML terminology
+filter;odML terminology
+filter set;odML terminology
+image acquisition;odML terminology
+light source;odML terminology
+microscope;odML terminology
+microscope objective;odML terminology
+scanner;odML terminology
+stimulus isolator;odML terminology
+leaky integrate and fire;odML terminology
+perfect integrate and fire;odML terminology
+multi-compartmental model;odML terminology
+one compartment model;odML terminology
+person;odML terminology
+preparation;odML terminology
+project;odML terminology
+recording;odML terminology
+setup;odML terminology
+stimulus;odML terminology
+DC pulse stimulus;odML terminology
+gabor stimulus;odML terminology
+grating stimulus;odML terminology
+pulse stimulus;odML terminology
+movie stimulus;odML terminology
+ramp stimulus;odML terminology
+random dots stimulus;odML terminology
+sawtooth stimulus;odML terminology
+sinewave stimulus;odML terminology
+squarewave stimulus;odML terminology
+white noise stimulus;odML terminology
+subject;odML terminology
+Carmen MINI;odML terminology
+type;odML terminology
+brain region;odML terminology
+brain subregion;odML terminology
+layer;odML terminology
+ganglion;odML terminology
+structure;odML terminology
+recording location;odML terminology
+identification;odML terminology
+resting potential;odML terminology
+baseline rate;odML terminology
+baseline noise;odML terminology
+rheobase;odML terminology
+membrane capacity;odML terminology
+input resistance;odML terminology
+time constante;odML terminology
+comment;odML terminology
+author;odML terminology
+date;odML terminology
+description;odML terminology
+method;odML terminology
+command line call;odML terminology
+code file;odML terminology
+code file URL;odML terminology
+code revision;odML terminology
+configuration file;odML terminology
+configuration file;odML terminology
+dataset file;odML terminology
+dataset file URL;odML terminology
+result file;odML terminology
+result file URL;odML terminology
+result figure;odML terminology
+paper DOI;odML terminology
+paper URL;odML terminology
+instantaneous spike rate;odML terminology
+sliding window;odML terminology
+discrete window;odML terminology
+rectangular window type;odML terminology
+gaussian window type;odML terminology
+alpha window type;odML terminology
+window type;odML terminology
+collections;odML terminology
+timestamp;odML terminology
+start ;odML terminology
+end;odML terminology
+start date;odML terminology
+end date;odML terminology
+start time;odML terminology
+end time;odML terminology
+file;odML terminology
+file URL;odML terminology
+dataset quality;odML terminology
+dataset quality range;odML terminology
+simulation;odML terminology
+subtype;odML terminology
+project name;odML terminology
+project ID;odML terminology
+paradigm;odML terminology
+environment;odML terminology
+individual count;odML terminology
+definition;odML terminology
+protocol;odML terminology
+intracellular recording;odML terminology
+extracellular recording;odML terminology
+patch clamp;odML terminology
+whole cell patch;odML terminology
+loose patch;odML terminology
+ERG;odML terminology
+EEG;odML terminology
+EKG;odML terminology
+EMG;odML terminology
+single electrode recording;odML terminology
+dual electrode recording;odML terminology
+multi electrode recording;odML terminology
+REM;odML terminology
+light microscopy;odML terminology
+confocal microscope;odML terminology
+two-photon microscope;odML terminology
+fMRI;odML terminology
+simulation type;odML terminology
+psychophysics task;odML terminology
+psychophysics experimental paradigm;odML terminology
+subject knowledge;odML terminology
+training trials;odML terminology
+training duration;odML terminology
+subject instruction;odML terminology
+serial number;odML terminology
+inventory number;odML terminology
+owner;odML terminology
+model;odML terminology
+manufacturer;odML terminology
+measurement type;odML terminology
+Bridge;odML terminology
+CC;odML terminology
+VC;odML terminology
+VCcCC;odML terminology
+dynamic clamp;odML terminology
+operation mode;odML terminology
+bridged;odML terminology
+discontinuous;odML terminology
+switching frequency;odML terminology
+duty cycle;odML terminology
+gain;odML terminology
+high pass cutoff;odML terminology
+low pass cutoff;odML terminology
+line count;odML terminology
+maximum attenuation;odML terminology
+minimum attenuation;odML terminology
+step size;odML terminology
+attenuation;odML terminology
+zoom;odML terminology
+macro;odML terminology
+fixed focus;odML terminology
+fixed aperture;odML terminology
+mount;odML terminology
+C-mount;odML terminology
+CS-mount;odML terminology
+numerical aperture;odML terminology
+maximum aperture;odML terminology
+aperture;odML terminology
+focal length range;odML terminology
+focal length;odML terminology
+transmission lower bound;odML terminology
+transmission upper bound;odML terminology
+transmission range;odML terminology
+analog input resolution;odML terminology
+analog input maximum sampling rate;odML terminology
+analog input channel count;odML terminology
+analog output resolution;odML terminology
+analog output maximum sampling rate;odML terminology
+analog output channel count;odML terminology
+DIO line count;odML terminology
+analog input used channel count;odML terminology
+analog input sampling rate;odML terminology
+analog input channel gain;odML terminology
+analog input reference;odML terminology
+analog input polarity;odML terminology
+analog output used channel count;odML terminology
+analog output sampling rate;odML terminology
+analog output channel gain;odML terminology
+tabletop eye tracker;odML terminology
+head mounted eye tracker;odML terminology
+eye tracker sampling rate;odML terminology
+detector type;odML terminology
+infrared detector;odML terminology
+dual Purkinje detector;odML terminology
+coil detector;odML terminology
+eye tracker filter;odML terminology
+eye tracker calibration;odML terminology
+eye tracker fixation;odML terminology
+Bitebar;odML terminology
+Chinrest;odML terminology
+filter type;odML terminology
+high pass filter;odML terminology
+low pass filter;odML terminology
+band pass filter;odML terminology
+notch filter;odML terminology
+filter subtype;odML terminology
+bessel filter;odML terminology
+Butterworth filter;odML terminology
+low pass filter cutoff;odML terminology
+low pass filter order;odML terminology
+high pass filter cutoff;odML terminology
+high pass filter order;odML terminology
+excitation filter model;odML terminology
+excitation filter manufacturer;odML terminology
+excitation filter wavelength;odML terminology

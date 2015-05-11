@@ -17,10 +17,11 @@ import csv
 import copy
 import difflib
 
+
 def openQscopeFile(file_path,option=""):
         """
 	Function to extract from csv file containing ontologies to be queried from,
-	corresponding endpoints and properties to be sought
+	the corresponding endpoints and properties to be sought
         """
         
         Qscope = {}
@@ -116,7 +117,7 @@ def openCSVFile(file_path,qscope):
                 #Create templated entries for each term listed in file	       
 		my_file=open(file_path, 'rb')
 		
-		csv_file=csv.reader(my_file, dialect='excel')
+		csv_file=csv.reader(my_file, dialect='excel', delimiter=';')
 		
 		for row in csv_file:
 			

@@ -18,10 +18,9 @@ from ontmain import *
 #file_path='/Users/admin/Documents/Python_Scripts/OntoMapper/test_terms.csv'
 file_path='/Users/Asus/Documents/GitHub/OEN/'
 
-#define path to file containing list of ontologies, endpoints, and annotation properties with which to run queries
+#define path to file containing list of ontologies, endpoints, and annotation 
+# properties with which to run queries
 qscope = openQscopeFile(file_path+'pyscripts/OntoMapper/ontos_and_props.csv', '_')
-
-print qscope
 
 test=openCSVFile(file_path+'pyscripts/OntoMapper/test_terms.csv', qscope)
 
@@ -30,6 +29,11 @@ test2=getSPARQLResults(test, qscope)
 test3=[]
 
 test3=storeResults(test, test2)
+
+
+
+
+# Write to files
 
 print
 print "- " * 20
