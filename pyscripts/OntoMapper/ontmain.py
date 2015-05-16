@@ -44,7 +44,7 @@ def openQscopeFile(file_path,option=""):
                                 
                                         Qscope[row[0]].append( item )
 
-                #identify full urls for those properties self-referenced within each ontology
+                #identify full urls for those annotations self-referenced within each ontology
                 if "ontology" in Qscope.keys():
                         
                         #keep ontologies whose name contains charstr "option"
@@ -59,30 +59,37 @@ def openQscopeFile(file_path,option=""):
                                         
                                 Qscope["ontology"][:] = [tup for tup in Qscope["ontology"] if option in tup]
                         
-
-                        #Duplicate of Qscope, truncated for querying only the labels
-                        # and ids of annotation properties of interest from each ontology
-                        qscope_noopt = {}                        
-                        for k in Qscope.keys():
-                                if k != "optional": 
-                                        qscope_noopt[k] = Qscope[k]
-                        
                         
                         for onto in Qscope["ontology"]:
+                                
+                                #Duplicate of Qscope, truncated for querying only the labels
+                                # and ids of annotation properties of interest from each ontology
+                                qscope_noopt = {}
+                                onto_ind = Qscope["ontology"].index( onto )
+                                for k in Qscope.keys():
+                                        if k in ["ontology","endpoint","prefixes","from_uri"]:
+                                                qscope_noopt[k] = []
+                                                qscope_noopt[k].append( Qscope[k][onto_ind] )
+                                        elif k not in ["optional","noprefix"]:
+                                                qscope_noopt[k] = Qscope[k]
                         
                                 for putativ_annot in Qscope["optional"]:
+
+                                        newdata = getData( qscope_noopt, onto, putativ_annot )
                                     
-                                    newdata = getData( qscope_noopt, onto, putativ_annot )
-                                    
-                                    for result in newdata["results"]["bindings"]:
+                                        for result in newdata["results"]["bindings"]:
                                         
-                                            if "label" in result.keys() and "value" in result['label'] and result['label']['value'].lower()==putativ_annot.lower():
+                                                if "label" in result.keys() and "value" in result['label'] and result['label']['value'].lower()==putativ_annot.lower():
         
-                                                    if "noprefix" not in Qscope.keys():
+                                                        if "noprefix" not in Qscope.keys():
                                                             
-                                                            Qscope["noprefix"] = {}
+                                                                Qscope["noprefix"] = {}
+                                                                
+                                                        if onto not in Qscope["noprefix"].keys():
+                                                                
+                                                                Qscope["noprefix"][onto] = set()
                                                             
-                                                    Qscope["noprefix"][result['label']['value']] = result['id']['value']
+                                                        Qscope["noprefix"][onto].add( (result['label']['value'], result['id']['value']) )
 
 	except IOError:
 		pass
@@ -178,7 +185,7 @@ def getSPARQLResults(csvdict, qscope, option=""):
 	
 #	print("nlx_output est un", type(nlx_output))
 #	return nlx_output
-	
+
 def storeResults(csvdict, crossonto_output):
         
         for onto in crossonto_output.keys():
@@ -209,15 +216,17 @@ def storeResults(csvdict, crossonto_output):
                                                         
                                                         if res in lpoi.keys():
                                                                 
+                                                                tupl = (result[res]['value'],"","")
+                                                                
                                                                 #Mandatory fields, intended to be "label" and "id"
-                                                                if type(csvdict[i][onto+"_"+lpoi[res]]) is list:
+                                                                if type(csvdict[i][onto+"_"+lpoi[res]]) is list:                                                                        
                                                                         
-                                                                        csvdict[i][onto+"_"+lpoi[res]].append( result[res]['value'] )
+                                                                        csvdict[i][onto+"_"+lpoi[res]].append( tupl )
                                                                 
                                                                 #Other fields, customisable via onto_and_props.csv file
                                                                 elif type(csvdict[i][onto+"_"+lpoi[res]])is set:
                                                                         
-                                                                        csvdict[i][onto+"_"+lpoi[res]].add( result[res]['value'] )
+                                                                        csvdict[i][onto+"_"+lpoi[res]].add( tupl )
                                                                         
                                                         else:
                                                                 
@@ -230,17 +239,51 @@ def storeResults(csvdict, crossonto_output):
                                 #Store label returned within query as "related entry" in case match to sought term is not exact
                                 else:
                                         
-                                        if "related" in lpoi.keys() and "label" in result.keys() and "id" in result.keys():
+                                        if "related" in lpoi.keys():                                                
                                                 
-                                                if "value" in result["label"] and "value" in result["id"]:
+                                                tupl = Tuplify_LblIdDef( result )
+                                                
+                                                #Discard content already listed with identical label and id if it doesn't provide a missing definition
+                                                list_inspect = csvdict[i][onto+"_"+lpoi["related"]]
+                                                
+                                                whole_new = True
+                                                
+                                                for ins in list_inspect:
+                                                        
+                                                        if ins[0]==tupl[0] and ins[1]==tupl[1]:
+                                                                
+                                                                if len(ins[2])>0 and len(tupl[2])>0:
+                                                                        
+                                                                        #keep and append
+                                                                        pass
+                                                                
+                                                                if len(ins[2])>0 and len(tupl[2])==0:
+                                                                        
+                                                                        #keep do not append
+                                                                        whole_new = False
+                                                                        break
+                                                                        
+                                                                if len(ins[2])==0 and len(tupl[2])>0:
+                                                                        
+                                                                        #remove and append
+                                                                        csvdict[i][onto+"_"+lpoi["related"]].remove( ins )
+                                                                        break
+                                                                
+                                                                if len(ins[2])==0 and len(tupl[2])==0:
+                                                                        
+                                                                        #keep do not append
+                                                                        whole_new = False
+                                                                        break
+                                                
+                                                if whole_new:
                                                         
                                                         if type(csvdict[i][onto+"_"+lpoi["related"]]) is list:
-                                                                
-                                                                csvdict[i][onto+"_"+lpoi["related"]].append( result["label"]['value'] )
+                                                        
+                                                                csvdict[i][onto+"_"+lpoi["related"]].append( tupl )
                                                                 
                                                         elif type(csvdict[i][onto+"_"+lpoi["related"]])is set:
                                                                 
-                                                                csvdict[i][onto+"_"+lpoi["related"]].add( result["label"]['value'] )
+                                                                csvdict[i][onto+"_"+lpoi["related"]].add( tupl )
                                                                 
                                         else:
                                             
@@ -261,7 +304,7 @@ def dictToCSVfile(csvdict,file_path="csvdict.csv",verbose=False):
 
     with open(file_path, 'wb') as csvfile:
             
-            fieldnames = ['term', 'property', 'content']
+            fieldnames = ['term', 'property', 'content', 'id', 'definition']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames, dialect='excel', delimiter=';')    
             writer.writeheader()
 
@@ -308,24 +351,28 @@ def dictToCSVfile(csvdict,file_path="csvdict.csv",verbose=False):
                                             
                                             # content
                                             for i in csvdict[k][p]:
-                                            
+                                                    
+                                                    #Deal with exception non-tuple entries,
+                                                    #entries in "provenance" field include in tuple
+                                                    if type(i) is str: i = (i,"","")
+                                                    
                                                     if newp and newi:
                                                             
-                                                            writer.writerow({'term': k, 'property': p, 'content': i})
-                                                            if verbose: print "> ", k, "\t", p, "\t", i
+                                                            if verbose: print "> ", encodeForWriting(k), "\t", encodeForWriting(p), "\t", encodeForWriting(i[0]), "\t", encodeForWriting(i[1]), "\t", encodeForWriting(i[2])
+                                                            writer.writerow({'term': encodeForWriting(k), 'property': encodeForWriting(p), 'content': encodeForWriting(i[0]), 'id': encodeForWriting(i[1]), 'definition': encodeForWriting(i[2])})
                                                             newp = False
                                                             newi = False
                                                     
                                                     elif newi:
-                                                    
-                                                            writer.writerow({'property': p, 'content': i})
-                                                            if verbose: print "> " + " "*len(k) + "\t", p, "\t", i
+                                                            
+                                                            if verbose: print "> " + " "*len(encodeForWriting(k)) + "\t", encodeForWriting(p), "\t", "\t", encodeForWriting(i[0]), "\t", encodeForWriting(i[1]), "\t", encodeForWriting(i[2])
+                                                            writer.writerow({'property': encodeForWriting(p), 'content': encodeForWriting(i[0]), 'id': encodeForWriting(i[1]), 'definition': encodeForWriting(i[2])})
                                                             newi = False
                                                             
                                                     else:
                                                             
-                                                            writer.writerow({'content': i})
-                                                            if verbose: print "> " + " "*len(k) + "\t" + " "*len(p) + "\t", i
+                                                            if verbose: print "> " + " "*len(encodeForWriting(k)) + "\t" + " "*len(encodeForWriting(p)) + "\t", encodeForWriting(i[0]), "\t", encodeForWriting(i[1]), "\t", encodeForWriting(i[2])
+                                                            writer.writerow({'content': encodeForWriting(i[0]), 'id': encodeForWriting(i[1]), 'definition': encodeForWriting(i[2])})
 
                     #Consistency checks
                     for w in monitorlist:
@@ -338,7 +385,6 @@ def dictToCSVfile(csvdict,file_path="csvdict.csv",verbose=False):
                                     print " !!! ", p, "  annotation was dropped, term =", k, "  !!! "
 
     print " Finished writing down dictionary:", filename, "\n"
-
 
 
 #                        for result in nlx_output["results"]["bindings"]:

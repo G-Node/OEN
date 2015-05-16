@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 ################################################################################
 #
 # Work on Ontology for Experimental Neurophysiology (c) by <ylefranc> and <ant1b>
@@ -111,9 +112,9 @@ def generate_SPARQL_Query(prefixes, from_uri, term, qscope={}):
         	       sparql_query += """?id rdfs:label ?label.
         	       filter REGEX(?label, "%s")
         	       """ %term                	       
-            	       for opt in qscope["noprefix"].keys():
-            	               sparql_query += """OPTIONAL{ ?id <""" + qscope["noprefix"][opt] +"""> ?%s }
-            	               """ %formatAsRDFSpropertyLabel( opt )
+            	       for opt in qscope["noprefix"]:
+            	               sparql_query += """OPTIONAL{ ?id <""" + opt[1] +"""> ?%s }
+            	               """ %formatAsRDFSpropertyLabel( opt[0] )
 		if "optional" in qscope.keys():
 		      if "noprefix" in qscope.keys(): sparql_query += """ } UNION { """
 		      sparql_query += """?id rdfs:label ?label.
@@ -211,8 +212,17 @@ def getData(qscope, ontology, term):
                         else:
                                 
                                 from_uri = ""
-                                
-                        sparql_query=generate_SPARQL_Query(prefixes, from_uri, term, qscope)
+                        
+                        #Restrict query scope to noprefixes as identified for each ontology to be queried from
+                        qscop = {}
+                        for k in qscope.keys():
+                                if k!="noprefix":
+                                        qscop[k] = qscope[k]
+                        if "noprefix" in qscope.keys() and ontology in qscope["noprefix"].keys():
+                                qscop["noprefix"]    = []
+                                qscop["noprefix"][:] = [k for k in qscope["noprefix"][ontology]]
+                        
+                        sparql_query=generate_SPARQL_Query(prefixes, from_uri, term, qscop)
                 
                         print(sparql_query)
                         
@@ -239,6 +249,23 @@ def formatAsRDFSpropertyLabel( charstr ):
                 o = o[0].upper() + o[1:].lower()
             op = op + o
     return op
+
+
+def Tuplify_LblIdDef( result_bindings ):
+    lbl, idt, dfn = "", "", ""
+    tupl = (lbl, idt, dfn)
+    
+    if 'label' in result_bindings.keys() and 'value' in result_bindings['label']: lbl = result_bindings['label']['value']
+    if 'id'    in result_bindings.keys() and 'value' in result_bindings['id']:    idt = result_bindings[ 'id'  ]['value']
+    if 'definition' in result_bindings.keys() and 'value' in result_bindings['definition']: dfn = result_bindings['definition']['value']                
+    
+    tupl = (lbl,idt,dfn)    
+    return tupl
+    
+
+def encodeForWriting( charstr ):
+    out = u"%s".encode('utf-8') %charstr
+    return out.encode('ascii', 'xmlcharrefreplace')
 
 	
 if __name__ == "__main__":

@@ -1,17 +1,18 @@
 analysis;odML terminology
-peristimulus time histogram;odML terminology
-power spectrum;odML terminology
+peristimulus time histogram analysis;odML terminology
+power spectrum analysis;odML terminology
 cell;odML terminology
 dataset;odML terminology
 electrode;odML terminology
 event;odML terminology
 event list;odML terminology
 experiment;odML terminology
-behavior;odML terminology
-electrophysiology;odML terminology
-imaging;odML terminology
-psychophysics;odML terminology
+behavior experiment;odML terminology
+electrophysiology experiment;odML terminology
+imaging experiment;odML terminology
+psychophysics experiment;odML terminology
 hardware properties;odML terminology
+hardware;odML terminology
 hardware settings;odML terminology
 amplifier;odML terminology
 attenuator;odML terminology
@@ -42,39 +43,37 @@ grating stimulus;odML terminology
 pulse stimulus;odML terminology
 movie stimulus;odML terminology
 ramp stimulus;odML terminology
-random dots stimulus;odML terminology
+random dot stimulus;odML terminology
 sawtooth stimulus;odML terminology
 sinewave stimulus;odML terminology
 squarewave stimulus;odML terminology
 white noise stimulus;odML terminology
 subject;odML terminology
-Carmen MINI;odML terminology
-type;odML terminology
+cell type;odML terminology
 brain region;odML terminology
 brain subregion;odML terminology
 layer;odML terminology
 ganglion;odML terminology
 structure;odML terminology
-recording location;odML terminology
-identification;odML terminology
-resting potential;odML terminology
-baseline rate;odML terminology
-baseline noise;odML terminology
-rheobase;odML terminology
-membrane capacity;odML terminology
-input resistance;odML terminology
-time constante;odML terminology
-comment;odML terminology
-author;odML terminology
-date;odML terminology
-description;odML terminology
-method;odML terminology
+cell recording location;odML terminology
+cell identification method;odML terminology
+cell resting potential;odML terminology
+cell baseline firing rate;odML terminology
+cell baseline membrane potential noise;odML terminology
+cell rheobase;odML terminology
+cell membrane capacity;odML terminology
+cell input resistance;odML terminology
+cell time constant;odML terminology
+analysis author;odML terminology
+analysis date;odML terminology
+analysis description;odML terminology
+analysis method;odML terminology
 command line call;odML terminology
 code file;odML terminology
 code file URL;odML terminology
 code revision;odML terminology
 configuration file;odML terminology
-configuration file;odML terminology
+configuration file URL;odML terminology
 dataset file;odML terminology
 dataset file URL;odML terminology
 result file;odML terminology
@@ -82,34 +81,37 @@ result file URL;odML terminology
 result figure;odML terminology
 paper DOI;odML terminology
 paper URL;odML terminology
-instantaneous spike rate;odML terminology
-sliding window;odML terminology
-discrete window;odML terminology
+PSTH analysis method;odML terminology
+instantaneous spike rate method;odML terminology
+sliding window method;odML terminology
+discrete window method;odML terminology
 rectangular window type;odML terminology
 gaussian window type;odML terminology
 alpha window type;odML terminology
 window type;odML terminology
+data segment length;odML terminology
+power spectrum window function;odML terminology
+data segment overlap;odML terminology
 collections;odML terminology
-timestamp;odML terminology
-start ;odML terminology
-end;odML terminology
-start date;odML terminology
-end date;odML terminology
-start time;odML terminology
-end time;odML terminology
-file;odML terminology
-file URL;odML terminology
+event timestamp;odML terminology
+dataset start date;odML terminology
+dataset end date;odML terminology
+dataset recording start time;odML terminology
+dataset recording end time;odML terminology
+dataset file;odML terminology
+dataset file URL;odML terminology
 dataset quality;odML terminology
 dataset quality range;odML terminology
-simulation;odML terminology
-subtype;odML terminology
+simulation experiment;odML terminology
+experiment subtype;odML terminology
 project name;odML terminology
 project ID;odML terminology
-paradigm;odML terminology
-environment;odML terminology
+behavorial paradigm;odML terminology
+experimental environment;odML terminology
 individual count;odML terminology
-definition;odML terminology
-protocol;odML terminology
+experiment definition;odML terminology
+experimental protocol;odML terminology
+electrophysiology experiment type;odML terminology
 intracellular recording;odML terminology
 extracellular recording;odML terminology
 patch clamp;odML terminology

@@ -140,12 +140,12 @@ for ppty in header:
 rt_header[ "RelatedTo" ] = "ERO_related"
 
 
-file_path='/Users/Asus/Documents/GitHub/OEN/'
-qscope = openQscopeFile(file_path+'pyscripts/OntoMapper/ontos_and_props.csv', 'ERO')
-test=openCSVFile(file_path+'pyscripts/OntoMapper/test_terms.csv', qscope)
-test2=getSPARQLResults(test, qscope)
-test3=[]
-test3=storeResults(test, test2)
+#file_path = '/Users/Asus/Documents/GitHub/OEN/'
+#qscope    = openQscopeFile(file_path+'pyscripts/OntoMapper/ontos_and_props.csv', 'ERO')
+#test      = openCSVFile(file_path+'pyscripts/OntoMapper/test_terms.csv', qscope)
+#test2     = getSPARQLResults(test, qscope)
+#test3     = []
+#test3     = storeResults(test, test2)
 
 #for i in test3.keys():
 #    print i
@@ -156,7 +156,28 @@ test3=storeResults(test, test2)
 #            for k in test3[i][j]:
 #                print "\t\t", k
 
+#WriteCSVwithHeader("csv_with_header.csv", header, test3, rt_header)
 
+
+onto = OntoInspector("C:\Users\Asus\Documents\GitHub\OEN\pyscripts\OntoMapper\pizza.owl")
+
+
+
+
+import csv
+my_file=open('/Users/Asus/csvdict.csv', 'rb')		
+csv_file=csv.reader(my_file, dialect='excel', delimiter=';')
+test3 = {}
+headerskip = False
+for row in csv_file:
+    if headerskip:
+        if len(row[0])>0: 
+            term  = row[0]
+            test3[term] = {}
+        if len(row[1])>0:
+            annot = row[1]
+            test3[term][annot] = []
+        test3[term][annot].append( row[2] )
+    else:
+        headerskip = True
 WriteCSVwithHeader("csv_with_header.csv", header, test3, rt_header)
-
-

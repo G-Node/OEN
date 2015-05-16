@@ -14,3 +14,4 @@
 
 from ontmain import *
 from ontomapper import *
+from ontospy import *

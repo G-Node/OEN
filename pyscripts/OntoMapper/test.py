@@ -46,6 +46,8 @@ print "- " * 20
 test4={}
 test5={}
 test6={}
+test7={}
+test8={}
 annotlibl   = 'label'
 annotsuffix = '_' + annotlibl
 for i in test3.keys():
@@ -65,15 +67,27 @@ for i in test3.keys():
     for j in test3[i].keys():
         if j[-len("_id"):]=="_id":
             for k in test3[i][j]:
-                if "oen_" in k.lower():
+                if "oen_" in k[0].lower():
                     isoenterm = True
                     break
     if isoenterm:
         test5[i] = test3[i]
     else:
         test6[i] = test3[i]
+    
+    #Has a single unique ID or multiple IDs
+    IDset = set()
+    for j in test3[i].keys():
+        if j[-len("_id"):]=="_id":
+            for k in test3[i][j]:
+                IDset.add( k )
+    if len(IDset)==1:
+        test7[i] = test3[i]
+    elif len(IDset)>1:
+        test8[i] = test3[i]
+    
 
-print str(len(test4)) + "/" + str(len(test3)), "terms were not previsouly referenced within specified ontologies."
+print str(len(test4)) + "/" + str(len(test3)), "terms were not previously referenced within specified ontologies."
 dictToCSVfile( test4, "neverseenbeforeterms.csv", False)
 
 print
@@ -86,6 +100,15 @@ print "- " * 20
 print str(len(test6)) + "/" + str(len(test3)), "terms not already provided with OEN id."
 dictToCSVfile( test6, "new_to_oen.csv", False)
 
+print
+print "- " * 20
+print str(len(test7)) + "/" + str(len(test3)), "terms have a unique ID across specified ontologies."
+dictToCSVfile( test7, "unique_ids.csv", False)
+
+print
+print "- " * 20
+print str(len(test8)) + "/" + str(len(test3)), "terms have mulitple IDs across specified ontologies."
+dictToCSVfile( test8, "mulitple_ids.csv", False)
 
 
 '''
