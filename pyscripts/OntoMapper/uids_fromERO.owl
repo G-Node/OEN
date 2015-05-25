@@ -1,0 +1,339 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY bfo "http://www.ifomis.org/bfo/1.1#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY span "http://www.ifomis.org/bfo/1.1/span#" >
+    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://ontofox.hegroup.org/s6arqxpn.owl#"
+     xml:base="http://ontofox.hegroup.org/s6arqxpn.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bfo="http://www.ifomis.org/bfo/1.1#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#">
+    <owl:Ontology rdf:about="http://ontofox.hegroup.org/s6arqxpn.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000111">
+        <rdfs:label xml:lang="en">editor preferred label</rdfs:label>
+        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">editor preferred term</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000112">
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">example</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000114">
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000281</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Bill Bug</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">has curation status</obo:IAO_0000111>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+        <rdfs:label rdf:datatype="&xsd;string">definition</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">textual definition</rdfs:label>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000116">
+        <rdfs:label rdf:datatype="&xsd;string">comment</rdfs:label>
+        <rdfs:label xml:lang="en">editor note</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obfoundry.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">editor note</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000117">
+        <rdfs:label rdf:datatype="&xsd;string">definition editor</rdfs:label>
+        <rdfs:label xml:lang="en">definition editor</rdfs:label>
+        <rdfs:label xml:lang="en">term editor</rdfs:label>
+        <obo:IAO_0000116 xml:lang="en">20110707, MC: label update to term editor and definition modified accordingly. See http://code.google.com/p/information-artifact-ontology/issues/detail?id=115.</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Name of editor entering the definition in the file. The definition editor is a point of contact for information regarding the term. The definition editor may be, but is not always, the author of the definition, which may have been worked upon by several people</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">definition editor</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">term editor</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118">
+        <rdfs:label rdf:datatype="&xsd;string">alternative term</rdfs:label>
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">alternative term</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119">
+        <rdfs:label rdf:datatype="&xsd;string">definition source</rdfs:label>
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">definition source</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">For external terms/classes, the ontology from which the term was imported</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">imported from</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#deprecated -->
+
+    <owl:AnnotationProperty rdf:about="&owl;deprecated">
+        <rdfs:domain rdf:resource="&rdfs;Resource"/>
+        <rdfs:range rdf:resource="&rdfs;Resource"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000001 -->
+
+    <owl:Class rdf:about="&obo;ERO_0000001">
+        <rdfs:label rdf:datatype="&xsd;string">laboratory</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <owl:disjointWith rdf:resource="&obo;ERO_0000387"/>
+        <owl:disjointWith rdf:resource="&obo;ERO_0001912"/>
+        <owl:deprecated rdf:datatype="&xsd;integer">1</owl:deprecated>
+        <obo:IAO_0000112 rdf:datatype="&xsd;string">A cancer research laboratory.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Material entity that performs research, provides services, or processes materials.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">PERSON: Melissa Haendel</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">PERSON: Melissa Haendel</obo:IAO_0000117>
+        <rdfs:comment rdf:datatype="&xsd;string">requested in OBI 2894859</rdfs:comment>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+        <obo:IAO_0000412 rdf:resource="&obo;ero.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000387 -->
+
+    <owl:Class rdf:about="&obo;ERO_0000387">
+        <rdfs:label rdf:datatype="&xsd;string">data acquisition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <owl:disjointWith rdf:resource="&obo;ERO_0001912"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A technique that samples real world physical conditions and conversion of the resulting samples into digital numeric values that can be manipulated by a computer.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="&xsd;string">Acquisition of flow cytometry data.</obo:IAO_0000112>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">DAQ</obo:IAO_0000118>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">PERSON: Karen Corday</obo:IAO_0000117>
+        <obo:IAO_0000111 rdf:datatype="&xsd;string">data acquisition</obo:IAO_0000111>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://en.wikipedia.org/wiki/Data_acquisition</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+        <obo:IAO_0000412 rdf:resource="&obo;ero.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001912 -->
+
+    <owl:Class rdf:about="&obo;ERO_0001912">
+        <rdfs:label rdf:datatype="&xsd;string">interval</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+        <obo:IAO_0000412 rdf:resource="&obo;ero.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000002 -->
+
+    <owl:NamedIndividual rdf:about="&obo;IAO_0000002">
+        <rdfs:label xml:lang="en">example to be eventually removed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000120 -->
+
+    <owl:NamedIndividual rdf:about="&obo;IAO_0000120">
+        <rdfs:label xml:lang="en">metadata complete</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete.</obo:IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000121 -->
+
+    <owl:NamedIndividual rdf:about="&obo;IAO_0000121">
+        <rdfs:label xml:lang="en">organizational term</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">term created to ease viewing/sort terms for development purpose, and will not be included in a release</obo:IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000122 -->
+
+    <owl:NamedIndividual rdf:about="&obo;IAO_0000122">
+        <rdfs:label xml:lang="en">ready for release</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Class has undergone final review, is ready for use, and will be included in the next release. Any class lacking &quot;ready_for_release&quot; should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed &quot;ready_for_release&quot; will also derived from a chain of ancestor classes that are also &quot;ready_for_release.&quot;</obo:IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000123 -->
+
+    <owl:NamedIndividual rdf:about="&obo;IAO_0000123">
+        <rdfs:label xml:lang="en">metadata incomplete</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors.</obo:IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000124 -->
+
+    <owl:NamedIndividual rdf:about="&obo;IAO_0000124">
+        <rdfs:label xml:lang="en">uncurated</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Nothing done yet beyond assigning a unique class ID and proposing a preferred term.</obo:IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000125 -->
+
+    <owl:NamedIndividual rdf:about="&obo;IAO_0000125">
+        <rdfs:label xml:lang="en">pending final vetting</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor.</obo:IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000423 -->
+
+    <owl:NamedIndividual rdf:about="&obo;IAO_0000423">
+        <rdfs:label xml:lang="en">to be replaced with external ontology term</rdfs:label>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">Terms with this status should eventually replaced with a term from another ontology.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000428 -->
+
+    <owl:NamedIndividual rdf:about="&obo;IAO_0000428">
+        <rdfs:label xml:lang="en">requires discussion</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

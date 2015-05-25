@@ -127,33 +127,42 @@ def openCSVFile(file_path,qscope):
 		csv_file=csv.reader(my_file, dialect='excel', delimiter=';')
 		
 		for row in csv_file:
-			
-			csvdict[row[0]]=copy.deepcopy(ontostruct)
-			
-			decomp = row[0].lower()
-			
-			csvdict[row[0]]["provenance"] = []
-			
-			if len(row)>1: csvdict[row[0]]["provenance"].append(row[1])
-			
-			for hyph in ['-','_']:
-			    
-			         decomp = decomp.replace(hyph," ")
-			 
-			decomp = decomp.split()
-			
-			if len(decomp)>1:
-			    
-			         for subterm in decomp:
-			                 
-			                 if type(subterm) is str and len(subterm)>2:
-			             
-			                         if subterm not in csvdict.keys():
-			         
-    			                                 csvdict[subterm]=copy.deepcopy(ontostruct)
-    			                                 csvdict[subterm]["provenance"] = []
-    			                 
-    			                         csvdict[subterm]["provenance"].append("is split of: " + row[0])
+		      
+		      if type(row[0]) is str and len(row[0])>0:
+		              
+		              if row[0] not in csvdict.keys():
+		                      
+		                      csvdict[row[0]]=copy.deepcopy(ontostruct)
+		                      csvdict[row[0]]["provenance"] = []
+		              
+		              decomp = row[0].lower()
+		              
+		              if len(row)>1: 
+		                      
+		                      csvdict[row[0]]["provenance"].append(row[1])
+		              
+		              else:
+		                      
+		                      csvdict[row[0]]["provenance"].append("unspecified provenance")		                      
+		              
+		              for hyph in ['-','_']:
+		                      
+		                      decomp = decomp.replace(hyph," ")
+		              
+		              decomp = decomp.split()
+		              
+		              if len(decomp)>1:
+		                      
+		                      for subterm in decomp:
+		                              
+		                              if type(subterm) is str and len(subterm)>1:
+		                                      
+		                                      if subterm not in csvdict.keys():
+		                                              
+		                                              csvdict[subterm]=copy.deepcopy(ontostruct)
+		                                              csvdict[subterm]["provenance"] = []
+		                                      
+		                                      csvdict[subterm]["provenance"].append("is split of: " + row[0])
 
 	except IOError:
 

@@ -53,9 +53,6 @@ def ImportHeader(file_path="NeuroLex_Brain_Region_Upload_Template.csv"):
 	return header
 
 
-
-
-
 def WriteCSVwithHeader(file_path="csv_with_header.csv", header=[], csvdict={}, rt_header={}):
         '''
         Function for writing csv file intended for import within neurolex space.
@@ -110,16 +107,28 @@ def WriteCSVwithHeader(file_path="csv_with_header.csv", header=[], csvdict={}, r
                                                                 
                                                                 if  dk.lower() == rt_header[candid].lower():
                                                                         
-                                                                        for j in csvdict[k][dk]:
+                                                                        if type(csvdict[k][dk]) is not list:
                                                                                 
-                                                                                #rowdict[ppty].append(j)
                                                                                 if rowdict[ppty]=="'":
                                                                                         
-                                                                                        rowdict[ppty] = j
+                                                                                        rowdict[ppty] = csvdict[k][dk]
                                                                                 
                                                                                 else:
                                                                                         
-                                                                                        rowdict[ppty] += "\n"+j
+                                                                                        rowdict[ppty] += "\n"+csvdict[k][dk]
+                                                                        
+                                                                        else:
+                                                                                
+                                                                                for j in csvdict[k][dk]:
+                                                                                        
+                                                                                        #rowdict[ppty].append(j)
+                                                                                        if rowdict[ppty]=="'":
+                                                                                                
+                                                                                                rowdict[ppty] = j
+                                                                                        
+                                                                                        else:
+                                                                                                
+                                                                                                rowdict[ppty] += "\n"+j
                                 
                                 writer.writerow( rowdict )
 
@@ -130,7 +139,7 @@ def WriteCSVwithHeader(file_path="csv_with_header.csv", header=[], csvdict={}, r
 
 
 
-
+'''
 
 header = ImportHeader("/Users/Asus/Documents/GitHub/OEN/pyscripts/OntoMapper/NeuroLex_Brain_Region_Upload_Template.csv")
 rt_header = {}
@@ -163,7 +172,6 @@ onto = OntoInspector("C:\Users\Asus\Documents\GitHub\OEN\pyscripts\OntoMapper\pi
 
 
 
-
 import csv
 my_file=open('/Users/Asus/csvdict.csv', 'rb')		
 csv_file=csv.reader(my_file, dialect='excel', delimiter=';')
@@ -181,3 +189,5 @@ for row in csv_file:
     else:
         headerskip = True
 WriteCSVwithHeader("csv_with_header.csv", header, test3, rt_header)
+
+'''
