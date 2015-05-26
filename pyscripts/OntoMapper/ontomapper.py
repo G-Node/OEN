@@ -13,10 +13,15 @@
 
 
 
-"""
-Getting ontology id, definition and superClass information from various SPARQL endpoints
-using a list of labels.
-"""
+'''
+##########################################
+#                                        #
+#            GENERAL COMMENTS            #
+#                                        #
+##########################################
+
+Getting ontology id, definition and superClass information from various SPARQL 
+endpoints using a list of labels.
 
 
 #Algorithm:
@@ -30,57 +35,125 @@ using a list of labels.
 # variables: prefixes, regex
 #
 # Class Neurolex_SPARQL: define the SPARQL format for Neurolex SPARQL endpoint
+'''
 
+##########################################
+#                                        #
+#            IMPORTED MODULES            #
+#                                        #
+##########################################
 
 from SPARQLWrapper import SPARQLWrapper, JSON
+
+
+##########################################
+#                                        #
+#            GLOBAL VARIABLES            #
+#                                        #
+##########################################
 
 neurolex_endpoint  = "http://rdf-stage.neuinfo.org/ds/query"
 bioportal_endpoint = "http://sparql.bioontology.org/sparql"
 ontofox_endpoint   = "http://sparql.hegroup.org/sparql"
 
-def format_SPARQL_Query(endpoint, ontology):
 
-	if endpoint==neurolex_endpoint:
-		
-#		endpoint="http://rdf-stage.neuinfo.org/ds/query"
-		prefixes="""
-		  prefix property: <http://neurolex.org/wiki/Property-3A>
-		"""
-		from_uri=""
-	
-	elif endpoint==bioportal_endpoint:
+###########################################
+#                                         #
+#            SUPPORT FUNCTIONS            #
+#                                         #
+###########################################
 
-#		endpoint="http://sparql.bioontology.org/sparql"
-		prefixes="""
-	           prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    	           prefix owl: <http://www.w3.org/2002/07/owl#>
-	           prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-		"""
-		from_uri="http://bioportal.bioontology.org/ontologies/"+ontology+">"
-		
-	elif endpoint==ontofox_endpoint:
+def formatAsRDFSpropertyLabel( charstr ):
+    '''
+    e.g. "EDITOR pREferred Label" ==> "editorPreferredLabel"
+    
+    intended to be used as rdfs:editorPreferredLabel
+    in tentative "optional" annotation sparql queries
+    see generate_SPARQL_Query function
+    '''
+    opt = charstr.split()
+    op  = opt[0]
+    if len(opt)>1:
+        op = opt[0].lower()
+        for o in opt[1:]:
+            if len(o)==1:
+                o = o.upper()
+            elif len(o)>1:
+                o = o[0].upper() + o[1:].lower()
+            op = op + o
+    return op
 
-#		endpoint="http://sparql.hegroup.org/sparql"
-		prefixes="""
-	           prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    	           prefix owl: <http://www.w3.org/2002/07/owl#>
-    	           prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-		"""
-		from_uri="http://purl.obolibrary.org/obo/merged/"+ontology+">"
-		
-	else:
-		
-		print("This endpoint is not defined")
-	
-#	return endpoint, prefixes, from_uri
-	return prefixes, from_uri
-	
+
+def Tuplify_LblIdDef( result_bindings ):
+    '''
+    Function to store additional annotation infos (id and definition) together 
+     with a term's label if available from sparql query answer.
+    
+    result_bindings: content from ["results"]["bindings"] in data structure 
+     returned by getData function, i.e. result of sparql query convert with 
+     setReturnFormat as JSON.
+    
+    tupl: ("term label", "term ID", "term definition")
+    '''
+    lbl, idt, dfn = "", "", ""
+    tupl = (lbl, idt, dfn)
+    
+    if 'label' in result_bindings.keys() and 'value' in result_bindings['label']: lbl = result_bindings['label']['value']
+    if 'id'    in result_bindings.keys() and 'value' in result_bindings['id']:    idt = result_bindings[ 'id'  ]['value']
+    if 'definition' in result_bindings.keys() and 'value' in result_bindings['definition']: dfn = result_bindings['definition']['value']                
+    
+    tupl = (lbl,idt,dfn)    
+    return tupl
+
+
+def encodeForWriting( charstr ):
+    '''
+    Function for compatibility with csv.DictWriter writerow function, which
+     can only handle characters included in the ascii space.
+    
+    charstr: unicode or other formatted string.
+    
+    returns string ascii formatted with xmlcharrefreplace option
+    '''
+    out = u"%s".encode('utf-8') %charstr
+    return out.encode('ascii', 'xmlcharrefreplace')
+
+
+###########################################
+#                                         #
+#            MAJOR FUNCTIONS              #
+#                                         #
+###########################################
+
 def generate_SPARQL_Query(prefixes, from_uri, term, qscope={}):
-	"""
-	Generate a generic SPARQL Query to gather the term_id based on the label
-	"""
+	'''
+	Function formatting a sparql query to gather label and id corresponding
+	 to a particular term within a particular ontology. Also gathers 
+	 contents of a set of "optional" annotations for this term from this
+	 ontology, as specified in qscope data structure. Tip: used by getData 
+	 function.
+	
+        prefixes: e.g. """
+         prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+         prefix owl: <http://www.w3.org/2002/07/owl#>
+         prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>         
+         """
+        
+        from_uri: e.g. "http://bioportal.bioontology.org/ontologies/"
+        
+        term: particular term about which content corresponding to a set of 
+         annotations is tentatively being queried from a particular ontology.
+        
+	qscope: data structure with "optional" field containing custom list of 
+	 annotation labels to be included in query, as well as "noprefix" field
+	 containing annotation reference IDs for those annotations from the 
+	 custom list that could be identified within the particular ontology
+	 being queried from.
+        '''
 	
 	if from_uri!="":
+	       
+	        ##Early non-customisable query formatting
 		#sparql_query = prefixes+"""
 		#select ?x ?label ?def ?defsrc ?comment ?preflabel ?altterm
 		#from """+from_uri+"""
@@ -163,7 +236,29 @@ def generate_SPARQL_Query(prefixes, from_uri, term, qscope={}):
 		
 	return sparql_query
 
+
 def getData(qscope, ontology, term):
+        '''
+        Function defining and performing sparql query on a single term.
+         Tip: during execution, "qscop" data structure is used which is a
+         duplicate of "qscope" with "noprefix" field restricted to the 
+         annotation reference IDs identified for the particular ontology being
+         queried from.
+        
+	qscope: dict specifying ontologies queried from, endpoints to be used, 
+	 prefixes, uris, and custom list of annotation labels to be queried 
+	 (field: "optional" & "noprefix"). Tip: generate using openQscopeFile 
+	 function.
+        
+        ontology: name of particular ontology to be queried from, as indicated 
+         in qscope "ontology" field. Tip: also gets concatenated to string
+         from corresponding "from_uri" field of qscope.
+        
+        term: individual term over which the sparql query should be performed.
+        
+        results: data structure resulting from sparql query convert with 
+         setReturnFormat as JSON.
+        '''
         
         results  = {}
         
@@ -237,37 +332,70 @@ def getData(qscope, ontology, term):
         return results
 
 
-def formatAsRDFSpropertyLabel( charstr ):
-    opt = charstr.split()
-    op  = opt[0]
-    if len(opt)>1:
-        op = opt[0].lower()
-        for o in opt[1:]:
-            if len(o)==1:
-                o = o.upper()
-            elif len(o)>1:
-                o = o[0].upper() + o[1:].lower()
-            op = op + o
-    return op
+###########################################
+#                                         #
+#         BYPASSED (INHERITED V00)        #
+#                                         #
+###########################################
 
+def format_SPARQL_Query(endpoint, ontology):
 
-def Tuplify_LblIdDef( result_bindings ):
-    lbl, idt, dfn = "", "", ""
-    tupl = (lbl, idt, dfn)
-    
-    if 'label' in result_bindings.keys() and 'value' in result_bindings['label']: lbl = result_bindings['label']['value']
-    if 'id'    in result_bindings.keys() and 'value' in result_bindings['id']:    idt = result_bindings[ 'id'  ]['value']
-    if 'definition' in result_bindings.keys() and 'value' in result_bindings['definition']: dfn = result_bindings['definition']['value']                
-    
-    tupl = (lbl,idt,dfn)    
-    return tupl
-    
-
-def encodeForWriting( charstr ):
-    out = u"%s".encode('utf-8') %charstr
-    return out.encode('ascii', 'xmlcharrefreplace')
-
+	if endpoint==neurolex_endpoint:
+		
+#		endpoint="http://rdf-stage.neuinfo.org/ds/query"
+		prefixes="""
+		  prefix property: <http://neurolex.org/wiki/Property-3A>
+		"""
+		from_uri=""
 	
+	elif endpoint==bioportal_endpoint:
+
+#		endpoint="http://sparql.bioontology.org/sparql"
+		prefixes="""
+	           prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    	           prefix owl: <http://www.w3.org/2002/07/owl#>
+	           prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+		"""
+		from_uri="http://bioportal.bioontology.org/ontologies/"+ontology+">"
+		
+	elif endpoint==ontofox_endpoint:
+
+#		endpoint="http://sparql.hegroup.org/sparql"
+		prefixes="""
+	           prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    	           prefix owl: <http://www.w3.org/2002/07/owl#>
+    	           prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+		"""
+		from_uri="http://purl.obolibrary.org/obo/merged/"+ontology+">"
+		
+	else:
+		
+		print("This endpoint is not defined")
+	
+#	return endpoint, prefixes, from_uri
+	return prefixes, from_uri
+
+
+###########################################
+#                                         #
+#      EXECUTION SNIPPET FOR TESTING      #
+#                                         #
+###########################################
+
+#import csv
+#with open("testcsvddictsriterwriterow.csv", 'wb') as csvfile:
+#    fieldnames = ['test']
+#    writer = csv.DictWriter(csvfile, fieldnames=fieldnames, dialect='excel', delimiter=';')    
+#    writer.writeheader()
+#    writer.writerow({"test": encodeForWriting( "http://neurolex.org/wiki/Category:Input_Resistance" )})
+
+
+############################################
+#                                          #
+#            INHERITED V00 CODE            #
+#                                          #
+############################################
+		
 if __name__ == "__main__":
     sparql_service = "http://sparql.bioontology.org/sparql/"
 

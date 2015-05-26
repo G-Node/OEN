@@ -12,18 +12,41 @@
 
 
 
-from ontomapper import *
+##########################################
+#                                        #
+#            IMPORTED MODULES            #
+#                                        #
+##########################################
+
 import csv
 import copy
 import difflib
 
+from ontomapper import *
+
+
+###########################################
+#                                         #
+#             MAJOR FUNCTIONS             #
+#                                         #
+###########################################
 
 def openQscopeFile(file_path,option=""):
-        """
-	Function to extract from csv file containing ontologies to be queried from,
-	the corresponding endpoints and properties to be sought
-        """
-        
+        '''
+	Function to extract from csv file containing ontologies to be queried 
+	 from, the corresponding endpoints, prefixes and uris, as well as the 
+	 labels of annotations to be sought (field: "optional").
+	
+	option: string for restricting selected ontologies to those specified in
+	 the csv file whose name also contains the exact same sequence of (>2) 
+	 characters.
+	
+	Qscope: dict reporting ontologies queried from (field: "ontology"), 
+	 endpoints to be used (field: "endpoint"), prefixes (field: "prefixes"), 
+	 uris (field: "from_uri"), and custom list of annotation labels to be 
+	 queried (field: "optional") and their ontology specific uri (field: "noprefix").
+        '''
+                                
         Qscope = {}
         
         try:
@@ -99,11 +122,52 @@ def openQscopeFile(file_path,option=""):
 	return Qscope
 	
 
-def openCSVFile(file_path,qscope):
-	""" 
-	Function to open the csv file and extract the data from the file as key of a 			
-	dictionary that will store the different mapping results
-	"""
+def openCSVFile(file_path,qscope={"ontology":"","endpoint":"","prefixes":"","from_uri":""}):
+	'''
+	Function to open the csv file and extract the data from the file as key 
+	 of a dictionary that will store the different mapping results according
+	 to the template specified in qscope.
+	
+	csv file:
+	    column1; column2
+	    term   ; provenance
+	
+	Tip: during extraction, the subparts of terms that happen to be 
+	 compounds become terms in their own right as direct primary key to
+	 csvdict data structure.
+	
+	Qscope: dict reporting ontologies queried from (field: "ontology"), 
+	 endpoints to be used (field: "endpoint"), prefixes (field: "prefixes"), 
+	 uris (field: "from_uri"), and custom list of annotation labels to be 
+	 queried (field: "optional") and their ontology specific uri (field: 
+	 "noprefix").
+	
+	csvdict: dict of dicts with terms as primary key and annotation labels 
+	 as secondary key. Tip1: requires a correctly formatted qscope data 
+	 structure (see below). Tip2: generate fully formed qscope structure 
+	 using openQscopeFile function.
+	'''
+	
+	##e.g.
+        #Qscope = {"ontology":[],"endpoint":[],"prefixes":[],"from_uri":[]}
+        ##fields with one content per ontology, 1:1:1:1 and order matters
+        #Qscope["ontology"].append("NEMO")
+        #Qscope["endpoint"].append("http://sparql.bioontology.org/sparql")
+        #Qscope["prefixes"].append("""
+        # prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        # prefix owl: <http://www.w3.org/2002/07/owl#>
+        # prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        # """)
+        #Qscope["from_uri"].append("http://bioportal.bioontology.org/ontologies/")
+        ##fields specifying unordered list of annotation labels
+        #Qscope["mandatory"].append( "label" )
+        #Qscope["mandatory"].append( "id" )
+        #Qscope["optional"].append( "related" )
+        #Qscope["optional"].append( "definition source" )
+        #Qscope["optional"].append( "pref_term" )
+        ##etc.
+        ##see "annotations" sections of ontology of interest for label spellings
+	
 	csvdict={}	
 	
 	try:
@@ -173,8 +237,21 @@ def openCSVFile(file_path,qscope):
 	return csvdict
 
 						
-def getSPARQLResults(csvdict, qscope, option=""):
-        
+def getSPARQLResults(csvdict, qscope):
+	''' 
+	Function to engage sparql query of putative contents from batch of annotations
+	 specific to each selected ontology and that relate to each successive term.
+	
+	csvdict: dict of dicts with terms as primary key and annotation labels 
+	 as secondary key. Tip: generate using openCSVFile function which
+	 requires a correctly formatted qscope data structure (see below).	 
+	qscope: dict specifying ontologies queried from, endpoints to be used, prefixes,
+	 uris, and custom list of annotation labels to be queried (field: "optional").
+	 Tip: generate using openQscopeFile function.
+	
+	crossonto_output: dict of sparql answers covering annotation batch
+	 with ontology as primary key and term as secondary key.
+	'''
         crossonto_output = {}
         
         for onto_ind, onto in enumerate(qscope["ontology"]):
@@ -196,7 +273,19 @@ def getSPARQLResults(csvdict, qscope, option=""):
 #	return nlx_output
 
 def storeResults(csvdict, crossonto_output):
-        
+	''' 
+	Function to fill-in csvdict structure with contents obtained by spqarql
+	 queries across annotation labels over listed terms.
+	
+	csvdict: dict of dicts with terms as primary key and annotation labels 
+	 as secondary key. Tip: generate un-filled structure using openCSVFile 
+	 function which requires a correctly formatted qscope data structure.
+	crossonto_output: dict of sparql answers covering annotation batch
+	 with ontology as primary key and term as secondary key. Tip: obtain
+	 by feeding co-constructed csvdict and qscope data structures to 
+	 getSPARQLResults function.
+	'''
+	
         for onto in crossonto_output.keys():
             
                 onto_output = crossonto_output[onto]
@@ -302,100 +391,112 @@ def storeResults(csvdict, crossonto_output):
 
 
 def dictToCSVfile(csvdict,file_path="csvdict.csv",verbose=False):
+	''' 
+	Function to write down csvdict data structure contents to a csv file.
+	
+	csvdict: dict of dicts with terms as primary key and annotation labels 
+	 as secondary key. Tip: content filled-in by storeResults function.
+	'''
+	    
+        filename = file_path
+        if "/" in file_path:
+                filename = filename[::-1]
+                filename = filename[:filename.index("/")]
+                filename = filename[::-1]
+        
+        print " Writing down dictionary:", filename
     
-    filename = file_path
-    if "/" in file_path:
-            filename = filename[::-1]
-            filename = filename[:filename.index("/")]
-            filename = filename[::-1]
+        with open(file_path, 'wb') as csvfile:
+                
+                fieldnames = ['term', 'property', 'content', 'id', 'definition']
+                writer = csv.DictWriter(csvfile, fieldnames=fieldnames, dialect='excel', delimiter=';')    
+                writer.writeheader()
     
-    print " Writing down dictionary:", filename
-
-    with open(file_path, 'wb') as csvfile:
-            
-            fieldnames = ['term', 'property', 'content', 'id', 'definition']
-            writer = csv.DictWriter(csvfile, fieldnames=fieldnames, dialect='excel', delimiter=';')    
-            writer.writeheader()
-
-            # terms
-            for k in csvdict.keys():
-                    
-                    newp = True
-                    
-                    # Establish annotations writing order
-                    match_score = {}
-                    
-                    for p in csvdict[k].keys():
+                # terms
+                for k in csvdict.keys():
                         
-                            for q in csvdict[k].keys():
-                                    
-                                    a = p
-                                    b = q
-                                            
-                                    if '_' in a: a = a[a.index('_')+1:]
-                                    if '_' in b: b = b[b.index('_')+1:]
-                                            
-                                    if a in match_score.keys():
-                                            match_score[a] += difflib.SequenceMatcher(None, a, b).ratio()
-                                    else:
-                                            match_score[a]  = difflib.SequenceMatcher(None, a, b).ratio()
+                        newp = True
+                        
+                        # Establish annotations writing order
+                        match_score = {}
+                        
+                        for p in csvdict[k].keys():
                             
-                    match_score = sorted(match_score, key=match_score.get, reverse=True)
-                            
-                    # Write down in established order
-                    monitorlist = []
+                                for q in csvdict[k].keys():
                                         
-                    for w in match_score:
-                            
-                            # annotations
-                            for p in csvdict[k].keys():
-                                    
-                                    a = p
-                                    if '_' in a: a = a[a.index('_')+1:]
-                                    
-                                    if w==a:
+                                        a = p
+                                        b = q
+                                                
+                                        if '_' in a: a = a[a.index('_')+1:]
+                                        if '_' in b: b = b[b.index('_')+1:]
+                                                
+                                        if a in match_score.keys():
+                                                match_score[a] += difflib.SequenceMatcher(None, a, b).ratio()
+                                        else:
+                                                match_score[a]  = difflib.SequenceMatcher(None, a, b).ratio()
+                                
+                        match_score = sorted(match_score, key=match_score.get, reverse=True)
+                                
+                        # Write down in established order
+                        monitorlist = []
                                             
-                                            monitorlist.append( p )
-                                            newi = True
-                                            
-                                            # content
-                                            for i in csvdict[k][p]:
-                                                    
-                                                    #Deal with exception non-tuple entries,
-                                                    #entries in "provenance" field include in tuple
-                                                    if type(i) is str: i = (i,"","")
-                                                    
-                                                    if newp and newi:
-                                                            
-                                                            if verbose: print "> ", encodeForWriting(k), "\t", encodeForWriting(p), "\t", encodeForWriting(i[0]), "\t", encodeForWriting(i[1]), "\t", encodeForWriting(i[2])
-                                                            writer.writerow({'term': encodeForWriting(k), 'property': encodeForWriting(p), 'content': encodeForWriting(i[0]), 'id': encodeForWriting(i[1]), 'definition': encodeForWriting(i[2])})
-                                                            newp = False
-                                                            newi = False
-                                                    
-                                                    elif newi:
-                                                            
-                                                            if verbose: print "> " + " "*len(encodeForWriting(k)) + "\t", encodeForWriting(p), "\t", "\t", encodeForWriting(i[0]), "\t", encodeForWriting(i[1]), "\t", encodeForWriting(i[2])
-                                                            writer.writerow({'property': encodeForWriting(p), 'content': encodeForWriting(i[0]), 'id': encodeForWriting(i[1]), 'definition': encodeForWriting(i[2])})
-                                                            newi = False
-                                                            
-                                                    else:
-                                                            
-                                                            if verbose: print "> " + " "*len(encodeForWriting(k)) + "\t" + " "*len(encodeForWriting(p)) + "\t", encodeForWriting(i[0]), "\t", encodeForWriting(i[1]), "\t", encodeForWriting(i[2])
-                                                            writer.writerow({'content': encodeForWriting(i[0]), 'id': encodeForWriting(i[1]), 'definition': encodeForWriting(i[2])})
+                        for w in match_score:
+                                
+                                # annotations
+                                for p in csvdict[k].keys():
+                                        
+                                        a = p
+                                        if '_' in a: a = a[a.index('_')+1:]
+                                        
+                                        if w==a:
+                                                
+                                                monitorlist.append( p )
+                                                newi = True
+                                                
+                                                # content
+                                                for i in csvdict[k][p]:
+                                                        
+                                                        #Deal with exception non-tuple entries,
+                                                        #entries in "provenance" field include in tuple
+                                                        if type(i) is str: i = (i,"","")
+                                                        
+                                                        if newp and newi:
+                                                                
+                                                                if verbose: print "> ", encodeForWriting(k), "\t", encodeForWriting(p), "\t", encodeForWriting(i[0]), "\t", encodeForWriting(i[1]), "\t", encodeForWriting(i[2])
+                                                                writer.writerow({'term': encodeForWriting(k), 'property': encodeForWriting(p), 'content': encodeForWriting(i[0]), 'id': encodeForWriting(i[1]), 'definition': encodeForWriting(i[2])})
+                                                                newp = False
+                                                                newi = False
+                                                        
+                                                        elif newi:
+                                                                
+                                                                if verbose: print "> " + " "*len(encodeForWriting(k)) + "\t", encodeForWriting(p), "\t", "\t", encodeForWriting(i[0]), "\t", encodeForWriting(i[1]), "\t", encodeForWriting(i[2])
+                                                                writer.writerow({'property': encodeForWriting(p), 'content': encodeForWriting(i[0]), 'id': encodeForWriting(i[1]), 'definition': encodeForWriting(i[2])})
+                                                                newi = False
+                                                                
+                                                        else:
+                                                                
+                                                                if verbose: print "> " + " "*len(encodeForWriting(k)) + "\t" + " "*len(encodeForWriting(p)) + "\t", encodeForWriting(i[0]), "\t", encodeForWriting(i[1]), "\t", encodeForWriting(i[2])
+                                                                writer.writerow({'content': encodeForWriting(i[0]), 'id': encodeForWriting(i[1]), 'definition': encodeForWriting(i[2])})
+    
+                        #Consistency checks
+                        for w in monitorlist:
+                                if monitorlist.count(w)>1:
+                                        print " !!! ", w, "  repeated annotation, term =", k, "  !!! "
+                                if w not in csvdict[k].keys():
+                                        print " !!! ", w, "  de novo annotation, term =", k, "  !!! "
+                        for p in csvdict[k].keys():
+                                if p not in monitorlist:
+                                        print " !!! ", p, "  annotation was dropped, term =", k, "  !!! "
+    
+        print " Finished writing down dictionary:", filename, "\n"
 
-                    #Consistency checks
-                    for w in monitorlist:
-                            if monitorlist.count(w)>1:
-                                    print " !!! ", w, "  repeated annotation, term =", k, "  !!! "
-                            if w not in csvdict[k].keys():
-                                    print " !!! ", w, "  de novo annotation, term =", k, "  !!! "
-                    for p in csvdict[k].keys():
-                            if p not in monitorlist:
-                                    print " !!! ", p, "  annotation was dropped, term =", k, "  !!! "
 
-    print " Finished writing down dictionary:", filename, "\n"
-
-
+############################################
+#                                          #
+#            INHERITED V00 CODE            #
+#                                          #
+############################################
+#
 #                        for result in nlx_output["results"]["bindings"]:
 #        
 #                            labels.append(result['label']['value'])

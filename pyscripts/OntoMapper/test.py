@@ -12,7 +12,20 @@
 
 
 
+############################################
+#                                          #
+#             IMPORTED MODULES             #
+#                                          #
+############################################
+
 from ontmain import *
+
+
+############################################
+#                                          #
+#            DEFINE QUERY SCOPE            #
+#                                          #
+############################################
 
 #define path to file containing list of terms to be queried from ontologies
 #file_path='/Users/admin/Documents/Python_Scripts/OntoMapper/test_terms.csv'
@@ -22,18 +35,41 @@ file_path='/Users/Asus/Documents/GitHub/OEN/'
 # properties with which to run queries
 qscope = openQscopeFile(file_path+'pyscripts/OntoMapper/ontos_and_props.csv', '_')
 
+
+############################################
+#                                          #
+#            LOAD LIST OF TERMS            #
+#    ESTABLISH RECIPIENT DATA STRUCTURE    #
+#                                          #
+############################################
+
 test=openCSVFile(file_path+'pyscripts/OntoMapper/test_terms.csv', qscope)
+
+
+############################################
+#                                          #
+#             PERFORM QUERIES              #
+#                                          #
+############################################
 
 test2=getSPARQLResults(test, qscope)
 
-test3=[]
 
+############################################
+#                                          #
+#              FILL-IN INFOS               #
+#                                          #
+############################################
+
+test3=[]
 test3=storeResults(test, test2)
 
 
-
-
-# Write to files
+############################################
+#                                          #
+#             WRITE TO FILES               #
+#                                          #
+############################################
 
 print
 print "- " * 20
@@ -111,7 +147,14 @@ print str(len(test8)) + "/" + str(len(test3)), "terms have mulitple IDs across s
 dictToCSVfile( test8, "mulitple_ids.csv", False)
 
 
+
 '''
+############################################
+#                                          #
+#          DISPLAY DATA STRUCTURE          #
+#                                          #
+############################################
+
 for i in test3.keys():
     print i
     for j in test3[i].keys():

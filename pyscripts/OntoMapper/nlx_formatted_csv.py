@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-#
 ################################################################################
 #
 # Work on Ontology for Experimental Neurophysiology (c) by <ylefranc> and <ant1b>
@@ -14,18 +13,32 @@
 
 
 
+##########################################
+#                                        #
+#            IMPORTED MODULES            #
+#                                        #
+##########################################
+
 import csv
 
 from ontmain import *
 
 
-def ImportHeader(file_path="NeuroLex_Brain_Region_Upload_Template.csv"):
+###########################################
+#                                         #
+#            SUPPORT FUNCTIONS            #
+#                                         #
+###########################################
+
+def ImportHeader(file_path="NeuroLex_oen_ConceptBranch_Template.csv"):
         '''        
         Function for retrieving a list of property labels from the first row of 
-         a csv file. 
+         a csv file.
+        
         Intent is for the list to provide the basis for the header of another 
          csv file, which will subsequently be populated with corresponding 
          content from a manually constructed OWL file. 
+        
         Final csv file should allow for import within neurolex space.
         '''
         
@@ -56,10 +69,13 @@ def ImportHeader(file_path="NeuroLex_Brain_Region_Upload_Template.csv"):
 def WriteCSVwithHeader(file_path="csv_with_header.csv", header=[], csvdict={}, rt_header={}):
         '''
         Function for writing csv file intended for import within neurolex space.
-        header, ordered list of property labels to be considered.
-        csvdict, dictionary of contents for each annotation of each term from 
+        
+        header: ordered list of property labels to be considered.
+        
+        csvdict: dictionary of contents for each annotation of each term from 
          a manually constructed OWL file.
-        rt_header, dictionary specifying for each neurolex property the csvdict 
+        
+        rt_header: dictionary specifying for each neurolex property the csvdict 
          contained annotation label the content of which can be used to populate
          the file.
         '''
@@ -78,9 +94,7 @@ def WriteCSVwithHeader(file_path="csv_with_header.csv", header=[], csvdict={}, r
                                         nort = False
                                         break
                         
-                        if nort:
-                                
-                                rt_header[ppty] = ppty
+                        if nort: rt_header[ppty] = ppty
         
                 with open(file_path, 'wb') as csvfile:
                     
@@ -138,8 +152,12 @@ def WriteCSVwithHeader(file_path="csv_with_header.csv", header=[], csvdict={}, r
 
 
 
-
 '''
+########################################################
+#                                                      #
+#            EXECUTION SNIPPETS FOR TESTING            #
+#                                                      #
+########################################################
 
 header = ImportHeader("/Users/Asus/Documents/GitHub/OEN/pyscripts/OntoMapper/NeuroLex_Brain_Region_Upload_Template.csv")
 rt_header = {}
