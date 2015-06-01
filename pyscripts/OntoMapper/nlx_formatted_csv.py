@@ -159,7 +159,7 @@ def WriteCSVwithHeader(file_path="csv_with_header.csv", header=[], csvdict={}, r
 #                                                      #
 ########################################################
 
-header = ImportHeader("/Users/Asus/Documents/GitHub/OEN/pyscripts/OntoMapper/NeuroLex_Brain_Region_Upload_Template.csv")
+header = ImportHeader("/Users/Asus/Documents/GitHub/OEN/pyscripts/OntoMapper/NeuroLex_oen_ConceptBranch_Template.csv")
 rt_header = {}
 for ppty in header:
     if ppty.lower() not in rt_header.keys():
@@ -186,26 +186,24 @@ rt_header[ "RelatedTo" ] = "ERO_related"
 #WriteCSVwithHeader("csv_with_header.csv", header, test3, rt_header)
 
 
-onto = OntoInspector("C:\Users\Asus\Documents\GitHub\OEN\pyscripts\OntoMapper\pizza.owl")
+header = ImportHeader("/Users/Asus/Documents/GitHub/OEN/pyscripts/OntoMapper/NeuroLex_oen_ConceptBranch_Template.csv")
 
 
+#patch-up provenance field contents
+#fill-in initial provenance info for split-up terms
+for i in test3.keys():
+    if "provenance" in test3[i].keys():
+        for k, j in enumerate(test3[i]["provenance"]):
+            if type(j) is tuple and len(j)>0:
+                j = j[0]
+                if "is split of: " in j and " from [" not in j:
+                    orig_label = j[len("is split of: "):]
+                    if orig_label in test3.keys() and len(test3[orig_label]["provenance"])>0 \
+                    and type(test3[orig_label]["provenance"][0]) and len(test3[orig_label]["provenance"][0])>0:                    
+                        test3[i]["provenance"][k] = ("is split from [" + test3[orig_label]["provenance"][0][0] + "]: " + orig_label, "", "")
+                        print j, " => ", test3[i]["provenance"][k]
 
-import csv
-my_file=open('/Users/Asus/csvdict.csv', 'rb')		
-csv_file=csv.reader(my_file, dialect='excel', delimiter=';')
-test3 = {}
-headerskip = False
-for row in csv_file:
-    if headerskip:
-        if len(row[0])>0: 
-            term  = row[0]
-            test3[term] = {}
-        if len(row[1])>0:
-            annot = row[1]
-            test3[term][annot] = []
-        test3[term][annot].append( row[2] )
-    else:
-        headerskip = True
-WriteCSVwithHeader("csv_with_header.csv", header, test3, rt_header)
 
+WriteCSVwithHeader("csv_with_header.csv", header, test3)
 '''
+

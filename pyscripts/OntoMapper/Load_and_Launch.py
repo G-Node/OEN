@@ -29,7 +29,7 @@ from ontmain import *
 
 #define path to file containing list of terms to be queried from ontologies
 #file_path='/Users/admin/Documents/Python_Scripts/OntoMapper/test_terms.csv'
-file_path='/Users/Asus/Documents/GitHub/OEN/'
+file_path = '/Users/Asus/Documents/GitHub/OEN/'
 
 #define path to file containing list of ontologies, endpoints, and annotation 
 # properties with which to run queries
@@ -74,7 +74,10 @@ test3=storeResults(test, test2)
 print
 print "- " * 20
 print len(test3), "terms explored within specified ontologies."
-dictToCSVfile( test3, "csvdict.csv", False)
+dictToCSVfile( test3, "csvdict_test.csv", False)
+
+dictToMappingDashboardCSV(test3)
+
 
 print
 print "- " * 20

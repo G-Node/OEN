@@ -226,7 +226,13 @@ def openCSVFile(file_path,qscope={"ontology":"","endpoint":"","prefixes":"","fro
 		                                              csvdict[subterm]=copy.deepcopy(ontostruct)
 		                                              csvdict[subterm]["provenance"] = []
 		                                      
-		                                      csvdict[subterm]["provenance"].append("is split of: " + row[0])
+		                                      if len(csvdict[row[0]]["provenance"])>0:
+		                                              
+		                                              csvdict[subterm]["provenance"].append("is split from ["+ csvdict[row[0]]["provenance"][0] +"]: " + row[0])
+		                                              
+		                                      else:
+		                                              
+		                                              csvdict[subterm]["provenance"].append("is split from [lack provenance info]: " + row[0])
 
 	except IOError:
 
@@ -280,6 +286,7 @@ def storeResults(csvdict, crossonto_output):
 	csvdict: dict of dicts with terms as primary key and annotation labels 
 	 as secondary key. Tip: generate un-filled structure using openCSVFile 
 	 function which requires a correctly formatted qscope data structure.
+	
 	crossonto_output: dict of sparql answers covering annotation batch
 	 with ontology as primary key and term as secondary key. Tip: obtain
 	 by feeding co-constructed csvdict and qscope data structures to 
@@ -317,7 +324,7 @@ def storeResults(csvdict, crossonto_output):
                                                                 tupl = (result[res]['value'],"","")
                                                                 
                                                                 #Mandatory fields, intended to be "label" and "id"
-                                                                if type(csvdict[i][onto+"_"+lpoi[res]]) is list:                                                                        
+                                                                if type(csvdict[i][onto+"_"+lpoi[res]]) is list:
                                                                         
                                                                         csvdict[i][onto+"_"+lpoi[res]].append( tupl )
                                                                 
@@ -395,7 +402,8 @@ def dictToCSVfile(csvdict,file_path="csvdict.csv",verbose=False):
 	Function to write down csvdict data structure contents to a csv file.
 	
 	csvdict: dict of dicts with terms as primary key and annotation labels 
-	 as secondary key. Tip: content filled-in by storeResults function.
+	 as secondary key. Tip: content filled-in by storeResults function or 
+	 loaded from csv file using reloadFullStructureCSV function.
 	'''
 	    
         filename = file_path
@@ -409,7 +417,7 @@ def dictToCSVfile(csvdict,file_path="csvdict.csv",verbose=False):
         with open(file_path, 'wb') as csvfile:
                 
                 fieldnames = ['term', 'property', 'content', 'id', 'definition']
-                writer = csv.DictWriter(csvfile, fieldnames=fieldnames, dialect='excel', delimiter=';')    
+                writer = csv.DictWriter(csvfile, fieldnames=fieldnames, dialect='excel', delimiter=';')
                 writer.writeheader()
     
                 # terms
@@ -429,14 +437,29 @@ def dictToCSVfile(csvdict,file_path="csvdict.csv",verbose=False):
                                                 
                                         if '_' in a: a = a[a.index('_')+1:]
                                         if '_' in b: b = b[b.index('_')+1:]
-                                                
+                                        
                                         if a in match_score.keys():
                                                 match_score[a] += difflib.SequenceMatcher(None, a, b).ratio()
                                         else:
                                                 match_score[a]  = difflib.SequenceMatcher(None, a, b).ratio()
-                                
+
+                        #override stricly resemblance based sorting
+                        max_score = float( match_score[ max(match_score.iterkeys(), key=lambda k: match_score[k]) ] )
+
+                        sorted_label_list = ["id", "provenance", "comment", "definition", "source", "label"]
+
+                        for q, p in enumerate( sorted_label_list ):
+
+                                for a in match_score.keys():
+                                    
+                                        if a[-len(p):]==p: 
+                                                
+                                                match_score[a] = max_score + (len(sorted_label_list)-q)
+
+                                        match_score[a] = float( match_score[a] )
+                        
                         match_score = sorted(match_score, key=match_score.get, reverse=True)
-                                
+                                                                                        
                         # Write down in established order
                         monitorlist = []
                                             
@@ -489,6 +512,310 @@ def dictToCSVfile(csvdict,file_path="csvdict.csv",verbose=False):
                                         print " !!! ", p, "  annotation was dropped, term =", k, "  !!! "
     
         print " Finished writing down dictionary:", filename, "\n"
+
+
+##########################################
+#                                        #
+#           SUPPORT FUNCTIONS            #
+#                                        #
+##########################################
+
+def reloadFullStructureCSV(file_path="csvdict.csv"):
+	'''
+	Function to load up csvdict data structure contents from a csv file
+	 previously written down using dictToCSVfile function.
+	
+	file_path: path to csv file to be loaded from, to which the contents of 
+	 a csvdict data structure were exported using dictToCSVfile function.
+	
+	csvdict: dict of dicts with terms as primary key and annotation labels 
+	 as secondary key.
+	'''
+
+        filename = file_path
+        if "/" in file_path:
+                filename = filename[::-1]
+                filename = filename[:filename.index("/")]
+                filename = filename[::-1]
+        
+        print " Loading dictionary:", filename
+	
+        csvdict = {}
+        
+        try:
+                
+                my_file=open(file_path, 'rb')
+
+                csv_file=csv.reader(my_file, dialect='excel', delimiter=';')
+        
+                headerskip = False
+                
+                for row in csv_file:
+                        
+                        if headerskip:
+                                
+                                if len(row[0])>0:
+                                        
+                                        term  = row[0]
+                                        csvdict[term] = {}
+                                        
+                                if len(row[1])>0:
+                                        
+                                        annot = row[1]
+                                        csvdict[term][annot] = []
+                                        
+                                #if "related" not in annot:
+                                if len(row)==3:
+                                        
+                                        csvdict[term][annot].append( row[2] )
+                                        
+                                elif len(row)==4:
+                                        
+                                        csvdict[term][annot].append( (row[2], row[3], "") )
+                                        
+                                elif len(row)==5:
+                                    
+                                        csvdict[term][annot].append( (row[2], row[3], row[4]) )
+                                        
+                        else:
+                                
+                                headerskip = True
+                                
+        except:
+                
+                print "Could not load csvdict data structure from", filename
+        
+        return csvdict
+
+
+def dictToMappingDashboardCSV(csvdict, file_path="MappingDashboard.csv"):
+	''' 
+	Function to write down csvdict data structure contents to a csv file,
+	 arranged to be convenient in a mapping effort.
+	
+        csvdict: dict of dicts with terms as primary key and annotation labels 
+	 as secondary key. Tip: content filled-in by storeResults function or 
+	 loaded from csv file using reloadFullStructureCSV function.
+	'''
+	    
+        filename = file_path
+        if "/" in file_path:
+                filename = filename[::-1]
+                filename = filename[:filename.index("/")]
+                filename = filename[::-1]
+        
+        print " Writing down dictionary:", filename
+        
+        with open(file_path, 'wb') as csvfile:
+                
+                #Establish header 
+                fieldnames = ['term']
+                temp = ['provenances', 'ids', 'defs', 'comments', 'notes', 'examples', 'sources', 'relateds']
+                for k in temp:                        
+                        fieldnames.append( k[:-1] + "_count" )
+                        fieldnames.append( k )                             
+                writer = csv.DictWriter(csvfile, fieldnames=fieldnames, dialect='excel', delimiter=';')
+                writer.writeheader()
+                
+                fn_lookup = { fieldnames[i]: [fieldnames[i][:-1]] for i in range(len(fieldnames))}
+                for k in fn_lookup.keys():                        
+                        if k[-len("_count"):] == "_count" in k: fn_lookup[k] = []
+                fn_lookup['term'] = []
+                fn_lookup['defs'] = ['definition']
+        
+                # terms
+                for k in csvdict.keys():
+                        
+                        rowdict = {}
+                        rowdict['term'] = k
+                        
+                        #based on column header name
+                        for fn in fieldnames:
+                                
+                                aggl_str = ""
+                                aggl_list = list()                               
+                                aggl_nbi  = 0
+                                
+                                #those with a non-empty corresponding list of lookup names
+                                #(avoid "term" header and all containing "_count"
+                                if len(fn_lookup[ fn ])>0:
+                                        
+                                        #lookup names designated as corresponding to header of interest
+                                        for m in fn_lookup[fn]:
+                                                
+                                                #within all annotations collected for the term
+                                                for j in csvdict[k].keys():
+                                                        
+                                                        #the end of the annotation name matches lookup name
+                                                        if j[-len(m):] == m:
+                                                                
+                                                                if "provenance" not in fn: aggl_list.append( j )
+                                                                
+                                                                for i in csvdict[k][j]:
+                                                                        
+                                                                        if type(i) is str and i not in aggl_list:
+                                                                                                                                                            
+                                                                                aggl_list.append( i )
+                                                                                aggl_nbi += 1
+                                                                        
+                                                                        elif type(i) is tuple and i[0]+" "+i[1] not in aggl_list:
+                                                                                
+                                                                                aggl_list.append(i[0]+" "+i[1])
+                                                                                aggl_nbi += 1
+                                        
+                                        if aggl_nbi<=200:
+                                            
+                                                for m in aggl_list: aggl_str += m + " \n"                                        
+                                                rowdict[fn] = aggl_str
+                                                
+                                        else:
+                                                
+                                                rowdict[fn] = "Content may exceed excell cell capacity, not reported."
+                                        
+                                        rowdict[fn[:-1] + "_count"] = int(aggl_nbi)
+                                        
+                        
+                        writer.writerow( rowdict )
+
+
+def MappingSummaryCSV(csvdict, file_path="MappingSummary.csv"):
+	''' 
+	Function to write down overview of mapping per input term to a csv file.
+	
+	csvdict: dict of dicts with terms as primary key and annotation labels 
+	 as secondary key. Tip: content filled-in by storeResults function or 
+	 loaded from csv file using reloadFullStructureCSV function.
+	'''
+	    
+        filename = file_path
+        if "/" in file_path:
+                filename = filename[::-1]
+                filename = filename[:filename.index("/")]
+                filename = filename[::-1]
+        
+        print " Writing down dictionary:", filename
+        
+        with open(file_path, 'wb') as csvfile:
+        
+                fieldnames = ['term', 'provenance', 'direct mapping count', 'post-splitting mapping count', 'related terms count']
+                writer = csv.DictWriter(csvfile, fieldnames=fieldnames, dialect='excel', delimiter=';')
+                writer.writeheader()
+                
+                # terms
+                for k in csvdict.keys():
+                        
+                        rowdict = {}
+                        
+                        if "provenance" in csvdict[k].keys() and len(csvdict[k]["provenance"])>0:
+
+                                qualif = False
+                                        
+                                compare_str = ""
+                                
+                                for prov in csvdict[k]["provenance"]:
+                                
+                                        if type(csvdict[k]["provenance"][prov]) is str:
+                                                
+                                                compare_str = csvdict[k]["provenance"][0]
+                                        
+                                        elif type(csvdict[k]["provenance"][prov]) is tuple:
+                                                
+                                                compare_str = csvdict[k]["provenance"][prov][0]
+                                
+                                        if "is split from" not in compare_str and "unspecified provenance" not in compare_str:
+                                            
+                                                qualif = True
+                                                break
+                                
+                                #is a term from the original list provided
+                                if qualif:
+                                        
+                                        rowdict["term"] = k
+                                        
+                                        #DIRECT MAPPING COUNT
+                                        if compare_str in csvdict[k]["provenance"]:
+                                        
+                                                if type(csvdict[k]["provenance"][compare_str]) is str:
+                                                    
+                                                        rowdict["provenance"] = csvdict[k]["provenance"][compare_str]
+                                                        
+                                                elif type(csvdict[k]["provenance"][compare_str]) is tuple:
+                                                        
+                                                        rowdict["provenance"] = csvdict[k]["provenance"][compare_str][0]
+                                        
+                                        id_set = set()
+                                        
+                                        for j in csvdict[k].keys():
+                                                
+                                                if j[-len("id"):]=="id":
+                                                        
+                                                        for m in csvdict[k][j]:
+                                                                
+                                                                id_set.add( m )
+                                                        
+                                        rowdict["direct mapping count"] = int(len(id_set))
+                                        
+                                        #POST-SPLITTING MAPPING COUNT                                        
+                                        id_set = set()
+                                        
+                                        for j in csvdict.keys():
+                                                
+                                                if "provenance" in csvdict[j].keys() and len(csvdict[j]["provenance"])>0:
+                                                        
+                                                        for m in csvdict[j]["provenance"]:
+                                                                
+                                                                compare_str = ""
+                                                                
+                                                                if type(m) is str:
+                                                                        
+                                                                        compare_str = m
+                                                                        
+                                                                elif type(m) is tuple:
+                                                                        
+                                                                        compare_str = m[0]
+                                                                
+                                                                #is issued from splitting-up the term of interest
+                                                                #i.e. the term of interest is listed in provenance field
+                                                                if compare_str[:len("is split from")] == "is split from" and compare_str[-(len(k)+2):] == ": " + k:
+                                                                        
+                                                                        for annot in csvdict[j].keys():
+                                                                                
+                                                                                if annot[-len("id"):]=="id":
+                                                                                        
+                                                                                        for each_id in csvdict[j][annot]:
+                                                                                                
+                                                                                                id_set.add( each_id )
+                                                                        
+                                                                        break
+                                        
+                                        rowdict["post-splitting mapping count"] = int(len(id_set))
+                                        
+                                        #RELATED TERMS COUNT
+                                        id_set = set()
+                                        
+                                        for j in csvdict[k].keys():
+                                                
+                                                if "related" in j.lower():
+                                                                                        
+                                                        for each_id in csvdict[k][j]:
+                                                                
+                                                                if type(each_id) is str:
+                                                                
+                                                                        id_set.add( each_id )
+                                                                        
+                                                                elif type(each_id) is tuple:
+                                                                        
+                                                                        if len(each_id)>1 and len(each_id[1])>0:
+                                                                                
+                                                                                id_set.add( each_id[0] + " " + each_id[1] )
+                                                                        
+                                                                        elif len(each_id)>0:
+                                                                                
+                                                                                id_set.add( each_id[0] )
+                                        
+                                        rowdict["related terms count"] = int(len(id_set))
+                                        
+                                        writer.writerow( rowdict )
 
 
 ############################################

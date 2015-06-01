@@ -98,7 +98,7 @@ csvdict = {}
 #onto = Ontology("C:\Users\Asus\Documents\Travail\OEN\uids_fromERO.owl")
 onto = Ontology("C:\Users\Asus\Documents\Travail\OEN\inclAllChild_fromERO.owl")
 
-header = ImportHeader("/Users/Asus/Documents/GitHub/OEN/pyscripts/OntoMapper/NeuroLex_Brain_Region_Upload_Template.csv")
+header = ImportHeader("/Users/Asus/Documents/GitHub/OEN/pyscripts/OntoMapper/NeuroLex_oen_ConceptBranch_Template.csv")
 
 fw_header = {}
 for h in header:
