@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1433692125236" name="http://ontofox.hegroup.org/s6arqxpn.owl" uri="uids_fromERO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1433692125236" name="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl" uri="oen_term.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1433692125236" name="http://www.pizza.com/ontologies/pizza.owl" uri="pizza.owl"/>
+    </group>
+</catalog>

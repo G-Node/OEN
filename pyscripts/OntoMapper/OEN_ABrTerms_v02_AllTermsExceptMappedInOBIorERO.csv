@@ -1,0 +1,725 @@
+amplifier;odML terminology
+aperture;odML terminology
+attenuator;odML terminology
+voltage clamp controlled current clamp measurement;odML terminology
+bridged;odML terminology
+chinrest;odML terminology
+bitebar;odML terminology
+owner;odML terminology
+stimulus;odML terminology
+fixed aperture;odML terminology
+event;odML terminology
+bridge balance;odML terminology
+scanner;odML terminology
+user;Helmholtz
+macro mode;odML terminology
+zoom;odML terminology
+people;Helmholtz
+hardware property;odML terminology
+camera objective;odML terminology
+stimulus isolator gain;odML terminology
+stimulus isolator minimum gain;odML terminology
+stimulus isolator maximum gain;odML terminology
+stimulus isolator output;odML terminology
+stimulus isolator output range minimum current;odML terminology
+stimulus isolator output range maximum current;odML terminology
+stimulus isolator output range minimum voltage;odML terminology
+stimulus isolator output range maximum voltage;odML terminology
+stimulus isolator input range minimum voltage;odML terminology
+stimulus isolator input range maximum voltage;odML terminology
+current stimulus isolator output;odML terminology
+voltage stimulus isolator output;odML terminology
+stimulus generator;Helmholtz
+beam splitter model;odML terminology
+frame grabber;odML terminology
+frame grabber detector;odML terminology
+analog camera;odML terminology
+image sensor;odML terminology
+charge couple device image sensor;odML terminology
+image acquisition device CCD count;odML terminology
+image sensor microchip;odML terminology
+microchip gain;odML terminology
+complementary metal oxide semiconductor image sensor;odML terminology
+infrared image sensor;odML terminology
+search coil sensor;odML terminology
+dual Purkinje sensor;odML terminology
+xenon lamp;odML terminology
+halogen lamp;odML terminology
+cs-mount;odML terminology
+numerical aperture;odML terminology
+maximum aperture;odML terminology
+signal processing filter bandform;odML terminology
+microscope filter cube;odML terminology
+signal processing filter family;odML terminology
+Bessel filter;odML terminology
+Butterworth filter;odML terminology
+notch filter;odML terminology
+high pass filter order;odML terminology
+low pass filter order;odML terminology
+emission filter model;odML terminology
+emission filter range;odML terminology
+emission filter passband transmission;odML terminology
+emission filter upper bound;odML terminology
+emission filter lower bound;odML terminology
+transmission range;odML terminology
+transmission lower bound;odML terminology
+transmission upper bound;odML terminology
+high pass filter;odML terminology
+high pass filter cutoff;odML terminology
+low pass filter;odML terminology
+low pass filter cutoff fequency;odML terminology
+cutoff frequency;odML terminology
+minimum attenuation;odML terminology
+maximum attenuation;odML terminology
+monochrome image acquisition colorspace;odML terminology
+analog input channel gain;odML terminology
+analog output channel gain;odML terminology
+discrete signal waveform description;Helmholtz
+inventory number;odML terminology
+scanner stack z range;odML terminology
+analog input reference;odML terminology
+analog input resolution;odML terminology
+analog output resolution;odML terminology
+subject developmental stage;odML terminology
+preparation equipment;Helmholtz
+preparation anaesthesia modality;odML terminology
+preparation anaesthetic;odML terminology
+local anaesthetic;odML terminology
+cutting solution;Helmholtz
+bath solution;odML terminology
+preparation date;odML terminology
+preparation animal;Helmholtz
+preparation animal nickname;Helmholtz
+preparation animal supplier;Helmholtz
+preparation animal birth;Helmholtz
+preparation animal sex;Helmholtz
+preparation animal identifier;Helmholtz
+extracellular recording;odML terminology
+intracellular recording;odML terminology
+training trial;odML terminology
+experimental environment;odML terminology
+multistimulus;Helmholtz
+reverse correlation mutistimulus;Helmholtz
+stimulation protocol;odML terminology
+stimulus file;odML terminology
+stimulus file URL;odML terminology
+stimulus start;Helmholtz
+stimulus repetitions;odML terminology
+stimulus temporal offset;odML terminology
+stimulus position reference;odML terminology
+stimulus position;odML terminology
+stimulus output channel;odML terminology
+ramp slope;odML terminology
+stimulation sequence number;Helmholtz
+stimulation cycle number;Helmholtz
+stimulation nature;odML terminology
+stimulation contrast;Helmholtz
+stimulation initial seed;Helmholtz
+stimulation seed constant;Helmholtz
+stimulation scotoma;Helmholtz
+grating contrast;odML terminology
+pulse stimulus;odML terminology
+DC pulse stimulus;odML terminology
+square wave stimulus;odML terminology
+sine wave stimulus;odML terminology
+square wave start amplitude;odML terminology
+ramp stimulus;odML terminology
+sawtooth stimulus;odML terminology
+random dot stimulus;odML terminology
+grating stimulus;odML terminology
+stimulation grating;Helmholtz
+gabor stimulation grating;Helmholtz
+spike stimulus;Helmholtz
+recording stimulus;Helmholtz
+movie stimulus;odML terminology
+gabor stimulus;odML terminology
+stimulation receptive field y;Helmholtz
+stimulation receptive field x;Helmholtz
+psychophysics experimental paradigm;odML terminology
+single compartment model;odML terminology
+multi-compartmental model;odML terminology
+discrete window method;odML terminology
+in silico preparation;Helmholtz
+in vivo patch preparation;Helmholtz
+in vitro slice preparation;Helmholtz
+in vitro culture preparation;Helmholtz
+perfect integrate and fire;odML terminology
+preparation model protocol;Helmholtz
+alpha window;odML terminology
+recording block;Helmholtz
+recording block start;Helmholtz
+recording block end;Helmholtz
+recording segment;Helmholtz
+recording segment start;Helmholtz
+recording segment end;Helmholtz
+recording datetime;Helmholtz
+recording file;Helmholtz
+event timestamp;odML terminology
+experimental setup;Helmholtz
+experimental setup creator;odML terminology
+experimental setup maintainer;odML terminology
+experimental setup room;Helmholtz
+experimental setup place;Helmholtz
+experimental setup department;odML terminology
+project identifier;odML terminology
+paper digital object identifier;odML terminology
+paper universal resource locator;odML terminology
+recording session start date;odML terminology
+recording session end date;odML terminology
+slice orientation;odML terminology
+animal strain;Helmholtz
+species strain URL;Helmholtz
+neural structure cell;Helmholtz
+subject trivial name;odML terminology
+subject genus;odML terminology
+species english name;Helmholtz
+species codename;Helmholtz
+subject weight;odML terminology
+subject specific label;odML terminology
+species strain nomenclature;Helmholtz
+preparation thickness;Helmholtz
+preparation protocol;Helmholtz
+subject cell line;odML terminology
+anaesthetic dose;odML terminology
+subject species;odML terminology
+bath temperature;odML terminology
+subject size;odML terminology
+species ISID;Helmholtz
+flow rate;odML terminology
+subject knowledge;odML terminology
+cut orientation;Helmholtz
+subjet strain;odML terminology
+species strain;Helmholtz
+subject population;odML terminology
+organization dissolution date;Helmholtz
+subject age;odML terminology
+researcher street address;Helmholtz
+experimental laboratory;Helmholtz
+excitation filter manufacturer;odML terminology
+recording experimenter;odML terminology
+responsible investigator role;odML terminology
+researcher phone number;Helmholtz
+first name;odML terminology
+emission filter manufacturer;odML terminology
+beam splitter manufacturer;odML terminology
+experimenter role;odML terminology
+chemical product supplier;Helmholtz
+birthday;odML terminology
+full name;odML terminology
+organization description;Helmholtz
+drug application route role;Helmholtz
+device manufacturer;Helmholtz
+supplier phone number;Helmholtz
+gender;odML terminology
+anaesthetic application route;Helmholtz
+organization diminutive;Helmholtz
+organization foundation date;Helmholtz
+person role;odML terminology
+configuration file URL;odML terminology
+principle investigator role;odML terminology
+last name;odML terminology
+supplier contact details;Helmholtz
+paralytic drug;Helmholtz
+organization contact details;Helmholtz
+recording experiment block;Helmholtz
+square wave duty cycle;odML terminology
+square wave;odML terminology
+duty cycle;odML terminology
+data segment length;odML terminology
+dataset recording end time;odML terminology
+storage file server port;Helmholtz
+storage file location;Helmholtz
+storage file name;Helmholtz
+storage file server IP address;Helmholtz
+server IP address;Helmholtz
+dataset quality range;odML terminology
+storage file server;Helmholtz
+storage root;Helmholtz
+dataset quality;odML terminology
+storage MIME type;Helmholtz
+storage file size;Helmholtz
+configuration file;odML terminology
+storage file path;Helmholtz
+storage communication protocol;Helmholtz
+dataset recording start time;odML terminology
+storage file creation date;Helmholtz
+storage file drive;Helmholtz
+storage file server protocol;Helmholtz
+microscope objective transmission range;odML terminology
+microscope objective numerical aperture;odML terminology
+setup device;Helmholtz
+fixed focus;odML terminology
+multielectrode array row count;Helmholtz
+multielectrode array;Helmholtz
+analog output channel count;odML terminology
+device filtering;Helmholtz
+setup configuration identifier;odML terminology
+head mounted eye tracker;odML terminology
+solid electrode;Helmholtz
+scanner scan mode;odML terminology
+light source pulse rate;odML terminology
+pulse rate;odML terminology
+device impedance;Helmholtz
+internal diameter;Helmholtz
+amplifier gain;odML terminology
+dry objective;odML terminology
+multi-photon microscope;odML terminology
+light source pulse width;odML terminology
+pulse width;odML terminology
+device software;Helmholtz
+device item configuration;Helmholtz
+analog input used channel count;odML terminology
+microscope objective transmission lower bound;odML terminology
+eye tracker fixation;odML terminology
+amplifier type;odML terminology
+light source wavelength upper bound;odML terminology
+wavelength upper bound;odML terminology
+microscope objective magnification;odML terminology
+light source wavelength lower bound;odML terminology
+wavelength lower bound;odML terminology
+light source watts intensity;odML terminology
+multi-electrode device;Helmholtz
+tabletop eye tracker;odML terminology
+scanner pixel size;odML terminology
+pixel size;odML terminology
+excitation filter range;odML terminology
+device item;Helmholtz
+microscope objective;odML terminology
+analog output maximum sampling rate;odML terminology
+sampling rate;odML terminology
+multielectrode array inter electrode interval;Helmholtz
+electrocardiogram device;Helmholtz
+amplifier device;Helmholtz
+microscope objective transmission upper bound;odML terminology
+light source candela per square meter intensity;odML terminology
+candela per square meter;odML terminology
+device subsystem;Helmholtz
+experimental setup location;odML terminology
+light source lux intensity;odML terminology
+light source wavelength;odML terminology
+device channel type;Helmholtz
+patch electrode;Helmholtz
+excitation filter wavelength;odML terminology
+eye tracker filter;odML terminology
+focal length;odML terminology
+oil immersion objective;odML terminology
+device recording point index;Helmholtz
+excitation filter upper bound;odML terminology
+analog input channel count;odML terminology
+excitation filter model;odML terminology
+hollow electrode solution;Helmholtz
+scanner dwell time;odML terminology
+electrode position;Helmholtz
+electrode resistance;Helmholtz
+beam splitter wavelength;odML terminology
+contact gel;Helmholtz
+device model;Helmholtz
+stimulus isolator gain step size;odML terminology
+disc electrode device;Helmholtz
+seal resistance;Helmholtz
+patch clamp device configuration;Helmholtz
+subsystem component;Helmholtz
+electroencephalogram device;Helmholtz
+excitation filter lower bound;odML terminology
+device item properties;Helmholtz
+stereotaxis device;Helmholtz
+eye tracker calibration;odML terminology
+sharp electrode;Helmholtz
+setup configuration;odML terminology
+microscope type;odML terminology
+focal length range;odML terminology
+emission filter wavelength;odML terminology
+mercury arc;odML terminology
+excitation filter passband transmission;odML terminology
+image acquisition device;odML terminology
+analog input maximum sampling rate;odML terminology
+water immersion objective;odML terminology
+device version;Helmholtz
+device serial;Helmholtz
+multielectrode array column count;Helmholtz
+analog input sampling rate;odML terminology
+device type;Helmholtz
+device identifier;Helmholtz
+image acquisition detector sensitivity range;odML terminology
+electrode contact configuration;Helmholtz
+recording point label;Helmholtz
+amplifier operation mode;odML terminology
+peristimulus time histogram analysis;odML terminology
+data segment overlap;odML terminology
+result figure;odML terminology
+event list;odML terminology
+power spectrum window function;odML terminology
+analysis method;odML terminology
+gaussian window;odML terminology
+continuous signal analysis;Helmholtz
+sine wave phase shift;odML terminology
+analysis caption;Helmholtz
+rectangular window;odML terminology
+analysis data source;Helmholtz
+analysis author;odML terminology
+power spectrum analysis;odML terminology
+analysis algorithm;Helmholtz
+brain subregion;odML terminology
+cell recording location;odML terminology
+position anteroposterior value;Helmholtz
+neural structure brain region;Helmholtz
+position anteroposterior axis;Helmholtz
+position dorsoventral value;Helmholtz
+position brain region;Helmholtz
+image acquisition region of interest width;odML terminology
+analog output sampling rate;odML terminology
+image acquisition aperture;odML terminology
+image acquisition shutter speed;odML terminology
+image acquisition color temperature;odML terminology
+image acquisition gamma value;odML terminology
+amplifier duty cycle;odML terminology
+inside out patch configuration;Helmholtz
+stimulus isolator output mode;odML terminology
+digital input output;odML terminology
+digital input output line count;odML terminology
+image acquisition color gain;odML terminology
+stimulation acquisition extra time;Helmholtz
+movie image spatial resolution;odML terminology
+recording end time;odML terminology
+recording experimenter identifier;odML terminology
+device amplification setting;Helmholtz
+scanner image width;odML terminology
+image acquisition contrast adjustment;odML terminology
+image acquisition pixel binning;odML terminology
+analog output used channel count;odML terminology
+image acquisition region of interest y;odML terminology
+image acquisition region of interest x;odML terminology
+image acquisition picture rotation;odML terminology
+image acquisition colorspace;odML terminology
+switching frequency;odML terminology
+recording end date and time;odML terminology
+recording dataset;Helmholtz
+analog input polarity;odML terminology
+image acquisition minimum frame rate;odML terminology
+frame rate;odML terminology
+recording start date and time;odML terminology
+scanner stack z step size;odML terminology
+recording segment dataset;Helmholtz
+scanner scan rate;odML terminology
+image acquisition lens;odML terminology
+image acquisition maximum frame rate;odML terminology
+scanner image height;odML terminology
+image acquisition detector type;odML terminology
+image acquisition bit depth;odML terminology
+discrete signal sampling rate;Helmholtz
+image acquisition spatial resolution;odML terminology
+movie frame rate;odML terminology
+image acquisition gamma function;odML terminology
+eye tracker sampling rate;odML terminology
+recording start time;odML terminology
+image acquisition frame rate;odML terminology
+image acquisition;odML terminology
+device recording point;Helmholtz
+image acquisition region of interest height;odML terminology
+image acquisition brightness adjustment;odML terminology
+perfusion drug application route;Helmholtz
+discrete drug application volume;Helmholtz
+discrete drug application time;Helmholtz
+continuous drug application end;Helmholtz
+training duration;odML terminology
+psychophysics task;odML terminology
+drug application route type;Helmholtz
+continuous drug application;Helmholtz
+local anaesthetic location;odML terminology
+continuous drug application start;Helmholtz
+drug experiment notes;Helmholtz
+continuous drug application rate;Helmholtz
+continuous recording;Helmholtz
+stimulus location;odML terminology
+grating spatial wavelength;odML terminology
+stimulation center type;Helmholtz
+ramp start amplitude;odML terminology
+stimulus intensity;odML terminology
+stimulus author;odML terminology
+step size;odML terminology
+quadri-directional stimulation movement stimulus;Helmholtz
+stimulation pre-trigger duration;Helmholtz
+inter-stimulus interval;odML terminology
+random dot pixel height;odML terminology
+grating drifting velocity;odML terminology
+sine wave stimulus frequency;odML terminology
+square wave modulation amplitude;odML terminology
+stimulation orientation;Helmholtz
+sparse noise multistimulus;Helmholtz
+multistimulus title;Helmholtz
+random dot size;odML terminology
+stimulation movement stimulus;Helmholtz
+sine wave mean intensity;odML terminology
+random dot pixel width;odML terminology
+stimulation spatial period;Helmholtz
+stimulation luminance low;Helmholtz
+ellipse stimulation grating shape;Helmholtz
+stimulation phase;Helmholtz
+sine wave modulation amplitude;odML terminology
+square wave intensity offset;odML terminology
+ramp start time;odML terminology
+stimulus end time;odML terminology
+on-off stimulation movement stimulus;Helmholtz
+white noise stimulus;odML terminology
+stimulus protocol;Helmholtz
+stimulus start time;odML terminology
+stimulus function;odML terminology
+back-forth stimulation movement stimulus;Helmholtz
+square wave modulation frequency;odML terminology
+stimulation luminance number;Helmholtz
+stimulation grating shape;Helmholtz
+drifting stimulation movement stimulus;Helmholtz
+ramp end amplitude;odML terminology
+stimulation luminance high;Helmholtz
+sparse noise nrev multistimulus;Helmholtz
+white noise variance;odML terminology
+ternary dense noise multistimulus;Helmholtz
+grating spatial frequency;odML terminology
+continuous signal sampling rate;Helmholtz
+stimulus spatial extent;odML terminology
+circle stimulation grating shape;Helmholtz
+phase-antiphase stimulation movement stimulus;Helmholtz
+grating intensity;odML terminology
+random dot vertical extent;odML terminology
+stimulation luminance background;Helmholtz
+stimulation phase speed;Helmholtz
+white noise mean intensity;odML terminology
+grating wave type;odML terminology
+binary dense noise multistimulus;Helmholtz
+stimulation intensity;odML terminology
+grating orientation;odML terminology
+stimulus intensity offset;odML terminology
+random dot horizontal extent;odML terminology
+random dot count;odML terminology
+rectangle stimulation grating shape;Helmholtz
+cell baseline firing rate;odML terminology
+cell time constant;odML terminology
+cell baseline membrane potential noise;odML terminology
+neural structure cell type;Helmholtz
+cell input resistance;odML terminology
+neural structure;Helmholtz
+cell rheobase;odML terminology
+cell resting potential;odML terminology
+brain region;odML terminology
+cell membrane capacity;odML terminology
+cell type;odML terminology
+experiment subtype;odML terminology
+drug experiment;Helmholtz
+electrophysiology experiment;odML terminology
+experiment definition;odML terminology
+experiment start;Helmholtz
+experiment end;Helmholtz
+stimulation experiment;odML terminology
+experiment preparation;Helmholtz
+experiment protocol;Helmholtz
+experiment duration;Helmholtz
+imaging experiment;odML terminology
+behavior experiment;odML terminology
+experiment notes;Helmholtz
+chemical solution component;Helmholtz
+chemical components list;Helmholtz
+chemical substance quantity;Helmholtz
+chemical substance shortname;Helmholtz
+chemistry catalog reference;Helmholtz
+chemical substance;Helmholtz
+cell identification method;odML terminology
+psychophysics experiment;odML terminology
+loose patch configuration;Helmholtz
+cell attached configuration;Helmholtz
+loose patch;odML terminology
+whole cell patch;odML terminology
+in vivo sharp preparation;Helmholtz
+dual electrode recording;odML terminology
+dynamic clamp;odML terminology
+whole cell configuration;Helmholtz
+sliding window method;odML terminology
+image acquisition subsampling method;odML terminology
+instantaneous spike rate method;odML terminology
+single electrode recording;odML terminology
+perforated patch configuration;Helmholtz
+multi electrode recording;odML terminology
+patch clamp;odML terminology
+work position end;Helmholtz
+discrete signal left sweep;Helmholtz
+center position reference;odML terminology
+individual count;odML terminology
+position intra;Helmholtz
+measurement timestamp;Helmholtz
+measurement unit;Helmholtz
+work position;Helmholtz
+measurement parameter;Helmholtz
+colored colorspace;odML terminology
+position lateral axis;Helmholtz
+attenuator line count;odML terminology
+position;Helmholtz
+bottom-right position reference;odML terminology
+drug application;Helmholtz
+position lateral value;Helmholtz
+top-left position reference;odML terminology
+intravenous drug application;Helmholtz
+work position start;Helmholtz
+position depth;Helmholtz
+position dorsoventral axis;Helmholtz
+experiment;odML terminology
+discontinuous;odML terminology
+experimental protocol;odML terminology
+electrode;odML terminology
+drug;Helmholtz
+ganglion;odML terminology
+attenuation;odML terminology
+chemistry;Helmholtz
+stimulus modality;odML terminology
+measurement;Helmholtz
+structure;odML terminology
+electrocardiogram;odML terminology
+light-emitting diode;odML terminology
+electroencephalogram;odML terminology
+cell layer;odML terminology
+anatomical layer;odML terminology
+reflection electron microscopy;odML terminology
+electroretinography;odML terminology
+filter;odML terminology
+researcher;Helmholtz
+stimulation;Helmholtz
+recording;odML terminology
+electromyogram;odML terminology
+subject;odML terminology
+current clamp;odML terminology
+collection;odML terminology
+mount;odML terminology
+functional magnetic resonance imaging;odML terminology
+model;odML terminology
+animal model;odML terminology
+voltage clamp;odML terminology
+voltage clamp technique;odML terminology
+hardware;odML terminology
+instrument;odML terminology
+experimental researcher;Helmholtz
+town;Helmholtz
+state;Helmholtz
+country;Helmholtz
+postal code;Helmholtz
+researcher contact details;Helmholtz
+dataset file;odML terminology
+data file;odML terminology
+digital file;odML terminology
+dataset file URL;odML terminology
+uniform resource locator;odML terminology
+dataset start date;odML terminology
+dataset end date;odML terminology
+result file;odML terminology
+result file URL;odML terminology
+contact information;odML terminology
+attenuator device;odML terminology
+hardware settings;odML terminology
+decibel;odML terminology
+beam splitter;odML terminology
+instrument model;odML terminology
+camera;odML terminology
+charge couple device;odML terminology
+microchip;odML terminology
+complementary metal oxide semiconductor;odML terminology
+infrared detector;odML terminology
+emission filter;odML terminology
+Ringer's solution;odML terminology
+preparation slicing method;odML terminology
+animal sacrifice;Helmholtz
+instructions to subject;odML terminology
+subject intsruction;odML terminology
+health status;odML terminology
+sine wave;odML terminology
+grating pattern;odML terminology
+receptive field;Helmholtz
+behavioral paradigm;odML terminology
+behavioral stimulus;odML terminology
+behavior;odML terminology
+behavioral science;odML terminology
+behavioral phenotype;odML terminology
+behavioral process;odML terminology
+behavioral sensitization;odML terminology
+leaky integrate-and-fire;Helmholtz
+temporal window;odML terminology
+experimental measurement;odML terminology
+slice preparation protocol;odML terminology
+slice thickness;odML terminology
+species scientific name;Helmholtz
+scientific name;Helmholtz
+common name;odML terminology
+genus;odML terminology
+weight;odML terminology
+body weight;odML terminology
+nomenclature;Helmholtz
+strain nomenclature;Helmholtz
+temperature;odML terminology
+size;odML terminology
+knowledge;odML terminology
+local anaesthetic dose;odML terminology
+excitation filter;odML terminology
+experimenter;odML terminology
+study principle investigator or responsible;odML terminology
+phone number;Helmholtz
+beam splitter device component;odML terminology
+chemical supplier;Helmholtz
+birth day;odML terminology
+website;Helmholtz
+diminutive;Helmholtz
+investigator;odML terminology
+investigator role;odML terminology
+principle investigator;odML terminology
+contact details;Helmholtz
+network address;Helmholtz
+address;Helmholtz
+MIME type specification;Helmholtz
+pathname;Helmholtz
+focus;odML terminology
+count;odML terminology
+identifier;odML terminology
+rate;odML terminology
+impedance;Helmholtz
+diameter;Helmholtz
+air interface objective lens;odML terminology
+two photon fluorescence microscopy;odML terminology
+software device;Helmholtz
+wavelength;odML terminology
+watt;odML terminology
+sampling frequency;odML terminology
+subsystem;Helmholtz
+lux;odML terminology
+oil immersion lens;odML terminology
+drug application route;Helmholtz
+water immersion lens;odML terminology
+overlap;odML terminology
+overlap with;odML terminology
+window;odML terminology
+window function parameter;odML terminology
+gaussian window function;odML terminology
+phase shift;odML terminology
+data source;Helmholtz
+anteroposterior orientation;Helmholtz
+anteroposterior plane;Helmholtz
+dorsoventral;Helmholtz
+region of interest;odML terminology
+image acquisition region of interest;odML terminology
+region of interest width;odML terminology
+shutter device component;odML terminology
+shutter speed;odML terminology
+contrast sensitivity;odML terminology
+contrast used;odML terminology
+contrast resolution;odML terminology
+color space;odML terminology
+location;odML terminology
+white noise;odML terminology
+stimulus duration;Helmholtz
+liquid solution component;Helmholtz
+chemical product;Helmholtz
+chemical;Helmholtz
+chemical concentration;Helmholtz
+concentration;Helmholtz
+method of identification;odML terminology
+unit of measurement;Helmholtz
+occupation;Helmholtz
+job details;Helmholtz
+drug preparation;Helmholtz
+type of drug preparation;Helmholtz
+intravenous anaesthetic;Helmholtz
+inhalation anesthetic;Helmholtz

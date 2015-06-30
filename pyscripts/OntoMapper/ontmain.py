@@ -597,7 +597,7 @@ def dictToMappingDashboardCSV(csvdict, file_path="MappingDashboard.csv"):
 	 as secondary key. Tip: content filled-in by storeResults function or 
 	 loaded from csv file using reloadFullStructureCSV function.
 	'''
-	    
+	
         filename = file_path
         if "/" in file_path:
                 filename = filename[::-1]
@@ -670,7 +670,7 @@ def dictToMappingDashboardCSV(csvdict, file_path="MappingDashboard.csv"):
                                                 
                                         else:
                                                 
-                                                rowdict[fn] = "Content may exceed excell cell capacity, not reported."
+                                                rowdict[fn] = "Content may exceed MS Excel cell capacity, not reported."
                                         
                                         rowdict[fn[:-1] + "_count"] = int(aggl_nbi)
                                         
@@ -697,7 +697,7 @@ def MappingSummaryCSV(csvdict, file_path="MappingSummary.csv"):
         
         with open(file_path, 'wb') as csvfile:
         
-                fieldnames = ['term', 'provenance', 'direct mapping count', 'post-splitting mapping count', 'related terms count']
+                fieldnames = ['term', 'provenance', 'direct mapping count', 'post-splitting mapping count', 'related terms count', 'post-splitting related count']
                 writer = csv.DictWriter(csvfile, fieldnames=fieldnames, dialect='excel', delimiter=';')
                 writer.writeheader()
                 
@@ -714,13 +714,13 @@ def MappingSummaryCSV(csvdict, file_path="MappingSummary.csv"):
                                 
                                 for prov in csvdict[k]["provenance"]:
                                 
-                                        if type(csvdict[k]["provenance"][prov]) is str:
+                                        if type(prov) is str:
                                                 
-                                                compare_str = csvdict[k]["provenance"][0]
+                                                compare_str = prov
                                         
-                                        elif type(csvdict[k]["provenance"][prov]) is tuple:
+                                        elif type(prov) is tuple:
                                                 
-                                                compare_str = csvdict[k]["provenance"][prov][0]
+                                                compare_str = prov[0]
                                 
                                         if "is split from" not in compare_str and "unspecified provenance" not in compare_str:
                                             
@@ -730,20 +730,21 @@ def MappingSummaryCSV(csvdict, file_path="MappingSummary.csv"):
                                 #is a term from the original list provided
                                 if qualif:
                                         
-                                        rowdict["term"] = k
+                                        #fill-in label and provenance
+                                        rowdict["term"] = k                                        
                                         
-                                        #DIRECT MAPPING COUNT
-                                        if compare_str in csvdict[k]["provenance"]:
-                                        
-                                                if type(csvdict[k]["provenance"][compare_str]) is str:
+                                        if type(compare_str) is str:
                                                     
-                                                        rowdict["provenance"] = csvdict[k]["provenance"][compare_str]
+                                                rowdict["provenance"] = compare_str
                                                         
-                                                elif type(csvdict[k]["provenance"][compare_str]) is tuple:
+                                        elif type(compare_str) is tuple:
                                                         
-                                                        rowdict["provenance"] = csvdict[k]["provenance"][compare_str][0]
+                                                rowdict["provenance"] = compare_str[0]
                                         
-                                        id_set = set()
+                                        
+                                        #DIRECT MAPPING COUNT & RELATED COUNT
+                                        id_set  = set()
+                                        rel_set = set()
                                         
                                         for j in csvdict[k].keys():
                                                 
@@ -752,11 +753,33 @@ def MappingSummaryCSV(csvdict, file_path="MappingSummary.csv"):
                                                         for m in csvdict[k][j]:
                                                                 
                                                                 id_set.add( m )
-                                                        
-                                        rowdict["direct mapping count"] = int(len(id_set))
+                                                
+                                                if j[-len("related"):]=="related":
+                                                                                        
+                                                        for each_id in csvdict[k][j]:
+                                                                
+                                                                if type(each_id) is str:
+                                                                
+                                                                        rel_set.add( each_id )
+                                                                        
+                                                                elif type(each_id) is tuple:
+                                                                        
+                                                                        if len(each_id)>1 and len(each_id[1])>0:
+                                                                                
+                                                                                rel_set.add( each_id[0] + " " + each_id[1] )
+                                                                        
+                                                                        elif len(each_id)>0:
+                                                                                
+                                                                                rel_set.add( each_id[0] )
+                                                                                                                                                            
+                                        rowdict["direct mapping count"] = int(len( id_set))
                                         
-                                        #POST-SPLITTING MAPPING COUNT                                        
-                                        id_set = set()
+                                        rowdict["related terms count"]  = int(len(rel_set))
+
+                                        
+                                        #POST-SPLITTING MAPPING COUNT & POS-SPLITTING RELATED COUNT                                       
+                                        id_set  = set()
+                                        rel_set = set()
                                         
                                         for j in csvdict.keys():
                                                 
@@ -784,37 +807,38 @@ def MappingSummaryCSV(csvdict, file_path="MappingSummary.csv"):
                                                                                         
                                                                                         for each_id in csvdict[j][annot]:
                                                                                                 
-                                                                                                id_set.add( each_id )
+                                                                                                if type( each_id ) is str:
+                                                                                                
+                                                                                                        id_set.add( each_id )
+                                                                                                
+                                                                                                elif type( each_id ) is tuple:
+                                                                                                        
+                                                                                                        id_set.add( each_id[0] )
+                                                                                                        
+                                                                                if annot[-len("related"):]=="related":
+                                                                                        
+                                                                                        for each_id in csvdict[j][annot]:
+                                                                                                
+                                                                                                if type( each_id ) is str:
+                                                                                                
+                                                                                                        rel_set.add( each_id )
+                                                                                                
+                                                                                                elif type( each_id ) is tuple:
+                                                                                                        
+                                                                                                        if len(each_id)>1 and len(each_id[1])>0:
+                                                                                                                
+                                                                                                                rel_set.add( each_id[0] + " " + each_id[1] )
+                                                                                                        
+                                                                                                        elif len(each_id)>0:
+                                                                                                                
+                                                                                                                rel_set.add( each_id[0] )
                                                                         
                                                                         break
                                         
-                                        rowdict["post-splitting mapping count"] = int(len(id_set))
+                                        rowdict["post-splitting mapping count"] = int(len( id_set))
                                         
-                                        #RELATED TERMS COUNT
-                                        id_set = set()
-                                        
-                                        for j in csvdict[k].keys():
-                                                
-                                                if "related" in j.lower():
-                                                                                        
-                                                        for each_id in csvdict[k][j]:
-                                                                
-                                                                if type(each_id) is str:
-                                                                
-                                                                        id_set.add( each_id )
-                                                                        
-                                                                elif type(each_id) is tuple:
-                                                                        
-                                                                        if len(each_id)>1 and len(each_id[1])>0:
-                                                                                
-                                                                                id_set.add( each_id[0] + " " + each_id[1] )
-                                                                        
-                                                                        elif len(each_id)>0:
-                                                                                
-                                                                                id_set.add( each_id[0] )
-                                        
-                                        rowdict["related terms count"] = int(len(id_set))
-                                        
+                                        rowdict["post-splitting related count"] = int(len(rel_set))                                      
+                                                                                                                        
                                         writer.writerow( rowdict )
 
 

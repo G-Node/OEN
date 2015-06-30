@@ -96,9 +96,10 @@ csvdict = {}
 
 #onto = Ontology("C:\Users\Asus\Documents\GitHub\OEN\pyscripts\OntoMapper\pizza.owl")
 #onto = Ontology("C:\Users\Asus\Documents\Travail\OEN\uids_fromERO.owl")
-onto = Ontology("C:\Users\Asus\Documents\Travail\OEN\inclAllChild_fromERO.owl")
+#onto = Ontology("C:\Users\Asus\Documents\Travail\OEN\inclAllChild_fromERO.owl")
+onto = Ontology("C:\Users\Asus\Documents\Github\OEN\pyscripts\OntoMapper\oen_term.owl")
 
-header = ImportHeader("/Users/Asus/Documents/GitHub/OEN/pyscripts/OntoMapper/NeuroLex_oen_ConceptBranch_Template.csv")
+header = ImportHeader("/Users/Asus/Documents/GitHub/OEN/pyscripts/OntoMapper/oen_ConceptBranch.csv")
 
 fw_header = {}
 for h in header:
@@ -116,7 +117,8 @@ fw_header["RelatedTo"] = "alternative term"
 for clas in onto.allclasses:
         
         label_list = []
-        #unwrapStruct( onto.classRepresentation(clas) )        
+        #unwrapStruct( onto.classRepresentation(clas) )
+        #print
         
         #Class representation includes a "class" field?
         if "class" in onto.classRepresentation(clas).keys():
@@ -183,7 +185,7 @@ for clas in onto.allclasses:
                                                 #case annotation label explicitly stated as first element of triples                                                
                                                 if fw_header[h] in tripl[0]:
                                                         
-                                                        print "*", h, "\t", fw_header[h], "\t", tripl[0]
+                                                        #print "*", h, "\t", fw_header[h], "\t", tripl[0]
                                                         if h not in csvdict[ onto.classRepresentation(clas)["class"] ].keys():
                                                                 
                                                                 csvdict[ onto.classRepresentation(clas)["class"] ][ h ] = []
@@ -202,7 +204,7 @@ for clas in onto.allclasses:
                                                                 
                                                                 if fw_header[h].lower() == afuri.lower()[1:-1]:
                                                                         
-                                                                        print "**", h, "\t", fw_header[h].lower(), "\t", tripl[0], "i.e.", afuri.lower()
+                                                                        #print "**", h, "\t", fw_header[h].lower(), "\t", tripl[0], "i.e.", afuri.lower()
                                                                         
                                                                         if h not in csvdict[ onto.classRepresentation(clas)["class"] ].keys():
                                                                                 

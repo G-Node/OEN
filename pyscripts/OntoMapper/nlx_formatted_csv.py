@@ -30,7 +30,7 @@ from ontmain import *
 #                                         #
 ###########################################
 
-def ImportHeader(file_path="NeuroLex_oen_ConceptBranch_Template.csv"):
+def ImportHeader(file_path="oen_ConceptBranch.csv", option=";"):
         '''        
         Function for retrieving a list of property labels from the first row of 
          a csv file.
@@ -48,7 +48,7 @@ def ImportHeader(file_path="NeuroLex_oen_ConceptBranch_Template.csv"):
                 
                 template_file = open(file_path, 'rb')
                 
-                csv_file = csv.reader(template_file, dialect='excel', delimiter=';')
+                csv_file = csv.reader(template_file, dialect='excel', delimiter=option)
                 
                 for row in csv_file:
                         
@@ -64,6 +64,67 @@ def ImportHeader(file_path="NeuroLex_oen_ConceptBranch_Template.csv"):
 	       pass
 
 	return header
+
+
+def LoadCSVwithHeader(file_path="oen_ConceptBranch.csv", header=[], option=";"):
+        
+        oen_CB = []
+
+        filename = file_path
+        if "/" in file_path:
+                filename = filename[::-1]
+                filename = filename[:filename.index("/")]
+                filename = filename[::-1]
+        
+        print " Loading according to header from csv file:", filename
+                        
+        try:
+        
+                my_file=open(file_path, 'rb')
+      		
+       	        csv_file=csv.reader(my_file, dialect='excel', delimiter=option)
+       	
+       	        headerskip = False
+      		
+       	        for row in csv_file:
+        	       
+        	       if headerskip == True:
+        	               
+        	               oen_CB.append({})
+        	               
+        	               N = len(oen_CB)-1
+        	               
+        	               for k in range(max(len(row),len(header))):
+        	                       
+        	                       if k<len(row) and k<len(header):
+        	                               
+        	                               if header[k] != "":
+        	                       
+        	                                       oen_CB[N][ header[k] ] = row[ k ]
+        	                                       
+        	                               else:
+        	                                       
+        	                                       oen_CB[N][ "header_" + "0"*(int(len(str(len(row)))-len(str(k)))) + str(k) ] = row[ k ]
+        	                               
+        	                       if k<len(row) and k>=len(header):
+        	                               
+        	                               oen_CB[N][ "header_" + "0"*(int(len(str(len(row)))-len(str(k)))) + str(k) ] = row[ k ]
+        	                               
+        	                       if k>=len(row) and k<len(header):
+        	                               
+        	                               break
+        
+        	       else:
+        	               
+        	               headerskip = True
+	  
+        except:
+                
+                print "Could not load according to header from csv file:",  filename
+                pass
+	  
+        return oen_CB
+
 
 
 def WriteCSVwithHeader(file_path="csv_with_header.csv", header=[], csvdict={}, rt_header={}):
@@ -95,13 +156,13 @@ def WriteCSVwithHeader(file_path="csv_with_header.csv", header=[], csvdict={}, r
                                         break
                         
                         if nort: rt_header[ppty] = ppty
-        
+                
                 with open(file_path, 'wb') as csvfile:
                     
                         fieldnames = header
                         writer = csv.DictWriter(csvfile, fieldnames=fieldnames, dialect='excel', delimiter=';')    
                         writer.writeheader()
-                        
+
                         for k in csvdict.keys():
                                 
                                 rowdict = {}
@@ -148,6 +209,7 @@ def WriteCSVwithHeader(file_path="csv_with_header.csv", header=[], csvdict={}, r
 
 	except IOError:
 	       
+	       print "EXECUTION WAS NOT SUCCESFUL"
 	       pass
 
 

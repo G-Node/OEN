@@ -376,20 +376,7 @@ def format_SPARQL_Query(endpoint, ontology):
 	return prefixes, from_uri
 
 
-###########################################
-#                                         #
-#      EXECUTION SNIPPET FOR TESTING      #
-#                                         #
-###########################################
-
-#import csv
-#with open("testcsvddictsriterwriterow.csv", 'wb') as csvfile:
-#    fieldnames = ['test']
-#    writer = csv.DictWriter(csvfile, fieldnames=fieldnames, dialect='excel', delimiter=';')    
-#    writer.writeheader()
-#    writer.writerow({"test": encodeForWriting( "http://neurolex.org/wiki/Category:Input_Resistance" )})
-
-
+'''
 ############################################
 #                                          #
 #            INHERITED V00 CODE            #
@@ -412,3 +399,4 @@ if __name__ == "__main__":
                     omv:name ?name .
         } 
     """
+'''

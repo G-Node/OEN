@@ -74,9 +74,11 @@ test3=storeResults(test, test2)
 print
 print "- " * 20
 print len(test3), "terms explored within specified ontologies."
-dictToCSVfile( test3, "csvdict_test.csv", False)
+dictToCSVfile( test3, "csvdict.csv", False )
 
 dictToMappingDashboardCSV(test3)
+
+MappingSummaryCSV(test3)
 
 
 print
@@ -124,7 +126,7 @@ for i in test3.keys():
         test7[i] = test3[i]
     elif len(IDset)>1:
         test8[i] = test3[i]
-    
+
 
 print str(len(test4)) + "/" + str(len(test3)), "terms were not previously referenced within specified ontologies."
 dictToCSVfile( test4, "neverseenbeforeterms.csv", False)
