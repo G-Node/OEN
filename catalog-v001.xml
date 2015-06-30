@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1435657111163" name="http://purl.org/incf/ontology/ExperimentalNeurophysiology/external-import/OEN_external_OntoFoxOutputFile_ERO.owl" uri="external-import/OEN_external_OntoFoxOutputFile_ERO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1435657111163" name="http://purl.org/incf/ontology/ExperimentalNeurophysiology/external-import/OEN_external_OntoFoxOutputFile_OBI.owl" uri="external-import/OEN_external_OntoFoxOutputFile_OBI.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1435657111163" name="http://purl.org/incf/ontology/ExperimentalNeurophysiology/external-import/external.owl" uri="external-import/external.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1435657111163" name="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen.owl" uri="oen_obi.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1435657111163" name="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl" uri="oen_term.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1435657111163" name="http://www.semanticweb.org/asus/ontologies/2015/5/untitled-ontology-96" uri="oen.owl"/>
+    </group>
+</catalog>
