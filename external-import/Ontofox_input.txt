@@ -1,0 +1,35 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.org/incf/ontology/ExperimentalNeurophysiology/external-import/external.owl
+
+[Source ontology]
+OBI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OBI_0000968 #device
+http://purl.obolibrary.org/obo/OBI_0000654 #device setting
+http://purl.obolibrary.org/obo/BFO_0000023 #role
+http://purl.obolibrary.org/obo/OBI_0000070 #assay
+http://purl.obolibrary.org/obo/IAO_0000030 #information content entity
+http://purl.obolibrary.org/obo/IAO_0000104 #plan specification
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/OBI_0000968 #device
+subClassOf http://www.w3.org/2002/07/owl#Thing
+http://purl.obolibrary.org/obo/OBI_0000654 #device setting
+subClassOf http://www.w3.org/2002/07/owl#Thing
+http://purl.obolibrary.org/obo/BFO_0000023 #role
+subClassOf http://www.w3.org/2002/07/owl#Thing
+http://purl.obolibrary.org/obo/OBI_0000070 #assay
+subClassOf http://www.w3.org/2002/07/owl#Thing
+http://purl.obolibrary.org/obo/IAO_0000030 #information content entity
+subClassOf http://www.w3.org/2002/07/owl#Thing
+http://purl.obolibrary.org/obo/IAO_0000104 #plan specification
+subClassOf http://www.w3.org/2002/07/owl#Thing
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+[Source annotation URIs to be excluded]
