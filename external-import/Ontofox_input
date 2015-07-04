@@ -5,6 +5,8 @@ http://purl.org/incf/ontology/ExperimentalNeurophysiology/external-import/extern
 OBI
 
 [Low level source term URIs]
+http://purl.obolibrary.org/obo/BFO_0000015 #process
+http://purl.obolibrary.org/obo/BFO_0000019 #quality
 http://purl.obolibrary.org/obo/OBI_0000968 #device
 http://purl.obolibrary.org/obo/OBI_0000654 #device setting
 http://purl.obolibrary.org/obo/BFO_0000023 #role
@@ -29,7 +31,7 @@ http://purl.obolibrary.org/obo/OBI_0302893 # storage
 http://purl.obolibrary.org/obo/IAO_0000100 # dataset
 http://purl.obolibrary.org/obo/OBI_0000807 # presentation of stimulus
 http://purl.obolibrary.org/obo/OBI_0000097 # study subject role
-http://purl.obolibrary.org/obo/OBI_0000073 # preparation
+http://purl.obolibrary.org/obo/OBI_0000073 # sample preparation for assay
 http://purl.obolibrary.org/obo/OBI_0200000 # data analysis
 http://purl.obolibrary.org/obo/OBI_0001129 # voltage clamp device
 http://purl.obolibrary.org/obo/IAO_0000422 # postal address
@@ -53,98 +55,100 @@ http://purl.obolibrary.org/obo/OBI_0200000 # data transformation
 http://purl.obolibrary.org/obo/IAO_0000304 # caption
 
 [Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000015 #process
+subClassOf http://www.w3.org/2002/07/owl#Thing
+http://purl.obolibrary.org/obo/BFO_0000019 #quality
+subClassOf http://www.w3.org/2002/07/owl#Thing
 http://purl.obolibrary.org/obo/OBI_0000968 #device
 subClassOf http://www.w3.org/2002/07/owl#Thing
 http://purl.obolibrary.org/obo/OBI_0000654 #device setting
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/BFO_0000019
 http://purl.obolibrary.org/obo/BFO_0000023 #role
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/BFO_0000019
 http://purl.obolibrary.org/obo/OBI_0000070 #assay
 subClassOf http://www.w3.org/2002/07/owl#Thing
 http://purl.obolibrary.org/obo/IAO_0000030 #information content entity
 subClassOf http://www.w3.org/2002/07/owl#Thing
 http://purl.obolibrary.org/obo/IAO_0000104 #plan specification
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/IAO_0000030
 http://purl.obolibrary.org/obo/CL_0000000  # cell
 subClassOf http://www.w3.org/2002/07/owl#Thing
 http://purl.obolibrary.org/obo/CLO_0000031 # cell line
 subClassOf http://www.w3.org/2002/07/owl#Thing
 http://purl.obolibrary.org/obo/OBI_0400101 # voltage amplifier
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968
 http://purl.obolibrary.org/obo/OBI_0400065 # light source
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968
 http://purl.obolibrary.org/obo/OBI_0000835 # manufacturer
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/BFO_0000023
 http://purl.obolibrary.org/obo/IAO_0000131 # serial number
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/IAO_0000030
 http://purl.obolibrary.org/obo/OBI_0400013 # band pass filter
 subClassOf http://www.w3.org/2002/07/owl#Thing
 http://purl.obolibrary.org/obo/OBI_0400169 # microscope
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968
 http://purl.obolibrary.org/obo/OBI_0001048 # digital camera
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968
 http://purl.obolibrary.org/obo/OBI_0001079 # confocal microscope
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968
 http://purl.obolibrary.org/obo/IAO_0000442 # author role
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/BFO_0000023
 http://purl.obolibrary.org/obo/OBI_0000040 # drug role
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/BFO_0000023
 http://purl.obolibrary.org/obo/OBI_0000245 # organization
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/IAO_0000030
 http://purl.obolibrary.org/obo/OBI_0302729 # chemical solution
 subClassOf http://www.w3.org/2002/07/owl#Thing
 http://purl.obolibrary.org/obo/OBI_0302893 # storage
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/BFO_0000015
 http://purl.obolibrary.org/obo/IAO_0000100 # dataset
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/IAO_0000030
 http://purl.obolibrary.org/obo/OBI_0000807 # presentation of stimulus
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/BFO_0000015
 http://purl.obolibrary.org/obo/OBI_0000097 # study subject role
-subClassOf http://www.w3.org/2002/07/owl#Thing
-http://purl.obolibrary.org/obo/OBI_0000073 # preparation
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/BFO_0000023
+http://purl.obolibrary.org/obo/OBI_0000073 # sample preparation for assay
+subClassOf http://purl.obolibrary.org/obo/BFO_0000015
 http://purl.obolibrary.org/obo/OBI_0200000 # data analysis
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/BFO_0000015
 http://purl.obolibrary.org/obo/OBI_0001129 # voltage clamp device
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968
 http://purl.obolibrary.org/obo/IAO_0000422 # postal address
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/IAO_0000030
 http://purl.obolibrary.org/obo/OBI_0001627 # country name
-subClassOf http://www.w3.org/2002/07/owl#Thing
-http://purl.obolibrary.org/obo/OBI_0000654 # device setting
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/IAO_0000030
 http://purl.obolibrary.org/obo/OBI_0001078 # infrared image acquisition device
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968
 http://purl.obolibrary.org/obo/OBI_0400168 # microtome
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968
 http://purl.obolibrary.org/obo/OBI_0600006 # killing
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/BFO_0000015
 http://purl.obolibrary.org/obo/OBI_0000919 # animal euthanization
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/BFO_0000015
 http://purl.obolibrary.org/obo/PATO_0000186 # behavioral quality
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/BFO_0000019
 http://purl.obolibrary.org/obo/OBI_0000984 # dose
 subClassOf http://www.w3.org/2002/07/owl#Thing
 http://purl.obolibrary.org/obo/OBI_0400120 # temperature control bath
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968
 http://purl.obolibrary.org/obo/PATO_0002243 # fluid flow rate
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/BFO_0000019
 http://purl.obolibrary.org/obo/PATO_0000011 # age
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/BFO_0000019
 http://purl.obolibrary.org/obo/OBI_0000018 # material supplier role
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/BFO_0000023
 http://purl.obolibrary.org/obo/IAO_0000010 # software
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/IAO_0000030
 http://purl.obolibrary.org/obo/OBI_0400080 # optical subsystem
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968
 http://purl.obolibrary.org/obo/OBI_0001007 # image creation
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/BFO_0000015
 http://purl.obolibrary.org/obo/IAO_0000308 # figure
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/IAO_0000030
 http://purl.obolibrary.org/obo/OBI_0200000 # data transformation
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/BFO_0000015
 http://purl.obolibrary.org/obo/IAO_0000304 # caption
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/IAO_0000030
 
 [Source term retrieval setting]
 includeNoIntermediates
@@ -186,9 +190,9 @@ http://purl.obolibrary.org/obo/ERO_0000220 # image analysis
 http://purl.obolibrary.org/obo/ERO_0000215 #light microscopy
 subClassOf http://www.w3.org/2002/07/owl#Thing
 http://purl.obolibrary.org/obo/ERO_0000861 # stimulus isolator
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968
 http://purl.obolibrary.org/obo/ERO_0000387 # data acquisition
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/BFO_0000015
 http://xmlns.com/foaf/0.1/Person		   # person
 subClassOf http://www.w3.org/2002/07/owl#Thing
 http://purl.obolibrary.org/obo/ERO_0001337 # electroencephalography
@@ -196,39 +200,39 @@ subClassOf http://www.w3.org/2002/07/owl#Thing
 http://purl.obolibrary.org/obo/ERO_0000499 # electromyography
 subClassOf http://www.w3.org/2002/07/owl#Thing
 http://purl.obolibrary.org/obo/ERO_0001965 # experimental subject role
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/BFO_0000023
 http://purl.obolibrary.org/obo/ERO_0001780 # functional magnetic resonance imaging scanner
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968
 http://purl.obolibrary.org/obo/ERO_0100288 # data analysis operation
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/BFO_0000015
 http://purl.obolibrary.org/obo/ERO_0000014 # research project
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/IAO_0000030
 http://purl.obolibrary.org/obo/ERO_0000454 # video camera
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968
 http://purl.obolibrary.org/obo/ERO_0001403 # c-mount
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968
 http://purl.obolibrary.org/obo/ERO_0000020 # biological specimen
 subClassOf http://www.w3.org/2002/07/owl#Thing
 http://purl.obolibrary.org/obo/ERO_0001707 # biospecimen preparation
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/BFO_0000015
 http://purl.obolibrary.org/obo/ERO_0001345 # brain slice preparation
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/BFO_0000015
 http://purl.obolibrary.org/obo/ERO_0001116 # behavioral assay
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/OBI_0000070
 http://vivoweb.org/ontology/core#Laboratory # laboratory
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/IAO_0000030
 http://purl.obolibrary.org/obo/ERO_0001040 # computer server
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968
 http://purl.obolibrary.org/obo/ERO_0001408 # multi-electrode array system
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968
 http://purl.obolibrary.org/obo/ERO_0001420 # eye tracking device
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968
 http://purl.obolibrary.org/obo/ERO_0000453 # objective lens
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968
 http://purl.obolibrary.org/obo/ERO_0001914 # continuous
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/BFO_0000019
 http://purl.obolibrary.org/obo/ERO_0000220 # image analysis
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/BFO_0000015
 
 
 [Source term retrieval setting]
