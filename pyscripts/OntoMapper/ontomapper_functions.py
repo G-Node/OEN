@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 ################################################################################
 #
 # Work on Ontology for Experimental Neurophysiology (c) by <ylefranc> and <ant1b>
@@ -21,8 +22,9 @@
 import csv
 import copy
 import difflib
+from SPARQLWrapper import SPARQLWrapper, JSON
 
-from ontomapper import *
+from pyscripts.generic_functions.generic_functions import formatAsRDFSpropertyLabel, Tuplify_LblIdDef, encodeForWriting
 
 
 ###########################################
@@ -278,6 +280,7 @@ def getSPARQLResults(csvdict, qscope):
 #	print("nlx_output est un", type(nlx_output))
 #	return nlx_output
 
+
 def storeResults(csvdict, crossonto_output):
 	''' 
 	Function to fill-in csvdict structure with contents obtained by spqarql
@@ -514,6 +517,213 @@ def dictToCSVfile(csvdict,file_path="csvdict.csv",verbose=False):
         print " Finished writing down dictionary:", filename, "\n"
 
 
+def generate_SPARQL_Query(prefixes, from_uri, term, qscope={}):
+	'''
+	Function formatting a sparql query to gather label and id corresponding
+	 to a particular term within a particular ontology. Also gathers 
+	 contents of a set of "optional" annotations for this term from this
+	 ontology, as specified in qscope data structure. Tip: used by getData 
+	 function.
+	
+        prefixes: e.g. """
+         prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+         prefix owl: <http://www.w3.org/2002/07/owl#>
+         prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>         
+         """
+        
+        from_uri: e.g. "http://bioportal.bioontology.org/ontologies/"
+        
+        term: particular term about which content corresponding to a set of 
+         annotations is tentatively being queried from a particular ontology.
+        
+	qscope: data structure with "optional" field containing custom list of 
+	 annotation labels to be included in query, as well as "noprefix" field
+	 containing annotation reference IDs for those annotations from the 
+	 custom list that could be identified within the particular ontology
+	 being queried from.
+        '''
+	
+	if from_uri!="":
+	       
+	        ##Early non-customisable query formatting
+		#sparql_query = prefixes+"""
+		#select ?x ?label ?def ?defsrc ?comment ?preflabel ?altterm
+		#from """+from_uri+"""
+		#where{
+		#  ?x rdfs:label ?label.
+		#  filter REGEX(?label, "%s")""" %term
+        	#sparql_query += """OPTIONAL{ ?x <http://purl.obolibrary.org/obo/IAO_0000115> ?%s }""" %"def"
+        	#sparql_query += """OPTIONAL{ ?x <http://purl.obolibrary.org/obo/IAO_0000119> ?%s }""" %"defsrc"
+        	#sparql_query += """OPTIONAL{ ?x <http://purl.obolibrary.org/obo/IAO_0000116> ?%s }""" %"comment"
+        	#sparql_query += """OPTIONAL{ ?x <http://purl.obolibrary.org/obo/IAO_0000111> ?%s }""" %"preflabel"
+        	#sparql_query += """OPTIONAL{ ?x <http://purl.obolibrary.org/obo/IAO_0000118> ?%s }""" %"altterm"
+		#sparql_query += """}"""
+                
+		sparql_query= prefixes+"""
+		select ?id ?label """
+		if "optional" in qscope.keys():
+          		for opt in qscope["optional"]:
+                                opt = formatAsRDFSpropertyLabel( opt )
+                                sparql_query += """?%s """ %opt
+		sparql_query += """
+		from <"""+from_uri+""">
+		where{"""
+		if "noprefix" not in qscope.keys() and "optional" not in qscope.keys():
+		      sparql_query += """?id rdfs:label ?label.
+		      filter REGEX(?label, "%s")
+		      """ %term
+        	if "noprefix" in qscope.keys():
+        	       if "optional" in qscope.keys(): sparql_query += """ { """
+        	       sparql_query += """?id rdfs:label ?label.
+        	       filter REGEX(?label, "%s")
+        	       """ %term                	       
+            	       for opt in qscope["noprefix"]:
+            	               sparql_query += """OPTIONAL{ ?id <""" + opt[1] +"""> ?%s }
+            	               """ %formatAsRDFSpropertyLabel( opt[0] )
+		if "optional" in qscope.keys():
+		      if "noprefix" in qscope.keys(): sparql_query += """ } UNION { """
+		      sparql_query += """?id rdfs:label ?label.
+		      filter REGEX(?label, "%s")
+		      """ %term
+		      for opt in qscope["optional"]:
+		              opt = formatAsRDFSpropertyLabel( opt )
+		              #sparql_query += """OPTIONAL{ ?id  rdf:""" + opt +""" ?%s }
+		              #""" %opt
+		              #sparql_query += """OPTIONAL{ ?id  owl:""" + opt +""" ?%s }
+		              #""" %opt
+		              sparql_query += """OPTIONAL{ ?id rdfs:""" + opt +""" ?%s }
+		              """ %opt
+		      if "noprefix" in qscope.keys(): sparql_query += """ } """
+		sparql_query += """}"""
+
+	else: #SPARQL Query for Neurolex
+		
+		if type(term) is str and len(term)>1:
+		      term = term[0].upper() + term[1:]
+
+		#term=term.capitalize()
+		
+		sparql_query= prefixes+"""
+		select ?id ?label """
+		if "optional" in qscope.keys():
+          		for opt in qscope["optional"]:
+                                opt = formatAsRDFSpropertyLabel( opt )
+                                sparql_query += """?%s """ %opt
+		sparql_query += """	
+		where {
+		  ?id property:Label ?label
+		  filter REGEX(?label, "%s")
+		""" % term
+		if "optional" in qscope.keys():
+        	       for opt in qscope["optional"]:
+        	           
+        	               opt = formatAsRDFSpropertyLabel( opt )
+        	               if len(opt)>1: nlxopt = opt[0].upper() + opt[1:]
+        	               
+        	               sparql_query += """OPTIONAL{ ?id property:""" + nlxopt +""" ?%s }
+        	               """ %opt
+        	               
+		sparql_query += """}"""		
+		print("Je suis dans la condition Neurolex avec from_uri empty")
+		
+	return sparql_query
+
+
+def getData(qscope, ontology, term):
+        '''
+        Function defining and performing sparql query on a single term.
+         Tip: during execution, "qscop" data structure is used which is a
+         duplicate of "qscope" with "noprefix" field restricted to the 
+         annotation reference IDs identified for the particular ontology being
+         queried from.
+        
+	qscope: dict specifying ontologies queried from, endpoints to be used, 
+	 prefixes, uris, and custom list of annotation labels to be queried 
+	 (field: "optional" & "noprefix"). Tip: generate using openQscopeFile 
+	 function.
+        
+        ontology: name of particular ontology to be queried from, as indicated 
+         in qscope "ontology" field. Tip: also gets concatenated to string
+         from corresponding "from_uri" field of qscope.
+        
+        term: individual term over which the sparql query should be performed.
+        
+        results: data structure resulting from sparql query convert with 
+         setReturnFormat as JSON.
+        '''
+        
+        results  = {}
+        
+        onto_ind = qscope["ontology"].index(ontology)
+        
+        endpoint = ""
+        
+        if "endpoint" in qscope.keys():
+                
+                if len(qscope["endpoint"])>onto_ind:
+                                            
+                        endpoint = qscope["endpoint"][onto_ind]
+                
+        if endpoint != "":
+                
+                sparql=SPARQLWrapper(endpoint)
+                
+                if endpoint==bioportal_endpoint:
+                        
+                        sparql.addCustomParameter("apikey", "de9357da-d547-40be-ba80-24a3a995ffbf")
+                        
+                #[prefixes, from_uri]=format_SPARQL_Query(endpoint, ontology)
+                
+                prefixes = ""
+                
+                if "prefixes" in qscope.keys():
+                        
+                        if len(qscope["prefixes"])>onto_ind:
+                                
+                                prefixes = qscope["prefixes"][onto_ind]
+                        
+                if prefixes != "":
+                        
+                        from_uri = ""
+                        
+                        if "from_uri" in qscope.keys():
+                                
+                                if len(qscope["from_uri"])>onto_ind:
+                                
+                                        from_uri = qscope["from_uri"][onto_ind]
+                       
+                        if len(from_uri)>len("http://") and from_uri[:len("http://")] == "http://":
+                                                                
+                                from_uri = from_uri + ontology
+                                
+                        else:
+                                
+                                from_uri = ""
+                        
+                        #Restrict query scope to noprefixes as identified for each ontology to be queried from
+                        qscop = {}
+                        for k in qscope.keys():
+                                if k!="noprefix":
+                                        qscop[k] = qscope[k]
+                        if "noprefix" in qscope.keys() and ontology in qscope["noprefix"].keys():
+                                qscop["noprefix"]    = []
+                                qscop["noprefix"][:] = [k for k in qscope["noprefix"][ontology]]
+                        
+                        sparql_query=generate_SPARQL_Query(prefixes, from_uri, term, qscop)
+                
+                        print(sparql_query)
+                        
+                        sparql.setQuery(sparql_query)
+                        
+                        sparql.setReturnFormat(JSON)
+                        
+                        results=sparql.query().convert()
+                        
+                        #print(type(results))
+	
+        return results
+
+
 ##########################################
 #                                        #
 #           SUPPORT FUNCTIONS            #
@@ -678,7 +888,7 @@ def dictToMappingDashboardCSV(csvdict, file_path="MappingDashboard.csv"):
                         writer.writerow( rowdict )
 
 
-def MappingSummaryCSV(csvdict, file_path="MappingSummary.csv"):
+def dictToMappingSummaryCSV(csvdict, file_path="MappingSummary.csv"):
 	''' 
 	Function to write down overview of mapping per input term to a csv file.
 	
@@ -842,18 +1052,12 @@ def MappingSummaryCSV(csvdict, file_path="MappingSummary.csv"):
                                         writer.writerow( rowdict )
 
 
-############################################
-#                                          #
-#            INHERITED V00 CODE            #
-#                                          #
-############################################
-#
-#                        for result in nlx_output["results"]["bindings"]:
-#        
-#                            labels.append(result['label']['value'])
-#                            ids.append(result['x']['value'])
-        
-#                        #Check number of label and id corresponding to the key
-#                        if labels.count(i)>1:
-#                  
-#                                csvdict[i]["neurolex_id"]=ids
+##########################################
+#                                        #
+#            GLOBAL VARIABLES            #
+#                                        #
+##########################################
+
+neurolex_endpoint  = "http://rdf-stage.neuinfo.org/ds/query"
+bioportal_endpoint = "http://sparql.bioontology.org/sparql"
+ontofox_endpoint   = "http://sparql.hegroup.org/sparql"

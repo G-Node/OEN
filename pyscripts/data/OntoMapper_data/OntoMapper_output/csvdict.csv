@@ -1,0 +1,500 @@
+term;property;content;id;definition
+light;provenance;is split from [ant1b_test]: light source;;
+;OBI_related;light source;http://purl.obolibrary.org/obo/OBI_0400065;A light source is an optical subsystem that provides light for use in a distant area using a delivery system (e.g., fiber optics). Light sources may include one of a variety of lamps (e.g., xenon, halogen, mercury). Most light sources are operated from line power, but some may be powered from batteries. They are mostly used in endoscopic, microscopic, and other examination and/or in surgical procedures. The light source is part of the optical subsystem. In a flow cytometer the light source directs high intensity light at particles at the interrogation point. The light source in a flow cytometer is usually a laser.
+;;light emission function;http://purl.obolibrary.org/obo/OBI_0000367;A light emission function is an excitation function to excite a material to a specific excitation state that it emits light.
+;;ratio of collected to emitted light;http://purl.obolibrary.org/obo/OBI_0000054;A measurement datum measuring the amount of light collected s compared to the total amount of emitted light in the detector component of a flow cytometer instrument. The datum has a qualitative role
+;;light emission device;http://purl.obolibrary.org/obo/OBI_0001032;a device which has a function to emit light.
+;;evaporative light scattering detector;http://purl.obolibrary.org/obo/OBI_0000547;The evaporative light scattering detector, as its name implies, utilizes a spray that continuously atomizes the column eluent into small droplets. These droplets are allowed to evaporate, leaving the solutes as fine particulate matter suspended in the atomizing gas.
+;neurolex_related;ArcLight;http://neurolex.org/wiki/Nlx_152495;
+;;Light violet;http://neurolex.org/wiki/Category-3ALight_violet;A color consisting of violet hue and high brightness.
+;;Light emitting optical imaging protocol;http://neurolex.org/wiki/Category-3ALight_emitting_optical_imaging_protocol;
+;;Light green;http://neurolex.org/wiki/Category-3ALight_green;A color consisting of green hue and high brightness.
+;;Light magenta;http://neurolex.org/wiki/Category-3ALight_magenta;A color consisting of magenta color and high brightness.
+;;Light purple;http://neurolex.org/wiki/PATO_0001260;A color consisting of purple color and high brightness.
+;;Light yellow;http://neurolex.org/wiki/Category-3ALight_yellow;A color consisting of yellow hue and high brightness.
+;;Light blue;http://neurolex.org/wiki/Category-3ALight_blue;A color consisting of blue hue and high brightness.
+;;Light green;http://neurolex.org/wiki/PATO_0001250;A color consisting of green hue and high brightness.
+;;Light brown;http://neurolex.org/wiki/PATO_0001246;
+;;Light microscopic imaging assay;http://neurolex.org/wiki/Birnlex_2147;
+;;Light grey;http://neurolex.org/wiki/Category-3ALight_grey;A color consisting of grey hue and high brightness.
+;;Light sheet based fluorescent microscopy imaging assay;http://neurolex.org/wiki/Category-3ALight_sheet_based_fluorescent_microscopy_imaging_assay;Fluorescent microscopy imaging that employs illumination in the form of a thin sheet of light directed perpendicular to the optic axis
+;;Light orange;http://neurolex.org/wiki/Category-3ALight_orange;A color consisting of orange hue and high brightness.
+;;Light transmission optical imaging protocol;http://neurolex.org/wiki/Birnlex_2253;
+;;Reflected Ambient Light;http://neurolex.org/wiki/Category-3AReflected_Ambient_Light;For scanned monochrome transmissive film viewed on a hypothetical viewing device, the luminance contribution due to reflected ambient light. Expressed as La, in candelas per square meter (cd/m2).
+;;Light red brown;http://neurolex.org/wiki/PATO_0001289;
+;;Light phase;http://neurolex.org/wiki/PATO_0000503;The light cycle phase.
+;;Light red;http://neurolex.org/wiki/Category-3ALight_red;A color consisting of red hue and high brightness.
+;;Light Path Filter Pass-Through Wavelength;http://neurolex.org/wiki/Category-3ALight_Path_Filter_Pass-2DThrough_Wavelength;Nominal pass-through wavelength of light path filter in nm
+;;Light red brown;http://neurolex.org/wiki/Category-3ALight_red_brown;
+;;Light cyan;http://neurolex.org/wiki/PATO_0001247;A color consisting of cyan hue and high brightness.
+;;Light yellow;http://neurolex.org/wiki/PATO_0001264;A color consisting of yellow hue and high brightness.
+;;Resource:Fast Light Toolkit;http://neurolex.org/wiki/Nif-2D0000-2D30565;" 
+This document defines the processes and standards that all FLTK developers must follow when developing and documenting FLTK, and how trouble reports are handled and releases are generated. The purpose of defining formal processes and standards is to organize and focus our development efforts, ensure that all developers communicate and develop software with a common vocabulary/style, and make it possible for us to generate and release a high-quality GUI toolkit which can be used with a high degree of confidence. 
+Much of this file describes the existing practices that have been used up through FLTK 1.1.x, however I have also added some new processes/standards to use for future code and releases. 
+The fltk-dev mailing list and fltk.development newsgroup are the primary means of communication between developers. All major design changes must be discussed prior to implementation. 
+Specific Goals 
+The specific goals of the FLTK are as follows: 
+Develop a C++ GUI toolkit based upon sound object-oriented design principles and experience. (*) 
+Minimize CPU usage (fast). (*) 
+Minimize memory usage (light). (*) 
+Support multiple operating systems and windowing environments, including UNIX/Linux, MacOS X, Microsoft Windows, and X11, using the ""native"" graphics interfaces. (*) 
+Support OpenGL rendering in environments that provide it. (*) 
+Provide a graphical development environment for designing GUI interfaces, classes, and simple programs. (*) 
+Support UTF-8 text. 
+Support printer rendering in environments that provide it. 
+Support ""schemes"", ""styles"", ""themes"", ""skinning"", etc. to alter the appearance of widgets in the toolkit easily and efficiently. The purpose is to allow applications to tailor their appearance to the underlying OS or based upon personal/user preferences. 
+Support newer C++ language features, such as templating via the Standard Template Library (""STL""), and certain Standard C++ library interfaces, such as streams. However, FLTK will not depend upon such features and interfaces to minimize portability issues. 
+Support intelligent layout of widgets. 
+Many of these goals are satisfied by FLTK 1.1.x (*), and many complex applications have been written using FLTK on a wide range of platforms and devices. Development of the remaining features is proceding for FLTK 2.0 with a new, namespace-based API. While 2.0 offers some limited 1.x source compatibility, the changes to the underlying widget classes are significant enough to prevent full compatibility. 
+Software Development Practices 
+Documentation 
+All widgets are documented using the Doxygen software; Doxygen comments are placed in the header file for the class comments and any inline methods, while non-inline methods should have their comments placed in the corresponding source file. The purpose of this separation is to place the comments near the implementation to reduce the possibility of the documentation getting out of sync with the code. 
+All widgets must have a corresponding test program which exercises all widget functionality and can be used to generate image(s) for the documentation. Complex widgets must have a written tutorial, either as full text or an outline for later publication 
+The final manuals are formatted using the HTMLDOC software. 
+Sponsor. 
+Easy Software Products"
+;;Microscope Light Source;http://neurolex.org/wiki/Category-3AMicroscope_Light_Source;Used to illuminate the subject under stereo microscopes and other applications where an external light source is required.
+;;Light grey;http://neurolex.org/wiki/PATO_0001252;A color consisting of grey hue and high brightness.
+;;Light orange;http://neurolex.org/wiki/PATO_0001255;A color consisting of orange hue and high brightness.
+;;Light brown;http://neurolex.org/wiki/Category-3ALight_brown;
+;;Light microscopic imaging assay;http://neurolex.org/wiki/Category-3ALight_microscopic_imaging_assay;
+;;Light violet;http://neurolex.org/wiki/PATO_0001704;A color consisting of violet hue and high brightness.
+;;Light Path Filter Pass Band;http://neurolex.org/wiki/Category-3ALight_Path_Filter_Pass_Band;Pass band of light path filter in nm. This Attribute has two Values. The first is the shorter and the second the longer wavelength relative to the peak. The values are for the - 3dB nominal (1/2 of peak) pass through intensity.
+;;Light phase;http://neurolex.org/wiki/Category-3ALight_phase;The light cycle phase.
+;;Inverted Light Microscope;http://neurolex.org/wiki/Category-3AInverted_Light_Microscope;Used in applications such as low to medium magnifications (50X to 200X) such as in patch clamping and large cell injections where the object is in a small liquid bath with circulation and the illumination comes from above the sample.
+;;Light cyan;http://neurolex.org/wiki/Category-3ALight_cyan;A color consisting of cyan hue and high brightness.
+;;Light blue;http://neurolex.org/wiki/PATO_0001243;A color consisting of blue hue and high brightness.
+;;Light magenta;http://neurolex.org/wiki/PATO_0001253;A color consisting of magenta color and high brightness.
+;;Light deep pink;http://neurolex.org/wiki/Category-3ALight_deep_pink;Pink color having high brightness and moderate saturation.
+;;Light red;http://neurolex.org/wiki/PATO_0001262;A color consisting of red hue and high brightness.
+;;Light purple;http://neurolex.org/wiki/Category-3ALight_purple;A color consisting of purple color and high brightness.
+;;Light transmission optical imaging protocol;http://neurolex.org/wiki/Category-3ALight_transmission_optical_imaging_protocol;
+;;Light Path Filter Type Stack Code Sequence;http://neurolex.org/wiki/Category-3ALight_Path_Filter_Type_Stack_Code_Sequence;Filters used in the light source path. Zero or more items may be present in the sequence.
+;;Light emitting optical imaging protocol;http://neurolex.org/wiki/Birnlex_2254;
+;;Resource:Fast Light Toolkit;http://neurolex.org/wiki/Category-3AResource-3AFast_Light_Toolkit;" 
+This document defines the processes and standards that all FLTK developers must follow when developing and documenting FLTK, and how trouble reports are handled and releases are generated. The purpose of defining formal processes and standards is to organize and focus our development efforts, ensure that all developers communicate and develop software with a common vocabulary/style, and make it possible for us to generate and release a high-quality GUI toolkit which can be used with a high degree of confidence. 
+Much of this file describes the existing practices that have been used up through FLTK 1.1.x, however I have also added some new processes/standards to use for future code and releases. 
+The fltk-dev mailing list and fltk.development newsgroup are the primary means of communication between developers. All major design changes must be discussed prior to implementation. 
+Specific Goals 
+The specific goals of the FLTK are as follows: 
+Develop a C++ GUI toolkit based upon sound object-oriented design principles and experience. (*) 
+Minimize CPU usage (fast). (*) 
+Minimize memory usage (light). (*) 
+Support multiple operating systems and windowing environments, including UNIX/Linux, MacOS X, Microsoft Windows, and X11, using the ""native"" graphics interfaces. (*) 
+Support OpenGL rendering in environments that provide it. (*) 
+Provide a graphical development environment for designing GUI interfaces, classes, and simple programs. (*) 
+Support UTF-8 text. 
+Support printer rendering in environments that provide it. 
+Support ""schemes"", ""styles"", ""themes"", ""skinning"", etc. to alter the appearance of widgets in the toolkit easily and efficiently. The purpose is to allow applications to tailor their appearance to the underlying OS or based upon personal/user preferences. 
+Support newer C++ language features, such as templating via the Standard Template Library (""STL""), and certain Standard C++ library interfaces, such as streams. However, FLTK will not depend upon such features and interfaces to minimize portability issues. 
+Support intelligent layout of widgets. 
+Many of these goals are satisfied by FLTK 1.1.x (*), and many complex applications have been written using FLTK on a wide range of platforms and devices. Development of the remaining features is proceding for FLTK 2.0 with a new, namespace-based API. While 2.0 offers some limited 1.x source compatibility, the changes to the underlying widget classes are significant enough to prevent full compatibility. 
+Software Development Practices 
+Documentation 
+All widgets are documented using the Doxygen software; Doxygen comments are placed in the header file for the class comments and any inline methods, while non-inline methods should have their comments placed in the corresponding source file. The purpose of this separation is to place the comments near the implementation to reduce the possibility of the documentation getting out of sync with the code. 
+All widgets must have a corresponding test program which exercises all widget functionality and can be used to generate image(s) for the documentation. Complex widgets must have a written tutorial, either as full text or an outline for later publication 
+The final manuals are formatted using the HTMLDOC software. 
+Sponsor. 
+Easy Software Products"
+;;Light stimulus transduction;http://neurolex.org/wiki/Category-3ALight_stimulus_transduction;The series of events in which a sensory light stimulus is received and converted into a molecular signal. (GO:ai) (GO)
+;ERO_related;static light scattering analyzer;http://purl.obolibrary.org/obo/ERO_0001596;An instrument which measures the intensity of the scattered light to obtain the average molecular weight Mw of a macromolecule like a polymer or a protein.
+;;automated light microscopy scan;http://purl.obolibrary.org/obo/ERO_0000961;An image acquisition instrument that is a microscope-based imaging platform designed for fully automated image acquisition and data analysis of biological samples.
+;;matrix-assisted laser desorption ionization time-of-flight mass spectrometry;http://purl.obolibrary.org/obo/ERO_0001627;A mass spectrometry technique which uses soft ionization to allow analysis of biomolecules and large organic molecules, which tend to be fragile and fragment when ionized by more conventional ionization methods. 
+;;time lapse light microscopy;http://purl.obolibrary.org/obo/ERO_0000216;Light microscopy where the same object (e.g., a cell) is photographed at regular time intervals over several hours.
+;;light/dark chamber;http://purl.obolibrary.org/obo/ERO_0001755;An animal activity monitoring system that transistions between light and dark, using a light/dark transition test, which is widely used to measure anxiety-like behavior in mice. 
+;;dynamic light scattering instrument photon correlation spectrometer;http://purl.obolibrary.org/obo/ERO_0001474;A spectrophotometer based on the Photon Correlation Spectroscopy (PCS) technique and designed for measurements of sub-micron particle sizes, diffusion coefficients, viscosities, and molecular weights of polymers in basic and applied studies.
+;;light source;http://purl.obolibrary.org/obo/OBI_0400065;A light source is an optical subsystem that provides light for use in a distant area using a delivery system (e.g., fiber optics). Light sources may include one of a variety of lamps (e.g., xenon, halogen, mercury). Most light sources are operated from line power, but some may be powered from batteries. They are mostly used in endoscopic, microscopic, and other examination and/or in surgical procedures. The light source is part of the optical subsystem. In a flow cytometer the light source directs high intensity light at particles at the interrogation point. The light source in a flow cytometer is usually a laser.
+;;transmitted light microscopy;http://purl.obolibrary.org/obo/ERO_0001622;A light microscopy technique in which light is transmitted from a source on the opposite side of the specimen from the objective.
+;;light box;http://purl.obolibrary.org/obo/ERO_0000208;A device that provides a source of illumination for observation and photography of a wide variety of tests performed in virological, microbiological and clinical laboratories using either white or ultraviolet light.
+;;time-of-flight secondary ion mass spectrometer;http://purl.obolibrary.org/obo/ERO_0000540;A mass spectrometer that uses a target modified to achieve biochemical affinity with the analyte compound.
+;;polarized light camera;http://purl.obolibrary.org/obo/ERO_0001011;An image acquisition instrument used to make clear demarcation between regions on an image.
+;;evaporative light scattering detector;http://purl.obolibrary.org/obo/OBI_0000547;The evaporative light scattering detector, as its name implies, utilizes a spray that continuously atomizes the column eluent into small droplets. These droplets are allowed to evaporate, leaving the solutes as fine particulate matter suspended in the atomizing gas.
+;;light microscopy;http://purl.obolibrary.org/obo/ERO_0000215;A microscopy technique that uses visible light and a system of lenses to magnify images of small samples.
+;;UV light source;http://purl.obolibrary.org/obo/ERO_0001574;A light source that emits electromagnetic radiation with a wavelength shorter than that of visible light, but longer than X-rays, in the range 10 nm to 400 nm, and of energies from 3 eV to 124 eV.
+microscope;neurolex_id;http://neurolex.org/wiki/Birnlex_2106;;
+;;http://neurolex.org/wiki/Category-3AMicroscope;;
+;;http://neurolex.org/wiki/Nlx_57599;;
+;OBI_id;http://purl.obolibrary.org/obo/OBI_0400169;;
+;;http://purl.obolibrary.org/obo/OBI_0400169;;
+;ERO_id;http://purl.obolibrary.org/obo/OBI_0400169;;
+;;http://purl.obolibrary.org/obo/OBI_0400169;;
+;provenance;ant1b_test;;
+;ERO_definition;A microscope is an instrument which magnifies the view on objects (too small to be viewed by the naked eye) under increased resolution. A microscope can be an optical instrument but also and electronic instrument. There are various kind of optical microscopes, e.g confocal microscope, epifluoresence microscope);;
+;OBI_definition;A microscope is an instrument which magnifies the view on objects (too small to be viewed by the naked eye) under increased resolution. A microscope can be an optical instrument but also and electronic instrument. There are various kind of optical microscopes, e.g confocal microscope, epifluoresence microscope);;
+;neurolex_definition;An instrument used to obtain a magnified image of small objects and reveal details of structure not otherwise distinguishable.;;
+;ERO_label;microscope;;
+;;microscope;;
+;neurolex_label;Microscope;;
+;;Microscope;;
+;;Microscope;;
+;OBI_label;microscope;;
+;;microscope;;
+;OBI_related;scanning force microscope;http://purl.obolibrary.org/obo/OBI_0001105;A microscope that forms images of surfaces using a physical probe that scans the specimen.
+;;spinning-disk confocal microscope;http://purl.obolibrary.org/obo/OBI_0001055;A confocal microscope that uses a Nipkow disk, a mechanical, geometrically operating image scanning device.
+;;digital microscope;http://purl.obolibrary.org/obo/OBI_0001126;A microscope that uses optics and a charge-coupled device (CCD) camera to output a digital image to a monitor.
+;;confocal microscope;http://purl.obolibrary.org/obo/OBI_0001079;A microscope that is used to increase micrograph contrast and/or reconstruct three-dimensional images by using a spatial pinhole to eliminate out-of-focus light in specimens that are thicker than the focal plane.
+;;laser scanning confocal microscope;http://purl.obolibrary.org/obo/OBI_0001125;A confocal microscope that obtains high-resolution optical images with depth selectivity, in which a laser beam passes through a light source aperture and then is focused by an objective lens into a small (ideally diffraction limited) focal volume within or on the surface of a specimen.
+;;microscope slide;http://purl.obolibrary.org/obo/OBI_0400170;a microscope slide is a device usually made of glass which is used as a solid matrix for (biological) material deposited on its surface and which is compatible for use with a microscope instrument
+;;programmable array microscope;http://purl.obolibrary.org/obo/OBI_0001071;A confocal microscope that uses a programmable spatial light modulator for generating an arbitrary pattern of conjugate illumination and detection apertures.
+;;optical microscope;http://purl.obolibrary.org/obo/OBI_0000940;A microscope that produces an image of an object by targeting it with an electro-magnetic beam in the visible frequency range
+;;electron microscope;http://purl.obolibrary.org/obo/OBI_0000990;A microscope that produces an image of an object by targeting it with an electron beam
+;;laser capture microdissection microscope;http://purl.obolibrary.org/obo/OBI_0001096;A microscope that uses low-energy laser beams and special transfer film to lift single cells from a tissue.
+;;stereo microscope;http://purl.obolibrary.org/obo/OBI_0001065;An optical microscope that uses two separate optical paths with two objectives and two eyepieces to provide slightly different viewing angles to the left and right eyes.
+;neurolex_related;Surgical Microscope;http://neurolex.org/wiki/Category-3ASurgical_Microscope;Used in animal surgery in a stand up configuration. Typically these use very high definition optics at a lower magnification
+;;Microscope Light Source;http://neurolex.org/wiki/Category-3AMicroscope_Light_Source;Used to illuminate the subject under stereo microscopes and other applications where an external light source is required.
+;;Inverted Light Microscope;http://neurolex.org/wiki/Category-3AInverted_Light_Microscope;Used in applications such as low to medium magnifications (50X to 200X) such as in patch clamping and large cell injections where the object is in a small liquid bath with circulation and the illumination comes from above the sample.
+;;Surgical Microscope;http://neurolex.org/wiki/Nlx_137342;Used in animal surgery in a stand up configuration. Typically these use very high definition optics at a lower magnification
+;ERO_related;interfacial force microscope;http://purl.obolibrary.org/obo/ERO_0001751;A microscope capable of measuring normal and lateral forces between a probe and sample.
+;;teaching microscope;http://purl.obolibrary.org/obo/ERO_0001006;A microscope with multiple binocular heads simultaneously displaying the same microscopic image.
+;;variable pressure analytical field emission scanning electron microscope;http://purl.obolibrary.org/obo/ERO_0001800;A field emission scanning electron microscope that allows for a variable pressure mode.
+;;cryogenic transmission electron microscope;http://purl.obolibrary.org/obo/ERO_0001807;A transmission electron microscope where the sample is studied at cryogenic temperatures (generally liquid nitrogen temperatures).
+;;programmable array microscope;http://purl.obolibrary.org/obo/OBI_0001071;A confocal microscope that uses a programmable spatial light modulator for generating an arbitrary pattern of conjugate illumination and detection apertures.
+;;raman-atomic force microscope;http://purl.obolibrary.org/obo/ERO_0001749;An atomic force microscope that has inegrated raman spectroscopy, for examination of chemical and structural properties of materials at sub-micrometer scales.
+;;stereo microscope;http://purl.obolibrary.org/obo/OBI_0001065;An optical microscope that uses two separate optical paths with two objectives and two eyepieces to provide slightly different viewing angles to the left and right eyes.
+;;inverted stereo microscope;http://purl.obolibrary.org/obo/ERO_0000978;A stereo microscope with its light source and condenser on the top, above the stage pointing down, while the objectives and turret are below the stage pointing up.
+;;scanning force microscope;http://purl.obolibrary.org/obo/OBI_0001105;A microscope that forms images of surfaces using a physical probe that scans the specimen.
+;;surgical microscope;http://purl.obolibrary.org/obo/ERO_0000879;A microscope used to visualize fine structures within the area of a surgical procedure.
+;;microscope digital camera;http://purl.obolibrary.org/obo/ERO_0000276;A digital camera for a microscope, which records image data of a sample image obtained by the microscope in a recording medium.
+;;digital microscope;http://purl.obolibrary.org/obo/OBI_0001126;A microscope that uses optics and a charge-coupled device (CCD) camera to output a digital image to a monitor.
+;;inverted microscope;http://purl.obolibrary.org/obo/ERO_0000344;An optical microscope with its light source and condenser on the top, above the stage pointing down, while the objectives and turret are below the stage pointing up.
+;;scanning transmission electron microscope;http://purl.obolibrary.org/obo/ERO_0001444;A transmission electron microscope where the electrons pass through a sufficiently thin specimen by focusing the electron beam into a narrow spot which is scanned over the sample in a raster.
+;;laser scanning confocal microscope;http://purl.obolibrary.org/obo/OBI_0001125;A confocal microscope that obtains high-resolution optical images with depth selectivity, in which a laser beam passes through a light source aperture and then is focused by an objective lens into a small (ideally diffraction limited) focal volume within or on the surface of a specimen.
+;;transmission electron microscope;http://purl.obolibrary.org/obo/ERO_0000248;An electron microscope that uses a high voltage electron beam to create an image.
+;;optical microscope;http://purl.obolibrary.org/obo/OBI_0000940;A microscope that produces an image of an object by targeting it with an electro-magnetic beam in the visible frequency range
+;;upright microscope;http://purl.obolibrary.org/obo/ERO_0000497;A microscope that has the illumination system below the stage and the lens system above the stage.
+;;fluorescence compound microscope;http://purl.obolibrary.org/obo/ERO_0000934;A fluorescence microscope in which magnification is achieved in two stages. It utilizes an objective lens, usually several of different power on a turret and an eyepiece that is used to further magnify the image formed by the objective lens.
+;;laser capture microdissection microscope;http://purl.obolibrary.org/obo/OBI_0001096;A microscope that uses low-energy laser beams and special transfer film to lift single cells from a tissue.
+;;incubator microscope;http://purl.obolibrary.org/obo/ERO_0001947;A microscope fitted with an environmental control chamber used to image live samples.
+;;infrared microscope;http://purl.obolibrary.org/obo/ERO_0000496;A microscope that uses the infrared region of the electromagnetic radiation spectrum, often used for the study of materials that are uniformly transparent or opaque in the visible spectrum, but have significant absorption or transmission bands in the 700 nanometer-plus wavelength region.
+;;confocal microscope;http://purl.obolibrary.org/obo/OBI_0001079;A microscope that is used to increase micrograph contrast and/or reconstruct three-dimensional images by using a spatial pinhole to eliminate out-of-focus light in specimens that are thicker than the focal plane.
+;;Raman confocal microscope;http://purl.obolibrary.org/obo/ERO_0000610;A confocal microscope that consists of of an optical microscope, an excitation laser, a monochromator, and a sensitive detector (such as a charge-coupled device or photomultiplier tube), has high spatial resolution, and relies on inelastic scattering, or Raman scattering, of monochromatic light.
+;;environmental scanning electron microscope;http://purl.obolibrary.org/obo/ERO_0000273;A scanning electron microscope that has a secondary-electron detector capable of operating in the presence of water vapour and pressure-limiting apertures with differential pumping in the path of the electron beam to separate the vacuum region (around the gun and lenses) from the sample chamber, which allows samples to be observed in low-pressure gaseous environments (e.g. 1-50 Torr) and high relative humidity (up to 100%).
+;;field emission scanning electron microscope;http://purl.obolibrary.org/obo/ERO_0000613;A scanning electron microscope that has electromagnetic coils that form an electron beam that scans the object (scan) and secondary electrons are produced by interaction with the atoms at the surface of the sample.
+;;atomic force microscope;http://purl.obolibrary.org/obo/ERO_0000463;A scanning force microscope used for determining the surface topography of native biomolecules at subnanometer resolution. It allows biomolecules to be imaged not only under physiological conditions, but also while biological processes are at work.
+;;energy filtering transmission electron microscope;http://purl.obolibrary.org/obo/ERO_0000937;A transmission electron microscope that produces an image of an object by electron scattering. The contrast is optimized by filtering out the contrast-reducing electrons from the spectrum of transmitted electrons, or by only allowing electrons containing specific information to be used for imaging.
+;;deconvolution microscope;http://purl.obolibrary.org/obo/ERO_0000374;Fluorescence microscope that uses a computational method to reduce out-of-focus fluorescence in three-dimensional (3D) microscope image.
+;;fluorescence microscope;http://purl.obolibrary.org/obo/ERO_0000249;An optical microscope used to study properties of organic or inorganic substances using the phenomena of fluorescence  and phosphorescence instead of, or in addition to, reflection and absorption.
+;;total internal reflection fluorescence atomic force microscope;http://purl.obolibrary.org/obo/ERO_0001750;Total internal reflection fluorescence instrument combined with atomic force microscope used to detect and confirm the result of cellular level manipulations made with the AFM part through the detection system of the highly sensitive fluorescence microscope part.
+;;motorized microscope stage;http://purl.obolibrary.org/obo/ERO_0001033;An instrument that contains a small motorized platform on a microscope where the specimen is mounted for examination.
+;;dissecting surgical microscope;http://purl.obolibrary.org/obo/ERO_0000958;A microscope that allows for maneuverability around the patient during surgery.
+;;super-resolution microscope;http://purl.obolibrary.org/obo/ERO_0001946;A microscope that uses light to capture images with a higher resolution than the diffraction limit
+;;spinning-disk confocal microscope;http://purl.obolibrary.org/obo/OBI_0001055;A confocal microscope that uses a Nipkow disk, a mechanical, geometrically operating image scanning device.
+;;two-photon confocal microscope;http://purl.obolibrary.org/obo/ERO_0000324;A confocal microscope that uses laser-excited autofluorescence and second harmonic signals that can be analyzed to construct a three dimensional, microanatomical, structural image.
+;;electron microscope;http://purl.obolibrary.org/obo/OBI_0000990;A microscope that produces an image of an object by targeting it with an electron beam
+;;fixed stage microscope;http://purl.obolibrary.org/obo/ERO_0000878;A microscope which contains a small platform on a microscope where the specimen is mounted for examination. Commonly used for electrophysiological research, such as patch clamp experiments on nerve cells, examinations of brain sections, and for measuring electrical signals on cells.
+;;scanning electron microscope;http://purl.obolibrary.org/obo/ERO_0000521;An electron microscope that images the sample surface by scanning it with a high-energy beam of electrons in a raster scan pattern. The electrons interact with the atoms that make up the sample producing signals that contain information about the sample's surface topography, composition and other properties such as electrical conductivity.
+amplifier;neurolex_id;http://neurolex.org/wiki/Category-3AAmplifier;;
+;;http://neurolex.org/wiki/Nlx_27076;;
+;ERO_id;http://purl.obolibrary.org/obo/ERO_0000945;;
+;;http://purl.obolibrary.org/obo/ERO_0000945;;
+;provenance;ant1b_test;;
+;neurolex_comment;Adapted from WPI http://www.wpiinc.com/index.php/Virtue-Mart/vmchk.html;;
+;ERO_definition;An instrument that changes, usually increases, the amplitude of a signal. The relationship of the input to the output of an amplifier, usually expressed as a function of the input frequency, is called the transfer function of the amplifier, and the magnitude of the transfer function is termed the gain.;;
+;neurolex_definition;Amplifiers are used in intracellular and extracellular recording, epithelial voltage clamps, specialty instruments for micro-pressure measurement and bio-potential discrimination, and the electrodes and transducers to work with these units.;;
+;ERO_label;amplifier;;
+;;amplifier;;
+;neurolex_label;Amplifier;;
+;;Amplifier;;
+;NEMO_related;voltage_amplifier;http://purl.obolibrary.org/obo/OBI_0400101;A voltage amplifier is a device that amplifies the voltage signal.
+;;voltage_amplifier_filter_setting;http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_1142000;voltage amplifier filter setting...
+;;amplifier_pass_band;http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_2237000;amplifier_pass_band is a band of frequencies, between specified limits, that a circuit (e.g., an amplifier or filter) is capable of handling.  All frequencies below the lower limit and above the upper limit are not allowed to pass.  The limiting frequencies are defined as those at which the relative intensity or power decreases to a specified fraction of the maximum intensity or power.  This decrease in power is often specified to be the half-power points (i.e., 3 dB below the maximum power). 
+;;amplifier_input_impedance;http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_2655000;... [incomplete]
+;;amplifier_stop_band;http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_0118000;amplifier_pass_band is a band of frequencies, between specified limits, that a circuit (e.g., an amplifier or filter) does not transmit. Frequencies above the lower limit and below the upper limit are not allowed to pass. The limiting frequencies are those at which the transmitted power level increases to a specified level, usually 3 dB below the maximum level, as the frequency is decreased or increased from that at which the transmitted power is a minimum.
+;;voltage_amplifier_highpass_filter_setting;http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_3383000;"""In an RC circuit, the value of the time constant (in seconds) is equal to the product of the circuit resistance (in ohms) and the circuit capacitance  (in farads), i.e. &#964; = R &#215; C. It is the time required to charge the capacitor, through the resistor, to 63.2 (&#8776; 63) percent of full charge; or to discharge it to 36.8 (&#8776; 37) percent of its initial voltage. These values are derived from the mathematical constant e, specifically 1 &#8722; e &#8722; 1 and e &#8722; 1 respectively."" (http://en.wikipedia.org/wiki/RC_time_constant)"
+;;voltage_amplifier_lowpass_filter_setting;http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_4273000;"""In an RC circuit, the value of the time constant (in seconds) is equal to the product of the circuit resistance (in ohms) and the circuit capacitance  (in farads), i.e. &#964; = R &#215; C. It is the time required to charge the capacitor, through the resistor, to 63.2 (&#8776; 63) percent of full charge; or to discharge it to 36.8 (&#8776; 37) percent of its initial voltage. These values are derived from the mathematical constant e, specifically 1 &#8722; e &#8722; 1 and e &#8722; 1 respectively."" (http://en.wikipedia.org/wiki/RC_time_constant)."
+;OBI_related;logarithmic voltage amplifier;http://purl.obolibrary.org/obo/OBI_0400066;A logarithmic voltage amplifier is an analog electronic circuit that puts out a voltage or current proportional to the voltage or current at its input, with logarithmic proportionality. In an analog system, the logarithmic voltage amplifier is used to present parameters with a high dynamic range on a more useful scale.
+;;voltage amplifier;http://purl.obolibrary.org/obo/OBI_0400101;A voltage amplifier is a device that amplifies the voltage signal.
+;;preamplifier;http://purl.obolibrary.org/obo/OBI_0400087;A preamplifier is part of the electronics subsystem. It converts the current output from its associated detector to a voltage. The preamplifier is the first stage in analog electronics signal processing.
+;neurolex_related;Transducer Amplifier;http://neurolex.org/wiki/Nlx_137271;"Transducer amplifiers, also commonly referred to as ""bridge"" amplifiers, are used to amplify signals from voltage excited transducers that are designed to be sensitive to physical or electromagnetic phenomena, such as force, light, displacement, or pressure."
+;;Intracellular Amplifier;http://neurolex.org/wiki/Category-3AIntracellular_Amplifier;Intracellular amplifiers are sometimes referred to as electrometers. They are used to measure potentials within the cytoplasm of a cell. They are typically low gain, very high input impedance amplifiers that incorporate special features to facilitate the unique requirements of intracellular recording.
+;;Extracellular Amplifier;http://neurolex.org/wiki/Category-3AExtracellular_Amplifier;Extracellular amplifiers are designed to amplify bio-potentials that occur within interstitial spaces, or to amplify field potentials at the surface of the cell membrane or on the surface of tissues. They typically have a very high input impedance and high voltage gain capability.
+;;Transducer Amplifier;http://neurolex.org/wiki/Category-3ATransducer_Amplifier;"Transducer amplifiers, also commonly referred to as ""bridge"" amplifiers, are used to amplify signals from voltage excited transducers that are designed to be sensitive to physical or electromagnetic phenomena, such as force, light, displacement, or pressure."
+;;Transducer Amplifier;http://neurolex.org/wiki/Nlx_137318;"Transducer amplifiers, also commonly referred to as ""bridge"" amplifiers, are used to amplify signals from voltage excited transducers that are designed to be sensitive to physical or electromagnetic phenomena, such as force, light, displacement, or pressure."
+;ERO_related;microelectrode amplifier;http://purl.obolibrary.org/obo/ERO_0000946;Amplifier that measures very small currents or voltage (often in a cell or patch of membrane) and passes that measurement on for recording and analysis. Microelectrode amplifiers may also control current and voltage in current-clamp and voltage-clamp mode.
+;;logarithmic voltage amplifier;http://purl.obolibrary.org/obo/OBI_0400066;A logarithmic voltage amplifier is an analog electronic circuit that puts out a voltage or current proportional to the voltage or current at its input, with logarithmic proportionality. In an analog system, the logarithmic voltage amplifier is used to present parameters with a high dynamic range on a more useful scale.
+;;voltage amplifier;http://purl.obolibrary.org/obo/OBI_0400101;A voltage amplifier is a device that amplifies the voltage signal.
+;;patch clamp amplifier;http://purl.obolibrary.org/obo/ERO_0000536;A patch clamp amplifier is a voltage amplifier that uses a single electrode clamp, where the voltage measuring and current passing circuits are connected. The electrode is attached to a wire that contacts the current/voltage loop inside the amplifier. Thus the electrode has only an indirect influence on the feedback circuit. The amplifier reads only the voltage at the top of the electrode, and feeds back current to compensate.
+;;preamplifier;http://purl.obolibrary.org/obo/OBI_0400087;A preamplifier is part of the electronics subsystem. It converts the current output from its associated detector to a voltage. The preamplifier is the first stage in analog electronics signal processing.
+source;provenance;is split from [ant1b_test]: light source;;
+;NEMO_related;EEG_current_source_density_map;http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_8315000;... [incomplete]
+;;data_resource;http://ontology.neuinfo.org/NIF/DigitalEntities/NIF-Resource.owl#nlx_res_20090102;A resource that provides access to data that may be in different forms, e.g., databases vs datum, and of different types, e.g., images.
+;;ERP_source_topography;http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_0000198;ERP_source_topography is the pattern or distribution of positive (source) and negative (sink) electrical potentials over a brain_region. It has a strength (amplitude, measured in microvolts), which can vary over time.
+;;distributed_source_modeling;http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_4767000;...[incomplete]
+;;source_ontology;http://purl.bioontology.org/NEMO/ontology/NEMO_annotation_properties.owl#source_ontology;This property indicates an ontology that a term has been imported from.
+;;publication_of_narrative_resource;http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_5753000;publication_of_narrative_resource is a planned process in which a published_paper is created
+;;electromagnetic_source_modeling;http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_1629000;...[incomplete]
+;;discrete_source_modeling;http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_5957000;...[incomplete]
+;;regional_source_modeling;http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_3964000;....[incomplete]
+;;discrete_source_modeling_algorithm;http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_9245000;...[incomplete]
+;;narrative_resource;http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Narrative_Resource;A resource that provides a literary work, book, story, textual description, or account of events, experiences, or the like, whether true or fictitious. 
+;;definition_source;http://purl.bioontology.org/NEMO/ontology/NEMO_annotation_properties.owl#definition_source;A traceable source for the current definition.
+;;completion_publication_of_narrative_resource;http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_2249000;completion_publication_of_narrative_resource is the moment (date) when the resource is actually published (released to consumers).
+;;data_resource_ID;http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_6572000;label for a data_resource (e.g., database or ontology)
+;;regional_source_modeling;http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_2751000;...[incomplete]
+;;source_localization_algorithm;http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_3947000;....[incomplete]
+;OBI_related;email address of Bioinformatics Resource Center contact person;http://purl.obolibrary.org/obo/OBI_0001887;An email address of the person who is contact representative of a Bioinformatics Resource Center
+;;Bioinformatics Resource Center contact person;http://purl.obolibrary.org/obo/OBI_0001883;A person who is the contact representative of a Bioinformatics Resource Center
+;;source code module;http://purl.obolibrary.org/obo/IAO_0000096;A source code module is a directive information entity that specifies, using a programming language, some algorithm.
+;;organization of Bioinformatics Resource Center contact person;http://purl.obolibrary.org/obo/OBI_0001881;An organization that is the affiliation of the person who is contact representative of a Bioinformatics Resource Center
+;;ion source;http://purl.obolibrary.org/obo/OBI_0000361;"An ion source is a device that is part of a mass
+spectrometer that ionizes the material under analysis. The ions are
+then transported by magnetic or electric fields to the mass analyzer.
+Techniques for ionization have been key to determining what types of
+samples can be analyzed by mass spectrometry. Electron ionization and
+chemical ionization are used for gases and vapors. In chemical
+ionization sources, the material is ionized by chemical ion-molecule
+reactions during collisions in the source. Two techniques often used
+with liquid and solid biological samples include electrospray
+ionization (due to John Fenn PMID 2675315.) and matrix-assisted laser
+desorption/ionization (MALDI, due to M. Karas and F. Hillenkamp
+(Measuring Mass: From Positive Rays to Proteins by Michael A. Grayson
+(Editor) (ISBN 0-941901-31-9)))."
+;;Resource Identifier;http://purl.org/dc/elements/1.1/identifier;
+;;Bioinformatics Resource Center;http://purl.obolibrary.org/obo/OBI_0001626;An organization that  is one of the Internet-based research centers established and funded by NIAID (the National Institute of Allergy and Infectious Diseases). The Bioinformatics Resource Centers (BRCs) were formed in response to the threats posed by emerging and re-emerging pathogens, particularly CDC Category A, B, and C pathogens, and their potential use in bioterrorism. The intention of NIAID in funding these bioinformatics centers is to assist researchers involved in the experimental characterization of such pathogens and the formation of drugs, vaccines, or diagnostic tools to combat them.
+;;X-ray source;http://purl.obolibrary.org/obo/OBI_0001138;A device that is used to generate X-rays.
+;;Resource Type;http://purl.org/dc/elements/1.1/type;
+;;definition source;http://purl.obolibrary.org/obo/IAO_0000119;formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007
+;;light source;http://purl.obolibrary.org/obo/OBI_0400065;A light source is an optical subsystem that provides light for use in a distant area using a delivery system (e.g., fiber optics). Light sources may include one of a variety of lamps (e.g., xenon, halogen, mercury). Most light sources are operated from line power, but some may be powered from batteries. They are mostly used in endoscopic, microscopic, and other examination and/or in surgical procedures. The light source is part of the optical subsystem. In a flow cytometer the light source directs high intensity light at particles at the interrogation point. The light source in a flow cytometer is usually a laser.
+;neurolex_related;Source-Axis Distance;http://neurolex.org/wiki/Category-3ASource-2DAxis_Distance;Radiation source to Gantry rotation axis distance of the equipment that is to be used for beam delivery (mm).
+;;Source Applicator Wall Nominal Transmission;http://neurolex.org/wiki/Category-3ASource_Applicator_Wall_Nominal_Transmission;Nominal Transmission through Source Applicator wall (between 0 and 1).
+;;Source to Surface Distance;http://neurolex.org/wiki/Category-3ASource_to_Surface_Distance;Source to Patient Surface distance (mm).
+;;Resource:MyBioSource;http://neurolex.org/wiki/Nlx_152416;
+;;Resource:Blind Source Separation and Independent Component Analysis;http://neurolex.org/wiki/Category-3AResource-3ABlind_Source_Separation_and_Independent_Component_Analysis;"Blind Source Separation and Independent Component Analysis (ICA) algorithms including: An efficient batch algorithm: JADE and Adaptive algorithms: relative gradient algorithms. Associated papers / documentation are included as well as thoughts on Multi-dimensional independent component analysis. 
+
+* An efficient batch algorithm: JADE - For off-line ICA, an algorithm has been developed based on the (joint) diagonalization of cumulant matrices. `Good' statistical performance is achieved by involving all the cumulants of order 2 and 4 while a fast optimization is obtained by the device of joint diagonalization. JADE has been successfully applied to the processing of real data sets, such as found in mobile telephony and in airport radar as well as to bio-medical signals (ECG, EEG, multi-electrode neural recordings). The strongest point of JADE for applications of ICA is that it works off-the-shelf (no parameter tuning). They advocate using the code provided as a plug-in replacement for PCA (whenever one is willing to investigate if such a replacement is appropriate). The weakest point of the current implementation is that the number of sources (but not of sensors) is limited in practice (by the available memory) to something like 40 or 50 depending on your computer. The JADE algorithm was originally developed to process complex signals, motivated by applications to digital communications. Another implementation is now available which is tuned to process more efficiently real-valued signals. 
+* Adaptive algorithms: relative gradient algorithms - For adaptive source separation, they have developed a class of equivariant algorithms. This means that their performance is independent of the mixing matrix. They are obtained as stochastic relative gradient algorithms. 
+* Multi-dimensional independent component analysis - Performing ICA on ECG signals with the JADE algorithm, it was realized that an interesting extension of the notion of independent component analysis would be to consider an analysis into linear components that would be 'as independent as possible' as in ICA, but would be `living' in subspaces of dimension greater than 1. This could be called `MICA' for Multi-dimensional Independent Component Analysis."
+;;Resource:Source BioScience LifeSciences;http://neurolex.org/wiki/Category-3AResource-3ASource_BioScience_LifeSciences;"Source BioScience LifeSciences are European leaders in DNA sequencing, genomic services, bioinformatic analyses and offers a comprehensive portfolio of genomic reagents and antibodies. Source BioScience LifeScience is a CPA, GLP/GCP accredited and Illumina NGS CSPro certified genomic service provider and distributes a comprehensive range of biological products to companies and institutions worldwide.
+
+Source BioScience is proud to announce that Source BioScience imaGenes has joined it's LifeSciences group. This will enable us to bring our customers one unified website with our complete range of Products, Clones and Services.
+
+We have merged our clone libraries together so that can now offer you over 20 million clones! Add to this our excellent sequencing service and our range of over 100,000 antibodies and Source BioScience LifeSciences is your ideal outsourcing partner."
+;;Active Source Length;http://neurolex.org/wiki/Category-3AActive_Source_Length;Length of active Source (mm).
+;;Counts Source;http://neurolex.org/wiki/Category-3ACounts_Source;The primary source of counts. The primary source leads to the underlying image Units (0054,1001), as opposed to secondary sources which are used during reconstruction correction.
+;;Number of Tomosynthesis Source Images;http://neurolex.org/wiki/Category-3ANumber_of_Tomosynthesis_Source_Images;The number of source images used to construct this tomosynthetic image. Only meaningful if Tomo Class (0018,1491) is OSYNTHESIS. These may be listed in Source Image Sequence (0008,2112) of the General Image Module.
+;;Source monitoring;http://neurolex.org/wiki/Nlx_145741;The process of identifying the the source or context at acquisition of information that has been stored in memory.
+;;Resource:Source BioScience LifeSciences;http://neurolex.org/wiki/Category-3AResource-3AImaGenes;"Source BioScience LifeSciences are European leaders in DNA sequencing, genomic services, bioinformatic analyses and offers a comprehensive portfolio of genomic reagents and antibodies. Source BioScience LifeScience is a CPA, GLP/GCP accredited and Illumina NGS CSPro certified genomic service provider and distributes a comprehensive range of biological products to companies and institutions worldwide.
+
+Source BioScience is proud to announce that Source BioScience imaGenes has joined it's LifeSciences group. This will enable us to bring our customers one unified website with our complete range of Products, Clones and Services.
+
+We have merged our clone libraries together so that can now offer you over 20 million clones! Add to this our excellent sequencing service and our range of over 100,000 antibodies and Source BioScience LifeSciences is your ideal outsourcing partner."
+;;Source to Block Tray Distance;http://neurolex.org/wiki/Category-3ASource_to_Block_Tray_Distance;Radiation Source to attachment edge of block tray assembly (mm). Required if Block Sequence (300A,00F4) is sent.
+;;Resource:AlloSource;http://neurolex.org/wiki/Category-3AResource-3AAlloSource;"AlloSource is a non-profit organization founded in 1994 on a promise to honor and respect the gift of donation by responsibly developing, processing and distributing life-saving and life-enhancing allografts for our communities. Today, each of our 300 employees continues to fulfill this promise through multi-shift, 360-day processing to the highest quality and service standards.
+
+We strive to be the tissue network patients and the world&#8217;s most respected transplant teams ask for by name. This is accomplished by understanding the needs of our doctors and by providing the best tissue for our recipients. We offer more than 200 standard and customized precision allograft products, and act as a trusted and knowledgeable partner to the medical community, all with the intention of maximizing medical impact.
+
+In 1995, Allosource evolved from a local tissue bank in Denver, Colorado into a national organization serving communities around the country. Today, AlloSource is one of the largest, most respected tissue banks in the United States. Through our growth we&#8217;ve remained committed to the wishes of donor families, the needs of our surgeon customers, and the hopes of our patient recipients. Our promise of &#8220;doing more with life&#8221; reflects our unwavering focus on integrity, quality, safety, and respect &#8211; today, and into the future."
+;;NTP Source Address;http://neurolex.org/wiki/Category-3ANTP_Source_Address;IP Address of NTP time source. IPv4 addresses shall be in dotted decimal (e.g. 192.168.1.1). The IPv6 addresses shall be in colon separated hexadecimal (e.g. 12:34:56:78:9a:bc:de:f0).
+;;Resource:Berkeley Bioinformatics Open-Source Projects;http://neurolex.org/wiki/Nlx_149171;"The BBOP, located at the Lawrence Berkeley National Labs, is a diverse group of scientific researchers and software engineers dedicated to developing tools and applying computational technologies to solve biological problems. Members of the group contribute to a number of projects, including the Gene Ontology, OBO Foundry, the Phenotypic Quality Ontology, modENCODE, and the Generic Model Organism Database Project. Our group is focused on the development, use, and integration of ontolgies into biological data analysis. 
+
+Software written or maintained by BBOP is accessible through the site."
+;;Source Applicator Wall Nominal Thickness;http://neurolex.org/wiki/Category-3ASource_Applicator_Wall_Nominal_Thickness;Nominal Thickness of Source Applicator wall (mm).
+;;Distance Source to Detector;http://neurolex.org/wiki/Category-3ADistance_Source_to_Detector;Distance in mm from the source to detector center. Note: This value is traditionally referred to as Source Image Receptor Distance (SID).
+;;Source Applicator ID;http://neurolex.org/wiki/Category-3ASource_Applicator_ID;User or machine supplied identifier for Source Applicator. Required if Source Applicator Number (300A,0290) is sent.
+;;Source to Compensator Tray Distance;http://neurolex.org/wiki/Category-3ASource_to_Compensator_Tray_Distance;Radiation source to compensator tray attachment edge distance (in mm) for current compensator. Required if Compensator Sequence (300A,00E3) is sent.
+;;Source code;http://neurolex.org/wiki/Nlx_inv_20081201;A source code module is an information content entity that specifies, using a programming language, some algorithm.
+;;Recorded Source Sequence;http://neurolex.org/wiki/Category-3ARecorded_Source_Sequence;Introduces sequence of Sources to be used within Application Setups. The sequence may contain one or more items.
+;;Source Type;http://neurolex.org/wiki/Category-3ASource_Type;Type of Source.
+;;Source Applicator Type;http://neurolex.org/wiki/Category-3ASource_Applicator_Type;Type of Source Applicator. Required if Source Applicator Number  (300A,0290) is sent.
+;;Channel Source Modifiers Sequence;http://neurolex.org/wiki/Category-3AChannel_Source_Modifiers_Sequence;Sequence of one or more Items which further qualify the Waveform Source. Required if Channel Source Sequence (003A,0208) does not fully specify the semantics of the source. Ordering of Items in this Sequence may be semantically significant.
+;;Source Isotope Half Life;http://neurolex.org/wiki/Category-3ASource_Isotope_Half_Life;Half-life of Isotope (days).
+;;Resource:Open Source Science Project;http://neurolex.org/wiki/Nlx_152232;"Platform where academic researchers from around the world collaborate to propose and conduct basic research projects with the support of funding provided by the broader online community. The OSSP hopes to transform how academic research is funded and increase the accessibility of academic research.
+* Researchers pay a monthly subscription to create and maintain public profiles
+* Researchers alone (or in teams) submit proposed research studies - each study is peer reviewed, and (if approved) is then posted online
+*  Investors browse through posted studies, and invest in them via small grants (microinvestments). The OSSP doesn't charge any transaction fees or commissions
+* Researchers whose studies are funded conduct their research and publish their results
+It is in the best interest of each researcher to ""make their case"" to as many citizens as possible to ensure that they are aware of the work the researcher is engaged in - and of its importance. It is to help academic researchers make this case, and invite the broader non-research community to play a more active role in the academic research process, that The OSSP has developed this unique platform.
+
+Through the tools and resources offered by The OSSP, academic researchers may:
+* Create publicly-accessible profiles
+* Interact and exchange ideas with peers and colleagues
+* Manage scholarly publications/bibliographies
+* Secure research funding (in the form of microgrants provided by the broader non-research community)
+
+Simultaneously non-researchers, by registering as 'investors', may:
+* Read through cutting-edge (peer-reviewed) research proposals
+* Interact and exchange ideas with academic researchers
+* Fund academic research projects"
+;;Resource:SourceForge;http://neurolex.org/wiki/Category-3AResource-3ASourceForge;"Find, create, and publish Open Source software for free with SourceForge. With the tools we provide, 2.7 million developers create powerful software in over 260,000 projects. Our popular directory connects more than 46 million consumers with these open source projects and serves more than 2,000,000 downloads a day. SourceForge is where open source happens.
+
+We thrive on community collaboration to help us create the leading resource for open source software development and distribution."
+;;Source Image Sequence;http://neurolex.org/wiki/Category-3ASource_Image_Sequence;A Sequence that identifies the set of Image SOP Class/Instance pairs of the Images that were used to derive this Image. Zero or more Items may be included in this Sequence.
+;;Trigger Source or Type;http://neurolex.org/wiki/Category-3ATrigger_Source_or_Type;Specifies equipment ID of trigger source and/or type of trigger
+;;Referenced Source Applicator Number;http://neurolex.org/wiki/Category-3AReferenced_Source_Applicator_Number;Identification number of the Source Applicator. The value of Source Applicator Number (300A,0290) shall be unique within the Channel in which it is created.
+;;Source Applicator Manufacturer;http://neurolex.org/wiki/Category-3ASource_Applicator_Manufacturer;Manufacturer of Source Applicator.
+;;Distance Source to Entrance;http://neurolex.org/wiki/Category-3ADistance_Source_to_Entrance;Distance in mm from the source to the surface of the patient closest to the source during this Performed Procedure Step. Note: This may be an estimated value based on assumptions about the patients body size and habitus.
+;;Distance Source to Support;http://neurolex.org/wiki/Category-3ADistance_Source_to_Support;TBD (retired)
+;;Source memory;http://neurolex.org/wiki/Nlx_145740;"the episodic source from which a specific item was acquired (e.g., from a person, a book, or television (Schacter, Kaszniak, Kihlstrom, andamp; Valdiserri, 1991, p. 559)."
+;;Resource:Alizadehlab: MeeboChip and HeeboChip Open Source Project;http://neurolex.org/wiki/Category-3AResource-3AAlizadehlab-3A_MeeboChip_and_HeeboChip_Open_Source_Project;" 
+This is an open-source Mouse Exonic Evidence-Based Oligonucleotide Chip (MEEBOChip), and are in the process of building the human counterpart, HEEBOChip. The set of 70mers for MEEBOChip is already available from Illumina, Inc., with synthesis of HEEBOChip 70mers in progress. 
+Both arrays are based on a novel selection of exonic  long-oligonucleotides (70-mers) from a genomic annotation of the corresponding complete genome sequences, using a transcriptome-based annotation of exon structure for each genomic locus. Using a combination of existing and custom-tailored tools and datasets  (including millions of mRNA and EST sequences), we built and performed a systematic examination of transcript-supported exon structure for each genomic locus at the base-pair level (i.e., exonic evidence). This strategy allowed them to select both constitutive and in many cases alternative exons for nearly every gene in the corresponding genome (e.g., protocadherin locus), allowing an unprecedented exploration of human and mouse biology. 
+Furthermore, they used experimentally derived data to hone the selection of these 70mers, helping maximize their performance under typical fluorescent labeling and hybridization conditions. Specifically, they applied and refined the ArrayOligoSelector algorithm from Joe DeRisis laboratory to select 70mers, considering not only their uniqueness (i.e., hybridization specificity) within the content of the entire genome, but also to overcome the known biases of labeling and hybridization methods (e.g., 3-biased reverse transcription and in vitro transcription reactions). 
+Sponsors: This resource is supported by Stanford, UCSF, Stowers-Institute, Rockefeller, and Basel University. 
+Keywords: Mouse, Exonic, Evidence, Oligonucleotide, Chip, Human, Array, Genomic, Annoation, Sequence, Transcriptome, Annotation, Dataset, mRNA, EST, Systematic, Transcript, Exon, Locus, Biology,"
+;;Resource:Source BioScience LifeSciences;http://neurolex.org/wiki/Nif-2D0000-2D31984;"Source BioScience LifeSciences are European leaders in DNA sequencing, genomic services, bioinformatic analyses and offers a comprehensive portfolio of genomic reagents and antibodies. Source BioScience LifeScience is a CPA, GLP/GCP accredited and Illumina NGS CSPro certified genomic service provider and distributes a comprehensive range of biological products to companies and institutions worldwide.
+
+Source BioScience is proud to announce that Source BioScience imaGenes has joined it's LifeSciences group. This will enable us to bring our customers one unified website with our complete range of Products, Clones and Services.
+
+We have merged our clone libraries together so that can now offer you over 20 million clones! Add to this our excellent sequencing service and our range of over 100,000 antibodies and Source BioScience LifeSciences is your ideal outsourcing partner."
+;;Source Serial Number;http://neurolex.org/wiki/Category-3ASource_Serial_Number;Serial Number of source.
+;;Source to Reference Object Distance;http://neurolex.org/wiki/Category-3ASource_to_Reference_Object_Distance;Source to reference object distance (in mm), as used for magnification calculation of RADIOGRAPH and SIMULATOR images.
+;;Source Manufacturer;http://neurolex.org/wiki/Category-3ASource_Manufacturer;Manufacturer of Source.
+;;Source memory test;http://neurolex.org/wiki/Category-3ASource_memory_test;Participants are shown a list or series of items (words, pictures, objects). Later, when shown an item, they are asked whether it has was shown to them before, and if they respond affirmatively, they are asked a question about the source of the item. The source question could be what the spatial location of the item was, what color it appeared in, or which list or set it belonged to.
+;;Resource:The Global Proteome Machine Organization: Proteomics Database and Open Source Software;http://neurolex.org/wiki/Category-3AResource-3AThe_Global_Proteome_Machine_Organization-3A_Proteomics_Database_and_Open_Source_Software;" 
+The Global Proteome Machine Organization was set up so that scientists involved in proteomics using tandem mass spectrometry could use that data to analyze proteomes. The projects supported by the GPMO have been selected to improve the quality of analysis, make the results portable and to provide a common platform for testing and validating proteomics results. 
+The Global Proteome Machine Database was constructed to utilize the information obtained by GPM servers to aid in the difficult process of validating peptide MS/MS spectra as well as protein coverage patterns. This database has been integrated into GPM server pages, allowing users to quickly compare their experimental results with the best results that have been previously observed by other scientists."
+;;Resource:MeeboChip and HeeboChip Open Source Project;http://neurolex.org/wiki/Category-3AResource-3AMeeboChip_and_HeeboChip_Open_Source_Project;"This is an open-source Mouse Exonic Evidence-Based Oligonucleotide Chip (MEEBOChip). And soon the human counterpart, HEEBOChip, will also be available. The set of 70mers for MEEBOChip is already available from Illumina, Inc., with synthesis of HEEBOChip 70mers in progress.
+Both arrays are based on a novel selection of exonic long-oligonucleotides (70-mers) from a genomic annotation of the corresponding complete genome sequences, using a transcriptome-based annotation of exon structure for each genomic locus. Using a combination of existing and custom-tailored tools and datasets (including millions of mRNA and EST sequences), we built and performed a systematic examination of transcript-supported exon structure for each genomic locus at the base-pair level (i.e., exonic evidence). This strategy allowed them to select both constitutive and in many cases alternative exons for nearly every gene in the corresponding genome (e.g., protocadherin locus), allowing an unprecedented exploration of human and mouse biology.
+Furthermore, they used experimentally derived data to hone the selection of these 70mers, helping maximize their performance under typical fluorescent labeling and hybridization conditions. Specifically, they applied and refined the ArrayOligoSelector algorithm from Joe DeRisi's laboratory to select 70mers, considering not only their uniqueness (i.e., hybridization specificity) within the content of the entire genome, but also to overcome the known biases of labeling and hybridization methods (e.g., 3'-biased reverse transcription and in vitro transcription reactions).
+Sponsors: This resource is supported by Stanford, UCSF, Stowers-Institute, Rockefeller, and Basel University.
+Keywords: Mouse, Exonic, Evidence, Oligonucleotide, Chip, Human, Array, Genomic, Annoation, Sequence, Transcriptome, Annotation, Dataset, mRNA, EST, Systematic, Transcript, Exon, Locus, Biology,"
+;;Source Waveform Sequence;http://neurolex.org/wiki/Category-3ASource_Waveform_Sequence;A sequence which provides reference to a DICOM waveform from which this channel was derived. One or more Items may be included in this Sequence.
+;;Source code;http://neurolex.org/wiki/Category-3ASource_code;A source code module is an information content entity that specifies, using a programming language, some algorithm.
+;;Resource:Source BioScience LifeSciences;http://neurolex.org/wiki/Category-3AResource-3ARZPD;"Source BioScience LifeSciences are European leaders in DNA sequencing, genomic services, bioinformatic analyses and offers a comprehensive portfolio of genomic reagents and antibodies. Source BioScience LifeScience is a CPA, GLP/GCP accredited and Illumina NGS CSPro certified genomic service provider and distributes a comprehensive range of biological products to companies and institutions worldwide.
+
+Source BioScience is proud to announce that Source BioScience imaGenes has joined it's LifeSciences group. This will enable us to bring our customers one unified website with our complete range of Products, Clones and Services.
+
+We have merged our clone libraries together so that can now offer you over 20 million clones! Add to this our excellent sequencing service and our range of over 100,000 antibodies and Source BioScience LifeSciences is your ideal outsourcing partner."
+;;Source Isotope Name;http://neurolex.org/wiki/Category-3ASource_Isotope_Name;Name of Isotope.
+;;Microscope Light Source;http://neurolex.org/wiki/Category-3AMicroscope_Light_Source;Used to illuminate the subject under stereo microscopes and other applications where an external light source is required.
+;;Time Source;http://neurolex.org/wiki/Category-3ATime_Source;ID of equipment or system providing time reference
+;;Resource:LifeSource;http://neurolex.org/wiki/Category-3AResource-3ALifeSource;"LifeSource is the non-profit organization dedicated to saving lives through organ and tissue donation in the Upper Midwest.  We serve more than 6 million people in communities across Minnesota, North Dakota, South Dakota and portions of western Wisconsin.
+
+As the federally-designated organization that manages organ and tissue donation in our region, we are dedicated to working with our hospital and community partners to support donor families, facilitate the donation of organs and tissues to transplant recipients and encourage the people in our communities to register as donors."
+;;Resource:The Global Proteome Machine Organization: Proteomics Database and Open Source Software;http://neurolex.org/wiki/Nif-2D0000-2D10455;" 
+The Global Proteome Machine Organization was set up so that scientists involved in proteomics using tandem mass spectrometry could use that data to analyze proteomes. The projects supported by the GPMO have been selected to improve the quality of analysis, make the results portable and to provide a common platform for testing and validating proteomics results. 
+The Global Proteome Machine Database was constructed to utilize the information obtained by GPM servers to aid in the difficult process of validating peptide MS/MS spectra as well as protein coverage patterns. This database has been integrated into GPM server pages, allowing users to quickly compare their experimental results with the best results that have been previously observed by other scientists."
+;;Resource:Source BioScience LifeSciences;http://neurolex.org/wiki/Category-3AResource-3AGeneservice;"Source BioScience LifeSciences are European leaders in DNA sequencing, genomic services, bioinformatic analyses and offers a comprehensive portfolio of genomic reagents and antibodies. Source BioScience LifeScience is a CPA, GLP/GCP accredited and Illumina NGS CSPro certified genomic service provider and distributes a comprehensive range of biological products to companies and institutions worldwide.
+
+Source BioScience is proud to announce that Source BioScience imaGenes has joined it's LifeSciences group. This will enable us to bring our customers one unified website with our complete range of Products, Clones and Services.
+
+We have merged our clone libraries together so that can now offer you over 20 million clones! Add to this our excellent sequencing service and our range of over 100,000 antibodies and Source BioScience LifeSciences is your ideal outsourcing partner."
+;;Resource:PBL InterferonSource;http://neurolex.org/wiki/Nlx_152426;
+;;Source Sequence;http://neurolex.org/wiki/Category-3ASource_Sequence;Introduces sequence of Sources to be used within Application Setups. One or more items may be included in this sequence.
+;;Respiratory Signal Source;http://neurolex.org/wiki/Category-3ARespiratory_Signal_Source;Signal source from which respiratory motion is derived. Required if Image Type (0008,0008) Value 1 is ORIGINAL or MIXED and Respiratory Motion Compensation Technique (0018,9170) equals other than NONE.
+;;Source to Beam Limiting Device Distance;http://neurolex.org/wiki/Category-3ASource_to_Beam_Limiting_Device_Distance;Radiation source to beam limiting device (collimator) distance (mm).
+;;Source to Compensator Distance;http://neurolex.org/wiki/Category-3ASource_to_Compensator_Distance;The distance between the source and compensator. Used in X-ray based imaging.
+;;Source monitoring;http://neurolex.org/wiki/Category-3ASource_monitoring;The process of identifying the the source or context at acquisition of information that has been stored in memory.
+;;Source to Wedge Tray Distance;http://neurolex.org/wiki/Category-3ASource_to_Wedge_Tray_Distance;Radiation source to wedge tray attachment edge distance (in mm) for current wedge.
+;;Referenced Source Number;http://neurolex.org/wiki/Category-3AReferenced_Source_Number;Uniquely identifies the referenced Source within the Source Sequence (300A,0210) for current Application Setup.
+;;Source Number;http://neurolex.org/wiki/Category-3ASource_Number;Identification number of the Source. The value of Source Number (300A,0212) shall be unique within the RT Plan in which it is created.
+;;Source Encapsulation Nominal Transmission;http://neurolex.org/wiki/Category-3ASource_Encapsulation_Nominal_Transmission;Nominal transmission through wall of encapsulation (between 0 and 1).
+;;Resource:Berkeley Bioinformatics Open-Source Projects;http://neurolex.org/wiki/Category-3AResource-3ABerkeley_Bioinformatics_Open-2DSource_Projects;"The BBOP, located at the Lawrence Berkeley National Labs, is a diverse group of scientific researchers and software engineers dedicated to developing tools and applying computational technologies to solve biological problems. Members of the group contribute to a number of projects, including the Gene Ontology, OBO Foundry, the Phenotypic Quality Ontology, modENCODE, and the Generic Model Organism Database Project. Our group is focused on the development, use, and integration of ontolgies into biological data analysis. 
+
+Software written or maintained by BBOP is accessible through the site."
+;;Resource:e-Source: Behavioral and Social Sciences Research;http://neurolex.org/wiki/Nlx_146241;"Inside e-Source you will find 20 interactive chapters with authoritative answers to methodological questions on behavioral and social science research. With contributions from a team of international experts, this anthology provides the latest information on addressing emerging challenges in public health. Book contents include: Setting the Scene, Describing How, Explaining Why, What Works, Emerging Issues. Tables, Figures, Exercises and Examples are included. Login for enhanced functionality.
+
+Contents:
+* Appropriate Research Methods
+* 'Science' in the Social Sciences
+* Design Decisions in Research
+* Theory Development
+* Social and Behavioral Theories
+* Sample Surveys
+* Social Survey Data Collection
+* Administrative Data Systems
+* Observational Studies
+* Qualitative Methods
+* Conversation Analysis
+* Software and Qualitative Analysis
+* Clinical Trials
+* Cluster Unit Randomized Trials
+* Ethical Challenges
+* Multilevel Modeling
+* Objective Measurement of Subjective Phenomena
+* Measuring Socioeconomic Status
+* Evaluating the Quality of Health Care
+* Patient-Reported Outcomes"
+;;Fluence Data Source;http://neurolex.org/wiki/Category-3AFluence_Data_Source;has a def
+;;Resource:e-Source: Behavioral and Social Sciences Research;http://neurolex.org/wiki/Category-3AResource-3Ae-2DSource-3A_Behavioral_and_Social_Sciences_Research;"Inside e-Source you will find 20 interactive chapters with authoritative answers to methodological questions on behavioral and social science research. With contributions from a team of international experts, this anthology provides the latest information on addressing emerging challenges in public health. Book contents include: Setting the Scene, Describing How, Explaining Why, What Works, Emerging Issues. Tables, Figures, Exercises and Examples are included. Login for enhanced functionality.
+
+Contents:
+* Appropriate Research Methods
+* 'Science' in the Social Sciences
+* Design Decisions in Research
+* Theory Development
+* Social and Behavioral Theories
+* Sample Surveys
+* Social Survey Data Collection
+* Administrative Data Systems
+* Observational Studies
+* Qualitative Methods
+* Conversation Analysis
+* Software and Qualitative Analysis
+* Clinical Trials
+* Cluster Unit Randomized Trials
+* Ethical Challenges
+* Multilevel Modeling
+* Objective Measurement of Subjective Phenomena
+* Measuring Socioeconomic Status
+* Evaluating the Quality of Health Care
+* Patient-Reported Outcomes"
+;;Resource:MeeboChip and HeeboChip Open Source Project;http://neurolex.org/wiki/Nif-2D0000-2D30030;"This is an open-source Mouse Exonic Evidence-Based Oligonucleotide Chip (MEEBOChip). And soon the human counterpart, HEEBOChip, will also be available. The set of 70mers for MEEBOChip is already available from Illumina, Inc., with synthesis of HEEBOChip 70mers in progress.
+Both arrays are based on a novel selection of exonic long-oligonucleotides (70-mers) from a genomic annotation of the corresponding complete genome sequences, using a transcriptome-based annotation of exon structure for each genomic locus. Using a combination of existing and custom-tailored tools and datasets (including millions of mRNA and EST sequences), we built and performed a systematic examination of transcript-supported exon structure for each genomic locus at the base-pair level (i.e., exonic evidence). This strategy allowed them to select both constitutive and in many cases alternative exons for nearly every gene in the corresponding genome (e.g., protocadherin locus), allowing an unprecedented exploration of human and mouse biology.
+Furthermore, they used experimentally derived data to hone the selection of these 70mers, helping maximize their performance under typical fluorescent labeling and hybridization conditions. Specifically, they applied and refined the ArrayOligoSelector algorithm from Joe DeRisi's laboratory to select 70mers, considering not only their uniqueness (i.e., hybridization specificity) within the content of the entire genome, but also to overcome the known biases of labeling and hybridization methods (e.g., 3'-biased reverse transcription and in vitro transcription reactions).
+Sponsors: This resource is supported by Stanford, UCSF, Stowers-Institute, Rockefeller, and Basel University.
+Keywords: Mouse, Exonic, Evidence, Oligonucleotide, Chip, Human, Array, Genomic, Annoation, Sequence, Transcriptome, Annotation, Dataset, mRNA, EST, Systematic, Transcript, Exon, Locus, Biology,"
+;;Source Applicator Step Size;http://neurolex.org/wiki/Category-3ASource_Applicator_Step_Size;Distance of path along channel (in mm) between adjacent (potential) dwell positions. Required if Source Movement Type (300A,0288) is STEPWISE.
+;;Source Encapsulation Nominal Thickness;http://neurolex.org/wiki/Category-3ASource_Encapsulation_Nominal_Thickness;Nominal thickness of wall of  encapsulation (mm).
+;;Source Image Evidence Sequence;http://neurolex.org/wiki/Category-3ASource_Image_Evidence_Sequence;Full set of Composite SOP Instances referred to inside the Source Image Sequences of this Enhanced MR Image SOP Instance. One or more Items may be included in this sequence. Required if the Source Image Sequence (0008,2112) is present.
+;;Resource:LifeSource;http://neurolex.org/wiki/Nlx_69466;"LifeSource is the non-profit organization dedicated to saving lives through organ and tissue donation in the Upper Midwest.  We serve more than 6 million people in communities across Minnesota, North Dakota, South Dakota and portions of western Wisconsin.
+
+As the federally-designated organization that manages organ and tissue donation in our region, we are dedicated to working with our hospital and community partners to support donor families, facilitate the donation of organs and tissues to transplant recipients and encourage the people in our communities to register as donors."
+;;Source Applicator Number;http://neurolex.org/wiki/Category-3ASource_Applicator_Number;Identification number of the Source Applicator. The value of Source Applicator Number (300A,0290) shall be unique within the Channel in which it is created.
+;;Resource:Open Source Science Project;http://neurolex.org/wiki/Category-3AResource-3AOpen_Source_Science_Project;"Platform where academic researchers from around the world collaborate to propose and conduct basic research projects with the support of funding provided by the broader online community. The OSSP hopes to transform how academic research is funded and increase the accessibility of academic research.
+* Researchers pay a monthly subscription to create and maintain public profiles
+* Researchers alone (or in teams) submit proposed research studies - each study is peer reviewed, and (if approved) is then posted online
+*  Investors browse through posted studies, and invest in them via small grants (microinvestments). The OSSP doesn't charge any transaction fees or commissions
+* Researchers whose studies are funded conduct their research and publish their results
+It is in the best interest of each researcher to ""make their case"" to as many citizens as possible to ensure that they are aware of the work the researcher is engaged in - and of its importance. It is to help academic researchers make this case, and invite the broader non-research community to play a more active role in the academic research process, that The OSSP has developed this unique platform.
+
+Through the tools and resources offered by The OSSP, academic researchers may:
+* Create publicly-accessible profiles
+* Interact and exchange ideas with peers and colleagues
+* Manage scholarly publications/bibliographies
+* Secure research funding (in the form of microgrants provided by the broader non-research community)
+
+Simultaneously non-researchers, by registering as 'investors', may:
+* Read through cutting-edge (peer-reviewed) research proposals
+* Interact and exchange ideas with academic researchers
+* Fund academic research projects"
+;;Source Applicator Name;http://neurolex.org/wiki/Category-3ASource_Applicator_Name;User-defined name for Source Applicator.
+;;Resource:Blind Source Separation and Independent Component Analysis;http://neurolex.org/wiki/Nif-2D0000-2D24771;"Blind Source Separation and Independent Component Analysis (ICA) algorithms including: An efficient batch algorithm: JADE and Adaptive algorithms: relative gradient algorithms. Associated papers / documentation are included as well as thoughts on Multi-dimensional independent component analysis. 
+
+* An efficient batch algorithm: JADE - For off-line ICA, an algorithm has been developed based on the (joint) diagonalization of cumulant matrices. `Good' statistical performance is achieved by involving all the cumulants of order 2 and 4 while a fast optimization is obtained by the device of joint diagonalization. JADE has been successfully applied to the processing of real data sets, such as found in mobile telephony and in airport radar as well as to bio-medical signals (ECG, EEG, multi-electrode neural recordings). The strongest point of JADE for applications of ICA is that it works off-the-shelf (no parameter tuning). They advocate using the code provided as a plug-in replacement for PCA (whenever one is willing to investigate if such a replacement is appropriate). The weakest point of the current implementation is that the number of sources (but not of sensors) is limited in practice (by the available memory) to something like 40 or 50 depending on your computer. The JADE algorithm was originally developed to process complex signals, motivated by applications to digital communications. Another implementation is now available which is tuned to process more efficiently real-valued signals. 
+* Adaptive algorithms: relative gradient algorithms - For adaptive source separation, they have developed a class of equivariant algorithms. This means that their performance is independent of the mixing matrix. They are obtained as stochastic relative gradient algorithms. 
+* Multi-dimensional independent component analysis - Performing ICA on ECG signals with the JADE algorithm, it was realized that an interesting extension of the notion of independent component analysis would be to consider an analysis into linear components that would be 'as independent as possible' as in ICA, but would be `living' in subspaces of dimension greater than 1. This could be called `MICA' for Multi-dimensional Independent Component Analysis."
+;;Recorded Source Applicator Sequence;http://neurolex.org/wiki/Category-3ARecorded_Source_Applicator_Sequence;Introduces sequence of recorded Source Applicators. The sequence may contain one or more items.
+;;Resource:An Open-Source MATLAB-to-Python Compiler;http://neurolex.org/wiki/Nif-2D0000-2D30104;"OMPC aims to enable reuse of the huge open and free code base of MATLAB on a free and faster growing Python platform. Running Python and MATLAB in a single interpreter avoids issues with running two separate applications. Python adds general purpose programming libraries to the convenient syntax of the language of technical computing.
+OMPC is not an interpreter, it lets Python to do the work. This means that if Python gets faster OMPC gets faster too. OMPC translates the m-files preserving the structure of the original programs as much as possible. Although OMPC comes with a library that emulates the features of numerical array of MATLAB there is nothing that will stop you from running the translated code the way you like it. This means that you could run the OMPC generated code on IronPython, Jython, PyPy or whatever else if you write your own numerical class.
+Sponsors: This resource is supported by RIKEN Brain Science Institute.
+:Keywords: Code, Compiler, Python, Matlab, Computng, Software, Program,
+:"
+;;Active Source Diameter;http://neurolex.org/wiki/Category-3AActive_Source_Diameter;Diameter of active Source (mm).
+;;Source memory;http://neurolex.org/wiki/Category-3ASource_memory;"the episodic source from which a specific item was acquired (e.g., from a person, a book, or television (Schacter, Kaszniak, Kihlstrom, andamp; Valdiserri, 1991, p. 559)."
+;;Source Movement Type;http://neurolex.org/wiki/Category-3ASource_Movement_Type;Type of Source movement.
+;;Source Applicator Length;http://neurolex.org/wiki/Category-3ASource_Applicator_Length;Length of Source Applicator (mm), defined as the distance between the connector of the applicator and the distal-most position of the source. Required if Source Applicator Number (300A,0290) is sent.
+;ERO_related;has_source;http://purl.obolibrary.org/obo/ERO_0000579;"Organism&#8217;s source environment or clinical setting."
+;;open source software;http://purl.obolibrary.org/obo/ERO_0000074;Software whose source code is published and made available to the public, enabling anyone to modify it.
+;;Resource Identifier;http://purl.org/dc/elements/1.1/identifier;
+;;Resource Type;http://purl.org/dc/elements/1.1/type;
+;;light source;http://purl.obolibrary.org/obo/OBI_0400065;A light source is an optical subsystem that provides light for use in a distant area using a delivery system (e.g., fiber optics). Light sources may include one of a variety of lamps (e.g., xenon, halogen, mercury). Most light sources are operated from line power, but some may be powered from batteries. They are mostly used in endoscopic, microscopic, and other examination and/or in surgical procedures. The light source is part of the optical subsystem. In a flow cytometer the light source directs high intensity light at particles at the interrogation point. The light source in a flow cytometer is usually a laser.
+;;Open source software license;http://www.ebi.ac.uk/swo/license/SWO_1000008;
+;;source-based data analysis objective;http://purl.obolibrary.org/obo/ERO_0100121;objective to process and analyze data that is output from a specific type of technique, technology, or instrument.
+;;X-ray source;http://purl.obolibrary.org/obo/OBI_0001138;A device that is used to generate X-rays.
+;;source-based data transformation objective;http://purl.obolibrary.org/obo/ERO_0100039;objective to process and transform data that is output from a specific type of technique, technology, or instrument.
+;;ion source;http://purl.obolibrary.org/obo/OBI_0000361;
+;;definition source;http://purl.obolibrary.org/obo/IAO_0000119;formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007
+;;UV light source;http://purl.obolibrary.org/obo/ERO_0001574;A light source that emits electromagnetic radiation with a wavelength shorter than that of visible light, but longer than X-rays, in the range 10 nm to 400 nm, and of energies from 3 eV to 124 eV.
+light source;OBI_id;http://purl.obolibrary.org/obo/OBI_0400065;;
+;;http://purl.obolibrary.org/obo/OBI_0400065;;
+;ERO_id;http://purl.obolibrary.org/obo/OBI_0400065;;
+;;http://purl.obolibrary.org/obo/OBI_0400065;;
+;provenance;ant1b_test;;
+;ERO_definition;A light source is an optical subsystem that provides light for use in a distant area using a delivery system (e.g., fiber optics). Light sources may include one of a variety of lamps (e.g., xenon, halogen, mercury). Most light sources are operated from line power, but some may be powered from batteries. They are mostly used in endoscopic, microscopic, and other examination and/or in surgical procedures. The light source is part of the optical subsystem. In a flow cytometer the light source directs high intensity light at particles at the interrogation point. The light source in a flow cytometer is usually a laser.;;
+;OBI_definition;A light source is an optical subsystem that provides light for use in a distant area using a delivery system (e.g., fiber optics). Light sources may include one of a variety of lamps (e.g., xenon, halogen, mercury). Most light sources are operated from line power, but some may be powered from batteries. They are mostly used in endoscopic, microscopic, and other examination and/or in surgical procedures. The light source is part of the optical subsystem. In a flow cytometer the light source directs high intensity light at particles at the interrogation point. The light source in a flow cytometer is usually a laser.;;
+;ERO_label;light source;;
+;;light source;;
+;OBI_label;light source;;
+;;light source;;
+;ERO_related;UV light source;http://purl.obolibrary.org/obo/ERO_0001574;A light source that emits electromagnetic radiation with a wavelength shorter than that of visible light, but longer than X-rays, in the range 10 nm to 400 nm, and of energies from 3 eV to 124 eV.

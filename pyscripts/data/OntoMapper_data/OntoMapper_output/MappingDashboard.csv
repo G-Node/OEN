@@ -1,0 +1,341 @@
+term;provenance_count;provenances;id_count;ids;def_count;defs;comment_count;comments;note_count;notes;example_count;examples;source_count;sources;related_count;relateds
+light;1;"is split from [ant1b_test]: light source 
+";0;"neurolex_id 
+NEMO_id 
+OBI_id 
+ERO_id 
+";0;"ERO_definition 
+OBI_definition 
+neurolex_definition 
+NEMO_definition 
+";0;"ERO_comment 
+OBI_comment 
+neurolex_comment 
+NEMO_comment 
+";0;;0;;0;;61;"NEMO_related 
+OBI_related 
+light source http://purl.obolibrary.org/obo/OBI_0400065 
+light emission function http://purl.obolibrary.org/obo/OBI_0000367 
+ratio of collected to emitted light http://purl.obolibrary.org/obo/OBI_0000054 
+light emission device http://purl.obolibrary.org/obo/OBI_0001032 
+evaporative light scattering detector http://purl.obolibrary.org/obo/OBI_0000547 
+neurolex_related 
+ArcLight http://neurolex.org/wiki/Nlx_152495 
+Light violet http://neurolex.org/wiki/Category-3ALight_violet 
+Light emitting optical imaging protocol http://neurolex.org/wiki/Category-3ALight_emitting_optical_imaging_protocol 
+Light green http://neurolex.org/wiki/Category-3ALight_green 
+Light magenta http://neurolex.org/wiki/Category-3ALight_magenta 
+Light purple http://neurolex.org/wiki/PATO_0001260 
+Light yellow http://neurolex.org/wiki/Category-3ALight_yellow 
+Light blue http://neurolex.org/wiki/Category-3ALight_blue 
+Light green http://neurolex.org/wiki/PATO_0001250 
+Light brown http://neurolex.org/wiki/PATO_0001246 
+Light microscopic imaging assay http://neurolex.org/wiki/Birnlex_2147 
+Light grey http://neurolex.org/wiki/Category-3ALight_grey 
+Light sheet based fluorescent microscopy imaging assay http://neurolex.org/wiki/Category-3ALight_sheet_based_fluorescent_microscopy_imaging_assay 
+Light orange http://neurolex.org/wiki/Category-3ALight_orange 
+Light transmission optical imaging protocol http://neurolex.org/wiki/Birnlex_2253 
+Reflected Ambient Light http://neurolex.org/wiki/Category-3AReflected_Ambient_Light 
+Light red brown http://neurolex.org/wiki/PATO_0001289 
+Light phase http://neurolex.org/wiki/PATO_0000503 
+Light red http://neurolex.org/wiki/Category-3ALight_red 
+Light Path Filter Pass-Through Wavelength http://neurolex.org/wiki/Category-3ALight_Path_Filter_Pass-2DThrough_Wavelength 
+Light red brown http://neurolex.org/wiki/Category-3ALight_red_brown 
+Light cyan http://neurolex.org/wiki/PATO_0001247 
+Light yellow http://neurolex.org/wiki/PATO_0001264 
+Resource:Fast Light Toolkit http://neurolex.org/wiki/Nif-2D0000-2D30565 
+Microscope Light Source http://neurolex.org/wiki/Category-3AMicroscope_Light_Source 
+Light grey http://neurolex.org/wiki/PATO_0001252 
+Light orange http://neurolex.org/wiki/PATO_0001255 
+Light brown http://neurolex.org/wiki/Category-3ALight_brown 
+Light microscopic imaging assay http://neurolex.org/wiki/Category-3ALight_microscopic_imaging_assay 
+Light violet http://neurolex.org/wiki/PATO_0001704 
+Light Path Filter Pass Band http://neurolex.org/wiki/Category-3ALight_Path_Filter_Pass_Band 
+Light phase http://neurolex.org/wiki/Category-3ALight_phase 
+Inverted Light Microscope http://neurolex.org/wiki/Category-3AInverted_Light_Microscope 
+Light cyan http://neurolex.org/wiki/Category-3ALight_cyan 
+Light blue http://neurolex.org/wiki/PATO_0001243 
+Light magenta http://neurolex.org/wiki/PATO_0001253 
+Light deep pink http://neurolex.org/wiki/Category-3ALight_deep_pink 
+Light red http://neurolex.org/wiki/PATO_0001262 
+Light purple http://neurolex.org/wiki/Category-3ALight_purple 
+Light transmission optical imaging protocol http://neurolex.org/wiki/Category-3ALight_transmission_optical_imaging_protocol 
+Light Path Filter Type Stack Code Sequence http://neurolex.org/wiki/Category-3ALight_Path_Filter_Type_Stack_Code_Sequence 
+Light emitting optical imaging protocol http://neurolex.org/wiki/Birnlex_2254 
+Resource:Fast Light Toolkit http://neurolex.org/wiki/Category-3AResource-3AFast_Light_Toolkit 
+Light stimulus transduction http://neurolex.org/wiki/Category-3ALight_stimulus_transduction 
+ERO_related 
+static light scattering analyzer http://purl.obolibrary.org/obo/ERO_0001596 
+automated light microscopy scan http://purl.obolibrary.org/obo/ERO_0000961 
+matrix-assisted laser desorption ionization time-of-flight mass spectrometry http://purl.obolibrary.org/obo/ERO_0001627 
+time lapse light microscopy http://purl.obolibrary.org/obo/ERO_0000216 
+light/dark chamber http://purl.obolibrary.org/obo/ERO_0001755 
+dynamic light scattering instrument photon correlation spectrometer http://purl.obolibrary.org/obo/ERO_0001474 
+transmitted light microscopy http://purl.obolibrary.org/obo/ERO_0001622 
+light box http://purl.obolibrary.org/obo/ERO_0000208 
+time-of-flight secondary ion mass spectrometer http://purl.obolibrary.org/obo/ERO_0000540 
+polarized light camera http://purl.obolibrary.org/obo/ERO_0001011 
+light microscopy http://purl.obolibrary.org/obo/ERO_0000215 
+UV light source http://purl.obolibrary.org/obo/ERO_0001574 
+"
+microscope;1;"ant1b_test 
+";4;"neurolex_id 
+http://neurolex.org/wiki/Birnlex_2106  
+http://neurolex.org/wiki/Category-3AMicroscope  
+http://neurolex.org/wiki/Nlx_57599  
+NEMO_id 
+OBI_id 
+http://purl.obolibrary.org/obo/OBI_0400169  
+ERO_id 
+";2;"ERO_definition 
+A microscope is an instrument which magnifies the view on objects (too small to be viewed by the naked eye) under increased resolution. A microscope can be an optical instrument but also and electronic instrument. There are various kind of optical microscopes, e.g confocal microscope, epifluoresence microscope)  
+OBI_definition 
+neurolex_definition 
+An instrument used to obtain a magnified image of small objects and reveal details of structure not otherwise distinguishable.  
+NEMO_definition 
+";0;"ERO_comment 
+OBI_comment 
+neurolex_comment 
+NEMO_comment 
+";0;;0;;0;;44;"NEMO_related 
+OBI_related 
+scanning force microscope http://purl.obolibrary.org/obo/OBI_0001105 
+spinning-disk confocal microscope http://purl.obolibrary.org/obo/OBI_0001055 
+digital microscope http://purl.obolibrary.org/obo/OBI_0001126 
+confocal microscope http://purl.obolibrary.org/obo/OBI_0001079 
+laser scanning confocal microscope http://purl.obolibrary.org/obo/OBI_0001125 
+microscope slide http://purl.obolibrary.org/obo/OBI_0400170 
+programmable array microscope http://purl.obolibrary.org/obo/OBI_0001071 
+optical microscope http://purl.obolibrary.org/obo/OBI_0000940 
+electron microscope http://purl.obolibrary.org/obo/OBI_0000990 
+laser capture microdissection microscope http://purl.obolibrary.org/obo/OBI_0001096 
+stereo microscope http://purl.obolibrary.org/obo/OBI_0001065 
+neurolex_related 
+Surgical Microscope http://neurolex.org/wiki/Category-3ASurgical_Microscope 
+Microscope Light Source http://neurolex.org/wiki/Category-3AMicroscope_Light_Source 
+Inverted Light Microscope http://neurolex.org/wiki/Category-3AInverted_Light_Microscope 
+Surgical Microscope http://neurolex.org/wiki/Nlx_137342 
+ERO_related 
+interfacial force microscope http://purl.obolibrary.org/obo/ERO_0001751 
+teaching microscope http://purl.obolibrary.org/obo/ERO_0001006 
+variable pressure analytical field emission scanning electron microscope http://purl.obolibrary.org/obo/ERO_0001800 
+cryogenic transmission electron microscope http://purl.obolibrary.org/obo/ERO_0001807 
+raman-atomic force microscope http://purl.obolibrary.org/obo/ERO_0001749 
+inverted stereo microscope http://purl.obolibrary.org/obo/ERO_0000978 
+surgical microscope http://purl.obolibrary.org/obo/ERO_0000879 
+microscope digital camera http://purl.obolibrary.org/obo/ERO_0000276 
+inverted microscope http://purl.obolibrary.org/obo/ERO_0000344 
+scanning transmission electron microscope http://purl.obolibrary.org/obo/ERO_0001444 
+transmission electron microscope http://purl.obolibrary.org/obo/ERO_0000248 
+upright microscope http://purl.obolibrary.org/obo/ERO_0000497 
+fluorescence compound microscope http://purl.obolibrary.org/obo/ERO_0000934 
+incubator microscope http://purl.obolibrary.org/obo/ERO_0001947 
+infrared microscope http://purl.obolibrary.org/obo/ERO_0000496 
+Raman confocal microscope http://purl.obolibrary.org/obo/ERO_0000610 
+environmental scanning electron microscope http://purl.obolibrary.org/obo/ERO_0000273 
+field emission scanning electron microscope http://purl.obolibrary.org/obo/ERO_0000613 
+atomic force microscope http://purl.obolibrary.org/obo/ERO_0000463 
+energy filtering transmission electron microscope http://purl.obolibrary.org/obo/ERO_0000937 
+deconvolution microscope http://purl.obolibrary.org/obo/ERO_0000374 
+fluorescence microscope http://purl.obolibrary.org/obo/ERO_0000249 
+total internal reflection fluorescence atomic force microscope http://purl.obolibrary.org/obo/ERO_0001750 
+motorized microscope stage http://purl.obolibrary.org/obo/ERO_0001033 
+dissecting surgical microscope http://purl.obolibrary.org/obo/ERO_0000958 
+super-resolution microscope http://purl.obolibrary.org/obo/ERO_0001946 
+two-photon confocal microscope http://purl.obolibrary.org/obo/ERO_0000324 
+fixed stage microscope http://purl.obolibrary.org/obo/ERO_0000878 
+scanning electron microscope http://purl.obolibrary.org/obo/ERO_0000521 
+"
+amplifier;1;"ant1b_test 
+";3;"neurolex_id 
+http://neurolex.org/wiki/Category-3AAmplifier  
+http://neurolex.org/wiki/Nlx_27076  
+NEMO_id 
+OBI_id 
+ERO_id 
+http://purl.obolibrary.org/obo/ERO_0000945  
+";2;"ERO_definition 
+An instrument that changes, usually increases, the amplitude of a signal. The relationship of the input to the output of an amplifier, usually expressed as a function of the input frequency, is called the transfer function of the amplifier, and the magnitude of the transfer function is termed the gain.  
+OBI_definition 
+neurolex_definition 
+Amplifiers are used in intracellular and extracellular recording, epithelial voltage clamps, specialty instruments for micro-pressure measurement and bio-potential discrimination, and the electrodes and transducers to work with these units.  
+NEMO_definition 
+";1;"ERO_comment 
+OBI_comment 
+neurolex_comment 
+Adapted from WPI http://www.wpiinc.com/index.php/Virtue-Mart/vmchk.html  
+NEMO_comment 
+";0;;0;;0;;17;"NEMO_related 
+voltage_amplifier http://purl.obolibrary.org/obo/OBI_0400101 
+voltage_amplifier_filter_setting http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_1142000 
+amplifier_pass_band http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_2237000 
+amplifier_input_impedance http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_2655000 
+amplifier_stop_band http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_0118000 
+voltage_amplifier_highpass_filter_setting http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_3383000 
+voltage_amplifier_lowpass_filter_setting http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_4273000 
+OBI_related 
+logarithmic voltage amplifier http://purl.obolibrary.org/obo/OBI_0400066 
+voltage amplifier http://purl.obolibrary.org/obo/OBI_0400101 
+preamplifier http://purl.obolibrary.org/obo/OBI_0400087 
+neurolex_related 
+Transducer Amplifier http://neurolex.org/wiki/Nlx_137271 
+Intracellular Amplifier http://neurolex.org/wiki/Category-3AIntracellular_Amplifier 
+Extracellular Amplifier http://neurolex.org/wiki/Category-3AExtracellular_Amplifier 
+Transducer Amplifier http://neurolex.org/wiki/Category-3ATransducer_Amplifier 
+Transducer Amplifier http://neurolex.org/wiki/Nlx_137318 
+ERO_related 
+microelectrode amplifier http://purl.obolibrary.org/obo/ERO_0000946 
+patch clamp amplifier http://purl.obolibrary.org/obo/ERO_0000536 
+"
+source;1;"is split from [ant1b_test]: light source 
+";0;"neurolex_id 
+NEMO_id 
+OBI_id 
+ERO_id 
+";0;"ERO_definition 
+OBI_definition 
+neurolex_definition 
+NEMO_definition 
+";0;"ERO_comment 
+OBI_comment 
+neurolex_comment 
+NEMO_comment 
+";0;;0;;0;;113;"NEMO_related 
+EEG_current_source_density_map http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_8315000 
+data_resource http://ontology.neuinfo.org/NIF/DigitalEntities/NIF-Resource.owl#nlx_res_20090102 
+ERP_source_topography http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_0000198 
+distributed_source_modeling http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_4767000 
+source_ontology http://purl.bioontology.org/NEMO/ontology/NEMO_annotation_properties.owl#source_ontology 
+publication_of_narrative_resource http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_5753000 
+electromagnetic_source_modeling http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_1629000 
+discrete_source_modeling http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_5957000 
+regional_source_modeling http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_3964000 
+discrete_source_modeling_algorithm http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_9245000 
+narrative_resource http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Narrative_Resource 
+definition_source http://purl.bioontology.org/NEMO/ontology/NEMO_annotation_properties.owl#definition_source 
+completion_publication_of_narrative_resource http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_2249000 
+data_resource_ID http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_6572000 
+regional_source_modeling http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_2751000 
+source_localization_algorithm http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_3947000 
+OBI_related 
+email address of Bioinformatics Resource Center contact person http://purl.obolibrary.org/obo/OBI_0001887 
+Bioinformatics Resource Center contact person http://purl.obolibrary.org/obo/OBI_0001883 
+source code module http://purl.obolibrary.org/obo/IAO_0000096 
+organization of Bioinformatics Resource Center contact person http://purl.obolibrary.org/obo/OBI_0001881 
+ion source http://purl.obolibrary.org/obo/OBI_0000361 
+Resource Identifier http://purl.org/dc/elements/1.1/identifier 
+Bioinformatics Resource Center http://purl.obolibrary.org/obo/OBI_0001626 
+X-ray source http://purl.obolibrary.org/obo/OBI_0001138 
+Resource Type http://purl.org/dc/elements/1.1/type 
+definition source http://purl.obolibrary.org/obo/IAO_0000119 
+light source http://purl.obolibrary.org/obo/OBI_0400065 
+neurolex_related 
+Source-Axis Distance http://neurolex.org/wiki/Category-3ASource-2DAxis_Distance 
+Source Applicator Wall Nominal Transmission http://neurolex.org/wiki/Category-3ASource_Applicator_Wall_Nominal_Transmission 
+Source to Surface Distance http://neurolex.org/wiki/Category-3ASource_to_Surface_Distance 
+Resource:MyBioSource http://neurolex.org/wiki/Nlx_152416 
+Resource:Blind Source Separation and Independent Component Analysis http://neurolex.org/wiki/Category-3AResource-3ABlind_Source_Separation_and_Independent_Component_Analysis 
+Resource:Source BioScience LifeSciences http://neurolex.org/wiki/Category-3AResource-3ASource_BioScience_LifeSciences 
+Active Source Length http://neurolex.org/wiki/Category-3AActive_Source_Length 
+Counts Source http://neurolex.org/wiki/Category-3ACounts_Source 
+Number of Tomosynthesis Source Images http://neurolex.org/wiki/Category-3ANumber_of_Tomosynthesis_Source_Images 
+Source monitoring http://neurolex.org/wiki/Nlx_145741 
+Resource:Source BioScience LifeSciences http://neurolex.org/wiki/Category-3AResource-3AImaGenes 
+Source to Block Tray Distance http://neurolex.org/wiki/Category-3ASource_to_Block_Tray_Distance 
+Resource:AlloSource http://neurolex.org/wiki/Category-3AResource-3AAlloSource 
+NTP Source Address http://neurolex.org/wiki/Category-3ANTP_Source_Address 
+Resource:Berkeley Bioinformatics Open-Source Projects http://neurolex.org/wiki/Nlx_149171 
+Source Applicator Wall Nominal Thickness http://neurolex.org/wiki/Category-3ASource_Applicator_Wall_Nominal_Thickness 
+Distance Source to Detector http://neurolex.org/wiki/Category-3ADistance_Source_to_Detector 
+Source Applicator ID http://neurolex.org/wiki/Category-3ASource_Applicator_ID 
+Source to Compensator Tray Distance http://neurolex.org/wiki/Category-3ASource_to_Compensator_Tray_Distance 
+Source code http://neurolex.org/wiki/Nlx_inv_20081201 
+Recorded Source Sequence http://neurolex.org/wiki/Category-3ARecorded_Source_Sequence 
+Source Type http://neurolex.org/wiki/Category-3ASource_Type 
+Source Applicator Type http://neurolex.org/wiki/Category-3ASource_Applicator_Type 
+Channel Source Modifiers Sequence http://neurolex.org/wiki/Category-3AChannel_Source_Modifiers_Sequence 
+Source Isotope Half Life http://neurolex.org/wiki/Category-3ASource_Isotope_Half_Life 
+Resource:Open Source Science Project http://neurolex.org/wiki/Nlx_152232 
+Resource:SourceForge http://neurolex.org/wiki/Category-3AResource-3ASourceForge 
+Source Image Sequence http://neurolex.org/wiki/Category-3ASource_Image_Sequence 
+Trigger Source or Type http://neurolex.org/wiki/Category-3ATrigger_Source_or_Type 
+Referenced Source Applicator Number http://neurolex.org/wiki/Category-3AReferenced_Source_Applicator_Number 
+Source Applicator Manufacturer http://neurolex.org/wiki/Category-3ASource_Applicator_Manufacturer 
+Distance Source to Entrance http://neurolex.org/wiki/Category-3ADistance_Source_to_Entrance 
+Distance Source to Support http://neurolex.org/wiki/Category-3ADistance_Source_to_Support 
+Source memory http://neurolex.org/wiki/Nlx_145740 
+Resource:Alizadehlab: MeeboChip and HeeboChip Open Source Project http://neurolex.org/wiki/Category-3AResource-3AAlizadehlab-3A_MeeboChip_and_HeeboChip_Open_Source_Project 
+Resource:Source BioScience LifeSciences http://neurolex.org/wiki/Nif-2D0000-2D31984 
+Source Serial Number http://neurolex.org/wiki/Category-3ASource_Serial_Number 
+Source to Reference Object Distance http://neurolex.org/wiki/Category-3ASource_to_Reference_Object_Distance 
+Source Manufacturer http://neurolex.org/wiki/Category-3ASource_Manufacturer 
+Source memory test http://neurolex.org/wiki/Category-3ASource_memory_test 
+Resource:The Global Proteome Machine Organization: Proteomics Database and Open Source Software http://neurolex.org/wiki/Category-3AResource-3AThe_Global_Proteome_Machine_Organization-3A_Proteomics_Database_and_Open_Source_Software 
+Resource:MeeboChip and HeeboChip Open Source Project http://neurolex.org/wiki/Category-3AResource-3AMeeboChip_and_HeeboChip_Open_Source_Project 
+Source Waveform Sequence http://neurolex.org/wiki/Category-3ASource_Waveform_Sequence 
+Source code http://neurolex.org/wiki/Category-3ASource_code 
+Resource:Source BioScience LifeSciences http://neurolex.org/wiki/Category-3AResource-3ARZPD 
+Source Isotope Name http://neurolex.org/wiki/Category-3ASource_Isotope_Name 
+Microscope Light Source http://neurolex.org/wiki/Category-3AMicroscope_Light_Source 
+Time Source http://neurolex.org/wiki/Category-3ATime_Source 
+Resource:LifeSource http://neurolex.org/wiki/Category-3AResource-3ALifeSource 
+Resource:The Global Proteome Machine Organization: Proteomics Database and Open Source Software http://neurolex.org/wiki/Nif-2D0000-2D10455 
+Resource:Source BioScience LifeSciences http://neurolex.org/wiki/Category-3AResource-3AGeneservice 
+Resource:PBL InterferonSource http://neurolex.org/wiki/Nlx_152426 
+Source Sequence http://neurolex.org/wiki/Category-3ASource_Sequence 
+Respiratory Signal Source http://neurolex.org/wiki/Category-3ARespiratory_Signal_Source 
+Source to Beam Limiting Device Distance http://neurolex.org/wiki/Category-3ASource_to_Beam_Limiting_Device_Distance 
+Source to Compensator Distance http://neurolex.org/wiki/Category-3ASource_to_Compensator_Distance 
+Source monitoring http://neurolex.org/wiki/Category-3ASource_monitoring 
+Source to Wedge Tray Distance http://neurolex.org/wiki/Category-3ASource_to_Wedge_Tray_Distance 
+Referenced Source Number http://neurolex.org/wiki/Category-3AReferenced_Source_Number 
+Source Number http://neurolex.org/wiki/Category-3ASource_Number 
+Source Encapsulation Nominal Transmission http://neurolex.org/wiki/Category-3ASource_Encapsulation_Nominal_Transmission 
+Resource:Berkeley Bioinformatics Open-Source Projects http://neurolex.org/wiki/Category-3AResource-3ABerkeley_Bioinformatics_Open-2DSource_Projects 
+Resource:e-Source: Behavioral and Social Sciences Research http://neurolex.org/wiki/Nlx_146241 
+Fluence Data Source http://neurolex.org/wiki/Category-3AFluence_Data_Source 
+Resource:e-Source: Behavioral and Social Sciences Research http://neurolex.org/wiki/Category-3AResource-3Ae-2DSource-3A_Behavioral_and_Social_Sciences_Research 
+Resource:MeeboChip and HeeboChip Open Source Project http://neurolex.org/wiki/Nif-2D0000-2D30030 
+Source Applicator Step Size http://neurolex.org/wiki/Category-3ASource_Applicator_Step_Size 
+Source Encapsulation Nominal Thickness http://neurolex.org/wiki/Category-3ASource_Encapsulation_Nominal_Thickness 
+Source Image Evidence Sequence http://neurolex.org/wiki/Category-3ASource_Image_Evidence_Sequence 
+Resource:LifeSource http://neurolex.org/wiki/Nlx_69466 
+Source Applicator Number http://neurolex.org/wiki/Category-3ASource_Applicator_Number 
+Resource:Open Source Science Project http://neurolex.org/wiki/Category-3AResource-3AOpen_Source_Science_Project 
+Source Applicator Name http://neurolex.org/wiki/Category-3ASource_Applicator_Name 
+Resource:Blind Source Separation and Independent Component Analysis http://neurolex.org/wiki/Nif-2D0000-2D24771 
+Recorded Source Applicator Sequence http://neurolex.org/wiki/Category-3ARecorded_Source_Applicator_Sequence 
+Resource:An Open-Source MATLAB-to-Python Compiler http://neurolex.org/wiki/Nif-2D0000-2D30104 
+Active Source Diameter http://neurolex.org/wiki/Category-3AActive_Source_Diameter 
+Source memory http://neurolex.org/wiki/Category-3ASource_memory 
+Source Movement Type http://neurolex.org/wiki/Category-3ASource_Movement_Type 
+Source Applicator Length http://neurolex.org/wiki/Category-3ASource_Applicator_Length 
+ERO_related 
+has_source http://purl.obolibrary.org/obo/ERO_0000579 
+open source software http://purl.obolibrary.org/obo/ERO_0000074 
+Open source software license http://www.ebi.ac.uk/swo/license/SWO_1000008 
+source-based data analysis objective http://purl.obolibrary.org/obo/ERO_0100121 
+source-based data transformation objective http://purl.obolibrary.org/obo/ERO_0100039 
+UV light source http://purl.obolibrary.org/obo/ERO_0001574 
+"
+light source;1;"ant1b_test 
+";1;"neurolex_id 
+NEMO_id 
+OBI_id 
+http://purl.obolibrary.org/obo/OBI_0400065  
+ERO_id 
+";1;"ERO_definition 
+A light source is an optical subsystem that provides light for use in a distant area using a delivery system (e.g., fiber optics). Light sources may include one of a variety of lamps (e.g., xenon, halogen, mercury). Most light sources are operated from line power, but some may be powered from batteries. They are mostly used in endoscopic, microscopic, and other examination and/or in surgical procedures. The light source is part of the optical subsystem. In a flow cytometer the light source directs high intensity light at particles at the interrogation point. The light source in a flow cytometer is usually a laser.  
+OBI_definition 
+neurolex_definition 
+NEMO_definition 
+";0;"ERO_comment 
+OBI_comment 
+neurolex_comment 
+NEMO_comment 
+";0;;0;;0;;1;"NEMO_related 
+OBI_related 
+neurolex_related 
+ERO_related 
+UV light source http://purl.obolibrary.org/obo/ERO_0001574 
+"
