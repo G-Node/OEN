@@ -19,13 +19,25 @@
 #                                         #
 ###########################################
 
-import os
+import os, inspect
 from OWLify import OWL as OWLclass
-from pyscripts.OntoMapper.ontmain import *
-from pyscripts.generic_functions.generic_functions import splitTermID, avoidSpecials
-from nlx_formatted_csv import *
 from ontospy.ontospy import *
 
+
+filename   = inspect.getframeinfo(inspect.currentframe()).filename
+scriptpath = os.path.dirname(os.path.abspath(filename))
+oenpath    = scriptpath[:scriptpath.find('OEN\\')+4]
+
+os.chdir( oenpath )
+
+from pyscripts.generic_functions.generic_functions import splitTermID, avoidSpecials
+
+
+###########################################
+#                                         #
+#           SUPPORT FUNCTIONS             #
+#                                         #
+###########################################
 
 
 def OENimportedClass(OWL, oen_id, ppty_dict):
@@ -73,6 +85,7 @@ def OENimportedClass(OWL, oen_id, ppty_dict):
     OWL.doc += stub
     return OWL
 
+
 def reloadOWL(OWL,file_path="oen_term.owl"):
     '''
     Function to make the doc field of an owlify owl object the exact replica of 
@@ -100,6 +113,7 @@ def reloadOWL(OWL,file_path="oen_term.owl"):
         print "Could not reload OWL from:", filename
     return OWL
 
+
 def shutOWL(OWL):
     '''
     Function to tie down doc field of an owlify owl object and write it to disk
@@ -120,6 +134,7 @@ def shutOWL(OWL):
         fileh.close()
     except:
         print "Could not shut OWL:", filename
+
 
 def ontoUpdate(OWL, file_path="oen_term.owl"):
     '''
@@ -149,6 +164,7 @@ def ontoUpdate(OWL, file_path="oen_term.owl"):
         onto = []
     return OWL, onto
 
+
 def findClassIDfromLabel(onto,k):
     '''
     Function to return the set of class identifiers of all classes for which a
@@ -173,6 +189,7 @@ def findClassIDfromLabel(onto,k):
                     except:
                         print "Class ID could not be retrieved:", onto.classRepresentation(clas)["classname"]
     return id_set
+
 
 def listAlreadyUsedIDs( onto, option="" ):
     '''
@@ -203,6 +220,7 @@ def listAlreadyUsedIDs( onto, option="" ):
         print "Could not use OntoSPy classFind()"
     return id_list
 
+
 def upOENids(oen_id_free,oen_id_used):
     '''
     Function to obtain remove from a list of integers those that pertain to 
@@ -215,7 +233,7 @@ def upOENids(oen_id_free,oen_id_used):
     '''
     oen_id_free = set(oen_id_free) - set(oen_id_used)
     return sorted(list(oen_id_free))
-    
+      
 
 def OWLrestart( OWL ):
     '''
@@ -920,3 +938,79 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     """
     OWL.doc = stub + "\n"
     return OWL
+
+
+
+'''
+###########################################
+#                                         #
+#                ENABLE TO                #
+#  IMPORT OEN TERMS FROM CONCEPT BRANCH   #
+#                                         #
+###########################################
+
+#manage oen id namespace
+oen_id_free = range(10000000)
+oen_id_used = [i for j in (range(1000), range(2001,10000000)) for i in j]
+#oen_id_used = [i for j in (oen_id_used, listAlreadyUsedIDs(onto, "oen_")) for i in j]
+oen_id_used = sorted(list(set( oen_id_used )))
+oen_id_free = upOENids(oen_id_free, oen_id_used)
+
+#Load all infos from oen_ConceptBranch.csv
+header = ImportHeader("/Users/Asus/Documents/GitHub/OEN/pyscripts/OntoMapper/oen_ConceptBranch.csv", ",")
+oen_CB = LoadCSVwithHeader("/Users/Asus/Documents/GitHub/OEN/pyscripts/OntoMapper/oen_ConceptBranch.csv", header, ",")
+
+conv_dict = {"rdfs:label":"Label", \
+"rdfs:subClassOf":"SuperCategory", \
+"obo:IAO_0000115":"Definition", \
+"obo:IAO_0000119":"DefiningCitation", \
+"obo:IAO_0000118":"Synonym"}
+
+for term in oen_CB:
+    ppty_dict = {}
+    if "Id" in term.keys() and type(term["Id"]) is str and term["Id"][:len("oen_")]=="oen_":
+        oen_id = -1
+        try:
+            oen_id = int(term["Id"][len("oen_"):])
+        except:
+            print "could not identify oen_id for:", term["Id"]
+        if oen_id==-1 or oen_id in oen_id_used:
+            if oen_id in listAlreadyUsedIDs(onto, "oen_"):
+                zeropad = "0"*(int(7) - len(str(oen_id)))
+                oen_idz = "oen_" + zeropad + str(oen_id)
+                print 'Cannot attribute', term["Id"] ,'to "' + term["Label"] + '",', oen_idz, '\talready attributed.'
+                #would use to display pre-existing label, but returns empty list.
+                #onto.classRepresentation(str(onto.classFind(oen_idz)))["label"]
+            else:
+                print "oen_id either pertains to exclusion range or not a straight integer:", term["Id"]
+            continue
+        else:
+            for c in conv_dict.keys():
+                if conv_dict[c] in term.keys():
+                    str_list = term[ conv_dict[c] ].split(",:Category:")
+                    str_list[:] = [str_list[k].replace(":Category:","") for k in range(len(str_list)) if str_list[k]!=""]
+                    if len(str_list)>0:
+                        ppty_dict[ c ] = [] 
+                        for s in str_list:
+                            ppty_dict[ c ].append( s )
+            if "rdfs:subClassOf" not in ppty_dict.keys() or len(ppty_dict["rdfs:subClassOf"])<1:
+                ppty_dict[ "rdfs:subClassOf" ] = ["unclassified term"]
+            else:
+                (out, onto) = ontoUpdate(out, "C:\Users\Asus\Documents\Github\OEN\pyscripts\OntoMapper\oen_term.owl")
+                temp_list = []
+                for k in ppty_dict["rdfs:subClassOf"]:
+                    if type(k) is str and len(k)>0:
+                        id_set = findClassIDfromLabel(onto,k)
+                        for each_id in id_set:
+                            temp_list.append( each_id )
+                ppty_dict[ "rdfs:subClassOf" ] = list(set(temp_list))
+            if len(ppty_dict[ "rdfs:subClassOf" ])==0:
+                ppty_dict[ "rdfs:subClassOf" ] = ["unclassified term"]
+                
+            zeropad = "0"*(int(7) - len(str(oen_id)))
+            oen_idz = "oen_" + zeropad + str(oen_id)
+            out = OENimportedClass(out, oen_idz, ppty_dict)
+            oen_id_used.append( oen_id )
+            oen_id_free.remove( oen_id )
+'''
+

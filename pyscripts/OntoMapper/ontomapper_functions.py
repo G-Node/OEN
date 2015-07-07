@@ -19,12 +19,18 @@
 #                                        #
 ##########################################
 
-import csv
-import copy
-import difflib
+import os, inspect, csv, copy, difflib
 from SPARQLWrapper import SPARQLWrapper, JSON
 
-from pyscripts.generic_functions.generic_functions import formatAsRDFSpropertyLabel, Tuplify_LblIdDef, encodeForWriting
+filename   = inspect.getframeinfo(inspect.currentframe()).filename
+scriptpath = os.path.dirname(os.path.abspath(filename))
+oenpath    = scriptpath[:scriptpath.find('OEN\\')+4]
+
+os.chdir( oenpath )
+
+from pyscripts.generic_functions.generic_functions import formatAsRDFSpropertyLabel
+from pyscripts.generic_functions.generic_functions import Tuplify_LblIdDef
+from pyscripts.generic_functions.generic_functions import encodeForWriting
 
 
 ###########################################

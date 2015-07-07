@@ -19,9 +19,9 @@
 ############################################
 
 import os, inspect
-from pyscripts.OntoMapper.ontomapper_functions import openQscopeFile, openCSVFile, getSPARQLResults
-from pyscripts.OntoMapper.ontomapper_functions import storeResults, dictToCSVfile, dictToMappingDashboardCSV
-from pyscripts.OntoMapper.ontomapper_functions import dictToMappingSummaryCSV
+from ontomapper_functions import openQscopeFile, openCSVFile, getSPARQLResults
+from ontomapper_functions import storeResults, dictToCSVfile, dictToMappingDashboardCSV
+from ontomapper_functions import dictToMappingSummaryCSV
 
 
 filename   = inspect.getframeinfo(inspect.currentframe()).filename
