@@ -142,7 +142,7 @@ for clas in onto.allclasses:
                                                         #print "*", h, "\t", fw_header[h], "\t", tripl[0]
                                                         if h not in csvdict[ onto.classRepresentation(clas)["class"] ].keys():
                                                                 
-                                                                csvdict[ onto.classRepresentation(clas)["class"] ][ h ] = []                                                        
+                                                                csvdict[ onto.classRepresentation(clas)["class"] ][ h ] = []
                                                         
                                                         if tripl[1] not in csvdict[ onto.classRepresentation(clas)["class"] ][ h ]:
                                                                                                                                 

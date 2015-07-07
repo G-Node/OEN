@@ -22,7 +22,7 @@
 import os, inspect, shutil
 from OWLify import OWL as OWLclass
 from ontospy.ontospy import *
-from ontowriter_functions import upOENids, OWLrestart, OENimportedClass
+from ontowriter_functions import upOENids, OENimportedClass
 from ontowriter_functions import reloadOWL, shutOWL, ontoUpdate
 from ontowriter_functions import findClassIDfromLabel, listAlreadyUsedIDs
 
