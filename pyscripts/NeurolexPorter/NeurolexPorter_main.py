@@ -21,8 +21,16 @@
 
 import os, inspect
 from ontospy.ontospy import *
-from NeurolexPorter_functions import labelListFromPropertyID, ImportHeader
-from NeurolexPorter_functions import LoadCSVwithHeader, WriteCSVwithHeader
+from neurolexporter_functions import labelListFromPropertyID, ImportHeader
+from neurolexporter_functions import LoadCSVwithHeader, WriteCSVwithHeader
+
+filename   = inspect.getframeinfo(inspect.currentframe()).filename
+scriptpath = os.path.dirname(os.path.abspath(filename))
+oenpath    = scriptpath[:scriptpath.find('OEN\\')+4]
+
+os.chdir( oenpath )
+
+from pyscripts.generic_functions.generic_functions import splitTermID
 
 
 ###########################################
@@ -33,9 +41,9 @@ from NeurolexPorter_functions import LoadCSVwithHeader, WriteCSVwithHeader
 
 csvdict = {}
 
-onto = Ontology( "C:\Users\Asus\Documents\Github\OEN\pyscripts\OntoMapper\oen_term.owl" )
+onto = Ontology( oenpath+"pyscripts\data\NeurolexPorter_data\NeurolexPorter_input\oen_term.owl" )
 
-header = ImportHeader("/Users/Asus/Documents/GitHub/OEN/pyscripts/OntoMapper/oen_ConceptBranch.csv")
+header = ImportHeader( oenpath+"pyscripts\data\NeurolexPorter_data\NeurolexPorter_input\oen_ConceptBranch.csv", ",")
 
 fw_header = {}
 for h in header:
@@ -46,11 +54,14 @@ for h in header:
             fw_header[h] = [ h ]
         else:
             fw_header[h].append( h )
-fw_header["SuperCategory"] = "subClassOf"
+fw_header["SuperCategory"]    = "subClassOf"
 fw_header["DefiningCitation"] = "definition source"
-fw_header["RelatedTo"] = "alternative term"
+fw_header["RelatedTo"]        = "alternative term"
 
 for clas in onto.allclasses:
+        
+        print
+        print "- "*12
         
         label_list = []
         #unwrapStruct( onto.classRepresentation(clas) )
@@ -73,8 +84,13 @@ for clas in onto.allclasses:
                         if "id" not in csvdict[ onto.classRepresentation(clas)["class"] ].keys():
                                 
                                 csvdict[ onto.classRepresentation(clas)["class"] ]["id"] = []
+                        
+                        temp = onto.classRepresentation(clas)["class"]
+                        temp = temp[::-1]
+                        temp = temp[:temp.index("/")]
+                        temp = temp[::-1]
                                 
-                        csvdict[ onto.classRepresentation(clas)["class"] ]["id"].append( onto.classRepresentation(clas)["class"] )
+                        csvdict[ onto.classRepresentation(clas)["class"] ]["id"].append( temp )
                         
                         if "label" in onto.classRepresentation(clas).keys():
                                 
@@ -84,11 +100,13 @@ for clas in onto.allclasses:
                                         
                                 if type( onto.classRepresentation(clas)["label"] ) is str:
                                     
-                                        csvdict[ onto.classRepresentation(clas)["class"] ]["label"].append( onto.classRepresentation(clas)["label"] ) 
+                                        csvdict[ onto.classRepresentation(clas)["class"] ]["label"].append( onto.classRepresentation(clas)["label"] )
+                                        print temp, " ", onto.classRepresentation(clas)["label"]
                                         
                                 elif type( onto.classRepresentation(clas)["label"] ) is list and len(  onto.classRepresentation(clas)["label"] )>0:
                                         
                                         csvdict[ onto.classRepresentation(clas)["class"] ]["label"].append( onto.classRepresentation(clas)["label"][0] )
+                                        print temp, " ", onto.classRepresentation(clas)["label"][0]
                                         
                         if "comment" in onto.classRepresentation(clas).keys():
                                 
@@ -124,10 +142,10 @@ for clas in onto.allclasses:
                                                         #print "*", h, "\t", fw_header[h], "\t", tripl[0]
                                                         if h not in csvdict[ onto.classRepresentation(clas)["class"] ].keys():
                                                                 
-                                                                csvdict[ onto.classRepresentation(clas)["class"] ][ h ] = []
+                                                                csvdict[ onto.classRepresentation(clas)["class"] ][ h ] = []                                                        
                                                         
                                                         if tripl[1] not in csvdict[ onto.classRepresentation(clas)["class"] ][ h ]:
-                                                                
+                                                                                                                                
                                                                 csvdict[ onto.classRepresentation(clas)["class"] ][ h ].append( tripl[1] )
                                                                 
                                                 #case annotation id is stated instead of annotation label
@@ -159,4 +177,5 @@ for clas in onto.allclasses:
                 
                 print "class without an id:", clas
 
-WriteCSVwithHeader("csv_with_header.csv", header, csvdict)
+WriteCSVwithHeader(oenpath+"pyscripts\data\NeurolexPorter_data\NeurolexPorter_output\\"+\
+                    "oen_DeviceAndMethodBranch.csv", header, csvdict)
