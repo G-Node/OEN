@@ -2683,7 +2683,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000220 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000220">
-    	<rdfs:label xml:lang="en">contrast sensitivity</rdfs:label>
+    	<rdfs:label xml:lang="en">image acquisition detector type</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -2693,7 +2693,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000221 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000221">
-    	<rdfs:label xml:lang="en">image acquisition detector type</rdfs:label>
+    	<rdfs:label xml:lang="en">dual electrode recording</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -2703,7 +2703,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000222 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000222">
-    	<rdfs:label xml:lang="en">dual electrode recording</rdfs:label>
+    	<rdfs:label xml:lang="en">digital input output line count</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -2713,16 +2713,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000223 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000223">
-    	<rdfs:label xml:lang="en">digital input output line count</rdfs:label>
-    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">odML terminology</dc:source>
-    </owl:Class>
-
-
-
-    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000224 -->
-
-    <owl:Class rdf:about="&oen_term;oen_0000224">
     	<rdfs:label xml:lang="en">continuous drug application start</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
@@ -2730,10 +2720,20 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
 
 
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000224 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000224">
+    	<rdfs:label xml:lang="en">beam splitter manufacturer</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">odML terminology</dc:source>
+    </owl:Class>
+
+
+
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000225 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000225">
-    	<rdfs:label xml:lang="en">beam splitter manufacturer</rdfs:label>
+    	<rdfs:label xml:lang="en">slice thickness</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -3753,9 +3753,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000327 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000327">
-    	<rdfs:label xml:lang="en">animal model</rdfs:label>
+    	<rdfs:label xml:lang="en">scientific name</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">odML terminology</dc:source>
+    	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
 
 
@@ -3763,7 +3763,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000328 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000328">
-    	<rdfs:label xml:lang="en">scientific name</rdfs:label>
+    	<rdfs:label xml:lang="en">experimental setup place</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
@@ -3773,9 +3773,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000329 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000329">
-    	<rdfs:label xml:lang="en">experimental setup place</rdfs:label>
+    	<rdfs:label xml:lang="en">water immersion lens</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">Helmholtz</dc:source>
+    	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
 
 
@@ -3783,7 +3783,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000330 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000330">
-    	<rdfs:label xml:lang="en">water immersion lens</rdfs:label>
+    	<rdfs:label xml:lang="en">result file</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -3793,7 +3793,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000331 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000331">
-    	<rdfs:label xml:lang="en">result file</rdfs:label>
+    	<rdfs:label xml:lang="en">sliding window method</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -3803,7 +3803,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000332 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000332">
-    	<rdfs:label xml:lang="en">sliding window method</rdfs:label>
+    	<rdfs:label xml:lang="en">image acquisition subsampling method</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -3813,16 +3813,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000333 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000333">
-    	<rdfs:label xml:lang="en">image acquisition subsampling method</rdfs:label>
-    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">odML terminology</dc:source>
-    </owl:Class>
-
-
-
-    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000334 -->
-
-    <owl:Class rdf:about="&oen_term;oen_0000334">
     	<rdfs:label xml:lang="en">paralytic drug</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
@@ -3830,10 +3820,20 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
 
 
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000334 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000334">
+    	<rdfs:label xml:lang="en">random dot horizontal extent</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">odML terminology</dc:source>
+    </owl:Class>
+
+
+
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000335 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000335">
-    	<rdfs:label xml:lang="en">random dot horizontal extent</rdfs:label>
+    	<rdfs:label xml:lang="en">excitation filter range</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -3843,7 +3843,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000336 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000336">
-    	<rdfs:label xml:lang="en">excitation filter range</rdfs:label>
+    	<rdfs:label xml:lang="en">stimulus end time</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -3853,7 +3853,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000337 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000337">
-    	<rdfs:label xml:lang="en">stimulus end time</rdfs:label>
+    	<rdfs:label xml:lang="en">local anaesthetic location</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -3863,16 +3863,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000338 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000338">
-    	<rdfs:label xml:lang="en">local anaesthetic location</rdfs:label>
-    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">odML terminology</dc:source>
-    </owl:Class>
-
-
-
-    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000339 -->
-
-    <owl:Class rdf:about="&oen_term;oen_0000339">
     	<rdfs:label xml:lang="en">measurement timestamp</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
@@ -3880,9 +3870,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
 
 
-    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000340 -->
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000339 -->
 
-    <owl:Class rdf:about="&oen_term;oen_0000340">
+    <owl:Class rdf:about="&oen_term;oen_0000339">
     	<rdfs:label xml:lang="en">chinrest</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
@@ -3890,10 +3880,20 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
 
 
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000340 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000340">
+    	<rdfs:label xml:lang="en">organization description</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">Helmholtz</dc:source>
+    </owl:Class>
+
+
+
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000341 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000341">
-    	<rdfs:label xml:lang="en">organization description</rdfs:label>
+    	<rdfs:label xml:lang="en">device item</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
@@ -3903,7 +3903,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000342 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000342">
-    	<rdfs:label xml:lang="en">device item</rdfs:label>
+    	<rdfs:label xml:lang="en">on-off stimulation movement stimulus</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
@@ -3913,7 +3913,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000343 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000343">
-    	<rdfs:label xml:lang="en">on-off stimulation movement stimulus</rdfs:label>
+    	<rdfs:label xml:lang="en">organization diminutive</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
@@ -3923,7 +3923,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000344 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000344">
-    	<rdfs:label xml:lang="en">organization diminutive</rdfs:label>
+    	<rdfs:label xml:lang="en">continuous drug application rate</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
@@ -3933,9 +3933,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000345 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000345">
-    	<rdfs:label xml:lang="en">continuous drug application rate</rdfs:label>
+    	<rdfs:label xml:lang="en">dataset quality</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">Helmholtz</dc:source>
+    	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
 
 
@@ -3943,7 +3943,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000346 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000346">
-    	<rdfs:label xml:lang="en">dataset quality</rdfs:label>
+    	<rdfs:label xml:lang="en">image acquisition region of interest width</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -3953,7 +3953,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000347 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000347">
-    	<rdfs:label xml:lang="en">image acquisition region of interest width</rdfs:label>
+    	<rdfs:label xml:lang="en">electrophysiology experiment</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -3963,7 +3963,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000348 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000348">
-    	<rdfs:label xml:lang="en">electrophysiology experiment</rdfs:label>
+    	<rdfs:label xml:lang="en">temporal window</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -3973,16 +3973,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000349 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000349">
-    	<rdfs:label xml:lang="en">temporal window</rdfs:label>
-    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">odML terminology</dc:source>
-    </owl:Class>
-
-
-
-    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000350 -->
-
-    <owl:Class rdf:about="&oen_term;oen_0000350">
     	<rdfs:label xml:lang="en">cut orientation</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
@@ -3990,9 +3980,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
 
 
-    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000351 -->
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000350 -->
 
-    <owl:Class rdf:about="&oen_term;oen_0000351">
+    <owl:Class rdf:about="&oen_term;oen_0000350">
     	<rdfs:label xml:lang="en">light source wavelength</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
@@ -4000,9 +3990,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
 
 
-    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000352 -->
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000351 -->
 
-    <owl:Class rdf:about="&oen_term;oen_0000352">
+    <owl:Class rdf:about="&oen_term;oen_0000351">
     	<rdfs:label xml:lang="en">experimental researcher</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
@@ -4010,10 +4000,20 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
 
 
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000352 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000352">
+    	<rdfs:label xml:lang="en">candela per square meter</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">odML terminology</dc:source>
+    </owl:Class>
+
+
+
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000353 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000353">
-    	<rdfs:label xml:lang="en">candela per square meter</rdfs:label>
+    	<rdfs:label xml:lang="en">cell layer</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -4023,16 +4023,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000354 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000354">
-    	<rdfs:label xml:lang="en">cell layer</rdfs:label>
-    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">odML terminology</dc:source>
-    </owl:Class>
-
-
-
-    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000355 -->
-
-    <owl:Class rdf:about="&oen_term;oen_0000355">
     	<rdfs:label xml:lang="en">device subsystem</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
@@ -4040,10 +4030,20 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
 
 
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000355 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000355">
+    	<rdfs:label xml:lang="en">behavioral paradigm</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">odML terminology</dc:source>
+    </owl:Class>
+
+
+
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000356 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000356">
-    	<rdfs:label xml:lang="en">behavioral paradigm</rdfs:label>
+    	<rdfs:label xml:lang="en">excitation filter</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -4053,7 +4053,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000357 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000357">
-    	<rdfs:label xml:lang="en">excitation filter</rdfs:label>
+    	<rdfs:label xml:lang="en">frame grabber detector</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -4063,7 +4063,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000358 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000358">
-    	<rdfs:label xml:lang="en">frame grabber detector</rdfs:label>
+    	<rdfs:label xml:lang="en">investigator role</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -4073,7 +4073,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000359 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000359">
-    	<rdfs:label xml:lang="en">investigator role</rdfs:label>
+    	<rdfs:label xml:lang="en">analog output maximum sampling rate</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -4083,7 +4083,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000360 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000360">
-    	<rdfs:label xml:lang="en">analog output maximum sampling rate</rdfs:label>
+    	<rdfs:label xml:lang="en">stimulus isolator gain step size</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -4093,16 +4093,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000361 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000361">
-    	<rdfs:label xml:lang="en">stimulus isolator gain step size</rdfs:label>
-    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">odML terminology</dc:source>
-    </owl:Class>
-
-
-
-    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000362 -->
-
-    <owl:Class rdf:about="&oen_term;oen_0000362">
     	<rdfs:label xml:lang="en">recording segment dataset</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
@@ -4110,9 +4100,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
 
 
-    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000363 -->
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000362 -->
 
-    <owl:Class rdf:about="&oen_term;oen_0000363">
+    <owl:Class rdf:about="&oen_term;oen_0000362">
     	<rdfs:label xml:lang="en">stimulus output channel</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
@@ -4120,9 +4110,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
 
 
-    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000364 -->
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000363 -->
 
-    <owl:Class rdf:about="&oen_term;oen_0000364">
+    <owl:Class rdf:about="&oen_term;oen_0000363">
     	<rdfs:label xml:lang="en">MIME type specification</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
@@ -4130,10 +4120,20 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
 
 
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000364 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000364">
+    	<rdfs:label xml:lang="en">stimulus isolator gain</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">odML terminology</dc:source>
+    </owl:Class>
+
+
+
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000365 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000365">
-    	<rdfs:label xml:lang="en">stimulus isolator gain</rdfs:label>
+    	<rdfs:label xml:lang="en">random dot size</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -4143,7 +4143,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000366 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000366">
-    	<rdfs:label xml:lang="en">random dot size</rdfs:label>
+    	<rdfs:label xml:lang="en">image acquisition colorspace</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -4153,26 +4153,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000367 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000367">
-    	<rdfs:label xml:lang="en">image acquisition colorspace</rdfs:label>
-    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">odML terminology</dc:source>
-    </owl:Class>
-
-
-
-    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000368 -->
-
-    <owl:Class rdf:about="&oen_term;oen_0000368">
-    	<rdfs:label xml:lang="en">job details</rdfs:label>
-    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">Helmholtz</dc:source>
-    </owl:Class>
-
-
-
-    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000369 -->
-
-    <owl:Class rdf:about="&oen_term;oen_0000369">
     	<rdfs:label xml:lang="en">chemical components list</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
@@ -4180,10 +4160,30 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
 
 
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000368 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000368">
+    	<rdfs:label xml:lang="en">low pass filter</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">odML terminology</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000369 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000369">
+    	<rdfs:label xml:lang="en">behavioral science</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">odML terminology</dc:source>
+    </owl:Class>
+
+
+
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000370 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000370">
-    	<rdfs:label xml:lang="en">low pass filter</rdfs:label>
+    	<rdfs:label xml:lang="en">switching frequency</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -4193,7 +4193,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000371 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000371">
-    	<rdfs:label xml:lang="en">behavioral science</rdfs:label>
+    	<rdfs:label xml:lang="en">gaussian window</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -4203,7 +4203,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000372 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000372">
-    	<rdfs:label xml:lang="en">switching frequency</rdfs:label>
+    	<rdfs:label xml:lang="en">image acquisition device CCD count</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -4213,9 +4213,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000373 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000373">
-    	<rdfs:label xml:lang="en">gaussian window</rdfs:label>
+    	<rdfs:label xml:lang="en">experiment duration</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">odML terminology</dc:source>
+    	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
 
 
@@ -4223,7 +4223,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000374 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000374">
-    	<rdfs:label xml:lang="en">image acquisition device CCD count</rdfs:label>
+    	<rdfs:label xml:lang="en">animal model</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -4233,9 +4233,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000375 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000375">
-    	<rdfs:label xml:lang="en">experiment duration</rdfs:label>
+    	<rdfs:label xml:lang="en">shutter speed</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">Helmholtz</dc:source>
+    	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
 
 
@@ -4243,7 +4243,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000376 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000376">
-    	<rdfs:label xml:lang="en">shutter speed</rdfs:label>
+    	<rdfs:label xml:lang="en">stimulation intensity</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -4253,7 +4253,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000377 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000377">
-    	<rdfs:label xml:lang="en">stimulation intensity</rdfs:label>
+    	<rdfs:label xml:lang="en">microscope objective transmission upper bound</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -4263,7 +4263,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000378 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000378">
-    	<rdfs:label xml:lang="en">microscope objective transmission upper bound</rdfs:label>
+    	<rdfs:label xml:lang="en">image acquisition</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -4273,9 +4273,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000379 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000379">
-    	<rdfs:label xml:lang="en">image acquisition</rdfs:label>
+    	<rdfs:label xml:lang="en">stimulation movement stimulus</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">odML terminology</dc:source>
+    	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
 
 
@@ -4283,7 +4283,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000380 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000380">
-    	<rdfs:label xml:lang="en">stimulation movement stimulus</rdfs:label>
+    	<rdfs:label xml:lang="en">device recording point</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
@@ -4293,7 +4293,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000381 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000381">
-    	<rdfs:label xml:lang="en">device recording point</rdfs:label>
+    	<rdfs:label xml:lang="en">measurement unit</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
@@ -4303,7 +4303,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000382 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000382">
-    	<rdfs:label xml:lang="en">measurement unit</rdfs:label>
+    	<rdfs:label xml:lang="en">seal resistance</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
@@ -4313,7 +4313,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000383 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000383">
-    	<rdfs:label xml:lang="en">seal resistance</rdfs:label>
+    	<rdfs:label xml:lang="en">preparation animal sex</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
@@ -4323,9 +4323,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000384 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000384">
-    	<rdfs:label xml:lang="en">preparation animal sex</rdfs:label>
+    	<rdfs:label xml:lang="en">wavelength upper bound</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">Helmholtz</dc:source>
+    	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
 
 
@@ -4333,7 +4333,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000385 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000385">
-    	<rdfs:label xml:lang="en">wavelength upper bound</rdfs:label>
+    	<rdfs:label xml:lang="en">light source candela per square meter intensity</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -4343,16 +4343,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000386 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000386">
-    	<rdfs:label xml:lang="en">light source candela per square meter intensity</rdfs:label>
-    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">odML terminology</dc:source>
-    </owl:Class>
-
-
-
-    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000387 -->
-
-    <owl:Class rdf:about="&oen_term;oen_0000387">
     	<rdfs:label xml:lang="en">sharp electrode</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
@@ -4360,10 +4350,20 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
 
 
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000387 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000387">
+    	<rdfs:label xml:lang="en">current stimulus isolator output</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">odML terminology</dc:source>
+    </owl:Class>
+
+
+
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000388 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000388">
-    	<rdfs:label xml:lang="en">current stimulus isolator output</rdfs:label>
+    	<rdfs:label xml:lang="en">stimulus isolator output mode</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -4373,7 +4373,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000389 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000389">
-    	<rdfs:label xml:lang="en">stimulus isolator output mode</rdfs:label>
+    	<rdfs:label xml:lang="en">excitation filter passband transmission</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -4383,7 +4383,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000390 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000390">
-    	<rdfs:label xml:lang="en">excitation filter passband transmission</rdfs:label>
+    	<rdfs:label xml:lang="en">instructions to subject</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -4393,7 +4393,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000391 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000391">
-    	<rdfs:label xml:lang="en">instructions to subject</rdfs:label>
+    	<rdfs:label xml:lang="en">grating pattern</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -4403,9 +4403,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000392 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000392">
-    	<rdfs:label xml:lang="en">grating pattern</rdfs:label>
+    	<rdfs:label xml:lang="en">device manufacturer</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">odML terminology</dc:source>
+    	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
 
 
@@ -4413,7 +4413,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000393 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000393">
-    	<rdfs:label xml:lang="en">device manufacturer</rdfs:label>
+    	<rdfs:label xml:lang="en">impedance</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
@@ -4423,7 +4423,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000394 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000394">
-    	<rdfs:label xml:lang="en">impedance</rdfs:label>
+    	<rdfs:label xml:lang="en">species strain URL</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
@@ -4433,16 +4433,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000395 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000395">
-    	<rdfs:label xml:lang="en">species strain URL</rdfs:label>
-    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">Helmholtz</dc:source>
-    </owl:Class>
-
-
-
-    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000396 -->
-
-    <owl:Class rdf:about="&oen_term;oen_0000396">
     	<rdfs:label xml:lang="en">excitation filter model</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
@@ -4450,10 +4440,20 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
 
 
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000396 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000396">
+    	<rdfs:label xml:lang="en">in vivo sharp preparation</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">Helmholtz</dc:source>
+    </owl:Class>
+
+
+
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000397 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000397">
-    	<rdfs:label xml:lang="en">in vivo sharp preparation</rdfs:label>
+    	<rdfs:label xml:lang="en">reverse correlation mutistimulus</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
@@ -4463,7 +4463,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000398 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000398">
-    	<rdfs:label xml:lang="en">reverse correlation mutistimulus</rdfs:label>
+    	<rdfs:label xml:lang="en">inhalation anesthetic</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
@@ -4473,7 +4473,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000399 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000399">
-    	<rdfs:label xml:lang="en">inhalation anesthetic</rdfs:label>
+    	<rdfs:label xml:lang="en">occupation</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
@@ -4483,7 +4483,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000400 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000400">
-    	<rdfs:label xml:lang="en">occupation</rdfs:label>
+    	<rdfs:label xml:lang="en">device channel type</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
@@ -4493,7 +4493,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000401 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000401">
-    	<rdfs:label xml:lang="en">device channel type</rdfs:label>
+    	<rdfs:label xml:lang="en">continuous recording</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
@@ -4503,9 +4503,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000402 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000402">
-    	<rdfs:label xml:lang="en">continuous recording</rdfs:label>
+    	<rdfs:label xml:lang="en">knowledge</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">Helmholtz</dc:source>
+    	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
 
 
@@ -4513,7 +4513,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000403 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000403">
-    	<rdfs:label xml:lang="en">knowledge</rdfs:label>
+    	<rdfs:label xml:lang="en">anatomical layer</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -4523,9 +4523,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000404 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000404">
-    	<rdfs:label xml:lang="en">anatomical layer</rdfs:label>
+    	<rdfs:label xml:lang="en">storage file size</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">odML terminology</dc:source>
+    	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
 
 
@@ -4533,7 +4533,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000405 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000405">
-    	<rdfs:label xml:lang="en">storage file size</rdfs:label>
+    	<rdfs:label xml:lang="en">electrode resistance</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
@@ -4543,7 +4543,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000406 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000406">
-    	<rdfs:label xml:lang="en">electrode resistance</rdfs:label>
+    	<rdfs:label xml:lang="en">state</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
@@ -4553,7 +4553,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000407 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000407">
-    	<rdfs:label xml:lang="en">state</rdfs:label>
+    	<rdfs:label xml:lang="en">species strain nomenclature</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
@@ -4563,7 +4563,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000408 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000408">
-    	<rdfs:label xml:lang="en">species strain nomenclature</rdfs:label>
+    	<rdfs:label xml:lang="en">experiment start</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
@@ -4573,9 +4573,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000409 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000409">
-    	<rdfs:label xml:lang="en">experiment start</rdfs:label>
+    	<rdfs:label xml:lang="en">experiment</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">Helmholtz</dc:source>
+    	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
 
 
@@ -4583,7 +4583,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000410 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000410">
-    	<rdfs:label xml:lang="en">experiment</rdfs:label>
+    	<rdfs:label xml:lang="en">scanner stack z step size</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -4593,9 +4593,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000411 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000411">
-    	<rdfs:label xml:lang="en">scanner stack z step size</rdfs:label>
+    	<rdfs:label xml:lang="en">job details</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">odML terminology</dc:source>
+    	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
 
 
@@ -6883,7 +6883,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000640 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000640">
-    	<rdfs:label xml:lang="en">signal processing filter bandform</rdfs:label>
+    	<rdfs:label xml:lang="en">contrast sensitivity</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -6893,9 +6893,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000641 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000641">
-    	<rdfs:label xml:lang="en">chemical product</rdfs:label>
+    	<rdfs:label xml:lang="en">signal processing filter bandform</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">Helmholtz</dc:source>
+    	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
 
 
@@ -6903,9 +6903,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000642 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000642">
-    	<rdfs:label xml:lang="en">stimulus isolator minimum gain</rdfs:label>
+    	<rdfs:label xml:lang="en">chemical product</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">odML terminology</dc:source>
+    	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
 
 
@@ -6913,7 +6913,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000643 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000643">
-    	<rdfs:label xml:lang="en">amplifier duty cycle</rdfs:label>
+    	<rdfs:label xml:lang="en">stimulus isolator minimum gain</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -6923,7 +6923,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000644 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000644">
-    	<rdfs:label xml:lang="en">behavioral phenotype</rdfs:label>
+    	<rdfs:label xml:lang="en">amplifier duty cycle</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -6933,7 +6933,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000645 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000645">
-    	<rdfs:label xml:lang="en">principle investigator</rdfs:label>
+    	<rdfs:label xml:lang="en">behavioral phenotype</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -6943,7 +6943,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000646 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000646">
-    	<rdfs:label xml:lang="en">stimulus isolator output range minimum current</rdfs:label>
+    	<rdfs:label xml:lang="en">principle investigator</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -6953,7 +6953,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000647 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000647">
-    	<rdfs:label xml:lang="en">transmission lower bound</rdfs:label>
+    	<rdfs:label xml:lang="en">stimulus isolator output range minimum current</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -6963,9 +6963,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000648 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000648">
-    	<rdfs:label xml:lang="en">storage file name</rdfs:label>
+    	<rdfs:label xml:lang="en">transmission lower bound</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">Helmholtz</dc:source>
+    	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
 
 
@@ -6973,9 +6973,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000649 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000649">
-    	<rdfs:label xml:lang="en">white noise mean intensity</rdfs:label>
+    	<rdfs:label xml:lang="en">storage file name</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">odML terminology</dc:source>
+    	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
 
 
@@ -6983,9 +6983,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000650 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000650">
-    	<rdfs:label xml:lang="en">hollow electrode solution</rdfs:label>
+    	<rdfs:label xml:lang="en">white noise mean intensity</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">Helmholtz</dc:source>
+    	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
 
 
@@ -6993,7 +6993,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000651 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000651">
-    	<rdfs:label xml:lang="en">chemical substance shortname</rdfs:label>
+    	<rdfs:label xml:lang="en">hollow electrode solution</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
@@ -7003,7 +7003,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000652 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000652">
-    	<rdfs:label xml:lang="en">continuous signal sampling rate</rdfs:label>
+    	<rdfs:label xml:lang="en">chemical substance shortname</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
@@ -7013,9 +7013,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000653 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000653">
-    	<rdfs:label xml:lang="en">cutoff frequency</rdfs:label>
+    	<rdfs:label xml:lang="en">continuous signal sampling rate</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">odML terminology</dc:source>
+    	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
 
 
@@ -7023,7 +7023,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000654 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000654">
-    	<rdfs:label xml:lang="en">discrete window method</rdfs:label>
+    	<rdfs:label xml:lang="en">cutoff frequency</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -7033,7 +7033,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000655 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000655">
-    	<rdfs:label xml:lang="en">person role</rdfs:label>
+    	<rdfs:label xml:lang="en">discrete window method</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -7043,7 +7043,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000656 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000656">
-    	<rdfs:label xml:lang="en">search coil sensor</rdfs:label>
+    	<rdfs:label xml:lang="en">person role</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -7053,7 +7053,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000657 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000657">
-    	<rdfs:label xml:lang="en">emission filter passband transmission</rdfs:label>
+    	<rdfs:label xml:lang="en">search coil sensor</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -7063,9 +7063,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000658 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000658">
-    	<rdfs:label xml:lang="en">chemical concentration</rdfs:label>
+    	<rdfs:label xml:lang="en">emission filter passband transmission</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">Helmholtz</dc:source>
+    	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
 
 
@@ -7073,9 +7073,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000659 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000659">
-    	<rdfs:label xml:lang="en">beam splitter</rdfs:label>
+    	<rdfs:label xml:lang="en">chemical concentration</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">odML terminology</dc:source>
+    	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
 
 
@@ -7083,7 +7083,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000660 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000660">
-    	<rdfs:label xml:lang="en">subject cell line</rdfs:label>
+    	<rdfs:label xml:lang="en">beam splitter</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -7093,7 +7093,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000661 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000661">
-    	<rdfs:label xml:lang="en">xenon lamp</rdfs:label>
+    	<rdfs:label xml:lang="en">subject cell line</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -7103,7 +7103,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000662 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000662">
-    	<rdfs:label xml:lang="en">frame rate</rdfs:label>
+    	<rdfs:label xml:lang="en">xenon lamp</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -7113,7 +7113,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000663 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000663">
-    	<rdfs:label xml:lang="en">ramp slope</rdfs:label>
+    	<rdfs:label xml:lang="en">frame rate</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -7123,7 +7123,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000664 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000664">
-    	<rdfs:label xml:lang="en">experimental environment</rdfs:label>
+    	<rdfs:label xml:lang="en">ramp slope</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -7133,9 +7133,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000665 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000665">
-    	<rdfs:label xml:lang="en">drug application route role</rdfs:label>
+    	<rdfs:label xml:lang="en">experimental environment</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">Helmholtz</dc:source>
+    	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
 
 
@@ -7143,9 +7143,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000666 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000666">
-    	<rdfs:label xml:lang="en">grating intensity</rdfs:label>
+    	<rdfs:label xml:lang="en">drug application route role</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">odML terminology</dc:source>
+    	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
 
 
@@ -7153,9 +7153,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000667 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000667">
-    	<rdfs:label xml:lang="en">stimulation contrast</rdfs:label>
+    	<rdfs:label xml:lang="en">grating intensity</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">Helmholtz</dc:source>
+    	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
 
 
@@ -7163,9 +7163,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000668 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000668">
-    	<rdfs:label xml:lang="en">duty cycle</rdfs:label>
+    	<rdfs:label xml:lang="en">stimulation contrast</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">odML terminology</dc:source>
+    	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
 
 
@@ -7173,9 +7173,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000669 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000669">
-    	<rdfs:label xml:lang="en">recording stimulus</rdfs:label>
+    	<rdfs:label xml:lang="en">duty cycle</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">Helmholtz</dc:source>
+    	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
 
 
@@ -7183,9 +7183,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000670 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000670">
-    	<rdfs:label xml:lang="en">transmission range</rdfs:label>
+    	<rdfs:label xml:lang="en">recording stimulus</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">odML terminology</dc:source>
+    	<dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
 
 
@@ -7193,7 +7193,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000671 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000671">
-    	<rdfs:label xml:lang="en">image acquisition frame rate</rdfs:label>
+    	<rdfs:label xml:lang="en">transmission range</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -7203,7 +7203,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000672 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000672">
-    	<rdfs:label xml:lang="en">image sensor microchip</rdfs:label>
+    	<rdfs:label xml:lang="en">image acquisition frame rate</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -7213,7 +7213,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000673 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000673">
-    	<rdfs:label xml:lang="en">first name</rdfs:label>
+    	<rdfs:label xml:lang="en">image sensor microchip</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
@@ -7223,7 +7223,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000674 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000674">
-    	<rdfs:label xml:lang="en">slice thickness</rdfs:label>
+    	<rdfs:label xml:lang="en">first name</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>

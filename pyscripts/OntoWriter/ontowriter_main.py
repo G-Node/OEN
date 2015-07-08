@@ -26,13 +26,12 @@ from ontowriter_functions import upOENids, OENimportedClass
 from ontowriter_functions import reloadOWL, shutOWL, ontoUpdate
 from ontowriter_functions import findClassIDfromLabel, listAlreadyUsedIDs
 
-
 filename   = inspect.getframeinfo(inspect.currentframe()).filename
 scriptpath = os.path.dirname(os.path.abspath(filename))
-if scriptpath[-3:].lower() == "oen":
-    oenpath = scriptpath + "\\"
+if "pyscripts" in scriptpath:
+    oenpath = scriptpath[:scriptpath.lower().find('pyscripts')]
 else:
-    oenpath = scriptpath[:scriptpath.lower().find('oen\\')+4]
+    oenpath = scriptpath + "\\"
 
 os.chdir( oenpath )
 sys.path.append( oenpath + "pyscripts" )
