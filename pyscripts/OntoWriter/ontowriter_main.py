@@ -19,7 +19,7 @@
 #                                         #
 ###########################################
 
-import os, inspect, shutil
+import os, sys, inspect, shutil
 from OWLify import OWL as OWLclass
 from ontospy.ontospy import *
 from ontowriter_functions import upOENids, OENimportedClass
@@ -29,13 +29,16 @@ from ontowriter_functions import findClassIDfromLabel, listAlreadyUsedIDs
 
 filename   = inspect.getframeinfo(inspect.currentframe()).filename
 scriptpath = os.path.dirname(os.path.abspath(filename))
-oenpath    = scriptpath[:scriptpath.find('OEN\\')+4]
+if scriptpath[-3:].lower() == "oen":
+    oenpath = scriptpath + "\\"
+else:
+    oenpath = scriptpath[:scriptpath.lower().find('oen\\')+4]
 
 os.chdir( oenpath )
+sys.path.append( oenpath + "pyscripts" )
 
-from pyscripts.generic_functions.generic_functions import splitTermID, avoidSpecials
-from pyscripts.OntoMapper.ontomapper_functions import openCSVFile
-
+from generic_functions.generic_functions import splitTermID, avoidSpecials
+from OntoMapper.ontomapper_functions import openCSVFile
 
 
 ###########################################
@@ -43,6 +46,9 @@ from pyscripts.OntoMapper.ontomapper_functions import openCSVFile
 #             MAIN EXECUTION              #
 #                                         #
 ###########################################
+
+print "SCRIPTPATH:", scriptpath
+print "OENPATH:", oenpath
 
 os.chdir( oenpath+"pyscripts\data\OntoWriter_data\OntoWriter_output" )
 

@@ -19,18 +19,22 @@
 #                                         #
 ###########################################
 
-import os, inspect
+import os, sys, inspect
 from OWLify import OWL as OWLclass
 from ontospy.ontospy import *
 
 
 filename   = inspect.getframeinfo(inspect.currentframe()).filename
 scriptpath = os.path.dirname(os.path.abspath(filename))
-oenpath    = scriptpath[:scriptpath.find('OEN\\')+4]
+if scriptpath[-3:].lower() == "oen":
+    oenpath = scriptpath
+else:
+    oenpath = scriptpath[:scriptpath.lower().find('oen\\')+4]
 
 os.chdir( oenpath )
+sys.path.append( oenpath + "pyscripts" )
 
-from pyscripts.generic_functions.generic_functions import splitTermID, avoidSpecials
+from generic_functions.generic_functions import splitTermID, avoidSpecials
 
 
 ###########################################
