@@ -69,7 +69,7 @@ term_dict = openCSVFile( oenpath+"pyscripts\data\OntoWriter_data\OntoWriter_inpu
 
 oen_id_free = range(10000000)
 oen_id_used = [i for j in (range(18), range(1000,1999)) for i in j]
-#oen_id_used = [i for j in (oen_id_used, listAlreadyUsedIDs(onto, "oen_")) for i in j]
+oen_id_used = [i for j in (oen_id_used, listAlreadyUsedIDs(onto, "oen_")) for i in j]
 oen_id_used = sorted(list(set( oen_id_used )))
 oen_id_free = upOENids(oen_id_free, oen_id_used)
 
