@@ -46,9 +46,6 @@ from OntoMapper.ontomapper_functions import openCSVFile
 #                                         #
 ###########################################
 
-print "SCRIPTPATH:", scriptpath
-print "OENPATH:", oenpath
-
 os.chdir( oenpath+"pyscripts\data\OntoWriter_data\OntoWriter_output" )
 
 #OWLify class 
