@@ -912,7 +912,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000019">
         <rdfs:label xml:lang="en">organization dissolution date</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -942,7 +942,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000022">
         <rdfs:label xml:lang="en">multielectrode array inter electrode interval</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -1052,7 +1052,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000033">
         <rdfs:label xml:lang="en">microscope objective transmission range</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -1152,7 +1152,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000043">
         <rdfs:label xml:lang="en">numerical aperture</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -1172,7 +1172,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000045">
         <rdfs:label xml:lang="en">event list</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -1212,7 +1212,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000049">
         <rdfs:label xml:lang="en">investigator</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -1232,7 +1232,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000051">
         <rdfs:label xml:lang="en">gender</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -1322,7 +1322,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000060">
         <rdfs:label xml:lang="en">network address</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -1382,7 +1382,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000066">
         <rdfs:label xml:lang="en">head mounted eye tracker</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -1502,7 +1502,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000078">
         <rdfs:label xml:lang="en">frame grabber</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -1562,7 +1562,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000084">
         <rdfs:label xml:lang="en">experimental laboratory</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Laboratory"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -1572,7 +1572,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000085">
         <rdfs:label xml:lang="en">light source pulse rate</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -1582,7 +1582,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000086">
         <rdfs:label xml:lang="en">image acquisition color gain</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -1662,7 +1662,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000094">
         <rdfs:label xml:lang="en">oil immersion lens</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -1682,7 +1682,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000096">
         <rdfs:label xml:lang="en">image acquisition aperture</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -1752,7 +1752,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000103">
         <rdfs:label xml:lang="en">image acquisition shutter speed</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -1782,7 +1782,8 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000106">
         <rdfs:label xml:lang="en">excitation filter manufacturer</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -2012,7 +2013,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000129">
         <rdfs:label xml:lang="en">image acquisition gamma value</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -2142,7 +2143,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000142">
         <rdfs:label xml:lang="en">light source pulse width</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -2152,7 +2153,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000143">
         <rdfs:label xml:lang="en">light source watts intensity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -2192,7 +2193,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000147">
         <rdfs:label xml:lang="en">multielectrode array row count</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -2302,7 +2303,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000158">
         <rdfs:label xml:lang="en">macro mode</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -2372,7 +2373,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000165">
         <rdfs:label xml:lang="en">experimental setup</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -2432,7 +2433,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000171">
         <rdfs:label xml:lang="en">multi-photon microscope</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -2472,7 +2473,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000175">
         <rdfs:label xml:lang="en">infrared detector</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -2522,7 +2523,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000180">
         <rdfs:label xml:lang="en">inventory number</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -2542,7 +2543,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000182">
         <rdfs:label xml:lang="en">light source lux intensity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -2562,7 +2563,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000184">
         <rdfs:label xml:lang="en">multielectrode array</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -2622,7 +2623,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000190">
         <rdfs:label xml:lang="en">last name</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -2632,7 +2633,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000191">
         <rdfs:label xml:lang="en">experimental setup creator</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -2722,7 +2723,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000200">
         <rdfs:label xml:lang="en">excitation filter wavelength</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -2782,7 +2783,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000206">
         <rdfs:label xml:lang="en">event timestamp</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -2832,7 +2833,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000211">
         <rdfs:label xml:lang="en">full name</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -2862,7 +2863,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000214">
         <rdfs:label xml:lang="en">nomenclature</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -2932,7 +2933,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000221">
         <rdfs:label xml:lang="en">image acquisition detector type</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -3013,7 +3014,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000229">
         <rdfs:label xml:lang="en">eye tracker fixation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -3093,7 +3094,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000237">
         <rdfs:label xml:lang="en">identifier</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -3123,7 +3124,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000240">
         <rdfs:label xml:lang="en">infrared image sensor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -3133,7 +3134,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000241">
         <rdfs:label xml:lang="en">light source wavelength upper bound</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -3203,7 +3204,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000248">
         <rdfs:label xml:lang="en">minimum attenuation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -3253,7 +3254,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000253">
         <rdfs:label xml:lang="en">measurement</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -3293,7 +3294,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000257">
         <rdfs:label xml:lang="en">image acquisition minimum frame rate</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -3323,7 +3324,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000260">
         <rdfs:label xml:lang="en">microscope objective magnification</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -3383,7 +3384,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000266">
         <rdfs:label xml:lang="en">oil immersion objective</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -3393,7 +3394,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000267">
         <rdfs:label xml:lang="en">image acquisition detector sensitivity range</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -3443,7 +3444,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000272">
         <rdfs:label xml:lang="en">image acquisition contrast adjustment</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -3473,7 +3474,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000275">
         <rdfs:label xml:lang="en">individual count</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -3654,7 +3655,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000293">
         <rdfs:label xml:lang="en">image acquisition region of interest height</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -3754,7 +3755,8 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000303">
         <rdfs:label xml:lang="en">owner</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -3834,7 +3836,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000311">
         <rdfs:label xml:lang="en">flow rate</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -3874,7 +3876,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000315">
         <rdfs:label xml:lang="en">microscope filter cube</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -3914,7 +3916,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000319">
         <rdfs:label xml:lang="en">image acquisition device</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -3924,7 +3926,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000320">
         <rdfs:label xml:lang="en">image acquisition pixel binning</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -3974,7 +3976,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000325">
         <rdfs:label xml:lang="en">image acquisition region of interest y</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -3984,7 +3986,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000326">
         <rdfs:label xml:lang="en">image acquisition region of interest x</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -4054,7 +4056,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000333">
         <rdfs:label xml:lang="en">image acquisition subsampling method</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -4084,7 +4086,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000336">
         <rdfs:label xml:lang="en">excitation filter range</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -4114,7 +4116,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000339">
         <rdfs:label xml:lang="en">measurement timestamp</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -4134,7 +4136,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000341">
         <rdfs:label xml:lang="en">organization description</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -4164,7 +4166,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000344">
         <rdfs:label xml:lang="en">organization diminutive</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000434"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -4194,7 +4196,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000347">
         <rdfs:label xml:lang="en">image acquisition region of interest width</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -4234,7 +4236,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000351">
         <rdfs:label xml:lang="en">light source wavelength</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -4244,7 +4246,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000352">
         <rdfs:label xml:lang="en">experimental researcher</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000300"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -4294,7 +4296,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000357">
         <rdfs:label xml:lang="en">excitation filter</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -4304,7 +4306,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000358">
         <rdfs:label xml:lang="en">frame grabber detector</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -4314,7 +4316,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000359">
         <rdfs:label xml:lang="en">investigator role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000023"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -4394,7 +4396,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000367">
         <rdfs:label xml:lang="en">image acquisition colorspace</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -4404,7 +4406,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000368">
         <rdfs:label xml:lang="en">job details</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -4464,7 +4466,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000374">
         <rdfs:label xml:lang="en">image acquisition device CCD count</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -4504,7 +4506,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000378">
         <rdfs:label xml:lang="en">microscope objective transmission upper bound</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -4514,7 +4516,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000379">
         <rdfs:label xml:lang="en">image acquisition</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -4544,7 +4546,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000382">
         <rdfs:label xml:lang="en">measurement unit</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -4584,7 +4586,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000386">
         <rdfs:label xml:lang="en">light source candela per square meter intensity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -4624,7 +4626,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000390">
         <rdfs:label xml:lang="en">excitation filter passband transmission</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -4685,7 +4687,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000396">
         <rdfs:label xml:lang="en">excitation filter model</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -4865,7 +4867,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000414">
         <rdfs:label xml:lang="en">measurement parameter</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -4925,7 +4927,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000420">
         <rdfs:label xml:lang="en">eye tracker filter</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -4975,7 +4977,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000425">
         <rdfs:label xml:lang="en">microchip</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -5005,7 +5007,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000428">
         <rdfs:label xml:lang="en">maximum aperture</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -5045,7 +5047,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000432">
         <rdfs:label xml:lang="en">light-emitting diode</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -5085,7 +5087,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000436">
         <rdfs:label xml:lang="en">image acquisition region of interest</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -5125,7 +5127,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000440">
         <rdfs:label xml:lang="en">excitation filter upper bound</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -5175,7 +5177,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000445">
         <rdfs:label xml:lang="en">monochrome image acquisition colorspace</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000109"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -5215,7 +5217,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000449">
         <rdfs:label xml:lang="en">microscope objective numerical aperture</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -5265,7 +5267,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000454">
         <rdfs:label xml:lang="en">focal length</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -5295,7 +5297,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000457">
         <rdfs:label xml:lang="en">focus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -5455,7 +5457,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000473">
         <rdfs:label xml:lang="en">genus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -5505,7 +5507,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000478">
         <rdfs:label xml:lang="en">microscope objective</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -5705,7 +5707,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000498">
         <rdfs:label xml:lang="en">location</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -5735,7 +5737,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000501">
         <rdfs:label xml:lang="en">microchip gain</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -5805,7 +5807,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000508">
         <rdfs:label xml:lang="en">eye tracker sampling rate</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -5845,7 +5847,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000512">
         <rdfs:label xml:lang="en">organization foundation date</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -5865,7 +5867,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000514">
         <rdfs:label xml:lang="en">image acquisition lens</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -5875,7 +5877,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000515">
         <rdfs:label xml:lang="en">image acquisition maximum frame rate</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -5986,7 +5988,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000526">
         <rdfs:label xml:lang="en">multielectrode array column count</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -6006,7 +6008,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000528">
         <rdfs:label xml:lang="en">image sensor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -6066,7 +6068,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000534">
         <rdfs:label xml:lang="en">organization contact details</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -6106,7 +6108,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000538">
         <rdfs:label xml:lang="en">eye tracker calibration</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -6136,7 +6138,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000541">
         <rdfs:label xml:lang="en">excitation filter lower bound</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -6156,7 +6158,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000543">
         <rdfs:label xml:lang="en">image acquisition bit depth</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -6176,7 +6178,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000545">
         <rdfs:label xml:lang="en">image acquisition picture rotation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -6236,7 +6238,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000551">
         <rdfs:label xml:lang="en">image acquisition color temperature</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -6276,7 +6278,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000555">
         <rdfs:label xml:lang="en">experimenter role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000023"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -6316,7 +6318,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000559">
         <rdfs:label xml:lang="en">experimenter</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -6436,7 +6438,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000571">
         <rdfs:label xml:lang="en">intravenous drug application</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -6466,7 +6468,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000574">
         <rdfs:label xml:lang="en">multi-electrode device</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -6476,7 +6478,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000575">
         <rdfs:label xml:lang="en">fixed aperture</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -6526,7 +6528,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000580">
         <rdfs:label xml:lang="en">maximum attenuation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -6576,7 +6578,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000585">
         <rdfs:label xml:lang="en">microscope objective transmission lower bound</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -6616,7 +6618,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000589">
         <rdfs:label xml:lang="en">experimental setup department</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000245"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -6636,7 +6638,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000591">
         <rdfs:label xml:lang="en">imaging experiment</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -6726,7 +6728,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000600">
         <rdfs:label xml:lang="en">focal length range</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -6736,7 +6738,8 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000601">
         <rdfs:label xml:lang="en">experimental setup maintainer</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -6866,7 +6869,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000614">
         <rdfs:label xml:lang="en">microscope type</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -6956,7 +6959,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000623">
         <rdfs:label xml:lang="en">image acquisition spatial resolution</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -7016,7 +7019,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000629">
         <rdfs:label xml:lang="en">fixed focus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -7026,7 +7029,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000630">
         <rdfs:label xml:lang="en">health status</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -7346,7 +7349,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000662">
         <rdfs:label xml:lang="en">frame rate</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -7436,7 +7439,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000671">
         <rdfs:label xml:lang="en">image acquisition frame rate</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -7446,7 +7449,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000672">
         <rdfs:label xml:lang="en">image sensor microchip</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -7456,7 +7459,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000673">
         <rdfs:label xml:lang="en">first name</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -7546,7 +7549,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000682">
         <rdfs:label xml:lang="en">mercury arc</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -7636,7 +7639,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000691">
         <rdfs:label xml:lang="en">light source wavelength lower bound</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -7696,7 +7699,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000697">
         <rdfs:label xml:lang="en">image acquisition brightness adjustment</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -7896,7 +7899,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000717">
         <rdfs:label xml:lang="en">halogen lamp</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -7926,7 +7929,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000720">
         <rdfs:label xml:lang="en">image acquisition gamma function</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
