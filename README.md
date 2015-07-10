@@ -6,7 +6,7 @@ Ontology for Experimental Neurophysiology
 OEN is an ontology aiming at describing both the context of the data (experimental procedures, devices, 
 setup description, acquisition settings,…) and the content of the data by providing general 
 neuroscience concepts used to describe neurophysiology data (firing pattern, spike characteristics,…).
-This project results from the collaboration between experts from [G-Node] (www.g-node.org), the [INCF task force on standards for sharing of electrophysiology data] (www.incf.org/programs/datasharing/electrophysiology-task-force), [EEGBase](eegdatabase.kiv.zcu.cz/home.html), [NIF] (www.neuinfo.org) and [Neuroelectro.org] (www.neurolectro.org).
+This project results from the collaboration between experts from [G-Node] (www.g-node.org), the [INCF task force on standards for sharing of electrophysiology data] (www.incf.org/programs/datasharing/electrophysiology-task-force), [EEGBase](eegdatabase.kiv.zcu.cz/home.html), [NIF] (www.neuinfo.org), [Neuroelectro.org] (www.neurolectro.org) and e-Science Data Factory.
 
 For more information about the project and the repository content, please visit the [OEN Wiki](https://github.com/G-Node/OEN/wiki).
 
