@@ -189,7 +189,7 @@ http://purl.obolibrary.org/obo/ERO_0000007 # technique
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/ERO_0000215 #light microscopy
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/ERO_0000007 # technique
 http://purl.obolibrary.org/obo/ERO_0000861 # stimulus isolator
 subClassOf http://purl.obolibrary.org/obo/OBI_0000968
 http://purl.obolibrary.org/obo/ERO_0000387 # data acquisition
@@ -197,9 +197,9 @@ subClassOf http://purl.obolibrary.org/obo/BFO_0000015
 http://xmlns.com/foaf/0.1/Person		   # person
 subClassOf http://www.w3.org/2002/07/owl#Thing
 http://purl.obolibrary.org/obo/ERO_0001337 # electroencephalography
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/ERO_0000007 # technique
 http://purl.obolibrary.org/obo/ERO_0000499 # electromyography
-subClassOf http://www.w3.org/2002/07/owl#Thing
+subClassOf http://purl.obolibrary.org/obo/ERO_0000007 # technique
 http://purl.obolibrary.org/obo/ERO_0001965 # experimental subject role
 subClassOf http://purl.obolibrary.org/obo/BFO_0000023
 http://purl.obolibrary.org/obo/ERO_0001780 # functional magnetic resonance imaging scanner

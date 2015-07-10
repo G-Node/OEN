@@ -377,7 +377,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000215">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">light microscopy</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000007"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A microscopy technique that uses visible light and a system of lenses to magnify images of small samples.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LM</obo:IAO_0000118>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Light microscopy is used to examine cell viability.</obo:IAO_0000112>
@@ -461,7 +461,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000499">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electromyography</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000007"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A physiological assay used to evaluate and record electrical activity produced by skeletal muscles.</obo:IAO_0000115>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Can be used for musculoskeletal evaluations.</obo:IAO_0000112>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EMG</obo:IAO_0000118>
@@ -521,7 +521,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001337">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electroencephalography</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000007"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A physiological assay that uses an electronic monitoring device to measure and record electrical activity in the brain.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EEG</obo:IAO_0000118>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
