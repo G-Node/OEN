@@ -185,6 +185,7 @@ http://purl.obolibrary.org/obo/ERO_0001420 # eye tracking device
 http://purl.obolibrary.org/obo/ERO_0000453 # objective lens
 http://purl.obolibrary.org/obo/ERO_0001914 # continuous
 http://purl.obolibrary.org/obo/ERO_0000220 # image analysis
+http://purl.obolibrary.org/obo/ERO_0000007 # technique
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/ERO_0000215 #light microscopy
@@ -233,6 +234,8 @@ http://purl.obolibrary.org/obo/ERO_0001914 # continuous
 subClassOf http://purl.obolibrary.org/obo/BFO_0000019
 http://purl.obolibrary.org/obo/ERO_0000220 # image analysis
 subClassOf http://purl.obolibrary.org/obo/BFO_0000015
+http://purl.obolibrary.org/obo/ERO_0000007 # technique
+subClassOf http://purl.obolibrary.org/obo/BFO_0000015 #process
 
 
 [Source term retrieval setting]
@@ -242,4 +245,3 @@ includeNoIntermediates
 includeAllAnnotationProperties
 
 [Source annotation URIs to be excluded]
-
