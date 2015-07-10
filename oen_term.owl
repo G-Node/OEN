@@ -1632,7 +1632,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000091">
         <rdfs:label xml:lang="en">preparation model protocol</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000104"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -1712,7 +1712,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000099">
         <rdfs:label xml:lang="en">watt</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000226"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -1932,7 +1932,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000121">
         <rdfs:label xml:lang="en">slice preparation protocol</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000104"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -2592,7 +2592,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000187">
         <rdfs:label xml:lang="en">preparation animal</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000023"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -2982,7 +2982,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000226">
         <rdfs:label xml:lang="en">unit of measurement</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -3312,7 +3312,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000259">
         <rdfs:label xml:lang="en">psychophysics experiment</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000070"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000410"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -3372,7 +3372,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000265">
         <rdfs:label xml:lang="en">stimulus protocol</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000104"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -3533,6 +3533,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     <owl:Class rdf:about="&oen_term;oen_0000281">
         <rdfs:label xml:lang="en">receptive field</rdfs:label>
         <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:comment>20150710 ant1b, Initial label &quot;receptive field&quot; already attributed oen id oen_0001184 in OEN concept branch.</rdfs:comment>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -4252,7 +4253,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000353">
         <rdfs:label xml:lang="en">candela per square meter</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000226"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -4541,8 +4542,9 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000382 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000382">
-        <rdfs:label xml:lang="en">measurement unit</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:label xml:lang="en">_term with no label_</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:comment>20150710 ant1b, initial label &quot;measurement unit&quot; redundant with &quot;unit of measurement&quot;.</rdfs:comment>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -4992,7 +4994,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000427">
         <rdfs:label xml:lang="en">experimental protocol</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000104"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -5192,7 +5194,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000447">
         <rdfs:label xml:lang="en">lux</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000226"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -5332,7 +5334,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000461">
         <rdfs:label xml:lang="en">preparation protocol</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000104"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -5542,7 +5544,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000482">
         <rdfs:label xml:lang="en">stimulation protocol</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000104"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -5591,8 +5593,9 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000487 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000487">
-        <rdfs:label xml:lang="en">instrument</rdfs:label>
+        <rdfs:label xml:lang="en">_term with no label_</rdfs:label>
         <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:comment>20150710 ant1b, initial label &quot;instrument&quot; is listed as synonym to &quot;device&quot;.</rdfs:comment>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -5782,7 +5785,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000506">
         <rdfs:label xml:lang="en">experiment protocol</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000104"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -5811,8 +5814,9 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000509 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000509">
-        <rdfs:label xml:lang="en">hardware settings</rdfs:label>
+        <rdfs:label xml:lang="en">_term with no label_</rdfs:label>
         <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:comment>20150710 ant1b, initial label &quot;hardware settings&quot; redundant with &quot;device setting&quot;.</rdfs:comment>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -6011,8 +6015,9 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000529 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000529">
-        <rdfs:label xml:lang="en">hardware</rdfs:label>
+        <rdfs:label xml:lang="en">_term with no label_</rdfs:label>
         <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:comment>20150710 ant1b, initial label &quot;hardware&quot; by and large redundant with &quot;device&quot;.</rdfs:comment>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -6891,8 +6896,9 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000617 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000617">
-        <rdfs:label xml:lang="en">people</rdfs:label>
+        <rdfs:label xml:lang="en">_term with no label_</rdfs:label>
         <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:comment>20150710 ant1b, initial label &quot;people&quot; redundant with class label &quot;person&quot;.</rdfs:comment>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -7831,8 +7837,9 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000711 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000711">
-        <rdfs:label xml:lang="en">hardware property</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:label xml:lang="en">device property</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:comment>20150710 ant1b, initial label &quot;hardware property&quot; recycled to &quot;device property&quot;.</rdfs:comment>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
