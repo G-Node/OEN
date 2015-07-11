@@ -1872,7 +1872,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000115">
         <rdfs:label xml:lang="en">bottom-right position reference</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000487"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -2103,7 +2103,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000138">
         <rdfs:label xml:lang="en">recording file</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000132"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -3532,7 +3532,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000281 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000281">
-        <rdfs:label xml:lang="en">_ term with no label_</rdfs:label>
+        <rdfs:label xml:lang="en">_term with no label_</rdfs:label>
         <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
         <rdfs:comment>20150710 ant1b, Initial label &quot;receptive field&quot; already attributed oen id oen_0001184 in OEN concept branch.</rdfs:comment>
         <dc:source xml:lang="en">Helmholtz</dc:source>
@@ -4034,7 +4034,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000331">
         <rdfs:label xml:lang="en">result file</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000132"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -4825,7 +4825,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000410">
         <rdfs:label xml:lang="en">experiment</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000070"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -5155,7 +5155,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000443">
         <rdfs:label xml:lang="en">recording</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000070"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -5415,7 +5415,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000469">
         <rdfs:label xml:lang="en">configuration file</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000132"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -5564,8 +5564,10 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000484 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000484">
-        <rdfs:label xml:lang="en">electrocardiogram</rdfs:label>
+        <rdfs:label xml:lang="en">_term with no label_</rdfs:label>
         <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:comment>20150711 ant1b, initial label potential mapping &quot;electrocardiogram&quot; http://purl.obolibrary.org/obo/ERO_0000383
+20150711 ant1b, initial label potential mapping &quot;Electrocardiogram&quot; http://purl.bioontology.org/ontology/MEDDRA/10014362</rdfs:comment>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -5594,9 +5596,12 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000487 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000487">
-        <rdfs:label xml:lang="en">_term with no label_</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-        <rdfs:comment>20150710 ant1b, initial label &quot;instrument&quot; is listed as synonym to &quot;device&quot;.</rdfs:comment>
+        <rdfs:label xml:lang="en">position reference</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:comment>20150710 ant1b, initial label &quot;instrument&quot; is listed as synonym to &quot;device&quot;.
+20150711 ant1b, potential mapping &quot;Position Frame of Reference&quot; http://dicom.nema.org/resources/ontology/DCM/111708
+20150711 ant1b, potential mapping &quot;Property value spatial reference frame&quot; http://bhi.washington.edu/OPB#OPB_01086
+20150711 ant1b, related &quot;position&quot; http://purl.obolibrary.org/obo/PATO_0000140</rdfs:comment>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -5827,7 +5832,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000510">
         <rdfs:label xml:lang="en">stimulus position reference</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000487"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -5947,7 +5952,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000522">
         <rdfs:label xml:lang="en">center position reference</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000487"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -6148,7 +6153,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000542">
         <rdfs:label xml:lang="en">top-left position reference</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000487"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -6939,7 +6944,11 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000621">
         <rdfs:label xml:lang="en">electroencephalogram</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000443"/>
+        <rdfs:comment>20150711 ant1b, potential mapping &quot;Electroencephalogram&quot; http://purl.bioontology.org/ontology/SNOMEDCT/54550000
+20150711 ant1b, potential mapping &quot;Electroencephalogram&quot; http://purl.bioontology.org/ontology/MEDDRA/10014407
+20150711 ant1b, potential mapping &quot;Electroencephalogram (EEG)&quot; http://mimi.case.edu/ontologies/2009/1/SDO.owl#Electroencephalogram
+20150711 ant1b, similar &quot;electroencephalogram measurement&quot; http://www.ebi.ac.uk/efo/EFO_0004357</rdfs:comment>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -7309,7 +7318,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000658">
         <rdfs:label xml:lang="en">chemical concentration</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000531"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -7970,7 +7979,9 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000724">
         <rdfs:label xml:lang="en">electromyogram</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000443"/>
+        <rdfs:comment>20150711 ant1b, potential mapping &quot;Electromyogram&quot; http://purl.bioontology.org/ontology/MEDDRA/10014430
+20150711 ant1b, potential mapping &quot;Electromyogram (EMG)&quot; http://mimi.case.edu/ontologies/2009/1/SDO.owl#Electromyogram</rdfs:comment>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
