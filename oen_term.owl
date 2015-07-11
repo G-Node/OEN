@@ -952,7 +952,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000023">
         <rdfs:label xml:lang="en">binary dense noise multistimulus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000050"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000252"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -1022,7 +1022,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000030">
         <rdfs:label xml:lang="en">uniform resource locator</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -1392,7 +1392,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000067">
         <rdfs:label xml:lang="en">sparse noise multistimulus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000050"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000252"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -1452,7 +1452,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000073">
         <rdfs:label xml:lang="en">sparse noise nrev multistimulus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000050"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000252"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -1562,7 +1562,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000084">
         <rdfs:label xml:lang="en">experimental laboratory</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Laboratory"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -1602,7 +1602,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000088">
         <rdfs:label xml:lang="en">dataset file URL</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000030"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -1881,8 +1881,9 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000116 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000116">
-        <rdfs:label xml:lang="en">drug experiment</rdfs:label>
+        <rdfs:label xml:lang="en">pharmacology experiment</rdfs:label>
         <rdfs:subClassOf rdf:resource="&oen_term;oen_0000410"/>
+        <rdfs:comment>20150711 ant1b, initial label &quot;drug experiment&quot; changed to &quot;pharmacology experiment&quot; for improved accuracy.</rdfs:comment>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -2412,7 +2413,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000169">
         <rdfs:label xml:lang="en">result file URL</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000030"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -3531,7 +3532,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000281 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000281">
-        <rdfs:label xml:lang="en">receptive field</rdfs:label>
+        <rdfs:label xml:lang="en">_ term with no label_</rdfs:label>
         <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
         <rdfs:comment>20150710 ant1b, Initial label &quot;receptive field&quot; already attributed oen id oen_0001184 in OEN concept branch.</rdfs:comment>
         <dc:source xml:lang="en">Helmholtz</dc:source>
@@ -3683,7 +3684,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000296">
         <rdfs:label xml:lang="en">analysis data source</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000139"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -3743,7 +3744,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000302">
         <rdfs:label xml:lang="en">body weight</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000242"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -4153,7 +4154,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000343">
         <rdfs:label xml:lang="en">on-off stimulation movement stimulus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000050"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000382"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -4523,7 +4524,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000380">
         <rdfs:label xml:lang="en">stimulation movement stimulus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000050"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000382"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -4542,8 +4543,8 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000382 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000382">
-        <rdfs:label xml:lang="en">_term with no label_</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:label xml:lang="en">movement stimulus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000050"/>
         <rdfs:comment>20150710 ant1b, initial label &quot;measurement unit&quot; redundant with &quot;unit of measurement&quot;.</rdfs:comment>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
@@ -4674,7 +4675,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000395">
         <rdfs:label xml:lang="en">species strain URL</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000030"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -4704,7 +4705,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000398">
         <rdfs:label xml:lang="en">reverse correlation mutistimulus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000050"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000252"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -6127,7 +6128,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000540">
         <rdfs:label xml:lang="en">paper universal resource locator</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000030"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -6197,7 +6198,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000547">
         <rdfs:label xml:lang="en">quadri-directional stimulation movement stimulus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000050"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000382"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -6217,7 +6218,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000549">
         <rdfs:label xml:lang="en">phase-antiphase stimulation movement stimulus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000050"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000382"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -6547,7 +6548,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000582">
         <rdfs:label xml:lang="en">drifting stimulation movement stimulus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000050"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000382"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -6557,7 +6558,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000583">
         <rdfs:label xml:lang="en">alpha window</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000213"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -6757,7 +6758,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000603">
         <rdfs:label xml:lang="en">configuration file URL</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000030"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -7068,7 +7069,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000634">
         <rdfs:label xml:lang="en">back-forth stimulation movement stimulus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000050"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000382"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -7738,7 +7739,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000701">
         <rdfs:label xml:lang="en">ternary dense noise multistimulus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000050"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000252"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -8019,7 +8020,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000729">
         <rdfs:label xml:lang="en">subject knowledge</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000403"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
