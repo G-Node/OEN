@@ -5,13 +5,13 @@ http://purl.org/incf/ontology/ExperimentalNeurophysiology/external-import/extern
 OBI
 
 [Low level source term URIs]
-http://purl.obolibrary.org/obo/BFO_0000015 #process
-http://purl.obolibrary.org/obo/BFO_0000019 #quality
-http://purl.obolibrary.org/obo/OBI_0000968 #device
-http://purl.obolibrary.org/obo/OBI_0000654 #device setting
-http://purl.obolibrary.org/obo/BFO_0000023 #role
-http://purl.obolibrary.org/obo/OBI_0000070 #assay
-http://purl.obolibrary.org/obo/IAO_0000030 #information content entity
+http://purl.obolibrary.org/obo/BFO_0000015 # process
+http://purl.obolibrary.org/obo/BFO_0000019 # quality
+http://purl.obolibrary.org/obo/OBI_0000968 # device
+http://purl.obolibrary.org/obo/OBI_0000654 # device setting
+http://purl.obolibrary.org/obo/BFO_0000023 # role
+http://purl.obolibrary.org/obo/OBI_0000070 # assay
+http://purl.obolibrary.org/obo/IAO_0000030 # information content entity
 http://purl.obolibrary.org/obo/IAO_0000104 #plan specification
 http://purl.obolibrary.org/obo/CL_0000000  # cell
 http://purl.obolibrary.org/obo/CLO_0000031 # cell line
@@ -56,21 +56,21 @@ http://purl.obolibrary.org/obo/IAO_0000304 # caption
 http://purl.obolibrary.org/obo/OBI_0000935 # micromanipulator
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000015 #process
+http://purl.obolibrary.org/obo/BFO_0000015 # process
 subClassOf http://www.w3.org/2002/07/owl#Thing
-http://purl.obolibrary.org/obo/BFO_0000019 #quality
+http://purl.obolibrary.org/obo/BFO_0000019 # quality
 subClassOf http://www.w3.org/2002/07/owl#Thing
-http://purl.obolibrary.org/obo/OBI_0000968 #device
+http://purl.obolibrary.org/obo/OBI_0000968 # device
 subClassOf http://www.w3.org/2002/07/owl#Thing
-http://purl.obolibrary.org/obo/OBI_0000654 #device setting
+http://purl.obolibrary.org/obo/OBI_0000654 # device setting
 subClassOf http://purl.obolibrary.org/obo/BFO_0000019
-http://purl.obolibrary.org/obo/BFO_0000023 #role
+http://purl.obolibrary.org/obo/BFO_0000023 # role
 subClassOf http://purl.obolibrary.org/obo/BFO_0000019
-http://purl.obolibrary.org/obo/OBI_0000070 #assay
+http://purl.obolibrary.org/obo/OBI_0000070 # assay
 subClassOf http://www.w3.org/2002/07/owl#Thing
-http://purl.obolibrary.org/obo/IAO_0000030 #information content entity
+http://purl.obolibrary.org/obo/IAO_0000030 # information content entity
 subClassOf http://www.w3.org/2002/07/owl#Thing
-http://purl.obolibrary.org/obo/IAO_0000104 #plan specification
+http://purl.obolibrary.org/obo/IAO_0000104 # plan specification
 subClassOf http://purl.obolibrary.org/obo/IAO_0000030
 http://purl.obolibrary.org/obo/CL_0000000  # cell
 subClassOf http://www.w3.org/2002/07/owl#Thing
@@ -242,6 +242,28 @@ http://purl.obolibrary.org/obo/ERO_0000007 # technique
 subClassOf http://purl.obolibrary.org/obo/BFO_0000015 # process
 http://purl.obolibrary.org/obo/ERO_0000383 # electrocardiogram
 subClassOf http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000443 # recording
+
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+[Source annotation URIs to be excluded]
+
+[Source ontology]
+CHEBI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/CHEBI_23888 # drug
+http://purl.obolibrary.org/obo/CHEBI_38867 # anaesthetic
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/CHEBI_23888 # drug
+subClassOf http://purl.obolibrary.org/obo/BFO_0000019 # quality
+http://purl.obolibrary.org/obo/CHEBI_38867 # anaesthetic
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23888 # drug
 
 
 [Source term retrieval setting]

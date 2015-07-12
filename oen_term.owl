@@ -972,7 +972,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000025">
         <rdfs:label xml:lang="en">overlap</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -1222,7 +1222,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000050">
         <rdfs:label xml:lang="en">stimulus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000316"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -2113,7 +2113,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000139">
         <rdfs:label xml:lang="en">data source</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -2393,7 +2393,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000167">
         <rdfs:label xml:lang="en">chemical</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000167"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -3214,7 +3214,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000249">
         <rdfs:label xml:lang="en">preparation anaesthetic</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;CHEBI_38867"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -3454,7 +3454,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000273">
         <rdfs:label xml:lang="en">overlap with</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -3494,7 +3494,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000277">
         <rdfs:label xml:lang="en">phase shift</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -3885,7 +3885,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000316">
         <rdfs:label xml:lang="en">stimulation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -4065,7 +4065,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000334">
         <rdfs:label xml:lang="en">paralytic drug</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000466"/>
+        <rdfs:subClassOf rdf:resource="&obo;CHEBI_23888"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -4716,7 +4716,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000399">
         <rdfs:label xml:lang="en">inhalation anaesthetic</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000246"/>
+        <rdfs:subClassOf rdf:resource="&obo;CHEBI_38867"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -4726,7 +4726,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000400">
         <rdfs:label xml:lang="en">occupation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -4756,7 +4756,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000403">
         <rdfs:label xml:lang="en">knowledge</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -4876,7 +4876,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000415">
         <rdfs:label xml:lang="en">work position</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -5056,7 +5056,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000433">
         <rdfs:label xml:lang="en">drug application route</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -5385,8 +5385,9 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000466 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000466">
-        <rdfs:label xml:lang="en">drug</rdfs:label>
+        <rdfs:label xml:lang="en">_term with no label_</rdfs:label>
         <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:comment>20150712 ant1b, initial label &quot;drug&quot; mapping found http://purl.obolibrary.org/obo/CHEBI_23888</rdfs:comment>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -5632,7 +5633,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000490">
         <rdfs:label xml:lang="en">stimulation grating</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000316"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -6395,7 +6396,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000566">
         <rdfs:label xml:lang="en">model</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -7100,7 +7101,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000636">
         <rdfs:label xml:lang="en">intravenous anaesthetic</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000246"/>
+        <rdfs:subClassOf rdf:resource="&obo;CHEBI_38867"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -7600,7 +7601,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000686">
         <rdfs:label xml:lang="en">local anaesthetic</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000249"/>
+        <rdfs:subClassOf rdf:resource="&obo;CHEBI_38867"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
