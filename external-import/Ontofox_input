@@ -273,3 +273,23 @@ includeNoIntermediates
 includeAllAnnotationProperties
 
 [Source annotation URIs to be excluded]
+
+[Source ontology]
+PATO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/PATO_0000133 # orientation
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/PATO_0000133 # orientation
+subClassOf http://purl.obolibrary.org/obo/BFO_0000019 # quality
+
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+[Source annotation URIs to be excluded]
+

@@ -1172,7 +1172,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000045">
         <rdfs:label xml:lang="en">event list</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000179"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -1352,7 +1352,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000063">
         <rdfs:label xml:lang="en">cell recording location</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000498"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -1903,7 +1903,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000118">
         <rdfs:label xml:lang="en">stimulus location</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000498"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -2253,7 +2253,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000153">
         <rdfs:label xml:lang="en">storage file location</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000498"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -2393,7 +2393,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000167">
         <rdfs:label xml:lang="en">chemical</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000167"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -2734,7 +2734,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000201">
         <rdfs:label xml:lang="en">power spectrum analysis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000145"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -2804,7 +2804,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000208">
         <rdfs:label xml:lang="en">paper digital object identifier</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000237"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -3845,7 +3845,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000312">
         <rdfs:label xml:lang="en">stimulation orientation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000133"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -3965,7 +3965,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000324">
         <rdfs:label xml:lang="en">slice orientation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000133"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -4105,7 +4105,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000338">
         <rdfs:label xml:lang="en">local anaesthetic location</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000498"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -4225,7 +4225,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000350">
         <rdfs:label xml:lang="en">cut orientation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000133"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -4415,7 +4415,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000369">
         <rdfs:label xml:lang="en">chemical components list</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000179"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -5306,7 +5306,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000458">
         <rdfs:label xml:lang="en">chemistry catalog reference</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000237"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -5397,7 +5397,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000467">
         <rdfs:label xml:lang="en">anteroposterior orientation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000133"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -5643,7 +5643,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000491">
         <rdfs:label xml:lang="en">experimental setup location</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000498"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -6056,7 +6056,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000532">
         <rdfs:label xml:lang="en">chemical substance</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000167"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -7151,7 +7151,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000641">
         <rdfs:label xml:lang="en">chemical product</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000167"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -7864,7 +7864,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000712">
         <rdfs:label xml:lang="en">grating orientation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000133"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
