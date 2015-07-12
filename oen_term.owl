@@ -1162,7 +1162,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000044">
         <rdfs:label xml:lang="en">brain subregion</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000557"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -2452,8 +2452,9 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000173 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000173">
-        <rdfs:label xml:lang="en">instrument model</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000566"/>
+        <rdfs:label xml:lang="en">_term with no label_</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:comment>20150712 ant1b, initial label &quot;instrument model&quot; by and large redundant with &quot;device model&quot;.</rdfs:comment>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -4174,7 +4175,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000345">
         <rdfs:label xml:lang="en">continuous drug application rate</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000065"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -4264,7 +4265,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000354">
         <rdfs:label xml:lang="en">cell layer</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000732"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -4765,7 +4766,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000404">
         <rdfs:label xml:lang="en">anatomical layer</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000557"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -5525,7 +5526,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000480">
         <rdfs:label xml:lang="en">device model</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000711"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -7798,7 +7799,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000706">
         <rdfs:label xml:lang="en">brain region</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000557"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -7869,7 +7870,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000713">
         <rdfs:label xml:lang="en">beam splitter model</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000480"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
