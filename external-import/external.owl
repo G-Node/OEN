@@ -993,6 +993,20 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000935 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000935">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">micromanipulator</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Micromanipulator</obo:IAO_0000119>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">micromanipulator</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000968 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000968">
