@@ -133,7 +133,7 @@ subClassOf http://www.w3.org/2002/07/owl#Thing
 http://purl.obolibrary.org/obo/OBI_0400120 # temperature control bath
 subClassOf http://purl.obolibrary.org/obo/OBI_0000968
 http://purl.obolibrary.org/obo/PATO_0002243 # fluid flow rate
-subClassOf http://purl.obolibrary.org/obo/BFO_0000019
+subClassOf http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000311 # flow rate
 http://purl.obolibrary.org/obo/PATO_0000011 # age
 subClassOf http://purl.obolibrary.org/obo/BFO_0000019
 http://purl.obolibrary.org/obo/OBI_0000018 # material supplier role
