@@ -1,2 +1,3 @@
 # ignore Protege file
 *.xml
+.DS_Store
