@@ -1,0 +1,2952 @@
+;Label;SuperCategory;Has role;Is part of;Id;Synonym;DefiningCitation;Definition;Comment
+"owl:Class
+""position intra""
+oen_term:oen_0000000
+""Helmholtz""";position intra;oen_term:oen_0000000;';';oen_0000286;';';';'
+"owl:Class
+""software device""
+oen_term:oen_0000000
+""Helmholtz""";software device;oen_term:oen_0000000;';';oen_0000287;';';';'
+"owl:Class
+""cell attached configuration""
+oen_term:oen_0000000
+""Helmholtz""";cell attached configuration;oen_term:oen_0000000;';';oen_0000284;';';';'
+"owl:Class
+""phone number""
+oen_term:oen_0000000
+""Helmholtz""";phone number;oen_term:oen_0000000;';';oen_0000285;';';';'
+"owl:Class
+""rectangular window""
+oen_term:oen_0000000
+""odML terminology""";rectangular window;oen_term:oen_0000000;';';oen_0000282;';';';'
+"owl:Class
+""neural structure cell type""
+oen_term:oen_0000000
+""Helmholtz""";neural structure cell type;oen_term:oen_0000000;';';oen_0000283;';';';'
+"owl:Class
+""cell baseline membrane potential noise""
+oen_term:oen_0000000
+""odML terminology""";cell baseline membrane potential noise;oen_term:oen_0000000;';';oen_0000280;';';';'
+"owl:Class
+""receptive field""
+oen_term:oen_0000000
+""Helmholtz""";receptive field;oen_term:oen_0000000;';';oen_0000281;';';';'
+"owl:Class
+""image acquisition color temperature""
+oen_term:oen_0000000
+""odML terminology""";image acquisition color temperature;oen_term:oen_0000000;';';oen_0000551;';';';'
+"owl:Class
+""storage file server""
+oen_term:oen_0000000
+""Helmholtz""";storage file server;oen_term:oen_0000000;';';oen_0000288;';';';'
+"owl:Class
+""stimulation receptive field y""
+oen_term:oen_0000000
+""Helmholtz""";stimulation receptive field y;oen_term:oen_0000000;';';oen_0000289;';';';'
+"owl:Class
+""preparation model protocol""
+oen_term:oen_0000000
+""Helmholtz""";preparation model protocol;oen_term:oen_0000000;';';oen_0000091;';';';'
+"owl:Class
+""decibel""
+oen_term:oen_0000000
+""odML terminology""";decibel;oen_term:oen_0000000;';';oen_0000090;';';';'
+"owl:Class
+""shutter device component""
+oen_term:oen_0000000
+""odML terminology""";shutter device component;oen_term:oen_0000000;';';oen_0000233;';';';'
+"owl:Class
+""electrode contact configuration""
+oen_term:oen_0000000
+""Helmholtz""";electrode contact configuration;oen_term:oen_0000000;';';oen_0000232;';';';'
+"owl:Class
+""species english name""
+oen_term:oen_0000000
+""Helmholtz""";species english name;oen_term:oen_0000000;';';oen_0000231;';';';'
+"owl:Class
+""preparation equipment""
+oen_term:oen_0000000
+""Helmholtz""";preparation equipment;oen_term:oen_0000000;';';oen_0000230;';';';'
+"owl:Class
+""identifier""
+oen_term:oen_0000000
+""odML terminology""";identifier;oen_term:oen_0000000;';';oen_0000237;';';';'
+"owl:Class
+""amplifier type""
+oen_term:oen_0000000
+""odML terminology""";amplifier type;oen_term:oen_0000000;';';oen_0000236;';';';'
+"owl:Class
+""discrete signal left sweep""
+oen_term:oen_0000000
+""Helmholtz""";discrete signal left sweep;oen_term:oen_0000000;';';oen_0000235;';';';'
+"owl:Class
+""grating drifting velocity""
+oen_term:oen_0000000
+""odML terminology""";grating drifting velocity;oen_term:oen_0000000;';';oen_0000234;';';';'
+"owl:Class
+""experimental measurement""
+oen_term:oen_0000000
+""odML terminology""";experimental measurement;oen_term:oen_0000000;';';oen_0000239;';';';'
+"owl:Class
+""preparation date""
+oen_term:oen_0000000
+""odML terminology""";preparation date;oen_term:oen_0000000;';';oen_0000238;';';';'
+"owl:Class
+""phase-antiphase stimulation movement stimulus""
+oen_term:oen_0000000
+""Helmholtz""";phase-antiphase stimulation movement stimulus;oen_term:oen_0000000;';';oen_0000549;';';';'
+"owl:Class
+""watt""
+oen_term:oen_0000000
+""odML terminology""";watt;oen_term:oen_0000000;';';oen_0000099;';';';'
+"owl:Class
+""colored colorspace""
+oen_term:oen_0000000
+""odML terminology""";colored colorspace;oen_term:oen_0000000;';';oen_0000548;';';';'
+"owl:Class
+""dataset recording end time""
+oen_term:oen_0000000
+""odML terminology""";dataset recording end time;oen_term:oen_0000000;';';oen_0000098;';';';'
+"owl:Class
+""image sensor microchip""
+oen_term:oen_0000000
+""odML terminology""";image sensor microchip;oen_term:oen_0000000;';';oen_0000672;';';';'
+"owl:Class
+""scanner pixel size""
+oen_term:oen_0000000
+""odML terminology""";scanner pixel size;oen_term:oen_0000000;';';oen_0000742;';';';'
+"owl:Class
+""drug application""
+oen_term:oen_0000000
+""Helmholtz""";drug application;oen_term:oen_0000000;';';oen_0000468;';';';'
+"owl:Class
+""configuration file""
+oen_term:oen_0000000
+""odML terminology""";configuration file;oen_term:oen_0000000;';';oen_0000469;';';';'
+"owl:Class
+""drug""
+oen_term:oen_0000000
+""Helmholtz""";drug;oen_term:oen_0000000;';';oen_0000466;';';';'
+"owl:Class
+""anteroposterior orientation""
+oen_term:oen_0000000
+""Helmholtz""";anteroposterior orientation;oen_term:oen_0000000;';';oen_0000467;';';';'
+"owl:Class
+""country""
+oen_term:oen_0000000
+""Helmholtz""";country;oen_term:oen_0000000;';';oen_0000464;';';';'
+"owl:Class
+""analog input resolution""
+oen_term:oen_0000000
+""odML terminology""";analog input resolution;oen_term:oen_0000000;';';oen_0000465;';';';'
+"owl:Class
+""preparation thickness""
+oen_term:oen_0000000
+""Helmholtz""";preparation thickness;oen_term:oen_0000000;';';oen_0000462;';';';'
+"owl:Class
+""electrocardiogram device""
+oen_term:oen_0000000
+""Helmholtz""";electrocardiogram device;oen_term:oen_0000000;';';oen_0000463;';';';'
+"owl:Class
+""stimulation seed constant""
+oen_term:oen_0000000
+""Helmholtz""";stimulation seed constant;oen_term:oen_0000000;';';oen_0000460;';';';'
+"owl:Class
+""preparation protocol""
+oen_term:oen_0000000
+""Helmholtz""";preparation protocol;oen_term:oen_0000000;';';oen_0000461;';';';'
+"owl:Class
+""experimental setup department""
+oen_term:oen_0000000
+""odML terminology""";experimental setup department;oen_term:oen_0000000;';';oen_0000589;';';';'
+"owl:Class
+""analog output channel gain""
+oen_term:oen_0000000
+""odML terminology""";analog output channel gain;oen_term:oen_0000000;';';oen_0000588;';';';'
+"owl:Class
+""first name""
+oen_term:oen_0000000
+""odML terminology""";first name;oen_term:oen_0000000;';';oen_0000673;';';';'
+"owl:Class
+""continuous signal analysis""
+oen_term:oen_0000000
+""Helmholtz""";continuous signal analysis;oen_term:oen_0000000;';';oen_0000581;';';';'
+"owl:Class
+""maximum attenuation""
+oen_term:oen_0000000
+""odML terminology""";maximum attenuation;oen_term:oen_0000000;';';oen_0000580;';';';'
+"owl:Class
+""alpha window""
+oen_term:oen_0000000
+""odML terminology""";alpha window;oen_term:oen_0000000;';';oen_0000583;';';';'
+"owl:Class
+""drifting stimulation movement stimulus""
+oen_term:oen_0000000
+""Helmholtz""";drifting stimulation movement stimulus;oen_term:oen_0000000;';';oen_0000582;';';';'
+"owl:Class
+""microscope objective transmission lower bound""
+oen_term:oen_0000000
+""odML terminology""";microscope objective transmission lower bound;oen_term:oen_0000000;';';oen_0000585;';';';'
+"owl:Class
+""quadri-directional stimulation movement stimulus""
+oen_term:oen_0000000
+""Helmholtz""";quadri-directional stimulation movement stimulus;oen_term:oen_0000000;';';oen_0000547;';';';'
+"owl:Class
+""birth day""
+oen_term:oen_0000000
+""odML terminology""";birth day;oen_term:oen_0000000;';';oen_0000587;';';';'
+"owl:Class
+""contact gel""
+oen_term:oen_0000000
+""Helmholtz""";contact gel;oen_term:oen_0000000;';';oen_0000586;';';';'
+"owl:Class
+""organization dissolution date""
+oen_term:oen_0000000
+""Helmholtz""";organization dissolution date;oen_term:oen_0000000;';';oen_0000019;';';';'
+"owl:Class
+""position dorsoventral axis""
+oen_term:oen_0000000
+""Helmholtz""";position dorsoventral axis;oen_term:oen_0000000;';';oen_0000018;';';';'
+"owl:Class
+""USB2 adaptor syncbox""
+oen_term:oen_0000000";USB2 adaptor syncbox;oen_term:oen_0000000;';';oen_0000013;';';';'
+"owl:Class
+""web camera""
+obo:OBI_0000968";web camera;obo:OBI_0000968;';';oen_0000012;';';';'
+"owl:Class
+""multimedia projector""
+obo:OBI_0000968";multimedia projector;obo:OBI_0000968;';';oen_0000011;';';';'
+"owl:Class
+""gas pedal""
+oen_term:oen_0000007
+""the gas pedal is an automobile pedal which controls fuel and air supply to the automobile's engine""
+""accelerator""
+""throttle""";gas pedal;oen_term:oen_0000007;';';oen_0000010;';';"""the gas pedal is an automobile pedal which controls fuel and air supply to the automobile's engine""";'
+"owl:Class
+""electrod input box""
+oen_term:oen_0000000";electrod input box;oen_term:oen_0000000;';';oen_0000014;';';';'
+"owl:Class
+""stimulus isolator output range minimum current""
+oen_term:oen_0000000
+""odML terminology""";stimulus isolator output range minimum current;oen_term:oen_0000000;';';oen_0000646;';';';'
+"owl:Class
+""transmission lower bound""
+oen_term:oen_0000000
+""odML terminology""";transmission lower bound;oen_term:oen_0000000;';';oen_0000647;';';';'
+"owl:Class
+""behavioral phenotype""
+oen_term:oen_0000000
+""odML terminology""";behavioral phenotype;oen_term:oen_0000000;';';oen_0000644;';';';'
+"owl:Class
+""principle investigator""
+oen_term:oen_0000000
+""odML terminology""";principle investigator;oen_term:oen_0000000;';';oen_0000645;';';';'
+"owl:Class
+""stimulus isolator minimum gain""
+oen_term:oen_0000000
+""odML terminology""";stimulus isolator minimum gain;oen_term:oen_0000000;';';oen_0000642;';';';'
+"owl:Class
+""microscope objective transmission upper bound""
+oen_term:oen_0000000
+""odML terminology""";microscope objective transmission upper bound;oen_term:oen_0000000;';';oen_0000378;';';';'
+"owl:Class
+""signal processing filter bandform""
+oen_term:oen_0000000
+""odML terminology""";signal processing filter bandform;oen_term:oen_0000000;';';oen_0000640;';';';'
+"owl:Class
+""chemical product""
+oen_term:oen_0000000
+""Helmholtz""";chemical product;oen_term:oen_0000000;';';oen_0000641;';';';'
+"owl:Class
+""image acquisition""
+oen_term:oen_0000000
+""odML terminology""";image acquisition;oen_term:oen_0000000;';';oen_0000379;';';';'
+"owl:Class
+""storage file name""
+oen_term:oen_0000000
+""Helmholtz""";storage file name;oen_term:oen_0000000;';';oen_0000648;';';';'
+"owl:Class
+""white noise mean intensity""
+oen_term:oen_0000000
+""odML terminology""";white noise mean intensity;oen_term:oen_0000000;';';oen_0000649;';';';'
+"owl:Class
+""experimental laboratory""
+oen_term:oen_0000000
+""Helmholtz""";experimental laboratory;oen_term:oen_0000000;';';oen_0000084;';';';'
+"owl:Class
+""light source pulse rate""
+oen_term:oen_0000000
+""odML terminology""";light source pulse rate;oen_term:oen_0000000;';';oen_0000085;';';';'
+"owl:Class
+""image acquisition color gain""
+oen_term:oen_0000000
+""odML terminology""";image acquisition color gain;oen_term:oen_0000000;';';oen_0000086;';';';'
+"owl:Class
+""address""
+oen_term:oen_0000000
+""Helmholtz""";address;oen_term:oen_0000000;';';oen_0000087;';';';'
+"owl:Class
+""analog input reference""
+oen_term:oen_0000000
+""odML terminology""";analog input reference;oen_term:oen_0000000;';';oen_0000080;';';';'
+"owl:Class
+""power spectrum window function""
+oen_term:oen_0000000
+""odML terminology""";power spectrum window function;oen_term:oen_0000000;';';oen_0000081;';';';'
+"owl:Class
+""result file URL""
+oen_term:oen_0000000
+""odML terminology""";result file URL;oen_term:oen_0000000;';';oen_0000169;';';';'
+"owl:Class
+""data file""
+oen_term:oen_0000000
+""odML terminology""";data file;oen_term:oen_0000000;';';oen_0000168;';';';'
+"owl:Class
+""chemical""
+oen_term:oen_0000000
+""Helmholtz""";chemical;oen_term:oen_0000000;';';oen_0000167;';';';'
+"owl:Class
+""emission filter range""
+oen_term:oen_0000000
+""odML terminology""";emission filter range;oen_term:oen_0000000;';';oen_0000166;';';';'
+"owl:Class
+""experimental setup""
+oen_term:oen_0000000
+""Helmholtz""";experimental setup;oen_term:oen_0000000;';';oen_0000165;';';';'
+"owl:Class
+""voltage clamp""
+oen_term:oen_0000000
+""odML terminology""";voltage clamp;oen_term:oen_0000000;';';oen_0000164;';';';'
+"owl:Class
+""dataset file URL""
+oen_term:oen_0000000
+""odML terminology""";dataset file URL;oen_term:oen_0000000;';';oen_0000088;';';';'
+"owl:Class
+""whole cell patch""
+oen_term:oen_0000000
+""odML terminology""";whole cell patch;oen_term:oen_0000000;';';oen_0000089;';';';'
+"owl:Class
+""subsystem""
+oen_term:oen_0000000
+""Helmholtz""";subsystem;oen_term:oen_0000000;';';oen_0000161;';';';'
+"owl:Class
+""psychophysics task""
+oen_term:oen_0000000
+""odML terminology""";psychophysics task;oen_term:oen_0000000;';';oen_0000160;';';';'
+"owl:Class
+""stimulation phase speed""
+oen_term:oen_0000000
+""Helmholtz""";stimulation phase speed;oen_term:oen_0000000;';';oen_0000741;';';';'
+"owl:Class
+""stimulus isolator output mode""
+oen_term:oen_0000000
+""odML terminology""";stimulus isolator output mode;oen_term:oen_0000000;';';oen_0000389;';';';'
+"owl:Class
+""recording dataset""
+oen_term:oen_0000000
+""Helmholtz""";recording dataset;oen_term:oen_0000000;';';oen_0000738;';';';'
+"owl:Class
+""setup configuration identifier""
+oen_term:oen_0000000
+""odML terminology""";setup configuration identifier;oen_term:oen_0000000;';';oen_0000739;';';';'
+"owl:Class
+""gabor stimulation grating""
+oen_term:oen_0000000
+""Helmholtz""";gabor stimulation grating;oen_term:oen_0000000;';';oen_0000736;';';';'
+"owl:Class
+""grating wave type""
+oen_term:oen_0000000
+""odML terminology""";grating wave type;oen_term:oen_0000000;';';oen_0000737;';';';'
+"owl:Class
+""DC pulse stimulus""
+oen_term:oen_0000000
+""odML terminology""";DC pulse stimulus;oen_term:oen_0000000;';';oen_0000734;';';';'
+"owl:Class
+""current stimulus isolator output""
+oen_term:oen_0000000
+""odML terminology""";current stimulus isolator output;oen_term:oen_0000000;';';oen_0000388;';';';'
+"owl:Class
+""structure""
+oen_term:oen_0000000
+""odML terminology""";structure;oen_term:oen_0000000;';';oen_0000732;';';';'
+"owl:Class
+""cell rheobase""
+oen_term:oen_0000000
+""odML terminology""";cell rheobase;oen_term:oen_0000000;';';oen_0000733;';';';'
+"owl:Class
+""device amplification setting""
+oen_term:oen_0000000
+""Helmholtz""";device amplification setting;oen_term:oen_0000000;';';oen_0000730;';';';'
+"owl:Class
+""recording block start""
+oen_term:oen_0000000
+""Helmholtz""";recording block start;oen_term:oen_0000000;';';oen_0000731;';';';'
+"owl:Class
+""seal resistance""
+oen_term:oen_0000000
+""Helmholtz""";seal resistance;oen_term:oen_0000000;';';oen_0000383;';';';'
+"owl:Class
+""measurement unit""
+oen_term:oen_0000000
+""Helmholtz""";measurement unit;oen_term:oen_0000000;';';oen_0000382;';';';'
+"owl:Class
+""subject size""
+oen_term:oen_0000000
+""odML terminology""";subject size;oen_term:oen_0000000;';';oen_0000422;';';';'
+"owl:Class
+""two photon fluorescence microscopy""
+oen_term:oen_0000000
+""odML terminology""";two photon fluorescence microscopy;oen_term:oen_0000000;';';oen_0000423;';';';'
+"owl:Class
+""eye tracker filter""
+oen_term:oen_0000000
+""odML terminology""";eye tracker filter;oen_term:oen_0000000;';';oen_0000420;';';';'
+"owl:Class
+""attenuator device""
+oen_term:oen_0000000
+""odML terminology""";attenuator device;oen_term:oen_0000000;';';oen_0000421;';';';'
+"owl:Class
+""stimulation experiment""
+oen_term:oen_0000000
+""odML terminology""";stimulation experiment;oen_term:oen_0000000;';';oen_0000426;';';';'
+"owl:Class
+""experimental protocol""
+oen_term:oen_0000000
+""odML terminology""";experimental protocol;oen_term:oen_0000000;';';oen_0000427;';';';'
+"owl:Class
+""device recording point index""
+oen_term:oen_0000000
+""Helmholtz""";device recording point index;oen_term:oen_0000000;';';oen_0000424;';';';'
+"owl:Class
+""microchip""
+oen_term:oen_0000000
+""odML terminology""";microchip;oen_term:oen_0000000;';';oen_0000425;';';';'
+"owl:Class
+""image acquisition picture rotation""
+oen_term:oen_0000000
+""odML terminology""";image acquisition picture rotation;oen_term:oen_0000000;';';oen_0000545;';';';'
+"owl:Class
+""stimulus start""
+oen_term:oen_0000000
+""Helmholtz""";stimulus start;oen_term:oen_0000000;';';oen_0000544;';';';'
+"owl:Class
+""maximum aperture""
+oen_term:oen_0000000
+""odML terminology""";maximum aperture;oen_term:oen_0000000;';';oen_0000428;';';';'
+"owl:Class
+""intracellular recording""
+oen_term:oen_0000000
+""odML terminology""";intracellular recording;oen_term:oen_0000000;';';oen_0000429;';';';'
+"owl:Class
+""excitation filter lower bound""
+oen_term:oen_0000000
+""odML terminology""";excitation filter lower bound;oen_term:oen_0000000;';';oen_0000541;';';';'
+"owl:Class
+""paper universal resource locator""
+oen_term:oen_0000000
+""odML terminology""";paper universal resource locator;oen_term:oen_0000000;';';oen_0000540;';';';'
+"owl:Class
+""image acquisition bit depth""
+oen_term:oen_0000000
+""odML terminology""";image acquisition bit depth;oen_term:oen_0000000;';';oen_0000543;';';';'
+"owl:Class
+""top-left position reference""
+oen_term:oen_0000000
+""odML terminology""";top-left position reference;oen_term:oen_0000000;';';oen_0000542;';';';'
+"owl:Class
+""phase shift""
+oen_term:oen_0000000
+""odML terminology""";phase shift;oen_term:oen_0000000;';';oen_0000277;';';';'
+"owl:Class
+""chemical product supplier""
+oen_term:oen_0000000
+""Helmholtz""";chemical product supplier;oen_term:oen_0000000;';';oen_0000276;';';';'
+"owl:Class
+""individual count""
+oen_term:oen_0000000
+""odML terminology""";individual count;oen_term:oen_0000000;';';oen_0000275;';';';'
+"owl:Class
+""scanner scan mode""
+oen_term:oen_0000000
+""odML terminology""";scanner scan mode;oen_term:oen_0000000;';';oen_0000274;';';';'
+"owl:Class
+""overlap with""
+oen_term:oen_0000000
+""odML terminology""";overlap with;oen_term:oen_0000000;';';oen_0000273;';';';'
+"owl:Class
+""image acquisition contrast adjustment""
+oen_term:oen_0000000
+""odML terminology""";image acquisition contrast adjustment;oen_term:oen_0000000;';';oen_0000272;';';';'
+"owl:Class
+""loose patch configuration""
+oen_term:oen_0000000
+""Helmholtz""";loose patch configuration;oen_term:oen_0000000;';';oen_0000271;';';';'
+"owl:Class
+""contact details""
+oen_term:oen_0000000
+""Helmholtz""";contact details;oen_term:oen_0000000;';';oen_0000270;';';';'
+"owl:Class
+""shutter speed""
+oen_term:oen_0000000
+""odML terminology""";shutter speed;oen_term:oen_0000000;';';oen_0000376;';';';'
+"owl:Class
+""stimulation intensity""
+oen_term:oen_0000000
+""odML terminology""";stimulation intensity;oen_term:oen_0000000;';';oen_0000377;';';';'
+"owl:Class
+""image acquisition device CCD count""
+oen_term:oen_0000000
+""odML terminology""";image acquisition device CCD count;oen_term:oen_0000000;';';oen_0000374;';';';'
+"owl:Class
+""experiment duration""
+oen_term:oen_0000000
+""Helmholtz""";experiment duration;oen_term:oen_0000000;';';oen_0000375;';';';'
+"owl:Class
+""switching frequency""
+oen_term:oen_0000000
+""odML terminology""";switching frequency;oen_term:oen_0000000;';';oen_0000372;';';';'
+"owl:Class
+""gaussian window""
+oen_term:oen_0000000
+""odML terminology""";gaussian window;oen_term:oen_0000000;';';oen_0000373;';';';'
+"owl:Class
+""cs-mount""
+oen_term:oen_0000000
+""odML terminology""";cs-mount;oen_term:oen_0000000;';';oen_0000279;';';';'
+"owl:Class
+""current clamp""
+oen_term:oen_0000000
+""odML terminology""";current clamp;oen_term:oen_0000000;';';oen_0000278;';';';'
+"owl:Class
+""drug experiment""
+oen_term:oen_0000000
+""Helmholtz""";drug experiment;oen_term:oen_0000000;';';oen_0000116;';';';'
+"owl:Class
+""random dot pixel height""
+oen_term:oen_0000000
+""odML terminology""";random dot pixel height;oen_term:oen_0000000;';';oen_0000117;';';';'
+"owl:Class
+""gaussian window function""
+oen_term:oen_0000000
+""odML terminology""";gaussian window function;oen_term:oen_0000000;';';oen_0000114;';';';'
+"owl:Class
+""bottom-right position reference""
+oen_term:oen_0000000
+""odML terminology""";bottom-right position reference;oen_term:oen_0000000;';';oen_0000115;';';';'
+"owl:Class
+""method of identification""
+oen_term:oen_0000000
+""odML terminology""";method of identification;oen_term:oen_0000000;';';oen_0000112;';';';'
+"owl:Class
+""common name""
+oen_term:oen_0000000
+""odML terminology""";common name;oen_term:oen_0000000;';';oen_0000113;';';';'
+"owl:Class
+""square wave modulation frequency""
+oen_term:oen_0000000
+""odML terminology""";square wave modulation frequency;oen_term:oen_0000000;';';oen_0000110;';';';'
+"owl:Class
+""spike stimulus""
+oen_term:oen_0000000
+""Helmholtz""";spike stimulus;oen_term:oen_0000000;';';oen_0000111;';';';'
+"owl:Class
+""stimulus location""
+oen_term:oen_0000000
+""odML terminology""";stimulus location;oen_term:oen_0000000;';';oen_0000118;';';';'
+"owl:Class
+""study principle investigator or responsible""
+oen_term:oen_0000000
+""odML terminology""";study principle investigator or responsible;oen_term:oen_0000000;';';oen_0000119;';';';'
+"owl:Class
+""low pass filter""
+oen_term:oen_0000000
+""odML terminology""";low pass filter;oen_term:oen_0000000;';';oen_0000370;';';';'
+"owl:Class
+""duty cycle""
+oen_term:oen_0000000
+""odML terminology""";duty cycle;oen_term:oen_0000000;';';oen_0000668;';';';'
+"owl:Class
+""recording stimulus""
+oen_term:oen_0000000
+""Helmholtz""";recording stimulus;oen_term:oen_0000000;';';oen_0000669;';';';'
+"owl:Class
+""behavioral science""
+oen_term:oen_0000000
+""odML terminology""";behavioral science;oen_term:oen_0000000;';';oen_0000371;';';';'
+"owl:Class
+""electrode position""
+oen_term:oen_0000000
+""Helmholtz""";electrode position;oen_term:oen_0000000;';';oen_0000059;';';';'
+"owl:Class
+""data segment overlap""
+oen_term:oen_0000000
+""odML terminology""";data segment overlap;oen_term:oen_0000000;';';oen_0000058;';';';'
+"owl:Class
+""local anaesthetic dose""
+oen_term:oen_0000000
+""odML terminology""";local anaesthetic dose;oen_term:oen_0000000;';';oen_0000057;';';';'
+"owl:Class
+""stimulation pre-trigger duration""
+oen_term:oen_0000000
+""Helmholtz""";stimulation pre-trigger duration;oen_term:oen_0000000;';';oen_0000056;';';';'
+"owl:Class
+""whole cell configuration""
+oen_term:oen_0000000
+""Helmholtz""";whole cell configuration;oen_term:oen_0000000;';';oen_0000055;';';';'
+"owl:Class
+""ramp start amplitude""
+oen_term:oen_0000000
+""odML terminology""";ramp start amplitude;oen_term:oen_0000000;';';oen_0000054;';';';'
+"owl:Class
+""stimulus isolator maximum gain""
+oen_term:oen_0000000
+""odML terminology""";stimulus isolator maximum gain;oen_term:oen_0000000;';';oen_0000053;';';';'
+"owl:Class
+""subject age""
+oen_term:oen_0000000
+""odML terminology""";subject age;oen_term:oen_0000000;';';oen_0000052;';';';'
+"owl:Class
+""gender""
+oen_term:oen_0000000
+""odML terminology""";gender;oen_term:oen_0000000;';';oen_0000051;';';';'
+"owl:Class
+""stimulus""
+oen_term:oen_0000000
+""odML terminology""";stimulus;oen_term:oen_0000000;';';oen_0000050;';';';'
+"owl:Class
+""subject cell line""
+oen_term:oen_0000000
+""odML terminology""";subject cell line;oen_term:oen_0000000;';';oen_0000660;';';';'
+"owl:Class
+""xenon lamp""
+oen_term:oen_0000000
+""odML terminology""";xenon lamp;oen_term:oen_0000000;';';oen_0000661;';';';'
+"owl:Class
+""grating orientation""
+oen_term:oen_0000000
+""odML terminology""";grating orientation;oen_term:oen_0000000;';';oen_0000712;';';';'
+"owl:Class
+""perforated patch configuration""
+oen_term:oen_0000000
+""Helmholtz""";perforated patch configuration;oen_term:oen_0000000;';';oen_0000608;';';';'
+"owl:Class
+""air interface objective lens""
+oen_term:oen_0000000
+""odML terminology""";air interface objective lens;oen_term:oen_0000000;';';oen_0000609;';';';'
+"owl:Class
+""dual Purkinje sensor""
+oen_term:oen_0000000
+""odML terminology""";dual Purkinje sensor;oen_term:oen_0000000;';';oen_0000602;';';';'
+"owl:Class
+""configuration file URL""
+oen_term:oen_0000000
+""odML terminology""";configuration file URL;oen_term:oen_0000000;';';oen_0000603;';';';'
+"owl:Class
+""focal length range""
+oen_term:oen_0000000
+""odML terminology""";focal length range;oen_term:oen_0000000;';';oen_0000600;';';';'
+"owl:Class
+""experimental setup maintainer""
+oen_term:oen_0000000
+""odML terminology""";experimental setup maintainer;oen_term:oen_0000000;';';oen_0000601;';';';'
+"owl:Class
+""notch filter""
+oen_term:oen_0000000
+""odML terminology""";notch filter;oen_term:oen_0000000;';';oen_0000606;';';';'
+"owl:Class
+""discrete signal sampling rate""
+oen_term:oen_0000000
+""Helmholtz""";discrete signal sampling rate;oen_term:oen_0000000;';';oen_0000607;';';';'
+"owl:Class
+""supplier contact details""
+oen_term:oen_0000000
+""Helmholtz""";supplier contact details;oen_term:oen_0000000;';';oen_0000604;';';';'
+"owl:Class
+""discrete signal waveform description""
+oen_term:oen_0000000
+""Helmholtz""";discrete signal waveform description;oen_term:oen_0000000;';';oen_0000605;';';';'
+"owl:Class
+""pathname""
+oen_term:oen_0000000
+""Helmholtz""";pathname;oen_term:oen_0000000;';';oen_0000170;';';';'
+"owl:Class
+""multi-photon microscope""
+oen_term:oen_0000000
+""odML terminology""";multi-photon microscope;oen_term:oen_0000000;';';oen_0000171;';';';'
+"owl:Class
+""contrast resolution""
+oen_term:oen_0000000
+""odML terminology""";contrast resolution;oen_term:oen_0000000;';';oen_0000172;';';';'
+"owl:Class
+""instrument model""
+oen_term:oen_0000000
+""odML terminology""";instrument model;oen_term:oen_0000000;';';oen_0000173;';';';'
+"owl:Class
+""step size""
+oen_term:oen_0000000
+""odML terminology""";step size;oen_term:oen_0000000;';';oen_0000174;';';';'
+"owl:Class
+""infrared detector""
+oen_term:oen_0000000
+""odML terminology""";infrared detector;oen_term:oen_0000000;';';oen_0000175;';';';'
+"owl:Class
+""in vitro culture preparation""
+oen_term:oen_0000000
+""Helmholtz""";in vitro culture preparation;oen_term:oen_0000000;';';oen_0000176;';';';'
+"owl:Class
+""stimulation luminance low""
+oen_term:oen_0000000
+""Helmholtz""";stimulation luminance low;oen_term:oen_0000000;';';oen_0000177;';';';'
+"owl:Class
+""subject genus""
+oen_term:oen_0000000
+""odML terminology""";subject genus;oen_term:oen_0000000;';';oen_0000178;';';';'
+"owl:Class
+""collection""
+oen_term:oen_0000000
+""odML terminology""";collection;oen_term:oen_0000000;';';oen_0000179;';';';'
+"owl:Class
+""image acquisition frame rate""
+oen_term:oen_0000000
+""odML terminology""";image acquisition frame rate;oen_term:oen_0000000;';';oen_0000671;';';';'
+"owl:Class
+""transmission range""
+oen_term:oen_0000000
+""odML terminology""";transmission range;oen_term:oen_0000000;';';oen_0000670;';';';'
+"owl:Class
+""bath solution""
+oen_term:oen_0000000
+""odML terminology""";bath solution;oen_term:oen_0000000;';';oen_0000677;';';';'
+"owl:Class
+""behavior experiment""
+oen_term:oen_0000000
+""odML terminology""";behavior experiment;oen_term:oen_0000000;';';oen_0000676;';';';'
+"owl:Class
+""ramp start time""
+oen_term:oen_0000000
+""odML terminology""";ramp start time;oen_term:oen_0000000;';';oen_0000675;';';';'
+"owl:Class
+""slice thickness""
+oen_term:oen_0000000
+""odML terminology""";slice thickness;oen_term:oen_0000000;';';oen_0000674;';';';'
+"owl:Class
+""stimulus repetitions""
+oen_term:oen_0000000
+""odML terminology""";stimulus repetitions;oen_term:oen_0000000;';';oen_0000598;';';';'
+"owl:Class
+""stimulation center type""
+oen_term:oen_0000000
+""Helmholtz""";stimulation center type;oen_term:oen_0000000;';';oen_0000079;';';';'
+"owl:Class
+""frame grabber""
+oen_term:oen_0000000
+""odML terminology""";frame grabber;oen_term:oen_0000000;';';oen_0000078;';';';'
+"owl:Class
+""stimulus spatial extent""
+oen_term:oen_0000000
+""odML terminology""";stimulus spatial extent;oen_term:oen_0000000;';';oen_0000599;';';';'
+"owl:Class
+""researcher street address""
+oen_term:oen_0000000
+""Helmholtz""";researcher street address;oen_term:oen_0000000;';';oen_0000071;';';';'
+"owl:Class
+""high pass filter order""
+oen_term:oen_0000000
+""odML terminology""";high pass filter order;oen_term:oen_0000000;';';oen_0000070;';';';'
+"owl:Class
+""sparse noise nrev multistimulus""
+oen_term:oen_0000000
+""Helmholtz""";sparse noise nrev multistimulus;oen_term:oen_0000000;';';oen_0000073;';';';'
+"owl:Class
+""subjet strain""
+oen_term:oen_0000000
+""odML terminology""";subjet strain;oen_term:oen_0000000;';';oen_0000072;';';';'
+"owl:Class
+""white noise""
+oen_term:oen_0000000
+""odML terminology""";white noise;oen_term:oen_0000000;';';oen_0000075;';';';'
+"owl:Class
+""stimulus start time""
+oen_term:oen_0000000
+""odML terminology""";stimulus start time;oen_term:oen_0000000;';';oen_0000074;';';';'
+"owl:Class
+""scanner stack z range""
+oen_term:oen_0000000
+""odML terminology""";scanner stack z range;oen_term:oen_0000000;';';oen_0000077;';';';'
+"owl:Class
+""single compartment model""
+oen_term:oen_0000000
+""odML terminology""";single compartment model;oen_term:oen_0000000;';';oen_0000076;';';';'
+"owl:Class
+""principle investigator role""
+oen_term:oen_0000000
+""odML terminology""";principle investigator role;oen_term:oen_0000000;';';oen_0000593;';';';'
+"owl:Class
+""single electrode recording""
+oen_term:oen_0000000
+""odML terminology""";single electrode recording;oen_term:oen_0000000;';';oen_0000590;';';';'
+"owl:Class
+""imaging experiment""
+oen_term:oen_0000000
+""odML terminology""";imaging experiment;oen_term:oen_0000000;';';oen_0000591;';';';'
+"owl:Class
+""drug application route type""
+oen_term:oen_0000000
+""Helmholtz""";drug application route type;oen_term:oen_0000000;';';oen_0000189;';';';'
+"owl:Class
+""pulse stimulus""
+oen_term:oen_0000000
+""odML terminology""";pulse stimulus;oen_term:oen_0000000;';';oen_0000188;';';';'
+"owl:Class
+""charge couple device image sensor""
+oen_term:oen_0000000
+""odML terminology""";charge couple device image sensor;oen_term:oen_0000000;';';oen_0000185;';';';'
+"owl:Class
+""multielectrode array""
+oen_term:oen_0000000
+""Helmholtz""";multielectrode array;oen_term:oen_0000000;';';oen_0000184;';';';'
+"owl:Class
+""preparation animal""
+oen_term:oen_0000000
+""Helmholtz""";preparation animal;oen_term:oen_0000000;';';oen_0000187;';';';'
+"owl:Class
+""storage communication protocol""
+oen_term:oen_0000000
+""Helmholtz""";storage communication protocol;oen_term:oen_0000000;';';oen_0000186;';';';'
+"owl:Class
+""birthday""
+oen_term:oen_0000000
+""odML terminology""";birthday;oen_term:oen_0000000;';';oen_0000181;';';';'
+"owl:Class
+""inventory number""
+oen_term:oen_0000000
+""odML terminology""";inventory number;oen_term:oen_0000000;';';oen_0000180;';';';'
+"owl:Class
+""gabor stimulus""
+oen_term:oen_0000000
+""odML terminology""";gabor stimulus;oen_term:oen_0000000;';';oen_0000183;';';';'
+"owl:Class
+""light source lux intensity""
+oen_term:oen_0000000
+""odML terminology""";light source lux intensity;oen_term:oen_0000000;';';oen_0000182;';';';'
+"owl:Class
+""signal processing filter family""
+oen_term:oen_0000000
+""odML terminology""";signal processing filter family;oen_term:oen_0000000;';';oen_0000595;';';';'
+"owl:Class
+""on-off stimulation movement stimulus""
+oen_term:oen_0000000
+""Helmholtz""";on-off stimulation movement stimulus;oen_term:oen_0000000;';';oen_0000343;';';';'
+"owl:Class
+""device item""
+oen_term:oen_0000000
+""Helmholtz""";device item;oen_term:oen_0000000;';';oen_0000342;';';';'
+"owl:Class
+""organization description""
+oen_term:oen_0000000
+""Helmholtz""";organization description;oen_term:oen_0000000;';';oen_0000341;';';';'
+"owl:Class
+""chinrest""
+oen_term:oen_0000000
+""odML terminology""";chinrest;oen_term:oen_0000000;';';oen_0000340;';';';'
+"owl:Class
+""image acquisition region of interest width""
+oen_term:oen_0000000
+""odML terminology""";image acquisition region of interest width;oen_term:oen_0000000;';';oen_0000347;';';';'
+"owl:Class
+""dataset quality""
+oen_term:oen_0000000
+""odML terminology""";dataset quality;oen_term:oen_0000000;';';oen_0000346;';';';'
+"owl:Class
+""continuous drug application rate""
+oen_term:oen_0000000
+""Helmholtz""";continuous drug application rate;oen_term:oen_0000000;';';oen_0000345;';';';'
+"owl:Class
+""organization diminutive""
+oen_term:oen_0000000
+""Helmholtz""";organization diminutive;oen_term:oen_0000000;';';oen_0000344;';';';'
+"owl:Class
+""temporal window""
+oen_term:oen_0000000
+""odML terminology""";temporal window;oen_term:oen_0000000;';';oen_0000349;';';';'
+"owl:Class
+""electrophysiology experiment""
+oen_term:oen_0000000
+""odML terminology""";electrophysiology experiment;oen_term:oen_0000000;';';oen_0000348;';';';'
+"owl:Class
+""stimulus function""
+oen_term:oen_0000000
+""odML terminology""";stimulus function;oen_term:oen_0000000;';';oen_0000417;';';';'
+"owl:Class
+""stimulation luminance background""
+oen_term:oen_0000000
+""Helmholtz""";stimulation luminance background;oen_term:oen_0000000;';';oen_0000416;';';';'
+"owl:Class
+""work position""
+oen_term:oen_0000000
+""Helmholtz""";work position;oen_term:oen_0000000;';';oen_0000415;';';';'
+"owl:Class
+""measurement parameter""
+oen_term:oen_0000000
+""Helmholtz""";measurement parameter;oen_term:oen_0000000;';';oen_0000414;';';';'
+"owl:Class
+""count""
+oen_term:oen_0000000
+""odML terminology""";count;oen_term:oen_0000000;';';oen_0000413;';';';'
+"owl:Class
+""recording point label""
+oen_term:oen_0000000
+""Helmholtz""";recording point label;oen_term:oen_0000000;';';oen_0000412;';';';'
+"owl:Class
+""scanner stack z step size""
+oen_term:oen_0000000
+""odML terminology""";scanner stack z step size;oen_term:oen_0000000;';';oen_0000411;';';';'
+"owl:Class
+""experiment""
+oen_term:oen_0000000
+""odML terminology""";experiment;oen_term:oen_0000000;';';oen_0000410;';';';'
+"owl:Class
+""attenuator line count""
+oen_term:oen_0000000
+""odML terminology""";attenuator line count;oen_term:oen_0000000;';';oen_0000556;';';';'
+"owl:Class
+""neural structure""
+oen_term:oen_0000000
+""Helmholtz""";neural structure;oen_term:oen_0000000;';';oen_0000557;';';';'
+"owl:Class
+""subsystem component""
+oen_term:oen_0000000
+""Helmholtz""";subsystem component;oen_term:oen_0000000;';';oen_0000554;';';';'
+"owl:Class
+""experimenter role""
+oen_term:oen_0000000
+""odML terminology""";experimenter role;oen_term:oen_0000000;';';oen_0000555;';';';'
+"owl:Class
+""attenuation""
+oen_term:oen_0000000
+""odML terminology""";attenuation;oen_term:oen_0000000;';';oen_0000552;';';';'
+"owl:Class
+""dataset file""
+oen_term:oen_0000000
+""odML terminology""";dataset file;oen_term:oen_0000000;';';oen_0000553;';';';'
+"owl:Class
+""analysis author""
+oen_term:oen_0000000
+""odML terminology""";analysis author;oen_term:oen_0000000;';';oen_0000419;';';';'
+"owl:Class
+""pulse rate""
+oen_term:oen_0000000
+""odML terminology""";pulse rate;oen_term:oen_0000000;';';oen_0000418;';';';'
+"owl:Class
+""strain nomenclature""
+oen_term:oen_0000000
+""Helmholtz""";strain nomenclature;oen_term:oen_0000000;';';oen_0000268;';';';'
+"owl:Class
+""behavioral stimulus""
+oen_term:oen_0000000
+""odML terminology""";behavioral stimulus;oen_term:oen_0000000;';';oen_0000269;';';';'
+"owl:Class
+""microscope objective magnification""
+oen_term:oen_0000000
+""odML terminology""";microscope objective magnification;oen_term:oen_0000000;';';oen_0000260;';';';'
+"owl:Class
+""pixel size""
+oen_term:oen_0000000
+""odML terminology""";pixel size;oen_term:oen_0000000;';';oen_0000261;';';';'
+"owl:Class
+""anteroposterior plane""
+oen_term:oen_0000000
+""Helmholtz""";anteroposterior plane;oen_term:oen_0000000;';';oen_0000262;';';';'
+"owl:Class
+""chemical substance quantity""
+oen_term:oen_0000000
+""Helmholtz""";chemical substance quantity;oen_term:oen_0000000;';';oen_0000263;';';';'
+"owl:Class
+""device identifier""
+oen_term:oen_0000000
+""Helmholtz""";device identifier;oen_term:oen_0000000;';';oen_0000264;';';';'
+"owl:Class
+""stimulus protocol""
+oen_term:oen_0000000
+""Helmholtz""";stimulus protocol;oen_term:oen_0000000;';';oen_0000265;';';';'
+"owl:Class
+""oil immersion objective""
+oen_term:oen_0000000
+""odML terminology""";oil immersion objective;oen_term:oen_0000000;';';oen_0000266;';';';'
+"owl:Class
+""image acquisition detector sensitivity range""
+oen_term:oen_0000000
+""odML terminology""";image acquisition detector sensitivity range;oen_term:oen_0000000;';';oen_0000267;';';';'
+"owl:Class
+""eye tracker calibration""
+oen_term:oen_0000000
+""odML terminology""";eye tracker calibration;oen_term:oen_0000000;';';oen_0000538;';';';'
+"owl:Class
+""clutch pedal""
+oen_term:oen_0000007
+""clutch pedal is an automobile pedal which controls the clutch""";clutch pedal;oen_term:oen_0000007;';';oen_0000008;';';"""clutch pedal is an automobile pedal which controls the clutch""";'
+"owl:Class
+""brake pedal""
+oen_term:oen_0000007
+""the brake pedal is an automobile pedal which controls the brakes""";brake pedal;oen_term:oen_0000007;';';oen_0000009;';';"""the brake pedal is an automobile pedal which controls the brakes""";'
+"owl:Class
+""experiment preparation""
+oen_term:oen_0000000
+""Helmholtz""";experiment preparation;oen_term:oen_0000000;';';oen_0000539;';';';'
+"owl:Class
+""bodywork""
+obo:OBI_0000968";bodywork;obo:OBI_0000968;';';oen_0000004;';';';'
+"owl:Class
+""steering wheel""
+obo:OBI_0000968";steering wheel;obo:OBI_0000968;';';oen_0000005;';';';'
+"owl:Class
+""six-speed shifter""
+obo:OBI_0000968";six-speed shifter;obo:OBI_0000968;';';oen_0000006;';';';'
+"owl:Class
+""automobile pedal""
+obo:OBI_0000968
+""http://en.wikipedia.org/wiki/Automobile_pedal""";automobile pedal;obo:OBI_0000968;';';oen_0000007;';"""http://en.wikipedia.org/wiki/Automobile_pedal""";';'
+"owl:Class
+""unclassified term""";unclassified term;';';';oen_0000000;';';';'
+"owl:Class
+""has quality size""
+""recording cap""
+obo:OBI_0000968";recording cap;obo:OBI_0000968;';';oen_0000001;';';';has quality size
+"owl:Class
+""blood pressure sensor""
+obo:OBI_0000968";blood pressure sensor;obo:OBI_0000968;';';oen_0000002;';';';'
+"owl:Class
+""car simulator""
+obo:OBI_0000968";car simulator;obo:OBI_0000968;';';oen_0000003;';';';'
+"owl:Class
+""setup configuration""
+oen_term:oen_0000000
+""odML terminology""";setup configuration;oen_term:oen_0000000;';';oen_0000584;';';';'
+"owl:Class
+""scanner image height""
+oen_term:oen_0000000
+""odML terminology""";scanner image height;oen_term:oen_0000000;';';oen_0000530;';';';'
+"owl:Class
+""concentration""
+oen_term:oen_0000000
+""Helmholtz""";concentration;oen_term:oen_0000000;';';oen_0000531;';';';'
+"owl:Class
+""storage file server protocol""
+oen_term:oen_0000000
+""Helmholtz""";storage file server protocol;oen_term:oen_0000000;';';oen_0000639;';';';'
+"owl:Class
+""in silico preparation""
+oen_term:oen_0000000
+""Helmholtz""";in silico preparation;oen_term:oen_0000000;';';oen_0000638;';';';'
+"owl:Class
+""device type""
+oen_term:oen_0000000
+""Helmholtz""";device type;oen_term:oen_0000000;';';oen_0000637;';';';'
+"owl:Class
+""chemical components list""
+oen_term:oen_0000000
+""Helmholtz""";chemical components list;oen_term:oen_0000000;';';oen_0000369;';';';'
+"owl:Class
+""analysis algorithm""
+oen_term:oen_0000000
+""Helmholtz""";analysis algorithm;oen_term:oen_0000000;';';oen_0000635;';';';'
+"owl:Class
+""back-forth stimulation movement stimulus""
+oen_term:oen_0000000
+""Helmholtz""";back-forth stimulation movement stimulus;oen_term:oen_0000000;';';oen_0000634;';';';'
+"owl:Class
+""dataset quality range""
+oen_term:oen_0000000
+""odML terminology""";dataset quality range;oen_term:oen_0000000;';';oen_0000633;';';';'
+"owl:Class
+""stimulus generator""
+oen_term:oen_0000000
+""Helmholtz""";stimulus generator;oen_term:oen_0000000;';';oen_0000632;';';';'
+"owl:Class
+""analog input polarity""
+oen_term:oen_0000000
+""odML terminology""";analog input polarity;oen_term:oen_0000000;';';oen_0000631;';';';'
+"owl:Class
+""job details""
+oen_term:oen_0000000
+""Helmholtz""";job details;oen_term:oen_0000000;';';oen_0000368;';';';'
+"owl:Class
+""recording start time""
+oen_term:oen_0000000
+""odML terminology""";recording start time;oen_term:oen_0000000;';';oen_0000728;';';';'
+"owl:Class
+""intravenous anaesthetic""
+oen_term:oen_0000000
+""Helmholtz""";intravenous anaesthetic;oen_term:oen_0000000;';';oen_0000636;';';';'
+"owl:Class
+""image acquisition colorspace""
+oen_term:oen_0000000
+""odML terminology""";image acquisition colorspace;oen_term:oen_0000000;';';oen_0000367;';';';'
+"owl:Class
+""random dot size""
+oen_term:oen_0000000
+""odML terminology""";random dot size;oen_term:oen_0000000;';';oen_0000366;';';';'
+"owl:Class
+""beam splitter device component""
+oen_term:oen_0000000
+""odML terminology""";beam splitter device component;oen_term:oen_0000000;';';oen_0000703;';';';'
+"owl:Class
+""cell membrane capacity""
+oen_term:oen_0000000
+""odML terminology""";cell membrane capacity;oen_term:oen_0000000;';';oen_0000702;';';';'
+"owl:Class
+""ternary dense noise multistimulus""
+oen_term:oen_0000000
+""Helmholtz""";ternary dense noise multistimulus;oen_term:oen_0000000;';';oen_0000701;';';';'
+"owl:Class
+""device version""
+oen_term:oen_0000000
+""Helmholtz""";device version;oen_term:oen_0000000;';';oen_0000700;';';';'
+"owl:Class
+""ramp stimulus""
+oen_term:oen_0000000
+""odML terminology""";ramp stimulus;oen_term:oen_0000000;';';oen_0000707;';';';'
+"owl:Class
+""brain region""
+oen_term:oen_0000000
+""odML terminology""";brain region;oen_term:oen_0000000;';';oen_0000706;';';';'
+"owl:Class
+""cell resting potential""
+oen_term:oen_0000000
+""odML terminology""";cell resting potential;oen_term:oen_0000000;';';oen_0000705;';';';'
+"owl:Class
+""emission filter lower bound""
+oen_term:oen_0000000
+""odML terminology""";emission filter lower bound;oen_term:oen_0000000;';';oen_0000704;';';';'
+"owl:Class
+""species strain""
+oen_term:oen_0000000
+""Helmholtz""";species strain;oen_term:oen_0000000;';';oen_0000709;';';';'
+"owl:Class
+""health status""
+oen_term:oen_0000000
+""odML terminology""";health status;oen_term:oen_0000000;';';oen_0000630;';';';'
+"owl:Class
+""image sensor""
+oen_term:oen_0000000
+""odML terminology""";image sensor;oen_term:oen_0000000;';';oen_0000528;';';';'
+"owl:Class
+""organization foundation date""
+oen_term:oen_0000000
+""Helmholtz""";organization foundation date;oen_term:oen_0000000;';';oen_0000512;';';';'
+"owl:Class
+""square wave modulation amplitude""
+oen_term:oen_0000000
+""odML terminology""";square wave modulation amplitude;oen_term:oen_0000000;';';oen_0000251;';';';'
+"owl:Class
+""stimulus position reference""
+oen_term:oen_0000000
+""odML terminology""";stimulus position reference;oen_term:oen_0000000;';';oen_0000510;';';';'
+"owl:Class
+""mount""
+oen_term:oen_0000000
+""odML terminology""";mount;oen_term:oen_0000000;';';oen_0000511;';';';'
+"owl:Class
+""device item configuration""
+oen_term:oen_0000000
+""Helmholtz""";device item configuration;oen_term:oen_0000000;';';oen_0000516;';';';'
+"owl:Class
+""behavior""
+oen_term:oen_0000000
+""odML terminology""";behavior;oen_term:oen_0000000;';';oen_0000517;';';';'
+"owl:Class
+""image acquisition lens""
+oen_term:oen_0000000
+""odML terminology""";image acquisition lens;oen_term:oen_0000000;';';oen_0000514;';';';'
+"owl:Class
+""multistimulus title""
+oen_term:oen_0000000
+""Helmholtz""";multistimulus title;oen_term:oen_0000000;';';oen_0000250;';';';'
+"owl:Class
+""position depth""
+oen_term:oen_0000000
+""Helmholtz""";position depth;oen_term:oen_0000000;';';oen_0000518;';';';'
+"owl:Class
+""chemical supplier""
+oen_term:oen_0000000
+""Helmholtz""";chemical supplier;oen_term:oen_0000000;';';oen_0000519;';';';'
+"owl:Class
+""size""
+oen_term:oen_0000000
+""odML terminology""";size;oen_term:oen_0000000;';';oen_0000307;';';';'
+"owl:Class
+""tabletop eye tracker""
+oen_term:oen_0000000
+""odML terminology""";tabletop eye tracker;oen_term:oen_0000000;';';oen_0000306;';';';'
+"owl:Class
+""low pass filter order""
+oen_term:oen_0000000
+""odML terminology""";low pass filter order;oen_term:oen_0000000;';';oen_0000305;';';';'
+"owl:Class
+""result figure""
+oen_term:oen_0000000
+""odML terminology""";result figure;oen_term:oen_0000000;';';oen_0000304;';';';'
+"owl:Class
+""owner""
+oen_term:oen_0000000
+""odML terminology""";owner;oen_term:oen_0000000;';';oen_0000303;';';';'
+"owl:Class
+""body weight""
+oen_term:oen_0000000
+""odML terminology""";body weight;oen_term:oen_0000000;';';oen_0000302;';';';'
+"owl:Class
+""Bessel filter""
+oen_term:oen_0000000
+""odML terminology""";Bessel filter;oen_term:oen_0000000;';';oen_0000301;';';';'
+"owl:Class
+""researcher""
+oen_term:oen_0000000
+""Helmholtz""";researcher;oen_term:oen_0000000;';';oen_0000300;';';';'
+"owl:Class
+""cell time constant""
+oen_term:oen_0000000
+""odML terminology""";cell time constant;oen_term:oen_0000000;';';oen_0000309;';';';'
+"owl:Class
+""stimulus isolator output range maximum current""
+oen_term:oen_0000000
+""odML terminology""";stimulus isolator output range maximum current;oen_term:oen_0000000;';';oen_0000308;';';';'
+"owl:Class
+""experiment definition""
+oen_term:oen_0000000
+""odML terminology""";experiment definition;oen_term:oen_0000000;';';oen_0000040;';';';'
+"owl:Class
+""electroencephalogram device""
+oen_term:oen_0000000
+""Helmholtz""";electroencephalogram device;oen_term:oen_0000000;';';oen_0000041;';';';'
+"owl:Class
+""image acquisition gamma value""
+oen_term:oen_0000000
+""odML terminology""";image acquisition gamma value;oen_term:oen_0000000;';';oen_0000129;';';';'
+"owl:Class
+""stimulus position""
+oen_term:oen_0000000
+""odML terminology""";stimulus position;oen_term:oen_0000000;';';oen_0000128;';';';'
+"owl:Class
+""brain subregion""
+oen_term:oen_0000000
+""odML terminology""";brain subregion;oen_term:oen_0000000;';';oen_0000044;';';';'
+"owl:Class
+""event list""
+oen_term:oen_0000000
+""odML terminology""";event list;oen_term:oen_0000000;';';oen_0000045;';';';'
+"owl:Class
+""subject developmental stage""
+oen_term:oen_0000000
+""odML terminology""";subject developmental stage;oen_term:oen_0000000;';';oen_0000046;';';';'
+"owl:Class
+""high pass filter cutoff""
+oen_term:oen_0000000
+""odML terminology""";high pass filter cutoff;oen_term:oen_0000000;';';oen_0000047;';';';'
+"owl:Class
+""recording experimenter""
+oen_term:oen_0000000
+""odML terminology""";recording experimenter;oen_term:oen_0000000;';';oen_0000123;';';';'
+"owl:Class
+""camera""
+oen_term:oen_0000000
+""odML terminology""";camera;oen_term:oen_0000000;';';oen_0000122;';';';'
+"owl:Class
+""slice preparation protocol""
+oen_term:oen_0000000
+""odML terminology""";slice preparation protocol;oen_term:oen_0000000;';';oen_0000121;';';';'
+"owl:Class
+""dry objective""
+oen_term:oen_0000000
+""odML terminology""";dry objective;oen_term:oen_0000000;';';oen_0000120;';';';'
+"owl:Class
+""preparation anaesthesia modality""
+oen_term:oen_0000000
+""odML terminology""";preparation anaesthesia modality;oen_term:oen_0000000;';';oen_0000127;';';';'
+"owl:Class
+""storage file server port""
+oen_term:oen_0000000
+""Helmholtz""";storage file server port;oen_term:oen_0000000;';';oen_0000126;';';';'
+"owl:Class
+""aperture""
+oen_term:oen_0000000
+""odML terminology""";aperture;oen_term:oen_0000000;';';oen_0000125;';';';'
+"owl:Class
+""inside out patch configuration""
+oen_term:oen_0000000
+""Helmholtz""";inside out patch configuration;oen_term:oen_0000000;';';oen_0000124;';';';'
+"owl:Class
+""psychophysics experiment""
+oen_term:oen_0000000
+""odML terminology""";psychophysics experiment;oen_term:oen_0000000;';';oen_0000259;';';';'
+"owl:Class
+""cell identification method""
+oen_term:oen_0000000
+""odML terminology""";cell identification method;oen_term:oen_0000000;';';oen_0000258;';';';'
+"owl:Class
+""beam splitter model""
+oen_term:oen_0000000
+""odML terminology""";beam splitter model;oen_term:oen_0000000;';';oen_0000713;';';';'
+"owl:Class
+""chemical concentration""
+oen_term:oen_0000000
+""Helmholtz""";chemical concentration;oen_term:oen_0000000;';';oen_0000658;';';';'
+"owl:Class
+""storage file drive""
+oen_term:oen_0000000
+""Helmholtz""";storage file drive;oen_term:oen_0000000;';';oen_0000679;';';';'
+"owl:Class
+""solid electrode""
+oen_term:oen_0000000
+""Helmholtz""";solid electrode;oen_term:oen_0000000;';';oen_0000678;';';';'
+"owl:Class
+""analog output channel count""
+oen_term:oen_0000000
+""odML terminology""";analog output channel count;oen_term:oen_0000000;';';oen_0000048;';';';'
+"owl:Class
+""bitebar""
+oen_term:oen_0000000
+""odML terminology""";bitebar;oen_term:oen_0000000;';';oen_0000321;';';';'
+"owl:Class
+""image acquisition pixel binning""
+oen_term:oen_0000000
+""odML terminology""";image acquisition pixel binning;oen_term:oen_0000000;';';oen_0000320;';';';'
+"owl:Class
+""analog output used channel count""
+oen_term:oen_0000000
+""odML terminology""";analog output used channel count;oen_term:oen_0000000;';';oen_0000323;';';';'
+"owl:Class
+""experimental setup room""
+oen_term:oen_0000000
+""Helmholtz""";experimental setup room;oen_term:oen_0000000;';';oen_0000322;';';';'
+"owl:Class
+""image acquisition region of interest y""
+oen_term:oen_0000000
+""odML terminology""";image acquisition region of interest y;oen_term:oen_0000000;';';oen_0000325;';';';'
+"owl:Class
+""slice orientation""
+oen_term:oen_0000000
+""odML terminology""";slice orientation;oen_term:oen_0000000;';';oen_0000324;';';';'
+"owl:Class
+""animal model""
+oen_term:oen_0000000
+""odML terminology""";animal model;oen_term:oen_0000000;';';oen_0000327;';';';'
+"owl:Class
+""image acquisition region of interest x""
+oen_term:oen_0000000
+""odML terminology""";image acquisition region of interest x;oen_term:oen_0000000;';';oen_0000326;';';';'
+"owl:Class
+""experimental setup place""
+oen_term:oen_0000000
+""Helmholtz""";experimental setup place;oen_term:oen_0000000;';';oen_0000329;';';';'
+"owl:Class
+""scientific name""
+oen_term:oen_0000000
+""Helmholtz""";scientific name;oen_term:oen_0000000;';';oen_0000328;';';';'
+"owl:Class
+""diameter""
+oen_term:oen_0000000
+""Helmholtz""";diameter;oen_term:oen_0000000;';';oen_0000105;';';';'
+"owl:Class
+""recording session end date""
+oen_term:oen_0000000
+""odML terminology""";recording session end date;oen_term:oen_0000000;';';oen_0000104;';';';'
+"owl:Class
+""discontinuous""
+oen_term:oen_0000000
+""odML terminology""";discontinuous;oen_term:oen_0000000;';';oen_0000107;';';';'
+"owl:Class
+""excitation filter manufacturer""
+oen_term:oen_0000000
+""odML terminology""";excitation filter manufacturer;oen_term:oen_0000000;';';oen_0000106;';';';'
+"owl:Class
+""Ringer&apos;s solution""
+oen_term:oen_0000000
+""odML terminology""";"Ringer&apos;s solution";oen_term:oen_0000000;';';oen_0000101;';';';'
+"owl:Class
+""device impedance""
+oen_term:oen_0000000
+""Helmholtz""";device impedance;oen_term:oen_0000000;';';oen_0000100;';';';'
+"owl:Class
+""image acquisition shutter speed""
+oen_term:oen_0000000
+""odML terminology""";image acquisition shutter speed;oen_term:oen_0000000;';';oen_0000103;';';';'
+"owl:Class
+""amplifier gain""
+oen_term:oen_0000000
+""odML terminology""";amplifier gain;oen_term:oen_0000000;';';oen_0000102;';';';'
+"owl:Class
+""experimental environment""
+oen_term:oen_0000000
+""odML terminology""";experimental environment;oen_term:oen_0000000;';';oen_0000664;';';';'
+"owl:Class
+""drug application route role""
+oen_term:oen_0000000
+""Helmholtz""";drug application route role;oen_term:oen_0000000;';';oen_0000665;';';';'
+"owl:Class
+""grating intensity""
+oen_term:oen_0000000
+""odML terminology""";grating intensity;oen_term:oen_0000000;';';oen_0000666;';';';'
+"owl:Class
+""stimulation contrast""
+oen_term:oen_0000000
+""Helmholtz""";stimulation contrast;oen_term:oen_0000000;';';oen_0000667;';';';'
+"owl:Class
+""color space""
+oen_term:oen_0000000
+""odML terminology""";color space;oen_term:oen_0000000;';';oen_0000109;';';';'
+"owl:Class
+""square wave start amplitude""
+oen_term:oen_0000000
+""odML terminology""";square wave start amplitude;oen_term:oen_0000000;';';oen_0000108;';';';'
+"owl:Class
+""frame rate""
+oen_term:oen_0000000
+""odML terminology""";frame rate;oen_term:oen_0000000;';';oen_0000662;';';';'
+"owl:Class
+""ramp slope""
+oen_term:oen_0000000
+""odML terminology""";ramp slope;oen_term:oen_0000000;';';oen_0000663;';';';'
+"owl:Class
+""researcher contact details""
+oen_term:oen_0000000
+""Helmholtz""";researcher contact details;oen_term:oen_0000000;';';oen_0000568;';';';'
+"owl:Class
+""psychophysics experimental paradigm""
+oen_term:oen_0000000
+""odML terminology""";psychophysics experimental paradigm;oen_term:oen_0000000;';';oen_0000718;';';';'
+"owl:Class
+""discrete drug application time""
+oen_term:oen_0000000
+""Helmholtz""";discrete drug application time;oen_term:oen_0000000;';';oen_0000719;';';';'
+"owl:Class
+""functional magnetic resonance imaging""
+oen_term:oen_0000000
+""odML terminology""";functional magnetic resonance imaging;oen_term:oen_0000000;';';oen_0000068;';';';'
+"owl:Class
+""pulse width""
+oen_term:oen_0000000
+""odML terminology""";pulse width;oen_term:oen_0000000;';';oen_0000069;';';';'
+"owl:Class
+""postal code""
+oen_term:oen_0000000
+""Helmholtz""";postal code;oen_term:oen_0000000;';';oen_0000062;';';';'
+"owl:Class
+""cell recording location""
+oen_term:oen_0000000
+""odML terminology""";cell recording location;oen_term:oen_0000000;';';oen_0000063;';';';'
+"owl:Class
+""network address""
+oen_term:oen_0000000
+""Helmholtz""";network address;oen_term:oen_0000000;';';oen_0000060;';';';'
+"owl:Class
+""storage root""
+oen_term:oen_0000000
+""Helmholtz""";storage root;oen_term:oen_0000000;';';oen_0000061;';';';'
+"owl:Class
+""head mounted eye tracker""
+oen_term:oen_0000000
+""odML terminology""";head mounted eye tracker;oen_term:oen_0000000;';';oen_0000066;';';';'
+"owl:Class
+""sparse noise multistimulus""
+oen_term:oen_0000000
+""Helmholtz""";sparse noise multistimulus;oen_term:oen_0000000;';';oen_0000067;';';';'
+"owl:Class
+""disc electrode device""
+oen_term:oen_0000000
+""Helmholtz""";disc electrode device;oen_term:oen_0000000;';';oen_0000064;';';';'
+"owl:Class
+""rate""
+oen_term:oen_0000000
+""odML terminology""";rate;oen_term:oen_0000000;';';oen_0000065;';';';'
+"owl:Class
+""amplifier duty cycle""
+oen_term:oen_0000000
+""odML terminology""";amplifier duty cycle;oen_term:oen_0000000;';';oen_0000643;';';';'
+"owl:Class
+""preparation animal supplier""
+oen_term:oen_0000000
+""Helmholtz""";preparation animal supplier;oen_term:oen_0000000;';';oen_0000714;';';';'
+"owl:Class
+""recording block end""
+oen_term:oen_0000000
+""Helmholtz""";recording block end;oen_term:oen_0000000;';';oen_0000715;';';';'
+"owl:Class
+""server IP address""
+oen_term:oen_0000000
+""Helmholtz""";server IP address;oen_term:oen_0000000;';';oen_0000716;';';';'
+"owl:Class
+""halogen lamp""
+oen_term:oen_0000000
+""odML terminology""";halogen lamp;oen_term:oen_0000000;';';oen_0000717;';';';'
+"owl:Class
+""stimulus intensity offset""
+oen_term:oen_0000000
+""odML terminology""";stimulus intensity offset;oen_term:oen_0000000;';';oen_0000710;';';';'
+"owl:Class
+""hardware property""
+oen_term:oen_0000000
+""odML terminology""";hardware property;oen_term:oen_0000000;';';oen_0000711;';';';'
+"owl:Class
+""square wave stimulus""
+oen_term:oen_0000000
+""odML terminology""";square wave stimulus;oen_term:oen_0000000;';';oen_0000499;';';';'
+"owl:Class
+""location""
+oen_term:oen_0000000
+""odML terminology""";location;oen_term:oen_0000000;';';oen_0000498;';';';'
+"owl:Class
+""recording segment start""
+oen_term:oen_0000000
+""Helmholtz""";recording segment start;oen_term:oen_0000000;';';oen_0000497;';';';'
+"owl:Class
+""white noise stimulus""
+oen_term:oen_0000000
+""odML terminology""";white noise stimulus;oen_term:oen_0000000;';';oen_0000496;';';';'
+"owl:Class
+""contrast used""
+oen_term:oen_0000000
+""odML terminology""";contrast used;oen_term:oen_0000000;';';oen_0000495;';';';'
+"owl:Class
+""stimulus isolator output range minimum voltage""
+oen_term:oen_0000000
+""odML terminology""";stimulus isolator output range minimum voltage;oen_term:oen_0000000;';';oen_0000494;';';';'
+"owl:Class
+""electroretinography""
+oen_term:oen_0000000
+""odML terminology""";electroretinography;oen_term:oen_0000000;';';oen_0000493;';';';'
+"owl:Class
+""stimulation nature""
+oen_term:oen_0000000
+""odML terminology""";stimulation nature;oen_term:oen_0000000;';';oen_0000492;';';';'
+"owl:Class
+""experimental setup location""
+oen_term:oen_0000000
+""odML terminology""";experimental setup location;oen_term:oen_0000000;';';oen_0000491;';';';'
+"owl:Class
+""stimulation grating""
+oen_term:oen_0000000
+""Helmholtz""";stimulation grating;oen_term:oen_0000000;';';oen_0000490;';';';'
+"owl:Class
+""cell layer""
+oen_term:oen_0000000
+""odML terminology""";cell layer;oen_term:oen_0000000;';';oen_0000354;';';';'
+"owl:Class
+""device subsystem""
+oen_term:oen_0000000
+""Helmholtz""";device subsystem;oen_term:oen_0000000;';';oen_0000355;';';';'
+"owl:Class
+""behavioral paradigm""
+oen_term:oen_0000000
+""odML terminology""";behavioral paradigm;oen_term:oen_0000000;';';oen_0000356;';';';'
+"owl:Class
+""excitation filter""
+oen_term:oen_0000000
+""odML terminology""";excitation filter;oen_term:oen_0000000;';';oen_0000357;';';';'
+"owl:Class
+""cut orientation""
+oen_term:oen_0000000
+""Helmholtz""";cut orientation;oen_term:oen_0000000;';';oen_0000350;';';';'
+"owl:Class
+""light source wavelength""
+oen_term:oen_0000000
+""odML terminology""";light source wavelength;oen_term:oen_0000000;';';oen_0000351;';';';'
+"owl:Class
+""experimental researcher""
+oen_term:oen_0000000
+""Helmholtz""";experimental researcher;oen_term:oen_0000000;';';oen_0000352;';';';'
+"owl:Class
+""candela per square meter""
+oen_term:oen_0000000
+""odML terminology""";candela per square meter;oen_term:oen_0000000;';';oen_0000353;';';';'
+"owl:Class
+""frame grabber detector""
+oen_term:oen_0000000
+""odML terminology""";frame grabber detector;oen_term:oen_0000000;';';oen_0000358;';';';'
+"owl:Class
+""investigator role""
+oen_term:oen_0000000
+""odML terminology""";investigator role;oen_term:oen_0000000;';';oen_0000359;';';';'
+"owl:Class
+""species strain nomenclature""
+oen_term:oen_0000000
+""Helmholtz""";species strain nomenclature;oen_term:oen_0000000;';';oen_0000408;';';';'
+"owl:Class
+""experiment start""
+oen_term:oen_0000000
+""Helmholtz""";experiment start;oen_term:oen_0000000;';';oen_0000409;';';';'
+"owl:Class
+""subject weight""
+oen_term:oen_0000000
+""odML terminology""";subject weight;oen_term:oen_0000000;';';oen_0000708;';';';'
+"owl:Class
+""occupation""
+oen_term:oen_0000000
+""Helmholtz""";occupation;oen_term:oen_0000000;';';oen_0000400;';';';'
+"owl:Class
+""device channel type""
+oen_term:oen_0000000
+""Helmholtz""";device channel type;oen_term:oen_0000000;';';oen_0000401;';';';'
+"owl:Class
+""continuous recording""
+oen_term:oen_0000000
+""Helmholtz""";continuous recording;oen_term:oen_0000000;';';oen_0000402;';';';'
+"owl:Class
+""knowledge""
+oen_term:oen_0000000
+""odML terminology""";knowledge;oen_term:oen_0000000;';';oen_0000403;';';';'
+"owl:Class
+""anatomical layer""
+oen_term:oen_0000000
+""odML terminology""";anatomical layer;oen_term:oen_0000000;';';oen_0000404;';';';'
+"owl:Class
+""storage file size""
+oen_term:oen_0000000
+""Helmholtz""";storage file size;oen_term:oen_0000000;';';oen_0000405;';';';'
+"owl:Class
+""electrode resistance""
+oen_term:oen_0000000
+""Helmholtz""";electrode resistance;oen_term:oen_0000000;';';oen_0000406;';';';'
+"owl:Class
+""state""
+oen_term:oen_0000000
+""Helmholtz""";state;oen_term:oen_0000000;';';oen_0000407;';';';'
+"owl:Class
+""stimulation luminance high""
+oen_term:oen_0000000
+""Helmholtz""";stimulation luminance high;oen_term:oen_0000000;';';oen_0000563;';';';'
+"owl:Class
+""white noise variance""
+oen_term:oen_0000000
+""odML terminology""";white noise variance;oen_term:oen_0000000;';';oen_0000562;';';';'
+"owl:Class
+""stimulus isolator output""
+oen_term:oen_0000000
+""odML terminology""";stimulus isolator output;oen_term:oen_0000000;';';oen_0000561;';';';'
+"owl:Class
+""user""
+oen_term:oen_0000000
+""Helmholtz""";user;oen_term:oen_0000000;';';oen_0000560;';';';'
+"owl:Class
+""supplier phone number""
+oen_term:oen_0000000
+""Helmholtz""";supplier phone number;oen_term:oen_0000000;';';oen_0000219;';';';'
+"owl:Class
+""storage file server IP address""
+oen_term:oen_0000000
+""Helmholtz""";storage file server IP address;oen_term:oen_0000000;';';oen_0000218;';';';'
+"owl:Class
+""position""
+oen_term:oen_0000000
+""Helmholtz""";position;oen_term:oen_0000000;';';oen_0000565;';';';'
+"owl:Class
+""complementary metal oxide semiconductor image sensor""
+oen_term:oen_0000000
+""odML terminology""";complementary metal oxide semiconductor image sensor;oen_term:oen_0000000;';';oen_0000564;';';';'
+"owl:Class
+""bridged""
+oen_term:oen_0000000
+""odML terminology""";bridged;oen_term:oen_0000000;';';oen_0000215;';';';'
+"owl:Class
+""nomenclature""
+oen_term:oen_0000000
+""Helmholtz""";nomenclature;oen_term:oen_0000000;';';oen_0000214;';';';'
+"owl:Class
+""sine wave phase shift""
+oen_term:oen_0000000
+""odML terminology""";sine wave phase shift;oen_term:oen_0000000;';';oen_0000217;';';';'
+"owl:Class
+""dorsoventral""
+oen_term:oen_0000000
+""Helmholtz""";dorsoventral;oen_term:oen_0000000;';';oen_0000216;';';';'
+"owl:Class
+""full name""
+oen_term:oen_0000000
+""odML terminology""";full name;oen_term:oen_0000000;';';oen_0000211;';';';'
+"owl:Class
+""stimulus author""
+oen_term:oen_0000000
+""odML terminology""";stimulus author;oen_term:oen_0000000;';';oen_0000210;';';';'
+"owl:Class
+""window""
+oen_term:oen_0000000
+""odML terminology""";window;oen_term:oen_0000000;';';oen_0000213;';';';'
+"owl:Class
+""camera objective""
+oen_term:oen_0000000
+""odML terminology""";camera objective;oen_term:oen_0000000;';';oen_0000212;';';';'
+"owl:Class
+""internal diameter""
+oen_term:oen_0000000
+""Helmholtz""";internal diameter;oen_term:oen_0000000;';';oen_0000035;';';';'
+"owl:Class
+""sampling rate""
+oen_term:oen_0000000
+""odML terminology""";sampling rate;oen_term:oen_0000000;';';oen_0000034;';';';'
+"owl:Class
+""stimulation acquisition extra time""
+oen_term:oen_0000000
+""Helmholtz""";stimulation acquisition extra time;oen_term:oen_0000000;';';oen_0000037;';';';'
+"owl:Class
+""peristimulus time histogram analysis""
+oen_term:oen_0000000
+""odML terminology""";peristimulus time histogram analysis;oen_term:oen_0000000;';';oen_0000036;';';';'
+"owl:Class
+""recording file""
+oen_term:oen_0000000
+""Helmholtz""";recording file;oen_term:oen_0000000;';';oen_0000138;';';';'
+"owl:Class
+""data source""
+oen_term:oen_0000000
+""Helmholtz""";data source;oen_term:oen_0000000;';';oen_0000139;';';';'
+"owl:Class
+""microscope objective transmission range""
+oen_term:oen_0000000
+""odML terminology""";microscope objective transmission range;oen_term:oen_0000000;';';oen_0000033;';';';'
+"owl:Class
+""square wave duty cycle""
+oen_term:oen_0000000
+""odML terminology""";square wave duty cycle;oen_term:oen_0000000;';';oen_0000032;';';';'
+"owl:Class
+""stimulation cycle number""
+oen_term:oen_0000000
+""Helmholtz""";stimulation cycle number;oen_term:oen_0000000;';';oen_0000134;';';';'
+"owl:Class
+""extracellular recording""
+oen_term:oen_0000000
+""odML terminology""";extracellular recording;oen_term:oen_0000000;';';oen_0000135;';';';'
+"owl:Class
+""town""
+oen_term:oen_0000000
+""Helmholtz""";town;oen_term:oen_0000000;';';oen_0000136;';';';'
+"owl:Class
+""bridge balance""
+oen_term:oen_0000000
+""odML terminology""";bridge balance;oen_term:oen_0000000;';';oen_0000137;';';';'
+"owl:Class
+""stereotaxis device""
+oen_term:oen_0000000
+""Helmholtz""";stereotaxis device;oen_term:oen_0000000;';';oen_0000130;';';';'
+"owl:Class
+""responsible investigator role""
+oen_term:oen_0000000
+""odML terminology""";responsible investigator role;oen_term:oen_0000000;';';oen_0000131;';';';'
+"owl:Class
+""digital file""
+oen_term:oen_0000000
+""odML terminology""";digital file;oen_term:oen_0000000;';';oen_0000132;';';';'
+"owl:Class
+""species scientific name""
+oen_term:oen_0000000
+""Helmholtz""";species scientific name;oen_term:oen_0000000;';';oen_0000133;';';';'
+"owl:Class
+""emission filter upper bound""
+oen_term:oen_0000000
+""odML terminology""";emission filter upper bound;oen_term:oen_0000000;';';oen_0000546;';';';'
+"owl:Class
+""position anteroposterior axis""
+oen_term:oen_0000000
+""Helmholtz""";position anteroposterior axis;oen_term:oen_0000000;';';oen_0000550;';';';'
+"owl:Class
+""storage MIME type""
+oen_term:oen_0000000
+""Helmholtz""";storage MIME type;oen_term:oen_0000000;';';oen_0000620;';';';'
+"owl:Class
+""electroencephalogram""
+oen_term:oen_0000000
+""odML terminology""";electroencephalogram;oen_term:oen_0000000;';';oen_0000621;';';';'
+"owl:Class
+""stimulus file URL""
+oen_term:oen_0000000
+""odML terminology""";stimulus file URL;oen_term:oen_0000000;';';oen_0000622;';';';'
+"owl:Class
+""image acquisition spatial resolution""
+oen_term:oen_0000000
+""odML terminology""";image acquisition spatial resolution;oen_term:oen_0000000;';';oen_0000623;';';';'
+"owl:Class
+""dataset start date""
+oen_term:oen_0000000
+""odML terminology""";dataset start date;oen_term:oen_0000000;';';oen_0000624;';';';'
+"owl:Class
+""analog input channel gain""
+oen_term:oen_0000000
+""odML terminology""";analog input channel gain;oen_term:oen_0000000;';';oen_0000572;';';';'
+"owl:Class
+""multi electrode recording""
+oen_term:oen_0000000
+""odML terminology""";multi electrode recording;oen_term:oen_0000000;';';oen_0000626;';';';'
+"owl:Class
+""position dorsoventral value""
+oen_term:oen_0000000
+""Helmholtz""";position dorsoventral value;oen_term:oen_0000000;';';oen_0000627;';';';'
+"owl:Class
+""analog input maximum sampling rate""
+oen_term:oen_0000000
+""odML terminology""";analog input maximum sampling rate;oen_term:oen_0000000;';';oen_0000628;';';';'
+"owl:Class
+""fixed focus""
+oen_term:oen_0000000
+""odML terminology""";fixed focus;oen_term:oen_0000000;';';oen_0000629;';';';'
+"owl:Class
+""dataset recording start time""
+oen_term:oen_0000000
+""odML terminology""";dataset recording start time;oen_term:oen_0000000;';';oen_0000573;';';';'
+"owl:Class
+""voltage clamp technique""
+oen_term:oen_0000000
+""odML terminology""";voltage clamp technique;oen_term:oen_0000000;';';oen_0000578;';';';'
+"owl:Class
+""ramp end amplitude""
+oen_term:oen_0000000
+""odML terminology""";ramp end amplitude;oen_term:oen_0000000;';';oen_0000579;';';';'
+"owl:Class
+""multi-compartmental model""
+oen_term:oen_0000000
+""odML terminology""";multi-compartmental model;oen_term:oen_0000000;';';oen_0000149;';';';'
+"owl:Class
+""analog output sampling rate""
+oen_term:oen_0000000
+""odML terminology""";analog output sampling rate;oen_term:oen_0000000;';';oen_0000148;';';';'
+"owl:Class
+""low pass filter cutoff fequency""
+oen_term:oen_0000000
+""odML terminology""";low pass filter cutoff fequency;oen_term:oen_0000000;';';oen_0000141;';';';'
+"owl:Class
+""recording experimenter identifier""
+oen_term:oen_0000000
+""odML terminology""";recording experimenter identifier;oen_term:oen_0000000;';';oen_0000140;';';';'
+"owl:Class
+""light source watts intensity""
+oen_term:oen_0000000
+""odML terminology""";light source watts intensity;oen_term:oen_0000000;';';oen_0000143;';';';'
+"owl:Class
+""light source pulse width""
+oen_term:oen_0000000
+""odML terminology""";light source pulse width;oen_term:oen_0000000;';';oen_0000142;';';';'
+"owl:Class
+""analysis method""
+oen_term:oen_0000000
+""odML terminology""";analysis method;oen_term:oen_0000000;';';oen_0000145;';';';'
+"owl:Class
+""subject trivial name""
+oen_term:oen_0000000
+""odML terminology""";subject trivial name;oen_term:oen_0000000;';';oen_0000144;';';';'
+"owl:Class
+""multielectrode array row count""
+oen_term:oen_0000000
+""Helmholtz""";multielectrode array row count;oen_term:oen_0000000;';';oen_0000147;';';';'
+"owl:Class
+""inter-stimulus interval""
+oen_term:oen_0000000
+""odML terminology""";inter-stimulus interval;oen_term:oen_0000000;';';oen_0000146;';';';'
+"owl:Class
+""continuous drug application start""
+oen_term:oen_0000000
+""Helmholtz""";continuous drug application start;oen_term:oen_0000000;';';oen_0000224;';';';'
+"owl:Class
+""beam splitter manufacturer""
+oen_term:oen_0000000
+""odML terminology""";beam splitter manufacturer;oen_term:oen_0000000;';';oen_0000225;';';';'
+"owl:Class
+""unit of measurement""
+oen_term:oen_0000000
+""Helmholtz""";unit of measurement;oen_term:oen_0000000;';';oen_0000226;';';';'
+"owl:Class
+""analog camera""
+oen_term:oen_0000000
+""odML terminology""";analog camera;oen_term:oen_0000000;';';oen_0000227;';';';'
+"owl:Class
+""contrast sensitivity""
+oen_term:oen_0000000
+""odML terminology""";contrast sensitivity;oen_term:oen_0000000;';';oen_0000220;';';';'
+"owl:Class
+""image acquisition detector type""
+oen_term:oen_0000000
+""odML terminology""";image acquisition detector type;oen_term:oen_0000000;';';oen_0000221;';';';'
+"owl:Class
+""dual electrode recording""
+oen_term:oen_0000000
+""odML terminology""";dual electrode recording;oen_term:oen_0000000;';';oen_0000222;';';';'
+"owl:Class
+""digital input output line count""
+oen_term:oen_0000000
+""odML terminology""";digital input output line count;oen_term:oen_0000000;';';oen_0000223;';';';'
+"owl:Class
+""sharp electrode""
+oen_term:oen_0000000
+""Helmholtz""";sharp electrode;oen_term:oen_0000000;';';oen_0000387;';';';'
+"owl:Class
+""light source candela per square meter intensity""
+oen_term:oen_0000000
+""odML terminology""";light source candela per square meter intensity;oen_term:oen_0000000;';';oen_0000386;';';';'
+"owl:Class
+""wavelength upper bound""
+oen_term:oen_0000000
+""odML terminology""";wavelength upper bound;oen_term:oen_0000000;';';oen_0000385;';';';'
+"owl:Class
+""preparation animal sex""
+oen_term:oen_0000000
+""Helmholtz""";preparation animal sex;oen_term:oen_0000000;';';oen_0000384;';';';'
+"owl:Class
+""preparation animal nickname""
+oen_term:oen_0000000
+""Helmholtz""";preparation animal nickname;oen_term:oen_0000000;';';oen_0000228;';';';'
+"owl:Class
+""eye tracker fixation""
+oen_term:oen_0000000
+""odML terminology""";eye tracker fixation;oen_term:oen_0000000;';';oen_0000229;';';';'
+"owl:Class
+""device recording point""
+oen_term:oen_0000000
+""Helmholtz""";device recording point;oen_term:oen_0000000;';';oen_0000381;';';';'
+"owl:Class
+""stimulation movement stimulus""
+oen_term:oen_0000000
+""Helmholtz""";stimulation movement stimulus;oen_term:oen_0000000;';';oen_0000380;';';';'
+"owl:Class
+""light source wavelength lower bound""
+oen_term:oen_0000000
+""odML terminology""";light source wavelength lower bound;oen_term:oen_0000000;';';oen_0000691;';';';'
+"owl:Class
+""recording segment end""
+oen_term:oen_0000000
+""Helmholtz""";recording segment end;oen_term:oen_0000000;';';oen_0000690;';';';'
+"owl:Class
+""website""
+oen_term:oen_0000000
+""Helmholtz""";website;oen_term:oen_0000000;';';oen_0000693;';';';'
+"owl:Class
+""random dot count""
+oen_term:oen_0000000
+""odML terminology""";random dot count;oen_term:oen_0000000;';';oen_0000692;';';';'
+"owl:Class
+""recording end date and time""
+oen_term:oen_0000000
+""odML terminology""";recording end date and time;oen_term:oen_0000000;';';oen_0000695;';';';'
+"owl:Class
+""grating spatial frequency""
+oen_term:oen_0000000
+""odML terminology""";grating spatial frequency;oen_term:oen_0000000;';';oen_0000694;';';';'
+"owl:Class
+""image acquisition brightness adjustment""
+oen_term:oen_0000000
+""odML terminology""";image acquisition brightness adjustment;oen_term:oen_0000000;';';oen_0000697;';';';'
+"owl:Class
+""scanner""
+oen_term:oen_0000000
+""odML terminology""";scanner;oen_term:oen_0000000;';';oen_0000696;';';';'
+"owl:Class
+""wavelength""
+oen_term:oen_0000000
+""odML terminology""";wavelength;oen_term:oen_0000000;';';oen_0000699;';';';'
+"owl:Class
+""work position start""
+oen_term:oen_0000000
+""Helmholtz""";work position start;oen_term:oen_0000000;';';oen_0000698;';';';'
+"owl:Class
+""rectangle stimulation grating shape""
+oen_term:oen_0000000
+""Helmholtz""";rectangle stimulation grating shape;oen_term:oen_0000000;';';oen_0000453;';';';'
+"owl:Class
+""ellipse stimulation grating shape""
+oen_term:oen_0000000
+""Helmholtz""";ellipse stimulation grating shape;oen_term:oen_0000000;';';oen_0000452;';';';'
+"owl:Class
+""scanner dwell time""
+oen_term:oen_0000000
+""odML terminology""";scanner dwell time;oen_term:oen_0000000;';';oen_0000451;';';';'
+"owl:Class
+""region of interest""
+oen_term:oen_0000000
+""odML terminology""";region of interest;oen_term:oen_0000000;';';oen_0000450;';';';'
+"owl:Class
+""focus""
+oen_term:oen_0000000
+""odML terminology""";focus;oen_term:oen_0000000;';';oen_0000457;';';';'
+"owl:Class
+""scanner scan rate""
+oen_term:oen_0000000
+""odML terminology""";scanner scan rate;oen_term:oen_0000000;';';oen_0000456;';';';'
+"owl:Class
+""stimulus isolator input range maximum voltage""
+oen_term:oen_0000000
+""odML terminology""";stimulus isolator input range maximum voltage;oen_term:oen_0000000;';';oen_0000455;';';';'
+"owl:Class
+""focal length""
+oen_term:oen_0000000
+""odML terminology""";focal length;oen_term:oen_0000000;';';oen_0000454;';';';'
+"owl:Class
+""analysis caption""
+oen_term:oen_0000000
+""Helmholtz""";analysis caption;oen_term:oen_0000000;';';oen_0000592;';';';'
+"owl:Class
+""device serial""
+oen_term:oen_0000000
+""Helmholtz""";device serial;oen_term:oen_0000000;';';oen_0000567;';';';'
+"owl:Class
+""bath temperature""
+oen_term:oen_0000000
+""odML terminology""";bath temperature;oen_term:oen_0000000;';';oen_0000459;';';';'
+"owl:Class
+""chemistry catalog reference""
+oen_term:oen_0000000
+""Helmholtz""";chemistry catalog reference;oen_term:oen_0000000;';';oen_0000458;';';';'
+"owl:Class
+""position lateral value""
+oen_term:oen_0000000
+""Helmholtz""";position lateral value;oen_term:oen_0000000;';';oen_0000596;';';';'
+"owl:Class
+""perfect integrate and fire""
+oen_term:oen_0000000
+""odML terminology""";perfect integrate and fire;oen_term:oen_0000000;';';oen_0000597;';';';'
+"owl:Class
+""animal sacrifice""
+oen_term:oen_0000000
+""Helmholtz""";animal sacrifice;oen_term:oen_0000000;';';oen_0000594;';';';'
+"owl:Class
+""model""
+oen_term:oen_0000000
+""odML terminology""";model;oen_term:oen_0000000;';';oen_0000566;';';';'
+"owl:Class
+""cell baseline firing rate""
+oen_term:oen_0000000
+""odML terminology""";cell baseline firing rate;oen_term:oen_0000000;';';oen_0000082;';';';'
+"owl:Class
+""recording segment""
+oen_term:oen_0000000
+""Helmholtz""";recording segment;oen_term:oen_0000000;';';oen_0000513;';';';'
+"owl:Class
+""random dot vertical extent""
+oen_term:oen_0000000
+""odML terminology""";random dot vertical extent;oen_term:oen_0000000;';';oen_0000083;';';';'
+"owl:Class
+""sampling frequency""
+oen_term:oen_0000000
+""odML terminology""";sampling frequency;oen_term:oen_0000000;';';oen_0000726;';';';'
+"owl:Class
+""storage file creation date""
+oen_term:oen_0000000
+""Helmholtz""";storage file creation date;oen_term:oen_0000000;';';oen_0000569;';';';'
+"owl:Class
+""Butterworth filter""
+oen_term:oen_0000000
+""odML terminology""";Butterworth filter;oen_term:oen_0000000;';';oen_0000527;';';';'
+"owl:Class
+""multielectrode array column count""
+oen_term:oen_0000000
+""Helmholtz""";multielectrode array column count;oen_term:oen_0000000;';';oen_0000526;';';';'
+"owl:Class
+""perfusion drug application route""
+oen_term:oen_0000000
+""Helmholtz""";perfusion drug application route;oen_term:oen_0000000;';';oen_0000525;';';';'
+"owl:Class
+""stimulation phase""
+oen_term:oen_0000000
+""Helmholtz""";stimulation phase;oen_term:oen_0000000;';';oen_0000524;';';';'
+"owl:Class
+""stimulus duration""
+oen_term:oen_0000000
+""Helmholtz""";stimulus duration;oen_term:oen_0000000;';';oen_0000523;';';';'
+"owl:Class
+""center position reference""
+oen_term:oen_0000000
+""odML terminology""";center position reference;oen_term:oen_0000000;';';oen_0000522;';';';'
+"owl:Class
+""experiment subtype""
+oen_term:oen_0000000
+""odML terminology""";experiment subtype;oen_term:oen_0000000;';';oen_0000521;';';';'
+"owl:Class
+""work position end""
+oen_term:oen_0000000
+""Helmholtz""";work position end;oen_term:oen_0000000;';';oen_0000520;';';';'
+"owl:Class
+""leaky integrate-and-fire""
+oen_term:oen_0000000
+""Helmholtz""";leaky integrate-and-fire;oen_term:oen_0000000;';';oen_0000163;';';';'
+"owl:Class
+""image acquisition maximum frame rate""
+oen_term:oen_0000000
+""odML terminology""";image acquisition maximum frame rate;oen_term:oen_0000000;';';oen_0000515;';';';'
+"owl:Class
+""hardware""
+oen_term:oen_0000000
+""odML terminology""";hardware;oen_term:oen_0000000;';';oen_0000529;';';';'
+"owl:Class
+""discrete drug application volume""
+oen_term:oen_0000000
+""Helmholtz""";discrete drug application volume;oen_term:oen_0000000;';';oen_0000162;';';';'
+"owl:Class
+""grating spatial wavelength""
+oen_term:oen_0000000
+""odML terminology""";grating spatial wavelength;oen_term:oen_0000000;';';oen_0000318;';';';'
+"owl:Class
+""image acquisition device""
+oen_term:oen_0000000
+""odML terminology""";image acquisition device;oen_term:oen_0000000;';';oen_0000319;';';';'
+"owl:Class
+""measurement""
+oen_term:oen_0000000
+""Helmholtz""";measurement;oen_term:oen_0000000;';';oen_0000253;';';';'
+"owl:Class
+""multistimulus""
+oen_term:oen_0000000
+""Helmholtz""";multistimulus;oen_term:oen_0000000;';';oen_0000252;';';';'
+"owl:Class
+""species codename""
+oen_term:oen_0000000
+""Helmholtz""";species codename;oen_term:oen_0000000;';';oen_0000255;';';';'
+"owl:Class
+""stimulus temporal offset""
+oen_term:oen_0000000
+""odML terminology""";stimulus temporal offset;oen_term:oen_0000000;';';oen_0000254;';';';'
+"owl:Class
+""image acquisition minimum frame rate""
+oen_term:oen_0000000
+""odML terminology""";image acquisition minimum frame rate;oen_term:oen_0000000;';';oen_0000257;';';';'
+"owl:Class
+""event""
+oen_term:oen_0000000
+""odML terminology""";event;oen_term:oen_0000000;';';oen_0000256;';';';'
+"owl:Class
+""temperature""
+oen_term:oen_0000000
+""odML terminology""";temperature;oen_term:oen_0000000;';';oen_0000310;';';';'
+"owl:Class
+""flow rate""
+oen_term:oen_0000000
+""odML terminology""";flow rate;oen_term:oen_0000000;';';oen_0000311;';';';'
+"owl:Class
+""stimulation orientation""
+oen_term:oen_0000000
+""Helmholtz""";stimulation orientation;oen_term:oen_0000000;';';oen_0000312;';';';'
+"owl:Class
+""reflection electron microscopy""
+oen_term:oen_0000000
+""odML terminology""";reflection electron microscopy;oen_term:oen_0000000;';';oen_0000313;';';';'
+"owl:Class
+""contact information""
+oen_term:oen_0000000
+""odML terminology""";contact information;oen_term:oen_0000000;';';oen_0000314;';';';'
+"owl:Class
+""microscope filter cube""
+oen_term:oen_0000000
+""odML terminology""";microscope filter cube;oen_term:oen_0000000;';';oen_0000315;';';';'
+"owl:Class
+""stimulation""
+oen_term:oen_0000000
+""Helmholtz""";stimulation;oen_term:oen_0000000;';';oen_0000316;';';';'
+"owl:Class
+""voltage stimulus isolator output""
+oen_term:oen_0000000
+""odML terminology""";voltage stimulus isolator output;oen_term:oen_0000000;';';oen_0000317;';';';'
+"owl:Class
+""recording experiment block""
+oen_term:oen_0000000
+""Helmholtz""";recording experiment block;oen_term:oen_0000000;';';oen_0000031;';';';'
+"owl:Class
+""uniform resource locator""
+oen_term:oen_0000000
+""odML terminology""";uniform resource locator;oen_term:oen_0000000;';';oen_0000030;';';';'
+"owl:Class
+""stimulus isolator output range maximum voltage""
+oen_term:oen_0000000
+""odML terminology""";stimulus isolator output range maximum voltage;oen_term:oen_0000000;';';oen_0000479;';';';'
+"owl:Class
+""microscope objective""
+oen_term:oen_0000000
+""odML terminology""";microscope objective;oen_term:oen_0000000;';';oen_0000478;';';';'
+"owl:Class
+""square wave""
+oen_term:oen_0000000
+""odML terminology""";square wave;oen_term:oen_0000000;';';oen_0000475;';';';'
+"owl:Class
+""cell type""
+oen_term:oen_0000000
+""odML terminology""";cell type;oen_term:oen_0000000;';';oen_0000474;';';';'
+"owl:Class
+""continuous drug application end""
+oen_term:oen_0000000
+""Helmholtz""";continuous drug application end;oen_term:oen_0000000;';';oen_0000477;';';';'
+"owl:Class
+""device filtering""
+oen_term:oen_0000000
+""Helmholtz""";device filtering;oen_term:oen_0000000;';';oen_0000476;';';';'
+"owl:Class
+""position lateral axis""
+oen_term:oen_0000000
+""Helmholtz""";position lateral axis;oen_term:oen_0000000;';';oen_0000471;';';';'
+"owl:Class
+""stimulation grating shape""
+oen_term:oen_0000000
+""Helmholtz""";stimulation grating shape;oen_term:oen_0000000;';';oen_0000470;';';';'
+"owl:Class
+""genus""
+oen_term:oen_0000000
+""odML terminology""";genus;oen_term:oen_0000000;';';oen_0000473;';';';'
+"owl:Class
+""transmission upper bound""
+oen_term:oen_0000000
+""odML terminology""";transmission upper bound;oen_term:oen_0000000;';';oen_0000472;';';';'
+"owl:Class
+""multi-electrode device""
+oen_term:oen_0000000
+""Helmholtz""";multi-electrode device;oen_term:oen_0000000;';';oen_0000574;';';';'
+"owl:Class
+""fixed aperture""
+oen_term:oen_0000000
+""odML terminology""";fixed aperture;oen_term:oen_0000000;';';oen_0000575;';';';'
+"owl:Class
+""beam splitter wavelength""
+oen_term:oen_0000000
+""odML terminology""";beam splitter wavelength;oen_term:oen_0000000;';';oen_0000576;';';';'
+"owl:Class
+""species ISID""
+oen_term:oen_0000000
+""Helmholtz""";species ISID;oen_term:oen_0000000;';';oen_0000577;';';';'
+"owl:Class
+""device item properties""
+oen_term:oen_0000000
+""Helmholtz""";device item properties;oen_term:oen_0000000;';';oen_0000570;';';';'
+"owl:Class
+""intravenous drug application""
+oen_term:oen_0000000
+""Helmholtz""";intravenous drug application;oen_term:oen_0000000;';';oen_0000571;';';';'
+"owl:Class
+""paper digital object identifier""
+oen_term:oen_0000000
+""odML terminology""";paper digital object identifier;oen_term:oen_0000000;';';oen_0000208;';';';'
+"owl:Class
+""liquid solution component""
+oen_term:oen_0000000
+""Helmholtz""";liquid solution component;oen_term:oen_0000000;';';oen_0000209;';';';'
+"owl:Class
+""event timestamp""
+oen_term:oen_0000000
+""odML terminology""";event timestamp;oen_term:oen_0000000;';';oen_0000206;';';';'
+"owl:Class
+""type of drug preparation""
+oen_term:oen_0000000
+""Helmholtz""";type of drug preparation;oen_term:oen_0000000;';';oen_0000207;';';';'
+"owl:Class
+""chemistry""
+oen_term:oen_0000000
+""Helmholtz""";chemistry;oen_term:oen_0000000;';';oen_0000204;';';';'
+"owl:Class
+""recording end time""
+oen_term:oen_0000000
+""odML terminology""";recording end time;oen_term:oen_0000000;';';oen_0000205;';';';'
+"owl:Class
+""window function parameter""
+oen_term:oen_0000000
+""odML terminology""";window function parameter;oen_term:oen_0000000;';';oen_0000202;';';';'
+"owl:Class
+""dynamic clamp""
+oen_term:oen_0000000
+""odML terminology""";dynamic clamp;oen_term:oen_0000000;';';oen_0000203;';';';'
+"owl:Class
+""excitation filter wavelength""
+oen_term:oen_0000000
+""odML terminology""";excitation filter wavelength;oen_term:oen_0000000;';';oen_0000200;';';';'
+"owl:Class
+""power spectrum analysis""
+oen_term:oen_0000000
+""odML terminology""";power spectrum analysis;oen_term:oen_0000000;';';oen_0000201;';';';'
+"owl:Class
+""high pass filter""
+oen_term:oen_0000000
+""odML terminology""";high pass filter;oen_term:oen_0000000;';';oen_0000039;';';';'
+"owl:Class
+""charge couple device""
+oen_term:oen_0000000
+""odML terminology""";charge couple device;oen_term:oen_0000000;';';oen_0000038;';';';'
+"owl:Class
+""microchip gain""
+oen_term:oen_0000000
+""odML terminology""";microchip gain;oen_term:oen_0000000;';';oen_0000501;';';';'
+"owl:Class
+""researcher phone number""
+oen_term:oen_0000000
+""Helmholtz""";researcher phone number;oen_term:oen_0000000;';';oen_0000500;';';';'
+"owl:Class
+""behavioral process""
+oen_term:oen_0000000
+""odML terminology""";behavioral process;oen_term:oen_0000000;';';oen_0000503;';';';'
+"owl:Class
+""subject species""
+oen_term:oen_0000000
+""odML terminology""";subject species;oen_term:oen_0000000;';';oen_0000502;';';';'
+"owl:Class
+""cell input resistance""
+oen_term:oen_0000000
+""odML terminology""";cell input resistance;oen_term:oen_0000000;';';oen_0000505;';';';'
+"owl:Class
+""neural structure brain region""
+oen_term:oen_0000000
+""Helmholtz""";neural structure brain region;oen_term:oen_0000000;';';oen_0000504;';';';'
+"owl:Class
+""storage file path""
+oen_term:oen_0000000
+""Helmholtz""";storage file path;oen_term:oen_0000000;';';oen_0000507;';';';'
+"owl:Class
+""experiment protocol""
+oen_term:oen_0000000
+""Helmholtz""";experiment protocol;oen_term:oen_0000000;';';oen_0000506;';';';'
+"owl:Class
+""hardware settings""
+oen_term:oen_0000000
+""odML terminology""";hardware settings;oen_term:oen_0000000;';';oen_0000509;';';';'
+"owl:Class
+""eye tracker sampling rate""
+oen_term:oen_0000000
+""odML terminology""";eye tracker sampling rate;oen_term:oen_0000000;';';oen_0000508;';';';'
+"owl:Class
+""sliding window method""
+oen_term:oen_0000000
+""odML terminology""";sliding window method;oen_term:oen_0000000;';';oen_0000332;';';';'
+"owl:Class
+""image acquisition subsampling method""
+oen_term:oen_0000000
+""odML terminology""";image acquisition subsampling method;oen_term:oen_0000000;';';oen_0000333;';';';'
+"owl:Class
+""water immersion lens""
+oen_term:oen_0000000
+""odML terminology""";water immersion lens;oen_term:oen_0000000;';';oen_0000330;';';';'
+"owl:Class
+""result file""
+oen_term:oen_0000000
+""odML terminology""";result file;oen_term:oen_0000000;';';oen_0000331;';';';'
+"owl:Class
+""excitation filter range""
+oen_term:oen_0000000
+""odML terminology""";excitation filter range;oen_term:oen_0000000;';';oen_0000336;';';';'
+"owl:Class
+""stimulus end time""
+oen_term:oen_0000000
+""odML terminology""";stimulus end time;oen_term:oen_0000000;';';oen_0000337;';';';'
+"owl:Class
+""paralytic drug""
+oen_term:oen_0000000
+""Helmholtz""";paralytic drug;oen_term:oen_0000000;';';oen_0000334;';';';'
+"owl:Class
+""random dot horizontal extent""
+oen_term:oen_0000000
+""odML terminology""";random dot horizontal extent;oen_term:oen_0000000;';';oen_0000335;';';';'
+"owl:Class
+""local anaesthetic location""
+oen_term:oen_0000000
+""odML terminology""";local anaesthetic location;oen_term:oen_0000000;';';oen_0000338;';';';'
+"owl:Class
+""measurement timestamp""
+oen_term:oen_0000000
+""Helmholtz""";measurement timestamp;oen_term:oen_0000000;';';oen_0000339;';';';'
+"owl:Class
+""person role""
+oen_term:oen_0000000
+""odML terminology""";person role;oen_term:oen_0000000;';';oen_0000655;';';';'
+"owl:Class
+""discrete window method""
+oen_term:oen_0000000
+""odML terminology""";discrete window method;oen_term:oen_0000000;';';oen_0000654;';';';'
+"owl:Class
+""emission filter passband transmission""
+oen_term:oen_0000000
+""odML terminology""";emission filter passband transmission;oen_term:oen_0000000;';';oen_0000657;';';';'
+"owl:Class
+""search coil sensor""
+oen_term:oen_0000000
+""odML terminology""";search coil sensor;oen_term:oen_0000000;';';oen_0000656;';';';'
+"owl:Class
+""chemical substance shortname""
+oen_term:oen_0000000
+""Helmholtz""";chemical substance shortname;oen_term:oen_0000000;';';oen_0000651;';';';'
+"owl:Class
+""hollow electrode solution""
+oen_term:oen_0000000
+""Helmholtz""";hollow electrode solution;oen_term:oen_0000000;';';oen_0000650;';';';'
+"owl:Class
+""cutoff frequency""
+oen_term:oen_0000000
+""odML terminology""";cutoff frequency;oen_term:oen_0000000;';';oen_0000653;';';';'
+"owl:Class
+""continuous signal sampling rate""
+oen_term:oen_0000000
+""Helmholtz""";continuous signal sampling rate;oen_term:oen_0000000;';';oen_0000652;';';';'
+"owl:Class
+""beam splitter""
+oen_term:oen_0000000
+""odML terminology""";beam splitter;oen_term:oen_0000000;';';oen_0000659;';';';'
+"owl:Class
+""setup device""
+oen_term:oen_0000000
+""Helmholtz""";setup device;oen_term:oen_0000000;';';oen_0000042;';';';'
+"owl:Class
+""numerical aperture""
+oen_term:oen_0000000
+""odML terminology""";numerical aperture;oen_term:oen_0000000;';';oen_0000043;';';';'
+"owl:Class
+""animal strain""
+oen_term:oen_0000000
+""Helmholtz""";animal strain;oen_term:oen_0000000;';';oen_0000093;';';';'
+"owl:Class
+""stimulation sequence number""
+oen_term:oen_0000000
+""Helmholtz""";stimulation sequence number;oen_term:oen_0000000;';';oen_0000092;';';';'
+"owl:Class
+""macro mode""
+oen_term:oen_0000000
+""odML terminology""";macro mode;oen_term:oen_0000000;';';oen_0000158;';';';'
+"owl:Class
+""behavioral sensitization""
+oen_term:oen_0000000
+""odML terminology""";behavioral sensitization;oen_term:oen_0000000;';';oen_0000159;';';';'
+"owl:Class
+""data segment length""
+oen_term:oen_0000000
+""odML terminology""";data segment length;oen_term:oen_0000000;';';oen_0000097;';';';'
+"owl:Class
+""image acquisition aperture""
+oen_term:oen_0000000
+""odML terminology""";image acquisition aperture;oen_term:oen_0000000;';';oen_0000096;';';';'
+"owl:Class
+""movie image spatial resolution""
+oen_term:oen_0000000
+""odML terminology""";movie image spatial resolution;oen_term:oen_0000000;';';oen_0000095;';';';'
+"owl:Class
+""oil immersion lens""
+oen_term:oen_0000000
+""odML terminology""";oil immersion lens;oen_term:oen_0000000;';';oen_0000094;';';';'
+"owl:Class
+""patch electrode""
+oen_term:oen_0000000
+""Helmholtz""";patch electrode;oen_term:oen_0000000;';';oen_0000152;';';';'
+"owl:Class
+""storage file location""
+oen_term:oen_0000000
+""Helmholtz""";storage file location;oen_term:oen_0000000;';';oen_0000153;';';';'
+"owl:Class
+""sawtooth stimulus""
+oen_term:oen_0000000
+""odML terminology""";sawtooth stimulus;oen_term:oen_0000000;';';oen_0000150;';';';'
+"owl:Class
+""training duration""
+oen_term:oen_0000000
+""odML terminology""";training duration;oen_term:oen_0000000;';';oen_0000151;';';';'
+"owl:Class
+""subject intsruction""
+oen_term:oen_0000000
+""odML terminology""";subject intsruction;oen_term:oen_0000000;';';oen_0000156;';';';'
+"owl:Class
+""project identifier""
+oen_term:oen_0000000
+""odML terminology""";project identifier;oen_term:oen_0000000;';';oen_0000157;';';';'
+"owl:Class
+""neural structure cell""
+oen_term:oen_0000000
+""Helmholtz""";neural structure cell;oen_term:oen_0000000;';';oen_0000154;';';';'
+"owl:Class
+""instantaneous spike rate method""
+oen_term:oen_0000000
+""odML terminology""";instantaneous spike rate method;oen_term:oen_0000000;';';oen_0000155;';';';'
+"owl:Class
+""device model""
+oen_term:oen_0000000
+""Helmholtz""";device model;oen_term:oen_0000000;';';oen_0000480;';';';'
+"owl:Class
+""amplifier device""
+oen_term:oen_0000000
+""Helmholtz""";amplifier device;oen_term:oen_0000000;';';oen_0000481;';';';'
+"owl:Class
+""stimulation protocol""
+oen_term:oen_0000000
+""odML terminology""";stimulation protocol;oen_term:oen_0000000;';';oen_0000482;';';';'
+"owl:Class
+""stimulation scotoma""
+oen_term:oen_0000000
+""Helmholtz""";stimulation scotoma;oen_term:oen_0000000;';';oen_0000483;';';';'
+"owl:Class
+""electrocardiogram""
+oen_term:oen_0000000
+""odML terminology""";electrocardiogram;oen_term:oen_0000000;';';oen_0000484;';';';'
+"owl:Class
+""square wave intensity offset""
+oen_term:oen_0000000
+""odML terminology""";square wave intensity offset;oen_term:oen_0000000;';';oen_0000485;';';';'
+"owl:Class
+""analog input sampling rate""
+oen_term:oen_0000000
+""odML terminology""";analog input sampling rate;oen_term:oen_0000000;';';oen_0000486;';';';'
+"owl:Class
+""instrument""
+oen_term:oen_0000000
+""odML terminology""";instrument;oen_term:oen_0000000;';';oen_0000487;';';';'
+"owl:Class
+""patch clamp device configuration""
+oen_term:oen_0000000
+""Helmholtz""";patch clamp device configuration;oen_term:oen_0000000;';';oen_0000488;';';';'
+"owl:Class
+""sine wave modulation amplitude""
+oen_term:oen_0000000
+""odML terminology""";sine wave modulation amplitude;oen_term:oen_0000000;';';oen_0000489;';';';'
+"owl:Class
+""analog input used channel count""
+oen_term:oen_0000000
+""odML terminology""";analog input used channel count;oen_term:oen_0000000;';';oen_0000295;';';';'
+"owl:Class
+""subject specific label""
+oen_term:oen_0000000
+""odML terminology""";subject specific label;oen_term:oen_0000000;';';oen_0000294;';';';'
+"owl:Class
+""emission filter model""
+oen_term:oen_0000000
+""odML terminology""";emission filter model;oen_term:oen_0000000;';';oen_0000297;';';';'
+"owl:Class
+""analysis data source""
+oen_term:oen_0000000
+""Helmholtz""";analysis data source;oen_term:oen_0000000;';';oen_0000296;';';';'
+"owl:Class
+""stimulus modality""
+oen_term:oen_0000000
+""odML terminology""";stimulus modality;oen_term:oen_0000000;';';oen_0000291;';';';'
+"owl:Class
+""stimulation receptive field x""
+oen_term:oen_0000000
+""Helmholtz""";stimulation receptive field x;oen_term:oen_0000000;';';oen_0000290;';';';'
+"owl:Class
+""image acquisition region of interest height""
+oen_term:oen_0000000
+""odML terminology""";image acquisition region of interest height;oen_term:oen_0000000;';';oen_0000293;';';';'
+"owl:Class
+""filter""
+oen_term:oen_0000000
+""odML terminology""";filter;oen_term:oen_0000000;';';oen_0000292;';';';'
+"owl:Class
+""preparation animal identifier""
+oen_term:oen_0000000
+""Helmholtz""";preparation animal identifier;oen_term:oen_0000000;';';oen_0000299;';';';'
+"owl:Class
+""emission filter manufacturer""
+oen_term:oen_0000000
+""odML terminology""";emission filter manufacturer;oen_term:oen_0000000;';';oen_0000298;';';';'
+"owl:Class
+""movie stimulus""
+oen_term:oen_0000000
+""odML terminology""";movie stimulus;oen_term:oen_0000000;';';oen_0000735;';';';'
+"owl:Class
+""random dot stimulus""
+oen_term:oen_0000000
+""odML terminology""";random dot stimulus;oen_term:oen_0000000;';';oen_0000431;';';';'
+"owl:Class
+""position brain region""
+oen_term:oen_0000000
+""Helmholtz""";position brain region;oen_term:oen_0000000;';';oen_0000430;';';';'
+"owl:Class
+""drug application route""
+oen_term:oen_0000000
+""Helmholtz""";drug application route;oen_term:oen_0000000;';';oen_0000433;';';';'
+"owl:Class
+""light-emitting diode""
+oen_term:oen_0000000
+""odML terminology""";light-emitting diode;oen_term:oen_0000000;';';oen_0000432;';';';'
+"owl:Class
+""experiment end""
+oen_term:oen_0000000
+""Helmholtz""";experiment end;oen_term:oen_0000000;';';oen_0000435;';';';'
+"owl:Class
+""diminutive""
+oen_term:oen_0000000
+""Helmholtz""";diminutive;oen_term:oen_0000000;';';oen_0000434;';';';'
+"owl:Class
+""stimulation initial seed""
+oen_term:oen_0000000
+""Helmholtz""";stimulation initial seed;oen_term:oen_0000000;';';oen_0000437;';';';'
+"owl:Class
+""image acquisition region of interest""
+oen_term:oen_0000000
+""odML terminology""";image acquisition region of interest;oen_term:oen_0000000;';';oen_0000436;';';';'
+"owl:Class
+""random dot pixel width""
+oen_term:oen_0000000
+""odML terminology""";random dot pixel width;oen_term:oen_0000000;';';oen_0000439;';';';'
+"owl:Class
+""stimulus isolator input range minimum voltage""
+oen_term:oen_0000000
+""odML terminology""";stimulus isolator input range minimum voltage;oen_term:oen_0000000;';';oen_0000438;';';';'
+"owl:Class
+""chemical substance""
+oen_term:oen_0000000
+""Helmholtz""";chemical substance;oen_term:oen_0000000;';';oen_0000532;';';';'
+"owl:Class
+""stimulus file""
+oen_term:oen_0000000
+""odML terminology""";stimulus file;oen_term:oen_0000000;';';oen_0000533;';';';'
+"owl:Class
+""organization contact details""
+oen_term:oen_0000000
+""Helmholtz""";organization contact details;oen_term:oen_0000000;';';oen_0000534;';';';'
+"owl:Class
+""recording datetime""
+oen_term:oen_0000000
+""Helmholtz""";recording datetime;oen_term:oen_0000000;';';oen_0000535;';';';'
+"owl:Class
+""stimulation luminance number""
+oen_term:oen_0000000
+""Helmholtz""";stimulation luminance number;oen_term:oen_0000000;';';oen_0000536;';';';'
+"owl:Class
+""scanner image width""
+oen_term:oen_0000000
+""odML terminology""";scanner image width;oen_term:oen_0000000;';';oen_0000537;';';';'
+"owl:Class
+""weight""
+oen_term:oen_0000000
+""odML terminology""";weight;oen_term:oen_0000000;';';oen_0000242;';';';'
+"owl:Class
+""preparation slicing method""
+oen_term:oen_0000000
+""odML terminology""";preparation slicing method;oen_term:oen_0000000;';';oen_0000243;';';';'
+"owl:Class
+""infrared image sensor""
+oen_term:oen_0000000
+""odML terminology""";infrared image sensor;oen_term:oen_0000000;';';oen_0000240;';';';'
+"owl:Class
+""light source wavelength upper bound""
+oen_term:oen_0000000
+""odML terminology""";light source wavelength upper bound;oen_term:oen_0000000;';';oen_0000241;';';';'
+"owl:Class
+""anaesthetic application route""
+oen_term:oen_0000000
+""Helmholtz""";anaesthetic application route;oen_term:oen_0000000;';';oen_0000246;';';';'
+"owl:Class
+""in vitro slice preparation""
+oen_term:oen_0000000
+""Helmholtz""";in vitro slice preparation;oen_term:oen_0000000;';';oen_0000247;';';';'
+"owl:Class
+""loose patch""
+oen_term:oen_0000000
+""odML terminology""";loose patch;oen_term:oen_0000000;';';oen_0000244;';';';'
+"owl:Class
+""sine wave stimulus frequency""
+oen_term:oen_0000000
+""odML terminology""";sine wave stimulus frequency;oen_term:oen_0000000;';';oen_0000245;';';';'
+"owl:Class
+""stimulus isolator gain""
+oen_term:oen_0000000
+""odML terminology""";stimulus isolator gain;oen_term:oen_0000000;';';oen_0000365;';';';'
+"owl:Class
+""MIME type specification""
+oen_term:oen_0000000
+""Helmholtz""";MIME type specification;oen_term:oen_0000000;';';oen_0000364;';';';'
+"owl:Class
+""minimum attenuation""
+oen_term:oen_0000000
+""odML terminology""";minimum attenuation;oen_term:oen_0000000;';';oen_0000248;';';';'
+"owl:Class
+""preparation anaesthetic""
+oen_term:oen_0000000
+""odML terminology""";preparation anaesthetic;oen_term:oen_0000000;';';oen_0000249;';';';'
+"owl:Class
+""stimulus isolator gain step size""
+oen_term:oen_0000000
+""odML terminology""";stimulus isolator gain step size;oen_term:oen_0000000;';';oen_0000361;';';';'
+"owl:Class
+""analog output maximum sampling rate""
+oen_term:oen_0000000
+""odML terminology""";analog output maximum sampling rate;oen_term:oen_0000000;';';oen_0000360;';';';'
+"owl:Class
+""stimulus output channel""
+oen_term:oen_0000000
+""odML terminology""";stimulus output channel;oen_term:oen_0000000;';';oen_0000363;';';';'
+"owl:Class
+""recording segment dataset""
+oen_term:oen_0000000
+""Helmholtz""";recording segment dataset;oen_term:oen_0000000;';';oen_0000362;';';';'
+"owl:Class
+""voltage clamp controlled current clamp measurement""
+oen_term:oen_0000000
+""odML terminology""";voltage clamp controlled current clamp measurement;oen_term:oen_0000000;';';oen_0000026;';';';'
+"owl:Class
+""region of interest width""
+oen_term:oen_0000000
+""odML terminology""";region of interest width;oen_term:oen_0000000;';';oen_0000027;';';';'
+"owl:Class
+""preparation animal birth""
+oen_term:oen_0000000
+""Helmholtz""";preparation animal birth;oen_term:oen_0000000;';';oen_0000024;';';';'
+"owl:Class
+""overlap""
+oen_term:oen_0000000
+""odML terminology""";overlap;oen_term:oen_0000000;';';oen_0000025;';';';'
+"owl:Class
+""multielectrode array inter electrode interval""
+oen_term:oen_0000000
+""Helmholtz""";multielectrode array inter electrode interval;oen_term:oen_0000000;';';oen_0000022;';';';'
+"owl:Class
+""binary dense noise multistimulus""
+oen_term:oen_0000000
+""Helmholtz""";binary dense noise multistimulus;oen_term:oen_0000000;';';oen_0000023;';';';'
+"owl:Class
+""amplifier""
+oen_term:oen_0000000
+""odML terminology""";amplifier;oen_term:oen_0000000;';';oen_0000020;';';';'
+"owl:Class
+""in vivo patch preparation""
+oen_term:oen_0000000
+""Helmholtz""";in vivo patch preparation;oen_term:oen_0000000;';';oen_0000021;';';';'
+"owl:Class
+""digital input output""
+oen_term:oen_0000000
+""odML terminology""";digital input output;oen_term:oen_0000000;';';oen_0000028;';';';'
+"owl:Class
+""dataset end date""
+oen_term:oen_0000000
+""odML terminology""";dataset end date;oen_term:oen_0000000;';';oen_0000029;';';';'
+"owl:Class
+""subject knowledge""
+oen_term:oen_0000000
+""odML terminology""";subject knowledge;oen_term:oen_0000000;';';oen_0000729;';';';'
+"owl:Class
+""cutting solution""
+oen_term:oen_0000000
+""Helmholtz""";cutting solution;oen_term:oen_0000000;';';oen_0000687;';';';'
+"owl:Class
+""sine wave""
+oen_term:oen_0000000
+""odML terminology""";sine wave;oen_term:oen_0000000;';';oen_0000727;';';';'
+"owl:Class
+""ganglion""
+oen_term:oen_0000000
+""odML terminology""";ganglion;oen_term:oen_0000000;';';oen_0000689;';';';'
+"owl:Class
+""movie frame rate""
+oen_term:oen_0000000
+""odML terminology""";movie frame rate;oen_term:oen_0000000;';';oen_0000625;';';';'
+"owl:Class
+""emission filter""
+oen_term:oen_0000000
+""odML terminology""";emission filter;oen_term:oen_0000000;';';oen_0000198;';';';'
+"owl:Class
+""chemical solution component""
+oen_term:oen_0000000
+""Helmholtz""";chemical solution component;oen_term:oen_0000000;';';oen_0000199;';';';'
+"owl:Class
+""continuous drug application""
+oen_term:oen_0000000
+""Helmholtz""";continuous drug application;oen_term:oen_0000000;';';oen_0000196;';';';'
+"owl:Class
+""stimulus intensity""
+oen_term:oen_0000000
+""odML terminology""";stimulus intensity;oen_term:oen_0000000;';';oen_0000197;';';';'
+"owl:Class
+""training trial""
+oen_term:oen_0000000
+""odML terminology""";training trial;oen_term:oen_0000000;';';oen_0000194;';';';'
+"owl:Class
+""sine wave mean intensity""
+oen_term:oen_0000000
+""odML terminology""";sine wave mean intensity;oen_term:oen_0000000;';';oen_0000195;';';';'
+"owl:Class
+""wavelength lower bound""
+oen_term:oen_0000000
+""odML terminology""";wavelength lower bound;oen_term:oen_0000000;';';oen_0000192;';';';'
+"owl:Class
+""attenuator""
+oen_term:oen_0000000
+""odML terminology""";attenuator;oen_term:oen_0000000;';';oen_0000193;';';';'
+"owl:Class
+""last name""
+oen_term:oen_0000000
+""odML terminology""";last name;oen_term:oen_0000000;';';oen_0000190;';';';'
+"owl:Class
+""experimental setup creator""
+oen_term:oen_0000000
+""odML terminology""";experimental setup creator;oen_term:oen_0000000;';';oen_0000191;';';';'
+"owl:Class
+""emission filter wavelength""
+oen_term:oen_0000000
+""odML terminology""";emission filter wavelength;oen_term:oen_0000000;';';oen_0000619;';';';'
+"owl:Class
+""circle stimulation grating shape""
+oen_term:oen_0000000
+""Helmholtz""";circle stimulation grating shape;oen_term:oen_0000000;';';oen_0000618;';';';'
+"owl:Class
+""zoom""
+oen_term:oen_0000000
+""odML terminology""";zoom;oen_term:oen_0000000;';';oen_0000611;';';';'
+"owl:Class
+""sine wave stimulus""
+oen_term:oen_0000000
+""odML terminology""";sine wave stimulus;oen_term:oen_0000000;';';oen_0000610;';';';'
+"owl:Class
+""device software""
+oen_term:oen_0000000
+""Helmholtz""";device software;oen_term:oen_0000000;';';oen_0000613;';';';'
+"owl:Class
+""complementary metal oxide semiconductor""
+oen_term:oen_0000000
+""odML terminology""";complementary metal oxide semiconductor;oen_term:oen_0000000;';';oen_0000612;';';';'
+"owl:Class
+""position anteroposterior value""
+oen_term:oen_0000000
+""Helmholtz""";position anteroposterior value;oen_term:oen_0000000;';';oen_0000615;';';';'
+"owl:Class
+""microscope type""
+oen_term:oen_0000000
+""odML terminology""";microscope type;oen_term:oen_0000000;';';oen_0000614;';';';'
+"owl:Class
+""people""
+oen_term:oen_0000000
+""Helmholtz""";people;oen_term:oen_0000000;';';oen_0000617;';';';'
+"owl:Class
+""drug preparation""
+oen_term:oen_0000000
+""Helmholtz""";drug preparation;oen_term:oen_0000000;';';oen_0000616;';';';'
+"owl:Class
+""investigator""
+oen_term:oen_0000000
+""odML terminology""";investigator;oen_term:oen_0000000;';';oen_0000049;';';';'
+"owl:Class
+""excitation filter passband transmission""
+oen_term:oen_0000000
+""odML terminology""";excitation filter passband transmission;oen_term:oen_0000000;';';oen_0000390;';';';'
+"owl:Class
+""instructions to subject""
+oen_term:oen_0000000
+""odML terminology""";instructions to subject;oen_term:oen_0000000;';';oen_0000391;';';';'
+"owl:Class
+""grating pattern""
+oen_term:oen_0000000
+""odML terminology""";grating pattern;oen_term:oen_0000000;';';oen_0000392;';';';'
+"owl:Class
+""device manufacturer""
+oen_term:oen_0000000
+""Helmholtz""";device manufacturer;oen_term:oen_0000000;';';oen_0000393;';';';'
+"owl:Class
+""impedance""
+oen_term:oen_0000000
+""Helmholtz""";impedance;oen_term:oen_0000000;';';oen_0000394;';';';'
+"owl:Class
+""species strain URL""
+oen_term:oen_0000000
+""Helmholtz""";species strain URL;oen_term:oen_0000000;';';oen_0000395;';';';'
+"owl:Class
+""excitation filter model""
+oen_term:oen_0000000
+""odML terminology""";excitation filter model;oen_term:oen_0000000;';';oen_0000396;';';';'
+"owl:Class
+""in vivo sharp preparation""
+oen_term:oen_0000000
+""Helmholtz""";in vivo sharp preparation;oen_term:oen_0000000;';';oen_0000397;';';';'
+"owl:Class
+""reverse correlation mutistimulus""
+oen_term:oen_0000000
+""Helmholtz""";reverse correlation mutistimulus;oen_term:oen_0000000;';';oen_0000398;';';';'
+"owl:Class
+""inhalation anesthetic""
+oen_term:oen_0000000
+""Helmholtz""";inhalation anesthetic;oen_term:oen_0000000;';';oen_0000399;';';';'
+"owl:Class
+""grating contrast""
+oen_term:oen_0000000
+""odML terminology""";grating contrast;oen_term:oen_0000000;';';oen_0000740;';';';'
+"owl:Class
+""mercury arc""
+oen_term:oen_0000000
+""odML terminology""";mercury arc;oen_term:oen_0000000;';';oen_0000682;';';';'
+"owl:Class
+""anaesthetic dose""
+oen_term:oen_0000000
+""odML terminology""";anaesthetic dose;oen_term:oen_0000000;';';oen_0000683;';';';'
+"owl:Class
+""subject population""
+oen_term:oen_0000000
+""odML terminology""";subject population;oen_term:oen_0000000;';';oen_0000680;';';';'
+"owl:Class
+""grating stimulus""
+oen_term:oen_0000000
+""odML terminology""";grating stimulus;oen_term:oen_0000000;';';oen_0000681;';';';'
+"owl:Class
+""local anaesthetic""
+oen_term:oen_0000000
+""odML terminology""";local anaesthetic;oen_term:oen_0000000;';';oen_0000686;';';';'
+"owl:Class
+""recording session start date""
+oen_term:oen_0000000
+""odML terminology""";recording session start date;oen_term:oen_0000000;';';oen_0000558;';';';'
+"owl:Class
+""drug experiment notes""
+oen_term:oen_0000000
+""Helmholtz""";drug experiment notes;oen_term:oen_0000000;';';oen_0000684;';';';'
+"owl:Class
+""patch clamp""
+oen_term:oen_0000000
+""odML terminology""";patch clamp;oen_term:oen_0000000;';';oen_0000685;';';';'
+"owl:Class
+""recording block""
+oen_term:oen_0000000
+""Helmholtz""";recording block;oen_term:oen_0000000;';';oen_0000725;';';';'
+"owl:Class
+""electromyogram""
+oen_term:oen_0000000
+""odML terminology""";electromyogram;oen_term:oen_0000000;';';oen_0000724;';';';'
+"owl:Class
+""experiment notes""
+oen_term:oen_0000000
+""Helmholtz""";experiment notes;oen_term:oen_0000000;';';oen_0000688;';';';'
+"owl:Class
+""experimenter""
+oen_term:oen_0000000
+""odML terminology""";experimenter;oen_term:oen_0000000;';';oen_0000559;';';';'
+"owl:Class
+""recording start date and time""
+oen_term:oen_0000000
+""odML terminology""";recording start date and time;oen_term:oen_0000000;';';oen_0000721;';';';'
+"owl:Class
+""image acquisition gamma function""
+oen_term:oen_0000000
+""odML terminology""";image acquisition gamma function;oen_term:oen_0000000;';';oen_0000720;';';';'
+"owl:Class
+""water immersion objective""
+oen_term:oen_0000000
+""odML terminology""";water immersion objective;oen_term:oen_0000000;';';oen_0000723;';';';'
+"owl:Class
+""analog output resolution""
+oen_term:oen_0000000
+""odML terminology""";analog output resolution;oen_term:oen_0000000;';';oen_0000722;';';';'
+"owl:Class
+""amplifier operation mode""
+oen_term:oen_0000000
+""odML terminology""";amplifier operation mode;oen_term:oen_0000000;';';oen_0000444;';';';'
+"owl:Class
+""monochrome image acquisition colorspace""
+oen_term:oen_0000000
+""odML terminology""";monochrome image acquisition colorspace;oen_term:oen_0000000;';';oen_0000445;';';';'
+"owl:Class
+""analog input channel count""
+oen_term:oen_0000000
+""odML terminology""";analog input channel count;oen_term:oen_0000000;';';oen_0000446;';';';'
+"owl:Class
+""lux""
+oen_term:oen_0000000
+""odML terminology""";lux;oen_term:oen_0000000;';';oen_0000447;';';';'
+"owl:Class
+""excitation filter upper bound""
+oen_term:oen_0000000
+""odML terminology""";excitation filter upper bound;oen_term:oen_0000000;';';oen_0000440;';';';'
+"owl:Class
+""electrode""
+oen_term:oen_0000000
+""odML terminology""";electrode;oen_term:oen_0000000;';';oen_0000441;';';';'
+"owl:Class
+""subject""
+oen_term:oen_0000000
+""odML terminology""";subject;oen_term:oen_0000000;';';oen_0000442;';';';'
+"owl:Class
+""recording""
+oen_term:oen_0000000
+""odML terminology""";recording;oen_term:oen_0000000;';';oen_0000443;';';';'
+"owl:Class
+""stimulation spatial period""
+oen_term:oen_0000000
+""Helmholtz""";stimulation spatial period;oen_term:oen_0000000;';';oen_0000448;';';';'
+"owl:Class
+""microscope objective numerical aperture""
+oen_term:oen_0000000
+""odML terminology""";microscope objective numerical aperture;oen_term:oen_0000000;';';oen_0000449;';';';'
