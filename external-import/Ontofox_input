@@ -12,7 +12,7 @@ http://purl.obolibrary.org/obo/OBI_0000654 # device setting
 http://purl.obolibrary.org/obo/BFO_0000023 # role
 http://purl.obolibrary.org/obo/OBI_0000070 # assay
 http://purl.obolibrary.org/obo/IAO_0000030 # information content entity
-http://purl.obolibrary.org/obo/IAO_0000104 #plan specification
+http://purl.obolibrary.org/obo/IAO_0000104 # plan specification
 http://purl.obolibrary.org/obo/CL_0000000  # cell
 http://purl.obolibrary.org/obo/CLO_0000031 # cell line
 http://purl.obolibrary.org/obo/OBI_0400101 # voltage amplifier
@@ -54,6 +54,15 @@ http://purl.obolibrary.org/obo/IAO_0000308 # figure
 http://purl.obolibrary.org/obo/OBI_0200000 # data transformation
 http://purl.obolibrary.org/obo/IAO_0000304 # caption
 http://purl.obolibrary.org/obo/OBI_0000935 # micromanipulator
+http://purl.obolibrary.org/obo/OBI_0000955 # electrode puller
+http://purl.obolibrary.org/obo/OBI_0001124 # micropipette puller
+http://purl.obolibrary.org/obo/OBI_0000945 # vibration isolation table
+http://purl.obolibrary.org/obo/OBI_0400155 # water bath
+http://purl.obolibrary.org/obo/OBI_0400087 # preamplifier
+http://purl.obolibrary.org/obo/OBI_0400107 # computer
+http://purl.obolibrary.org/obo/OBI_0000948 # oscillscope
+http://purl.obolibrary.org/obo/OBI_0400142 # power supply unit
+http://purl.obolibrary.org/obo/OBI_0001002 # Faraday cage
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000015 # process
@@ -131,7 +140,7 @@ subClassOf http://purl.obolibrary.org/obo/BFO_0000019
 http://purl.obolibrary.org/obo/OBI_0000984 # dose
 subClassOf http://www.w3.org/2002/07/owl#Thing
 http://purl.obolibrary.org/obo/OBI_0400120 # temperature control bath
-subClassOf http://purl.obolibrary.org/obo/OBI_0000968
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
 http://purl.obolibrary.org/obo/PATO_0002243 # fluid flow rate
 subClassOf http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000311 # flow rate
 http://purl.obolibrary.org/obo/PATO_0000011 # age
@@ -151,6 +160,24 @@ subClassOf http://purl.obolibrary.org/obo/BFO_0000015
 http://purl.obolibrary.org/obo/IAO_0000304 # caption
 subClassOf http://purl.obolibrary.org/obo/IAO_0000030
 http://purl.obolibrary.org/obo/OBI_0000935 # micromanipulator
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
+http://purl.obolibrary.org/obo/OBI_0000955 # electrode puller
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
+http://purl.obolibrary.org/obo/OBI_0001124 # micropipette puller
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
+http://purl.obolibrary.org/obo/OBI_0000945 # vibration isolation table
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
+http://purl.obolibrary.org/obo/OBI_0400155 # water bath
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
+http://purl.obolibrary.org/obo/OBI_0400087 # preamplifier
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
+http://purl.obolibrary.org/obo/OBI_0400107 # computer
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
+http://purl.obolibrary.org/obo/OBI_0000948 # oscillscope
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
+http://purl.obolibrary.org/obo/OBI_0400142 # power supply unit
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
+http://purl.obolibrary.org/obo/OBI_0001002 # Faraday cage
 subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
 
 [Source term retrieval setting]
@@ -190,6 +217,15 @@ http://purl.obolibrary.org/obo/ERO_0001914 # continuous
 http://purl.obolibrary.org/obo/ERO_0000220 # image analysis
 http://purl.obolibrary.org/obo/ERO_0000007 # technique
 http://purl.obolibrary.org/obo/ERO_0000383 # electrocardiogram
+http://purl.obolibrary.org/obo/ERO_0000870 # microelectrode
+http://purl.obolibrary.org/obo/ERO_0001173 # peristaltic pump
+http://purl.obolibrary.org/obo/ERO_0000912 # microelectrode positioning system
+http://purl.obolibrary.org/obo/ERO_0001175 # remote manipulator arm
+http://purl.obolibrary.org/obo/ERO_0000946 # microelectrode amplifier
+http://purl.obolibrary.org/obo/ERO_0000536 # patch clamp amplifier
+http://purl.obolibrary.org/obo/ERO_0000948 # data acquisition system
+http://purl.obolibrary.org/obo/ERO_0000812 # electrophysiology data acquisition system
+http://purl.obolibrary.org/obo/ERO_0000823 # temperature controller
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/ERO_0000215 #light microscopy
@@ -242,6 +278,24 @@ http://purl.obolibrary.org/obo/ERO_0000007 # technique
 subClassOf http://purl.obolibrary.org/obo/BFO_0000015 # process
 http://purl.obolibrary.org/obo/ERO_0000383 # electrocardiogram
 subClassOf http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000443 # recording
+http://purl.obolibrary.org/obo/ERO_0000870 # microelectrode
+subClassOf http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000441 # electrode
+http://purl.obolibrary.org/obo/ERO_0001173 # peristaltic pump
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
+http://purl.obolibrary.org/obo/ERO_0000912 # microelectrode positioning system
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
+http://purl.obolibrary.org/obo/ERO_0001175 # remote manipulator arm
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
+http://purl.obolibrary.org/obo/ERO_0000946 # microelectrode amplifier
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
+http://purl.obolibrary.org/obo/ERO_0000536 # patch clamp amplifier
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
+http://purl.obolibrary.org/obo/ERO_0000948 # data acquisition system
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
+http://purl.obolibrary.org/obo/ERO_0000812 # electrophysiology data acquisition system
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
+http://purl.obolibrary.org/obo/ERO_0000823 # temperature controller
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
 
 
 [Source term retrieval setting]
@@ -279,9 +333,12 @@ PATO
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/PATO_0000133 # orientation
+http://purl.obolibrary.org/obo/PATO_0002012 # coating
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/PATO_0000133 # orientation
+subClassOf http://purl.obolibrary.org/obo/BFO_0000019 # quality
+http://purl.obolibrary.org/obo/PATO_0002012 # coating
 subClassOf http://purl.obolibrary.org/obo/BFO_0000019 # quality
 
 
@@ -293,3 +350,78 @@ includeAllAnnotationProperties
 
 [Source annotation URIs to be excluded]
 
+[Source ontology]
+CHMO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/CHMO_0002356 # silver/silver chloride reference electrode
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/CHMO_0002356 # silver/silver chloride reference electrode
+subClassOf http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000441 # electrode
+
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+[Source annotation URIs to be excluded]
+
+[Source ontology]
+UBERON
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/UBERON_0001359 # cerebrospinal fluid
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/UBERON_0001359 # cerebrospinal fluid
+subClassOf http://purl.obolibrary.org/obo/BFO_0000019 # quality
+
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+[Source annotation URIs to be excluded]
+
+[Source ontology]
+DRON
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/DRON_00076620 # Carbon Dioxide 5 % / Oxygen 95 % Gas for Inhalation [carbogen]
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/DRON_00076620 # Carbon Dioxide 5 % / Oxygen 95 % Gas for Inhalation [carbogen]
+subClassOf http://purl.obolibrary.org/obo/BFO_0000019 # quality
+
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+[Source annotation URIs to be excluded]
+
+[Source ontology]
+UO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/UO_0000196 # pH
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/UO_0000196 # pH
+subClassOf http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000226 # unit of measurement
+
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+[Source annotation URIs to be excluded]
