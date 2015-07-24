@@ -8208,9 +8208,214 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
         <rdfs:subClassOf rdf:resource="&oen_term;oen_0000307"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000743 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000743">
+    	<rdfs:label xml:lang="en">microscope digital camera system</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000744 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000744">
+    	<rdfs:label xml:lang="en">air suspension table</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000745 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000745">
+    	<rdfs:label xml:lang="en">headstage</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000746 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000746">
+    	<rdfs:label xml:lang="en">normal artificial cerebrospinal fluid</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000747 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000747">
+    	<rdfs:label xml:lang="en">power supply cable</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000748 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000748">
+    	<rdfs:label xml:lang="en">shifting table</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000749 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000749">
+    	<rdfs:label xml:lang="en">laboratory tubing</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000750 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000750">
+    	<rdfs:label xml:lang="en">95% oxygen/5% carbon dioxide carbogen</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000751 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000751">
+    	<rdfs:label xml:lang="en">data acquisition board</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000752 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000752">
+    	<rdfs:label xml:lang="en">peristaltic pump head</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000753 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000753">
+    	<rdfs:label xml:lang="en">bath chamber insert</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000754 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000754">
+    	<rdfs:label xml:lang="en">motorized micromanipulator</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000755 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000755">
+    	<rdfs:label xml:lang="en">slice holder</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000756 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000756">
+    	<rdfs:label xml:lang="en">microelectrode holder</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000757 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000757">
+    	<rdfs:label xml:lang="en">tubing for peristaltic pump head</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000758 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000758">
+    	<rdfs:label xml:lang="en">in-line solution heater</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000759 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000759">
+    	<rdfs:label xml:lang="en">digitizer</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000760 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000760">
+    	<rdfs:label xml:lang="en">digital storage oscilloscope</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000761 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000761">
+    	<rdfs:label xml:lang="en">bath chamber body</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000762 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000762">
+    	<rdfs:label xml:lang="en">signal transmission cable</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000763 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000763">
+    	<rdfs:label xml:lang="en">analog monitor</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
 </rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
-
