@@ -1,0 +1,448 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#"
+     xml:base="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157">
+        <owl:imports rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part">
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#is_part_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_property -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_property">
+        <rdfs:range rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000711"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#is_property_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#is_part_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#is_part_of"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#is_property_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#is_property_of"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000968 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000968">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_property"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000711"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000152 -->
+
+    <rdf:Description rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000152">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000466"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000756"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000165 -->
+
+    <rdf:Description rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000165">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000466 -->
+
+    <rdf:Description rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000466">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_property"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000484"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000764 -->
+
+    <rdf:Description rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000764">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000152"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Axon_instruments_CV-7B_headstage_for_MultiClamp_700B -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Axon_instruments_CV-7B_headstage_for_MultiClamp_700B">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Axon_instruments_Digidata_1550_digitizer -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Axon_instruments_Digidata_1550_digitizer">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Axon_instruments_MultiClamp_700B_Amplifier -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Axon_instruments_MultiClamp_700B_Amplifier">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#BOC_oxygen-carbon_dioxide_mixture_95_O2-5_CO2 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#BOC_oxygen-carbon_dioxide_mixture_95_O2-5_CO2">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Cambridge_Electronic_Design_1902_isolated_pre-amplifier -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Cambridge_Electronic_Design_1902_isolated_pre-amplifier">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Dell_XPS_8700 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Dell_XPS_8700">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#G23_ISO-S-1.0G_microelectrode_holder -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#G23_ISO-S-1.0G_microelectrode_holder">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Gilson_Minipuls_3 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Gilson_Minipuls_3">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Gilson_R4_medium_flow_pump_head -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Gilson_R4_medium_flow_pump_head">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Hitachi_HV-D30-1o3-800_TVL-3_CCD -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Hitachi_HV-D30-1o3-800_TVL-3_CCD">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Luigs_and_Neumann_380_FM-U_shifting_table -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Luigs_and_Neumann_380_FM-U_shifting_table">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Luigs_and_Neumann_basic_unit -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Luigs_and_Neumann_basic_unit">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Luigs_and_Neumann_slice_mini_chamber -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Luigs_and_Neumann_slice_mini_chamber">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Luigs_and_Neumann_type_A_insert_for_bathchamber -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Luigs_and_Neumann_type_A_insert_for_bathchamber">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#National_instruments_bus-powered_M_series_multifunction_DAQ_for_USB -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#National_instruments_bus-powered_M_series_multifunction_DAQ_for_USB">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Neuromatic_v2.00 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Neuromatic_v2.00">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Olympus_BX51_BX2_series_system_microscope -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Olympus_BX51_BX2_series_system_microscope">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Olympus_BX51_BX2_system_microscope_built-in_Koehler_illumination_for_transmitted_light -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Olympus_BX51_BX2_system_microscope_built-in_Koehler_illumination_for_transmitted_light">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Olympus_DP50_microscope_digital_camera_system -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Olympus_DP50_microscope_digital_camera_system">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Olympus_LUMPLFLN_40xW_water_immersion_objective -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Olympus_LUMPLFLN_40xW_water_immersion_objective">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Olympus__UMPLFLN_10xW_water_immersion_objective -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Olympus__UMPLFLN_10xW_water_immersion_objective">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Sutter_P-2000 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Sutter_P-2000">
+        <rdf:type rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000173"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#TMC_63-7512E_CleanBench_with_tapped_holes -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#TMC_63-7512E_CleanBench_with_tapped_holes">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#TMC_type_2_Faraday_cage -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#TMC_type_2_Faraday_cage">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Tektronix_TDS2014C -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Tektronix_TDS2014C">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Tygon_PVC_tubing_for_Gilson_medium_flow_pump_head -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Tygon_PVC_tubing_for_Gilson_medium_flow_pump_head">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Tygon_laboratory_tubing -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Tygon_laboratory_tubing">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Vitek_VTM-14A-14-1000_TVL -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Vitek_VTM-14A-14-1000_TVL">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Warner_instruments_SH-27B_single_in-line_solution_heater -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Warner_instruments_SH-27B_single_in-line_solution_heater">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Warner_instruments_TC-324C_temperature_controller -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Warner_instruments_TC-324C_temperature_controller">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Wavemetrics_IGOR_Pro -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Wavemetrics_IGOR_Pro">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#example_patch-clamp_setup -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#example_patch-clamp_setup">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#microelectrode_wire -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#microelectrode_wire">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#microelectrode_wire_coating -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#microelectrode_wire_coating">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#recording_microelectrode -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#recording_microelectrode">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Warner_instruments_SHD-22CF/10Warner_instruments_SHD-22CF-10_slice_harp_hold-down -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#Warner_instruments_SHD-22CF/10Warner_instruments_SHD-22CF-10_slice_harp_hold-down">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

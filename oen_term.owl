@@ -2247,7 +2247,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000152">
         <rdfs:label xml:lang="en">patch electrode</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000441"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -2377,7 +2377,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000165">
         <rdfs:label xml:lang="en">experimental setup</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -2457,7 +2457,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000173">
         <rdfs:label xml:lang="en">laser-based micropipette puller</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0001124"/>
         <rdfs:comment>20150712 ant1b, initial label &quot;instrument model&quot; (odML terminology) by and large redundant with &quot;device model&quot;.
 20150724 ant1b, class label to accomodate for prospective list of instances in example patch-clamp setup model, &quot;laser-based micropipette puller&quot;.</rdfs:comment>
         <dc:source xml:lang="en">OEN native</dc:source>
@@ -3542,8 +3542,8 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000281 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000281">
-        <rdfs:label xml:lang="en">recording microeletrode</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
+        <rdfs:label xml:lang="en">recording microelectrode</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000441"/>
         <rdfs:comment>20150710 ant1b, Initial label &quot;receptive field&quot; (Helmholtz) already attributed oen id oen_0001184 in OEN concept branch.
 20150724 ant1b, class label to accomodate for prospective list of instances in example patch-clamp setup model, &quot;recording microelectrode&quot;.</rdfs:comment>
         <dc:source xml:lang="en">OEN native</dc:source>
@@ -4614,7 +4614,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000387">
         <rdfs:label xml:lang="en">sharp electrode</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000441"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -5406,7 +5406,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000466 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000466">
-        <rdfs:label xml:lang="en">microeletrode wire</rdfs:label>
+        <rdfs:label xml:lang="en">microelectrode wire</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
         <rdfs:comment>20150712 ant1b, initial label &quot;drug&quot; (Helmholtz) mapping found http://purl.obolibrary.org/obo/CHEBI_23888
 20150724 ant1b, class label to accomodate for prospective list of instances in example patch-clamp setup model, &quot;microelectrode wire&quot;.</rdfs:comment>
@@ -6938,7 +6938,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000617">
         <rdfs:label xml:lang="en">reference electrode</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000441"/>
         <rdfs:comment>20150710 ant1b, initial label &quot;people&quot; (Helmholtz) redundant with class label &quot;person&quot;.
 20150724 ant1b, class label to accomodate for prospective list of instances in example patch-clamp setup model, &quot;reference electrode&quot;.</rdfs:comment>
         <dc:source xml:lang="en">OEN native</dc:source>
@@ -7558,7 +7558,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000678">
         <rdfs:label xml:lang="en">solid electrode</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000441"/>
         <dc:source xml:lang="en">Helmholtz</dc:source>
     </owl:Class>
     
@@ -8416,6 +8416,16 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     <owl:Class rdf:about="&oen_term;oen_0000763">
         <rdfs:label xml:lang="en">analog monitor</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
+        <dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000764 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000764">
+        <rdfs:label xml:lang="en">patch clamp setup</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000165"/>
         <dc:source xml:lang="en">OEN native</dc:source>
     </owl:Class>
 </rdf:RDF>
