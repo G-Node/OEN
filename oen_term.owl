@@ -8433,144 +8433,149 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
         <rdfs:subClassOf rdf:resource="&oen_term;oen_0000165"/>
         <dc:source xml:lang="en">OEN native</dc:source>
     </owl:Class>
+    
+
 
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000765 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000765">
-    	<rdfs:label xml:lang="en">glass capillary wall property</rdfs:label>
-    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">OEN native</dc:source>
+        <rdfs:label xml:lang="en">glass capillary wall property</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000711"/>
+        <dc:source xml:lang="en">OEN native</dc:source>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000766 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000766">
-    	<rdfs:label xml:lang="en">disc polish</rdfs:label>
-    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">OEN native</dc:source>
+        <rdfs:label xml:lang="en">disc polish</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <dc:source xml:lang="en">OEN native</dc:source>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000767 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000767">
-    	<rdfs:label xml:lang="en">pulling parameter</rdfs:label>
-    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">OEN native</dc:source>
+        <rdfs:label xml:lang="en">pulling parameter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <dc:source xml:lang="en">OEN native</dc:source>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000768 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000768">
-    	<rdfs:label xml:lang="en">outer diameter</rdfs:label>
-    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">OEN native</dc:source>
+        <rdfs:label xml:lang="en">outer diameter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000105"/>
+        <dc:source xml:lang="en">OEN native</dc:source>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000769 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000769">
-    	<rdfs:label xml:lang="en">patch pipette</rdfs:label>
-    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">OEN native</dc:source>
+        <rdfs:label xml:lang="en">patch pipette</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000771"/>
+        <dc:source xml:lang="en">OEN native</dc:source>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000770 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000770">
-    	<rdfs:label xml:lang="en">glass capillary thin wall</rdfs:label>
-    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">OEN native</dc:source>
+        <rdfs:label xml:lang="en">glass capillary thin wall</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000765"/>
+        <dc:source xml:lang="en">OEN native</dc:source>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000771 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000771">
-    	<rdfs:label xml:lang="en">pipette</rdfs:label>
-    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">OEN native</dc:source>
+        <rdfs:label xml:lang="en">pipette</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
+        <dc:source xml:lang="en">OEN native</dc:source>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000772 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000772">
-    	<rdfs:label xml:lang="en">fire polish</rdfs:label>
-    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">OEN native</dc:source>
+        <rdfs:label xml:lang="en">fire polish</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <dc:source xml:lang="en">OEN native</dc:source>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000773 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000773">
-    	<rdfs:label xml:lang="en">silver wire</rdfs:label>
-    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">OEN native</dc:source>
+        <rdfs:label xml:lang="en">silver wire</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000466"/>
+        <dc:source xml:lang="en">OEN native</dc:source>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000774 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000774">
-    	<rdfs:label xml:lang="en">glass capillary standard wall</rdfs:label>
-    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">OEN native</dc:source>
+        <rdfs:label xml:lang="en">glass capillary standard wall</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000765"/>
+        <dc:source xml:lang="en">OEN native</dc:source>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000775 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000775">
-    	<rdfs:label xml:lang="en">glass capillary inner filament</rdfs:label>
-    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">OEN native</dc:source>
+        <rdfs:label xml:lang="en">glass capillary inner filament</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000765"/>
+        <dc:source xml:lang="en">OEN native</dc:source>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000776 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000776">
-    	<rdfs:label xml:lang="en">micropipette</rdfs:label>
-    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">OEN native</dc:source>
+        <rdfs:label xml:lang="en">micropipette</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000771"/>
+        <dc:source xml:lang="en">OEN native</dc:source>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000777 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000777">
-    	<rdfs:label xml:lang="en">intrapipette solution</rdfs:label>
-    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">OEN native</dc:source>
+        <rdfs:label xml:lang="en">intrapipette solution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0302729"/>
+        <dc:source xml:lang="en">OEN native</dc:source>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000778 -->
 
     <owl:Class rdf:about="&oen_term;oen_0000778">
-    	<rdfs:label xml:lang="en">chlorided</rdfs:label>
-    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
-    	<dc:source xml:lang="en">OEN native</dc:source>
+        <rdfs:label xml:lang="en">chlorided</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000484"/>
+        <dc:source xml:lang="en">OEN native</dc:source>
     </owl:Class>
-
-
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
