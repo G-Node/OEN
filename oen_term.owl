@@ -5854,6 +5854,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     <owl:Class rdf:about="&oen_term;oen_0000509">
         <rdfs:label xml:lang="en">glass capillary</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000711"/>
         <rdfs:comment>20150710 ant1b, initial label &quot;hardware settings&quot; (odML terminology) redundant with &quot;device setting&quot;.
 20150724 ant1b, class label to accomodate for prospective list of instances in example patch-clamp setup model, &quot;glass capillary&quot;.</rdfs:comment>
         <dc:source xml:lang="en">OEN native</dc:source>
@@ -8330,7 +8331,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000754">
         <rdfs:label xml:lang="en">motorized micromanipulator</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000935"/>
         <dc:source xml:lang="en">OEN native</dc:source>
     </owl:Class>
     
@@ -8480,7 +8481,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000769">
         <rdfs:label xml:lang="en">patch pipette</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000771"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000776"/>
         <dc:source xml:lang="en">OEN native</dc:source>
     </owl:Class>
     
@@ -8571,6 +8572,26 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     <owl:Class rdf:about="&oen_term;oen_0000778">
         <rdfs:label xml:lang="en">chlorided</rdfs:label>
         <rdfs:subClassOf rdf:resource="&oen_term;oen_0000484"/>
+        <dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000779 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000779">
+        <rdfs:label xml:lang="en">borosilicate glass</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0005062"/>
+        <dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000780 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000780">
+        <rdfs:label xml:lang="en">quartz glass</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0005062"/>
         <dc:source xml:lang="en">OEN native</dc:source>
     </owl:Class>
 </rdf:RDF>
