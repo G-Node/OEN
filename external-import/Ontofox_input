@@ -307,6 +307,25 @@ includeAllAnnotationProperties
 [Source annotation URIs to be excluded]
 
 [Source ontology]
+EFO
+
+[Low level source term URIs]
+http://www.ebi.ac.uk/efo/EFO_0005062 # glass substrate
+
+[Top level source term URIs and target direct superclass URIs]
+http://www.ebi.ac.uk/efo/EFO_0005062 # glass substrate
+subClassOf http://purl.obolibrary.org/obo/BFO_0000019 # quality
+
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+[Source annotation URIs to be excluded]
+
+[Source ontology]
 CHEBI
 
 [Low level source term URIs]
@@ -355,9 +374,12 @@ CHMO
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/CHMO_0002356 # silver/silver chloride reference electrode
+http://purl.obolibrary.org/obo/CHMO_0002353 # pH glass electrode
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/CHMO_0002356 # silver/silver chloride reference electrode
+subClassOf http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000441 # electrode
+http://purl.obolibrary.org/obo/CHMO_0002353 # pH glass electrode
 subClassOf http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000441 # electrode
 
 
