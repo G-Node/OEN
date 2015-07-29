@@ -63,6 +63,10 @@ http://purl.obolibrary.org/obo/OBI_0400107 # computer
 http://purl.obolibrary.org/obo/OBI_0000948 # oscillscope
 http://purl.obolibrary.org/obo/OBI_0400142 # power supply unit
 http://purl.obolibrary.org/obo/OBI_0001002 # Faraday cage
+http://purl.obolibrary.org/obo/OBI_0000940 # optical microscope
+http://purl.obolibrary.org/obo/OBI_0001065 # stereo microscope
+http://purl.obolibrary.org/obo/OBI_0000454 # extracellular electrophysiology recording
+http://purl.obolibrary.org/obo/OBI_0000447 # intra cellular electrophysiology recording
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000015 # process
@@ -98,7 +102,7 @@ subClassOf http://www.w3.org/2002/07/owl#Thing
 http://purl.obolibrary.org/obo/OBI_0400169 # microscope
 subClassOf http://purl.obolibrary.org/obo/OBI_0000968
 http://purl.obolibrary.org/obo/OBI_0001048 # digital camera
-subClassOf http://purl.obolibrary.org/obo/OBI_0000968
+subClassOf http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000122 # camera
 http://purl.obolibrary.org/obo/OBI_0001079 # confocal microscope
 subClassOf http://purl.obolibrary.org/obo/OBI_0000968
 http://purl.obolibrary.org/obo/IAO_0000442 # author role
@@ -179,6 +183,14 @@ http://purl.obolibrary.org/obo/OBI_0400142 # power supply unit
 subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
 http://purl.obolibrary.org/obo/OBI_0001002 # Faraday cage
 subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
+http://purl.obolibrary.org/obo/OBI_0000940 # optical microscope
+subClassOf http://purl.obolibrary.org/obo/OBI_0400169 # microscope
+http://purl.obolibrary.org/obo/OBI_0001065 # stereo microscope
+subClassOf http://purl.obolibrary.org/obo/OBI_0000940 # optical microscope
+http://purl.obolibrary.org/obo/OBI_0000454 # extracellular electrophysiology recording
+subClassOf http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000135 # extracellular recording
+http://purl.obolibrary.org/obo/OBI_0000447 # intra cellular electrophysiology recording
+subClassOf http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000135 # intracellular recording
 
 [Source term retrieval setting]
 includeNoIntermediates
@@ -249,7 +261,7 @@ subClassOf http://purl.obolibrary.org/obo/BFO_0000015
 http://purl.obolibrary.org/obo/ERO_0000014 # research project
 subClassOf http://purl.obolibrary.org/obo/IAO_0000030
 http://purl.obolibrary.org/obo/ERO_0000454 # video camera
-subClassOf http://purl.obolibrary.org/obo/OBI_0000968
+subClassOf http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000122 # camera
 http://purl.obolibrary.org/obo/ERO_0001403 # c-mount
 subClassOf http://purl.obolibrary.org/obo/OBI_0000968
 http://purl.obolibrary.org/obo/ERO_0000020 # biological specimen
@@ -287,13 +299,13 @@ subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
 http://purl.obolibrary.org/obo/ERO_0001175 # remote manipulator arm
 subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
 http://purl.obolibrary.org/obo/ERO_0000946 # microelectrode amplifier
-subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
+subClassOf http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000020 # amplifier
 http://purl.obolibrary.org/obo/ERO_0000536 # patch clamp amplifier
 subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
 http://purl.obolibrary.org/obo/ERO_0000948 # data acquisition system
 subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
 http://purl.obolibrary.org/obo/ERO_0000812 # electrophysiology data acquisition system
-subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
+subClassOf http://purl.obolibrary.org/obo/ERO_0000948 # data acquisition system
 http://purl.obolibrary.org/obo/ERO_0000823 # temperature controller
 subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
 
