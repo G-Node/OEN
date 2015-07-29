@@ -872,7 +872,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000012">
         <rdfs:label xml:lang="en">web camera</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000122"/>
         <dc:source xml:lang="en">EEGbase</dc:source>
     </owl:Class>
     
@@ -1666,7 +1666,8 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000094">
         <rdfs:label xml:lang="en">oil immersion lens</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="&obo;ERO_0000453"/>
+        <rdfs:comment>20150729 ant1b, Potential mapping outside of Ontobee referenced ontologies, &quot;oil immersion lens&quot; - BioAssay Ontology (BAO): http://www.bioassayontology.org/bao#BAO_0150019</rdfs:comment>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -3005,7 +3006,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000227">
         <rdfs:label xml:lang="en">analog camera</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000122"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -4044,7 +4045,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000330">
         <rdfs:label xml:lang="en">water immersion lens</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="&obo;ERO_0000453"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -6863,7 +6864,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000609">
         <rdfs:label xml:lang="en">air interface objective lens</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="&obo;ERO_0000453"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -7213,6 +7214,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     <owl:Class rdf:about="&oen_term;oen_0000643">
         <rdfs:label xml:lang="en">amplifier duty cycle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000668"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -7463,7 +7465,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000668">
         <rdfs:label xml:lang="en">duty cycle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000654"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
         <dc:source xml:lang="en">odML terminology</dc:source>
     </owl:Class>
     
@@ -8391,7 +8393,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000760">
         <rdfs:label xml:lang="en">digital storage oscilloscope</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000948"/>
         <dc:source xml:lang="en">OEN native</dc:source>
     </owl:Class>
     
@@ -8451,7 +8453,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000766">
         <rdfs:label xml:lang="en">disc polish</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000711"/>
         <dc:source xml:lang="en">OEN native</dc:source>
     </owl:Class>
     
@@ -8511,7 +8513,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000772">
         <rdfs:label xml:lang="en">fire polish</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&oen_term;oen_0000711"/>
         <dc:source xml:lang="en">OEN native</dc:source>
     </owl:Class>
     
@@ -8594,9 +8596,214 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0005062"/>
         <dc:source xml:lang="en">OEN native</dc:source>
     </owl:Class>
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000781 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000781">
+    	<rdfs:label xml:lang="en">outflow tract</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000782 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000782">
+    	<rdfs:label xml:lang="en">pressure control line</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000783 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000783">
+    	<rdfs:label xml:lang="en">dynamic clamp measurement</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">odML terminology</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000784 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000784">
+    	<rdfs:label xml:lang="en">bath chamber</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000785 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000785">
+    	<rdfs:label xml:lang="en">current clamp measurement</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">odML terminology</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000786 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000786">
+    	<rdfs:label xml:lang="en">discontinuous single-electrode voltage clamp amplifier operation mode</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000787 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000787">
+    	<rdfs:label xml:lang="en">recording chamber</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000788 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000788">
+    	<rdfs:label xml:lang="en">microelectrode holder suction tube</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000789 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000789">
+    	<rdfs:label xml:lang="en">inflow tract</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000790 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000790">
+    	<rdfs:label xml:lang="en">bridged amplifier operation mode</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">odML terminology</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000791 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000791">
+    	<rdfs:label xml:lang="en">voltage clamp measurement</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">odML terminology</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000792 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000792">
+    	<rdfs:label xml:lang="en">polycarbonate stopcock</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000793 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000793">
+    	<rdfs:label xml:lang="en">immersion recording chamber</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000794 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000794">
+    	<rdfs:label xml:lang="en">electrical earth</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000795 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000795">
+    	<rdfs:label xml:lang="en">continuous single-electrode voltage clamp amplifier operation mode</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000796 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000796">
+    	<rdfs:label xml:lang="en">interface recording chamber</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000797 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000797">
+    	<rdfs:label xml:lang="en">high-compliance two-electrode voltage clamp amplifier operation mode</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000798 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000798">
+    	<rdfs:label xml:lang="en">bridge mode passive measurement</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">odML terminology</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000799 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000799">
+    	<rdfs:label xml:lang="en">discontinuous amplifier operation mode</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">odML terminology</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000800 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000800">
+    	<rdfs:label xml:lang="en">current clamp amplifier operation mode</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000801 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000801">
+    	<rdfs:label xml:lang="en">discontinuous current clamp amplifier operation mode</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
 </rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
-
