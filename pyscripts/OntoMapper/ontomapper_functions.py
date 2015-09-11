@@ -63,9 +63,9 @@ def openQscopeFile(file_path,option=""):
         Qscope = {}
         
         try:
-                
+                                 
                 scope_file = open(file_path,'rb')
-                
+                                             
                 csv_file = csv.reader(scope_file, dialect='excel', delimiter=';')
                 
                 for row in csv_file:
@@ -127,10 +127,10 @@ def openQscopeFile(file_path,option=""):
                                                             
                                                         Qscope["noprefix"][onto].add( (result['label']['value'], result['id']['value']) )
 
+                scope_file.close()
+	
 	except IOError:
 		pass
-
-	scope_file.close()
 	
 	return Qscope
 	

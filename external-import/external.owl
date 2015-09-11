@@ -648,7 +648,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000536">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patch clamp amplifier</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000020"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A patch clamp amplifier is a voltage amplifier that uses a single electrode clamp, where the voltage measuring and current passing circuits are connected. The electrode is attached to a wire that contacts the current/voltage loop inside the amplifier. Thus the electrode has only an indirect influence on the feedback circuit. The amplifier reads only the voltage at the top of the electrode, and feeds back current to compensate.</obo:IAO_0000115>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A patch clamp amplifier is used to study action potentials in neurons.</obo:IAO_0000112>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Tenille Johnson</obo:IAO_0000117>
@@ -1221,7 +1221,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000447">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intra cellular electrophysiology recording</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000135"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000429"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intracellular electrophysiology recording is a process where the recording location of the electrode is intracellular</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Frank Gibson</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Frank Gibson</obo:IAO_0000119>
@@ -1686,7 +1686,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400101">
         <rdfs:label xml:lang="en">voltage amplifier</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000020"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frank Gibson</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A voltage amplifier is a device that amplifies the voltage signal.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">John Quinn</obo:IAO_0000117>

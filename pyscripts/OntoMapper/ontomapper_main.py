@@ -26,7 +26,10 @@ from ontomapper_functions import dictToMappingSummaryCSV
 
 filename   = inspect.getframeinfo(inspect.currentframe()).filename
 scriptpath = os.path.dirname(os.path.abspath(filename))
-oenpath    = scriptpath[:scriptpath.find('OEN\\')+4]
+if "OEN\\" in scriptpath:
+    oenpath    = scriptpath[:scriptpath.find('OEN\\')+4]
+else:
+    oenpath = scriptpath + "\\"
 
 OMS  = 'pyscripts/data/OntoMapper_data/OntoMapper_input/ontology_metadata_schema.csv'
 LOT  = 'pyscripts/data/OntoMapper_data/OntoMapper_input/list_of_terms.csv'

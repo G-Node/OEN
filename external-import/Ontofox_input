@@ -90,7 +90,7 @@ subClassOf http://www.w3.org/2002/07/owl#Thing
 http://purl.obolibrary.org/obo/CLO_0000031 # cell line
 subClassOf http://www.w3.org/2002/07/owl#Thing
 http://purl.obolibrary.org/obo/OBI_0400101 # voltage amplifier
-subClassOf http://purl.obolibrary.org/obo/OBI_0000968
+subClassOf http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000020 # amplifier
 http://purl.obolibrary.org/obo/OBI_0400065 # light source
 subClassOf http://purl.obolibrary.org/obo/OBI_0000968
 http://purl.obolibrary.org/obo/OBI_0000835 # manufacturer
@@ -190,7 +190,7 @@ subClassOf http://purl.obolibrary.org/obo/OBI_0000940 # optical microscope
 http://purl.obolibrary.org/obo/OBI_0000454 # extracellular electrophysiology recording
 subClassOf http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000135 # extracellular recording
 http://purl.obolibrary.org/obo/OBI_0000447 # intra cellular electrophysiology recording
-subClassOf http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000135 # intracellular recording
+subClassOf http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000429 # intracellular recording
 
 [Source term retrieval setting]
 includeNoIntermediates
@@ -301,7 +301,7 @@ subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
 http://purl.obolibrary.org/obo/ERO_0000946 # microelectrode amplifier
 subClassOf http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000020 # amplifier
 http://purl.obolibrary.org/obo/ERO_0000536 # patch clamp amplifier
-subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
+subClassOf http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000020 # amplifier
 http://purl.obolibrary.org/obo/ERO_0000948 # data acquisition system
 subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
 http://purl.obolibrary.org/obo/ERO_0000812 # electrophysiology data acquisition system

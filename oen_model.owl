@@ -141,13 +141,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_property"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000047"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_property"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000141"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000180"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -159,7 +159,31 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_property"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000303"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_property"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000131"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_property"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000141"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_property"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000480"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_property"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000047"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -203,12 +227,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000777"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000756"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -216,6 +234,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000466"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000777"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -279,6 +303,24 @@
     <rdf:Description rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000478">
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000453"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_property"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000260"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_property"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000033"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_property"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -294,24 +336,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_property"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000449"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000453"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_property"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000033"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_property"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000260"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -394,67 +418,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000759"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0400169"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000754"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000751"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000945"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0400087"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001173"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000750"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000753"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000749"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0400107"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -466,7 +430,37 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000745"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000948"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0400087"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000945"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000749"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000753"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000617"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -478,7 +472,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000761"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000757"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000762"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -497,37 +497,61 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000152"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000948"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000762"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000617"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000757"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000152"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000754"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000750"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000761"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000751"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000745"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000759"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0400107"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001173"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -548,13 +572,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_property"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000767"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000772"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_property"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000772"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000767"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -568,6 +592,90 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_property"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000509"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000786 -->
+
+    <rdf:Description rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000786">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_property"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000791"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000790 -->
+
+    <rdf:Description rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000790">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_property"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000798"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000795 -->
+
+    <rdf:Description rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000795">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_property"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000791"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000797 -->
+
+    <rdf:Description rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000797">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_property"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000791"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000799 -->
+
+    <rdf:Description rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000799">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_property"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000643"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_property"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000372"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000800 -->
+
+    <rdf:Description rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000800">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2015/6/untitled-ontology-157#has_property"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000785"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
