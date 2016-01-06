@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:dc="http://purl.org/metadata/dublin_core#"
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000757>  <http://purl.obolibrary.org/obo/BFO_0000051>  <http://purl.obolibrary.org/obo/OBI_0001002>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000757>  <http://purl.obolibrary.org/obo/BFO_0000051>  <http://purl.obolibrary.org/obo/ERO_0001173>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000757>  <http://purl.obolibrary.org/obo/BFO_0000051>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000746>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000757>  <http://purl.obolibrary.org/obo/BFO_0000051>  <http://purl.obolibrary.org/obo/OBI_0000945>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000757>  <http://purl.obolibrary.org/obo/BFO_0000051>  <http://purl.obolibrary.org/obo/OBI_0400169>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000757>  <http://purl.obolibrary.org/obo/BFO_0000051>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000122>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000757>  <http://purl.obolibrary.org/obo/BFO_0000051>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000756>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000757>  <http://purl.obolibrary.org/obo/BFO_0000051>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000152>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000757>  <http://purl.obolibrary.org/obo/BFO_0000051>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000744>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000757>  <http://purl.obolibrary.org/obo/BFO_0000051>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000749>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000757>  <http://purl.obolibrary.org/obo/BFO_0000051>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000747>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000757>  <http://purl.obolibrary.org/obo/BFO_0000051>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000745>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000757>  <http://purl.obolibrary.org/obo/BFO_0000051>  <http://purl.obolibrary.org/obo/CHMO_0002345>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000757>  <http://purl.obolibrary.org/obo/BFO_0000051>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000020>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000757>  <http://purl.obolibrary.org/obo/BFO_0000051>  <http://purl.obolibrary.org/obo/OBI_0000948>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000757>  <http://purl.obolibrary.org/obo/BFO_0000051>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000748>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000757>  <http://purl.obolibrary.org/obo/BFO_0000051>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000753>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000757>  <http://purl.obolibrary.org/obo/BFO_0000051>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000743>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000757>  <http://purl.obolibrary.org/obo/BFO_0000051>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000752>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000757>  <http://purl.obolibrary.org/obo/BFO_0000051>  <http://purl.obolibrary.org/obo/OBI_0400107>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000152>  <http://purl.obolibrary.org/obo/RO_0002177>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000745>
+    <http://purl.obolibrary.org/obo/CHMO_0002345>  <http://purl.obolibrary.org/obo/RO_0002170>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000745>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000745>  <http://purl.obolibrary.org/obo/RO_0002170>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000020>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000020>  <http://purl.obolibrary.org/obo/RO_0002170>  <http://purl.obolibrary.org/obo/OBI_0000948>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000020>  <http://purl.obolibrary.org/obo/RO_0002170>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000753>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000753>  <http://purl.obolibrary.org/obo/RO_0002170>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000748>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000748>  <http://purl.obolibrary.org/obo/RO_0002170>  <http://purl.obolibrary.org/obo/OBI_0400107>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000122>  <http://purl.obolibrary.org/obo/RO_0002177>  <http://purl.obolibrary.org/obo/OBI_0400169>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000122>  <http://purl.obolibrary.org/obo/RO_0002170>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000756>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000745>  <http://purl.obolibrary.org/obo/RO_0002177>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000749>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000744>  <http://purl.obolibrary.org/obo/RO_0002177>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000152>
+    <http://purl.obolibrary.org/obo/OBI_0001002>  <http://purl.obolibrary.org/obo/RO_0002177>  <http://purl.obolibrary.org/obo/OBI_0000945>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000152>  <http://purl.obolibrary.org/obo/BFO_0000051>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000751>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000152>  <http://purl.obolibrary.org/obo/BFO_0000051>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000750>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000152>  <http://purl.obolibrary.org/obo/BFO_0000051>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000754>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000750>  <http://purl.obolibrary.org/obo/RO_0001019>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000755>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000750>  <http://purl.obolibrary.org/obo/RO_0002177>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000751>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000754>  <http://purl.obolibrary.org/obo/RO_0002177>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000751>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000743>  <http://purl.obolibrary.org/obo/RO_0002177>  <http://purl.obolibrary.org/obo/ERO_0001173>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000743>  <http://purl.obolibrary.org/obo/RO_0002177>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000747>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000752>  <http://purl.obolibrary.org/obo/RO_0002177>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000747>
+    <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000752>  <http://purl.obolibrary.org/obo/BFO_0000051>  <http://purl.obolibrary.org/obo/OBI_0400169>
+    <http://purl.obolibrary.org/obo/OBI_0400169>  <http://purl.obolibrary.org/obo/RO_0002177>  <http://purl.obolibrary.org/obo/OBI_0000945>
+    <http://purl.obolibrary.org/obo/CHMO_0002345>  <http://purl.obolibrary.org/obo/RO_0002177>  <http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000747>
+
+    <rdf:Property rdf:about="http://purl.obolibrary.org/obo/RO_0001019">
+        <rdfs:label xml:lang="en">contains</rdfs:label>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000745">
+        <rdfs:label xml:lang="en">headstage</rdfs:label>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://purl.obolibrary.org/obo/OBI_0000948">
+        <rdfs:label xml:lang="en">oscilloscope</rdfs:label>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://purl.obolibrary.org/obo/OBI_0000945">
+        <rdfs:label xml:lang="en">vibration isolation table</rdfs:label>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000743">
+        <rdfs:label xml:lang="en">perfusion tubing system</rdfs:label>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://purl.obolibrary.org/obo/CHMO_0002345">
+        <rdfs:label xml:lang="en">reference electrode</rdfs:label>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000020">
+        <rdfs:label xml:lang="en">amplifier</rdfs:label>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://purl.obolibrary.org/obo/ERO_0001173">
+        <rdfs:label xml:lang="en">peristaltic pump </rdfs:label>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000744">
+        <rdfs:label xml:lang="en">pressure control line</rdfs:label>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000752">
+        <rdfs:label xml:lang="en">microscope stage</rdfs:label>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://purl.obolibrary.org/obo/OBI_0400169">
+        <rdfs:label xml:lang="en">microscope</rdfs:label>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000749">
+        <rdfs:label xml:lang="en">motorized micromanipulator</rdfs:label>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000753">
+        <rdfs:label xml:lang="en">digitizer</rdfs:label>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://purl.obolibrary.org/obo/RO_0002177">
+        <rdfs:label xml:lang="en">attached to part of</rdfs:label>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000755">
+        <rdfs:label xml:lang="en">intrapipette solution</rdfs:label>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://purl.obolibrary.org/obo/OBI_0001002">
+        <rdfs:label xml:lang="en">Faraday cage</rdfs:label>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000756">
+        <rdfs:label xml:lang="en">monitor</rdfs:label>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+        <rdfs:label xml:lang="en">has part</rdfs:label>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000122">
+        <rdfs:label xml:lang="en">camera</rdfs:label>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000750">
+        <rdfs:label xml:lang="en">patch pipette</rdfs:label>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000746">
+        <rdfs:label xml:lang="en">carbogen cylinder</rdfs:label>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://purl.obolibrary.org/obo/OBI_0400107">
+        <rdfs:label xml:lang="en">computer</rdfs:label>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000748">
+        <rdfs:label xml:lang="en">data acquisition board</rdfs:label>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://purl.obolibrary.org/obo/RO_0002170">
+        <rdfs:label xml:lang="en">connected to</rdfs:label>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000754">
+        <rdfs:label xml:lang="en">silver wire</rdfs:label>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000757">
+        <rdfs:label xml:lang="en">patch clamp setup</rdfs:label>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000152">
+        <rdfs:label xml:lang="en">patch electrode</rdfs:label>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000751">
+        <rdfs:label xml:lang="en">microelectrode holder</rdfs:label>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000747">
+        <rdfs:label xml:lang="en">recording chamber</rdfs:label>
+    </rdf:Property>
+
+</rdf:RDF>
