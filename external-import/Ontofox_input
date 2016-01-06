@@ -5,7 +5,6 @@ http://purl.org/incf/ontology/ExperimentalNeurophysiology/external-import/extern
 OBI
 
 [Low level source term URIs]
-http://purl.obolibrary.org/obo/BFO_0000051 # has part
 http://purl.obolibrary.org/obo/BFO_0000015 # process
 http://purl.obolibrary.org/obo/BFO_0000019 # quality
 http://purl.obolibrary.org/obo/OBI_0000968 # device
@@ -57,8 +56,6 @@ http://purl.obolibrary.org/obo/IAO_0000304 # caption
 http://purl.obolibrary.org/obo/OBI_0000935 # micromanipulator
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000051 # has part
-subClassOf http://www.w3.org/2002/07/owl#topObjectProperty
 http://purl.obolibrary.org/obo/BFO_0000015 # process
 subClassOf http://www.w3.org/2002/07/owl#Thing
 http://purl.obolibrary.org/obo/BFO_0000019 # quality
@@ -296,26 +293,3 @@ includeAllAnnotationProperties
 
 [Source annotation URIs to be excluded]
 
-[Source ontology]
-RO
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/RO_0002170 # connected to
-http://purl.obolibrary.org/obo/RO_0002177 # attached to part of
-http://purl.obolibrary.org/obo/RO_0001019 # contains
-
-[Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/RO_0002170 # connected to
-subClassOf http://www.w3.org/2002/07/owl#topObjectProperty
-http://purl.obolibrary.org/obo/RO_0002177 # attached to part of
-subClassOf http://www.w3.org/2002/07/owl#topObjectProperty
-http://purl.obolibrary.org/obo/RO_0001019 # contains
-subClassOf http://www.w3.org/2002/07/owl#topObjectProperty
-
-[Source term retrieval setting]
-includeNoIntermediates
-
-[Source annotation URIs]
-includeAllAnnotationProperties
-
-[Source annotation URIs to be excluded]
