@@ -1,0 +1,24 @@
+graph "test" {
+layout = "dot";
+rankdir="LR";
+"	oen:amplifier	"	--	"	oen:Axon Instruments, inc.	"	[label="	obi:is_manufactured_by	"	color=	"#c4c4c4"	fontcolor=	"#c4c4c4"	]	;
+"	oen:amplifier	"	--	"	Axoclamp-2B	"	[label="	oen:has_manufacturer_model_name	"	color=	"#c4c4c4"	fontcolor=	"#c4c4c4"	]	;
+"	oen:amplifier	"	--	"	oen:DC current command	"	[label="	bfo:has_part	"	color=	"#000000"	fontcolor=	"#000000"	]	;
+"	oen:DC current command	"	--	"	oen:DC current command range	"	[label="	oen:has_technical_characteristic	"	color=	"#00ff00"	fontcolor=	"#00ff00"	]	;
+"	oen:DC current command	"	--	"	nA	"	[label="	iao:has measurement unit label	"	color=	"#c4c4c4"	fontcolor=	"#c4c4c4"	]	;
+"	oen:DC current command range	"	--	"	[-100, +100]	"	[label="	oen:has_specified_range	"	color=	"#000000"	fontcolor=	"#000000"	]	;
+"	oen:DC current command range	"	--	"	oen:headstage current gain	"	[label="	pato:directly_associated_with	"	color=	"#000000"	fontcolor=	"#000000"	]	;
+"	oen:DC current command range	"	--	"	nA	"	[label="	iao:has measurement unit label	"	color=	"#c4c4c4"	fontcolor=	"#c4c4c4"	]	;
+"	oen:DC current command	"	--	"	-1.2	"	[label="	oen:has_experimental_setting	"	color=	"#0000ff"	fontcolor=	"#0000ff"	]	;
+"	oen:amplifier	"	--	"	oen:bridge balance command	"	[label="	bfo:has_part	"	color=	"#000000"	fontcolor=	"#000000"	]	;
+"	oen:bridge balance command	"	--	"	oen:bridge balance command range	"	[label="	oen:has_technical_characteristic	"	color=	"#00ff00"	fontcolor=	"#00ff00"	]	;
+"	oen:bridge balance command	"	--	"	Mohm	"	[label="	iao:has measurement unit label	"	color=	"#c4c4c4"	fontcolor=	"#c4c4c4"	]	;
+"	oen:bridge balance command range	"	--	"	[-100, +100]	"	[label="	oen:has_specified_range	"	color=	"#000000"	fontcolor=	"#000000"	]	;
+"	oen:bridge balance command range	"	--	"	oen:headstage current gain	"	[label="	pato:inversely_associated_with	"	color=	"#000000"	fontcolor=	"#000000"	]	;
+"	oen:bridge balance command range	"	--	"	Mohm	"	[label="	iao:has measurement unit label	"	color=	"#c4c4c4"	fontcolor=	"#c4c4c4"	]	;
+"	oen:bridge balance command	"	--	"	35	"	[label="	oen:has_experimental_setting	"	color=	"#0000ff"	fontcolor=	"#0000ff"	]	;
+"	oen:headstage	"	--	"	oen:Axon Instruments, inc.	"	[label="	obi:is_manufactured_by	"	color=	"#c4c4c4"	fontcolor=	"#c4c4c4"	]	;
+"	oen:headstage	"	--	"	HS-2A-x1LU	"	[label="	oen:has_manufacturer_model_name	"	color=	"#c4c4c4"	fontcolor=	"#c4c4c4"	]	;
+"	oen:headstage	"	--	"	oen:headstage current gain	"	[label="	oen:has_technical_characteristic	"	color=	"#00ff00"	fontcolor=	"#00ff00"	]	;
+"	oen:headstage current gain	"	--	"	1	"	[label="	obi:has_value_specification	"	color=	"#0000ff"	fontcolor=	"#0000ff"	]	;
+}

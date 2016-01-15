@@ -729,7 +729,59 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     <!-- http://www.w3.org/2002/07/owl#versionInfo -->
 
     <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
-    
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_9999999 -->
+
+    <owl:ObjectProperty rdf:about="&oen_term;oen_9999999">
+        <rdfs:label>has_technical_characteristic</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_9999998 -->
+
+    <owl:ObjectProperty rdf:about="&oen_term;oen_9999998">
+        <rdfs:label>has_experimental_setting</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_9999997 -->
+
+    <owl:ObjectProperty rdf:about="&oen_term;oen_9999997">
+        <rdfs:label>has_specified_range</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_9999996 -->
+
+    <owl:ObjectProperty rdf:about="&oen_term;oen_9999996">
+        <rdfs:label>has_manufacturer_model_name</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_9999995 -->
+
+    <owl:ObjectProperty rdf:about="&oen_term;oen_9999995">
+        <rdfs:label>has_pulling_parameter</rdfs:label>
+    </owl:ObjectProperty>
+
+
 
 
     <!-- 
@@ -8346,6 +8398,436 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="&oen_term;oen_0000757">
     	<rdfs:label xml:lang="en">patch clamp setup</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000758 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000758">
+    	<rdfs:label xml:lang="en">National Instruments Corporation</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000759 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000759">
+    	<rdfs:label xml:lang="en">Olympus Corporation</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000760 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000760">
+    	<rdfs:label xml:lang="en">DC current command range</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000761 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000761">
+    	<rdfs:label xml:lang="en">electrode puller delay</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000762 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000762">
+    	<rdfs:label xml:lang="en">Gilson, Inc.</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000763 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000763">
+    	<rdfs:label xml:lang="en">Vitek Industrial Video Products, Inc.</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000764 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000764">
+    	<rdfs:label xml:lang="en">micropipette</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000765 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000765">
+    	<rdfs:label xml:lang="en">recording chamber frame</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000766 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000766">
+    	<rdfs:label xml:lang="en">electrode puller filament range</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000767 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000767">
+    	<rdfs:label xml:lang="en">mOsmol</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000768 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000768">
+    	<rdfs:label xml:lang="en">Luigs and Neumann</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000769 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000769">
+    	<rdfs:label xml:lang="en">Dell Inc.</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000770 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000770">
+    	<rdfs:label xml:lang="en">Hitachi, Ltd.</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000771 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000771">
+    	<rdfs:label xml:lang="en">glass capillary</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000772 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000772">
+    	<rdfs:label xml:lang="en">microelectrode resistance</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000773 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000773">
+    	<rdfs:label xml:lang="en">pipette pulling</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000774 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000774">
+    	<rdfs:label xml:lang="en">chlorided</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000775 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000775">
+    	<rdfs:label xml:lang="en">Mohm</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000776 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000776">
+    	<rdfs:label xml:lang="en">electrode puller pull range</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000777 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000777">
+    	<rdfs:label xml:lang="en">Warner instruments</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000778 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000778">
+    	<rdfs:label xml:lang="en">peristaltic pump head</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000779 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000779">
+    	<rdfs:label xml:lang="en">borosilicate glass</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000780 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000780">
+    	<rdfs:label xml:lang="en">recording chamber frame insert</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000781 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000781">
+    	<rdfs:label xml:lang="en">electrode puller filament</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000782 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000782">
+    	<rdfs:label xml:lang="en">electrode puller heat range</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000783 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000783">
+    	<rdfs:label xml:lang="en">Sutter Instrument Company</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000784 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000784">
+    	<rdfs:label xml:lang="en">nA</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000785 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000785">
+    	<rdfs:label xml:lang="en">electrode puller pull</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000786 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000786">
+    	<rdfs:label xml:lang="en">recording chamber frame insert coverslip</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000787 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000787">
+    	<rdfs:label xml:lang="en">bridge balance command range</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000788 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000788">
+    	<rdfs:label xml:lang="en">Tektronix Inc.</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000789 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000789">
+    	<rdfs:label xml:lang="en">microelectrode wire</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000790 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000790">
+    	<rdfs:label xml:lang="en">headstage current gain</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000791 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000791">
+    	<rdfs:label xml:lang="en">electrode puller velocity range</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000792 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000792">
+    	<rdfs:label xml:lang="en">electrode puller heat</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000793 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000793">
+    	<rdfs:label xml:lang="en">G23 Instruments</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000794 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000794">
+    	<rdfs:label xml:lang="en">Axon Instruments, inc.</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000795 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000795">
+    	<rdfs:label xml:lang="en">electrode puller velocity</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000796 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000796">
+    	<rdfs:label xml:lang="en">DC current command</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000797 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000797">
+    	<rdfs:label xml:lang="en">fire polish</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000798 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000798">
+    	<rdfs:label xml:lang="en">electrode puller delay range</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000799 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000799">
+    	<rdfs:label xml:lang="en">Technical Manufacturing Corp.</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
+    	<dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000800 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0000800">
+    	<rdfs:label xml:lang="en">bridge balance command</rdfs:label>
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">OEN native</dc:source>
     </owl:Class>

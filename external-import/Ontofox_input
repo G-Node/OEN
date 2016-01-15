@@ -6,6 +6,12 @@ OBI
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/BFO_0000051 # has part
+http://purl.obolibrary.org/obo/OBI_0000304 # is manufactured by
+http://purl.obolibrary.org/obo/IAO_0000039 # has measurement unit label
+http://purl.obolibrary.org/obo/OBI_0001937 # has specified value
+http://purl.obolibrary.org/obo/OBI_0000647 # has supplier
+http://purl.obolibrary.org/obo/OBI_0000304 # is manufactured by
+http://purl.obolibrary.org/obo/IAO_0000004 # has measurement value
 http://purl.obolibrary.org/obo/BFO_0000015 # process
 http://purl.obolibrary.org/obo/BFO_0000019 # quality
 http://purl.obolibrary.org/obo/OBI_0000968 # device
@@ -55,7 +61,12 @@ http://purl.obolibrary.org/obo/IAO_0000308 # figure
 http://purl.obolibrary.org/obo/OBI_0200000 # data transformation
 http://purl.obolibrary.org/obo/IAO_0000304 # caption
 http://purl.obolibrary.org/obo/OBI_0000935 # micromanipulator
-http://purl.obolibrary.org/obo/OBI_0001002 # Faraday cagehttp://purl.obolibrary.org/obo/OBI_0000948 # oscilloscopehttp://purl.obolibrary.org/obo/OBI_0400107 # computerhttp://purl.obolibrary.org/obo/OBI_0000945 # vibration isolation table
+http://purl.obolibrary.org/obo/OBI_0001002 # Faraday cage
+http://purl.obolibrary.org/obo/OBI_0000948 # oscilloscope
+http://purl.obolibrary.org/obo/OBI_0400107 # computer
+http://purl.obolibrary.org/obo/OBI_0000945 # vibration isolation table
+http://purl.obolibrary.org/obo/OBI_0000816 # micro electrode
+http://purl.obolibrary.org/obo/OBI_0000955 # electrode puller
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000015 # process
@@ -154,7 +165,17 @@ http://purl.obolibrary.org/obo/IAO_0000304 # caption
 subClassOf http://purl.obolibrary.org/obo/IAO_0000030
 http://purl.obolibrary.org/obo/OBI_0000935 # micromanipulator
 subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
-http://purl.obolibrary.org/obo/OBI_0001002 # Faraday cagesubClassOf http://purl.obolibrary.org/obo/OBI_0000968 # devicehttp://purl.obolibrary.org/obo/OBI_0000948 # oscilloscopesubClassOf http://purl.obolibrary.org/obo/OBI_0000968 # devicehttp://purl.obolibrary.org/obo/OBI_0400107 # computersubClassOf http://purl.obolibrary.org/obo/OBI_0000968 # devicehttp://purl.obolibrary.org/obo/OBI_0000945 # vibration isolation table
+http://purl.obolibrary.org/obo/OBI_0001002 # Faraday cage
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
+http://purl.obolibrary.org/obo/OBI_0000948 # oscilloscope
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
+http://purl.obolibrary.org/obo/OBI_0400107 # computer
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
+http://purl.obolibrary.org/obo/OBI_0000945 # vibration isolation table
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
+http://purl.obolibrary.org/obo/OBI_0000816 # micro electrode
+subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
+http://purl.obolibrary.org/obo/OBI_0000955 # electrode puller
 subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
 
 [Source term retrieval setting]
@@ -169,6 +190,7 @@ includeAllAnnotationProperties
 ERO
 
 [Low level source term URIs]
+http://purl.obolibrary.org/obo/ERO_0001528 # has catalog number
 http://purl.obolibrary.org/obo/ERO_0000215 #light microscopy
 http://purl.obolibrary.org/obo/ERO_0000861 # stimulus isolator
 http://purl.obolibrary.org/obo/ERO_0000387 # data acquisition
@@ -265,6 +287,7 @@ CHEBI
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/CHEBI_23888 # drug
 http://purl.obolibrary.org/obo/CHEBI_38867 # anaesthetic
+http://purl.obolibrary.org/obo/CHEBI_33966 # elemental silver
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/CHEBI_23888 # drug
@@ -286,9 +309,17 @@ PATO
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/PATO_0000133 # orientation
+http://purl.obolibrary.org/obo/pato#directly_associated_with # directly associated with
+http://purl.obolibrary.org/obo/pato#inversely_associated_with # inversely associated with
+http://purl.obolibrary.org/obo/PATO_0001655 # osmolarity
+http://purl.obolibrary.org/obo/PATO_0001842 # pH
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/PATO_0000133 # orientation
+subClassOf http://purl.obolibrary.org/obo/BFO_0000019 # quality
+http://purl.obolibrary.org/obo/PATO_0001655 # osmolarity
+subClassOf http://purl.obolibrary.org/obo/BFO_0000019 # quality
+http://purl.obolibrary.org/obo/PATO_0001842 # pH
 subClassOf http://purl.obolibrary.org/obo/BFO_0000019 # quality
 
 
@@ -307,6 +338,13 @@ RO
 http://purl.obolibrary.org/obo/RO_0002170 # connected to
 http://purl.obolibrary.org/obo/RO_0002177 # attached to part of
 http://purl.obolibrary.org/obo/RO_0001019 # contains
+http://purl.obolibrary.org/obo/RO_0000086 # has quality
+http://purl.obolibrary.org/obo/RO_0002180 # has component
+http://purl.obolibrary.org/obo/RO_0002352 # input of
+http://purl.obolibrary.org/obo/RO_0002473 # composed primarily of
+http://purl.obolibrary.org/obo/RO_0002353 # output of
+http://purl.obolibrary.org/obo/RO_0000057 # has participant
+
 
 [Top level source term URIs and target direct superclass URIs]
 
@@ -328,6 +366,23 @@ http://purl.obolibrary.org/obo/CHMO_0002345 # reference electrode
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/CHMO_0002345 # reference electrode
 subClassOf http://purl.obolibrary.org/obo/OBI_0000968 # device
+
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+[Source annotation URIs to be excluded]
+
+[Source ontology]
+UO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/UO_0000011 # ampere
+
+[Top level source term URIs and target direct superclass URIs]
 
 
 [Source term retrieval setting]
