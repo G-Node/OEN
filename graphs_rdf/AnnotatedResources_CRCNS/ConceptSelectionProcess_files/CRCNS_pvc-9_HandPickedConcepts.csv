@@ -1,0 +1,59 @@
+match value;datafile description cue;ontology class label;ontology class iri
+100;stimulation intensity;stimulation intensity;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000377
+100;software;software;http://purl.obolibrary.org/obo/IAO_0000010
+100;Access resistance;Access resistance;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001016
+100;cell;cell;http://purl.obolibrary.org/obo/CL_0000000
+100;electrode;electrode;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000441
+100;data set;data set;http://purl.obolibrary.org/obo/IAO_0000100
+100;current clamp;current clamp;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000278
+100;cerebrospinal fluid;cerebrospinal fluid;http://purl.obolibrary.org/obo/UBERON_0001359
+100;experiment;experiment;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000410
+100;amplifier;amplifier;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000020
+100;recording;recording;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000443
+100;temperature;temperature;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000310
+100;aperture;aperture;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000125
+100;recording chamber;recording chamber;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000747
+100;micropipette;micropipette;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000764
+100;stimulation;stimulation;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000316
+100;digitizer;digitizer;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000753
+100;water immersion lens;water immersion lens;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000330
+100;microscope;microscope;http://purl.obolibrary.org/obo/OBI_0400169
+100;voltage clamp;voltage clamp;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000164
+100;numerical aperture;numerical aperture;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000043
+94;Warner Instruments;Warner instruments;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000777
+90;excitatory;Excitatory;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001145
+90;inhibitory;Inhibitory;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001143
+89;synaptic plasticity;Synaptic Plasticity;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001031
+88;spike frequency adaptation;Spike Frequency Adaptation;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001036
+87;input resistance;Input Resistance;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001023
+86;pipette solution;intrapipette solution;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000755
+84;Axon Instruments;Axon Instruments, inc.;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000794
+83;Device;device;http://purl.obolibrary.org/obo/OBI_0000968
+81;data files;dataset file;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000553
+81;application;drug application;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000468
+80;subset;in_subset;http://www.geneontology.org/formats/oboInOwl#inSubset
+80;resistance;seal resistance;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000383
+80;mOsm;mOsmol;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000767
+80;Slice preparation;brain slice preparation;http://purl.obolibrary.org/obo/ERO_0001345
+76;microscopy;light microscopy;http://purl.obolibrary.org/obo/ERO_0000215
+76;solution;bath solution;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000677
+72;frequency;Firing frequency;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001022
+70;square;square wave;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000475
+66;pulse s;pulse stimulus;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000188
+64;protocol;stimulus protocol;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000265
+63;Bessel;Bessel filter;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000301
+62;clamp;patch clamp;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000685
+61;file;data file;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000168
+60;to the patched;whole cell patch;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000089
+58;light;light source;http://purl.obolibrary.org/obo/OBI_0400065
+58;brain;brain region;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000706
+55;train;animal strain;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000093
+55;bath application;animal euthanization;http://purl.obolibrary.org/obo/OBI_0000919
+54;matrix;mesangial matrix;http://purl.obolibrary.org/obo/UBERON_0012352
+54;puller;electrode puller;http://purl.obolibrary.org/obo/OBI_0000955
+50;slice;slice thickness;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000674
+50;glass;glass capillary;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000771
+47;Method;analysis method;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000145
+46;the presynaptic stimulation;cutting solution;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000687
+44;lens;objective lens;http://purl.obolibrary.org/obo/ERO_0000453
+38;by linear fitting;minimum attenuation;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000248

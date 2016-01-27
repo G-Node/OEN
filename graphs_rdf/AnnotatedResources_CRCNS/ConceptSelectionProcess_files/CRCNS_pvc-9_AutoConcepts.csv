@@ -1,0 +1,227 @@
+match value,datafile description cue,ontology class label,ontology class iri
+100,stimulation intensity,stimulation intensity,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000377
+100,software,software,http://purl.obolibrary.org/obo/IAO_0000010
+100,Access resistance,Access resistance,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001016
+100,cell,cell,http://purl.obolibrary.org/obo/CL_0000000
+100,electrode,electrode,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000441
+100,data set,data set,http://purl.obolibrary.org/obo/IAO_0000100
+100,quality,quality,http://purl.obolibrary.org/obo/BFO_0000019
+100,current clamp,current clamp,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000278
+100,cerebrospinal fluid,cerebrospinal fluid,http://purl.obolibrary.org/obo/UBERON_0001359
+100,experiment,experiment,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000410
+100,amplifier,amplifier,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000020
+100,age,age,http://purl.obolibrary.org/obo/PATO_0000011
+100,organization,organization,http://purl.obolibrary.org/obo/OBI_0000245
+100,recording,recording,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000443
+100,temperature,temperature,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000310
+100,aperture,aperture,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000125
+100,contains,contains,http://purl.obolibrary.org/obo/RO_0001019
+100,recording chamber,recording chamber,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000747
+100,rate,rate,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000065
+100,micropipette,micropipette,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000764
+100,stimulation,stimulation,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000316
+100,size,size,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000307
+100,digitizer,digitizer,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000753
+100,water immersion lens,water immersion lens,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000330
+100,microscope,microscope,http://purl.obolibrary.org/obo/OBI_0400169
+100,filter,filter,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000292
+100,voltage clamp,voltage clamp,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000164
+100,numerical aperture,numerical aperture,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000043
+95,as quality,has quality,http://purl.obolibrary.org/obo/RO_0000086
+94,Warner Instruments,Warner instruments,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000777
+90,description,Description,http://purl.org/dc/elements/1.1/description
+90,excitatory,Excitatory,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001145
+90,inhibitory,Inhibitory,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001143
+89,synaptic plasticity,Synaptic Plasticity,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001031
+88,mode,model,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000566
+88,spike frequency adaptation,Spike Frequency Adaptation,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001036
+87,immersion lens,oil immersion lens,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000094
+87,input resistance,Input Resistance,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001023
+86,pipette solution,intrapipette solution,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000755
+84,Instruments,G23 Instruments,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000793
+84,Axon Instruments,"Axon Instruments, inc.",http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000794
+83,format,Format,http://purl.org/dc/elements/1.1/format
+83,Device,device,http://purl.obolibrary.org/obo/OBI_0000968
+82,Electrophysiology,Electrophysiology theory,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001313
+81,data files,dataset file,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000553
+81,application,drug application,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000468
+81,preparation,drug preparation,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000616
+80,transmission,transmission range,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000670
+80,subset,in_subset,http://www.geneontology.org/formats/oboInOwl#inSubset
+80,resistance,seal resistance,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000383
+80,mOsm,mOsmol,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000767
+80,Slice preparation,brain slice preparation,http://purl.obolibrary.org/obo/ERO_0001345
+78,potential,Fast potential,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001263
+77,details,job details,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000368
+77,Research,researcher,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000300
+76,input,input of,http://purl.obolibrary.org/obo/RO_0002352
+76,individual,individual count,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000275
+76,microscopy,light microscopy,http://purl.obolibrary.org/obo/ERO_0000215
+76,solution,bath solution,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000677
+75,publish,Publisher,http://purl.org/dc/elements/1.1/publisher
+75,threshold,Spike threshold,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001500
+75,lab,label,http://www.w3.org/2000/01/rdf-schema#label
+73,information,contact information,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000314
+72,analysis,image analysis,http://purl.obolibrary.org/obo/ERO_0000220
+72,property,Cable property,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001215
+72,extracellular,extracellular recording,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000135
+72,frequency,Firing frequency,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001022
+72,Scientific,scientific name,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000328
+70,square,square wave,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000475
+69,intensity,grating intensity,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000666
+69,adaptation,Adaptation ratio,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001000
+69,electrical,Electrical drift,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001213
+66,layer,cell layer,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000354
+66,per,person,http://xmlns.com/foaf/0.1/Person
+66,base,Rheobase,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001018
+66,pulse s,pulse stimulus,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000188
+66,System,subsystem,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000161
+66,Contrast,contrast used,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000495
+66,work,bodywork,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000004
+66,pulse,pulse rate,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000418
+64,protocol,stimulus protocol,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000265
+63,dataset,dataset quality,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000346
+63,Bessel,Bessel filter,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000301
+62,postsynaptic,Postsynaptic inhibition,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001157
+62,clamp,patch clamp,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000685
+62,color,color space,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000109
+62,visual,Visual map,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001169
+62,properties,device item properties,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000570
+62,connection,Connectionist model,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001130
+61,file,data file,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000168
+60,presynaptic,Presynaptic inhibition,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001158
+60,to the patched,whole cell patch,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000089
+58,Result,result file,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000331
+58,light,light source,http://purl.obolibrary.org/obo/OBI_0400065
+58,brain,brain region,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000706
+58,fluid,bodily fluid,http://purl.obolibrary.org/obo/UBERON_0006314
+57,Instrument,Sutter Instrument Company,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000783
+57,Use,user,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000560
+57,datasets include,dataset recording end time,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000098
+57,cortex,Auditory cortex,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001105
+57,Version,device version,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000700
+56,recordings,device recording point,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000381
+55,train,animal strain,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000093
+55,bath application,animal euthanization,http://purl.obolibrary.org/obo/OBI_0000919
+55,Animal,animal model,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000327
+55,stimulation a,stimulation acquisition extra time,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000037
+54,matrix,mesangial matrix,http://purl.obolibrary.org/obo/UBERON_0012352
+54,puller,electrode puller,http://purl.obolibrary.org/obo/OBI_0000955
+53,membrane,cell membrane capacity,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000702
+53,back,Biofeedback,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001086
+53,post,postal code,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000062
+53,spike,Spike peak,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001002
+52,start,stimulus start,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000544
+52,Product,chemical product,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000641
+52,Neuron,Neuronal birthday,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001120
+51,synaptic,Synaptic depression,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001280
+51,Care and Use,random dot size,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000366
+51,of the connection,perforated patch configuration,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000608
+50,out,output of,http://purl.obolibrary.org/obo/RO_0002353
+50,control,pressure control line,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000744
+50,block,recording block,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000725
+50,fitting,Parameter Fitting,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001054
+50,with,overlap with,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000273
+50,slice,slice thickness,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000674
+50,and,shorthand,http://www.geneontology.org/formats/oboInOwl#shorthand
+50,Axon,Axon Hillock,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001187
+50,glass,glass capillary,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000771
+48,a linear fit,cell baseline firing rate,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000082
+48,the slice during,training duration,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000151
+48,no change,Ion channel kinetics,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001065
+47,cooled,Junctional fold,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001156
+47,Method,analysis method,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000145
+47,Technical,Technical Manufacturing Corp.,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000799
+47,from,imported from,http://purl.obolibrary.org/obo/IAO_0000412
+47,in strength after,slice orientation,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000324
+47,vertical,random dot vertical extent,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000083
+46,the presynaptic stimulation,cutting solution,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000687
+46,extracellular stimulation experiments,square wave modulation frequency,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000110
+46,Tech,technique,http://purl.obolibrary.org/obo/ERO_0000007
+45,Digidata digitizer A,dataset recording start time,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000573
+45,to estimate,method of identification,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000112
+45,these subfolders contains,patch clamp device configuration,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000488
+45,evoked,Evoked potential,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001273
+44,about the recording,Cut open oocyte voltage clamp recording protocol,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001314
+44,lens,objective lens,http://purl.obolibrary.org/obo/ERO_0000453
+44,Plus Technical Products,analog input used channel count,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000295
+44,the data we,bath temperature,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000459
+44,deflection,digestive system fluid or secretion,http://purl.obolibrary.org/obo/UBERON_0006911
+44,Osmolarity was adjusted,stimulus isolator input range maximum voltage,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000455
+43,identified under light,has specified value,http://purl.obolibrary.org/obo/OBI_0001937
+43,the input resistance,light source lux intensity,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000182
+43,for plasticity,perfusion drug application route,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000525
+43,signal,Signaling pathway,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001041
+43,the paper,Size principle,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001202
+43,Later,Lateral inhibition,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001155
+43,aperture water,perfusion tubing system,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000743
+42,The,Therapeutic,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001028
+42,Hz for at,data transformation,http://purl.obolibrary.org/obo/OBI_0200000
+42,control details,cell rheobase,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000733
+42,is being used,light-emitting diode,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000432
+42,excessive access,Labeled line code,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001123
+42,time,ramp start time,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000675
+42,extracellular stimulation and,sample preparation for assay,http://purl.obolibrary.org/obo/OBI_0000073
+41,reading and,square wave modulation amplitude,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000251
+41,a Matlab converter,image acquisition color temperature,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000551
+41,files are in,Cell surface area,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001013
+41,cortex area V,storage file creation date,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000569
+40,recordings from layer,Macropatch voltage clamp recording protocol,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001315
+40,stimulation pulse s,cell identification method,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000258
+40,high,high pass filter,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000039
+40,significant increase or,high pass filter order,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000070
+40,outcome,DC current command,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000796
+40,not,notch filter,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000606
+40,the data please,electrode puller filament,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000781
+39,and analyzing this,excitation filter wavelength,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000200
+38,by linear fitting,minimum attenuation,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000248
+38,made with,image acquisition lens,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000514
+38,a baseline of,scanner pixel size,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000742
+38,which extracellular stimulation,stimulation luminance high,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000563
+38,KHz digitization rate,image acquisition spatial resolution,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000623
+38,value,has measurement value,http://purl.obolibrary.org/obo/IAO_0000004
+38,brain was,storage file path,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000507
+38,hyperpolarizing,secretion of lacrimal gland,http://purl.obolibrary.org/obo/UBERON_0001827
+38,were discarded After,discrete window method,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000654
+37,and Excel and,candela per square meter,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000353
+37,intensity was adjusted,discrete signal left sweep,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000235
+36,as evaluated,analog input sampling rate,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000486
+36,a significant,paper digital object identifier,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000208
+36,was carried out,Two electrode voltage clamp recording protocol,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001177
+35,in Clampfit,recording dataset,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000738
+35,significant increase,stimulus intensity offset,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000710
+35,Axon Instruments provides,image acquisition contrast adjustment,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000272
+35,or were excluded,light source wavelength lower bound,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000691
+34,mlmin with oxygenated,Synaptic modulation of active current,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001032
+34,incomplete or,Integrative zone,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001159
+34,open tip,storage file location,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000153
+34,layer  pyramidal,instantaneous spike rate method,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000155
+33,linear fit p,inside out patch configuration,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000124
+33,all,Winner-take-all,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001025
+33,least  seconds,present_in_taxon,http://purl.obolibrary.org/obo/RO_0002175
+33,recorded to,Post-Tetanic Potentiation,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001047
+33,recording  h recording time,signal processing filter bandform,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000640
+32,were discarded Once,peristimulus time histogram analysis,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000036
+32,unstable baseline,perfect integrate and fire,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000597
+32,header containing,continuous drug application start,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000224
+32,Later in,Luigs and Neumann,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000768
+32,changes,cellular_component,http://purl.obolibrary.org/obo/GO_0005575
+31,quality control,neural structure brain region,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000504
+31,International Slices,Attractor Neural Network,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001088
+31,cut,cutoff frequency,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000653
+31,putative inhibitory neurons,aqueous humor of eyeball,http://purl.obolibrary.org/obo/UBERON_0001796
+30,were digitized at,image acquisition gamma value,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000129
+30,solution containing in,temperature control bath,http://purl.obolibrary.org/obo/OBI_0400120
+30,recommend,amplifier operation mode,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000444
+30,for,has ID policy for,http://purl.obolibrary.org/obo/IAO_0000598
+29,a submerged recording,stimulus isolator output range minimum voltage,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000494
+29,room,experimental setup room,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000322
+29,Once the wholecell,participant under investigation role,http://purl.obolibrary.org/obo/OBI_0000097
+28,filtered online at,Cell-detached outside-out single-channel recording protocol,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001316
+28,during which,Calcium dynamics,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001083
+27,If you publish,discrete drug application time,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000719
+26,protocol for plasticity,stimulus isolator input range minimum voltage,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000438
+26,AM Systems Carlsborg,Butterworth filter,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000527
+26,to its,continuous drug application rate,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000345
+25,data plus,cell baseline membrane potential noise,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000280
+23,experiments,back-forth stimulation movement stimulus,http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000634

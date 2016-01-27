@@ -1,0 +1,40 @@
+match value;datafile description cue;ontology class label;ontology class iri
+100;sampling rate;sampling rate;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000034
+100;microscope;microscope;http://purl.obolibrary.org/obo/OBI_0400169
+100;temperature;temperature;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000310
+100;experimenter;experimenter;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000559
+100;ganglion;ganglion;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000689
+100;monitor;monitor;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000756
+100;electrode;electrode;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000441
+100;frame rate;frame rate;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000662
+100;recording;recording;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000443
+100;diameter;diameter;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000105
+100;size;size;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000307
+100;pixel size;pixel size;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000261
+100;recording start time;recording start time;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000728
+100;contains;contains;http://purl.obolibrary.org/obo/RO_0001019
+100;address;address;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000087
+100;white noise;white noise;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000075
+100;cell;cell;http://purl.obolibrary.org/obo/CL_0000000
+100;rate;rate;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000065
+100;stimulus;stimulus;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000050
+88;Data file;data file;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000168
+87;recording date;recording datetime;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000535
+85;electrode array;multielectrode array;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000184
+82;Electrophysiology;Electrophysiology theory;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001313
+73;dataset;dataset file;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000553
+73;information;contact information;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000314
+72;analysis;image analysis;http://purl.obolibrary.org/obo/ERO_0000220
+72;extracellular;extracellular recording;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000135
+66;algorithm;analysis algorithm;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000635
+66;presentation;presentation of stimulus;http://purl.obolibrary.org/obo/OBI_0000807
+60;example;example of usage;http://purl.obolibrary.org/obo/IAO_0000112
+60;web;website;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000693
+54;set;data set;http://purl.obolibrary.org/obo/IAO_0000100
+52;luminance;stimulation luminance low;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000177
+50;stamp;event timestamp;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000206
+50;sampling rate  kHz;amplifier type;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000236
+44;start time stamp;recording start date and time;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000721
+40;data;data acquisition;http://purl.obolibrary.org/obo/ERO_0000387
+36;Content;information content entity;http://purl.obolibrary.org/obo/IAO_0000030
+29;room;experimental setup room;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000322

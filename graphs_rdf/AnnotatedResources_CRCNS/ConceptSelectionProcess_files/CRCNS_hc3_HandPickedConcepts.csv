@@ -1,0 +1,38 @@
+match value;datafile description cue;ontology class label;ontology class iri
+100;behavior;behavior;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000517
+100;rate;rate;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000065
+100;configuration file;configuration file;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000469
+100;filter;filter;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000292
+100;position;position;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000565
+100;cell;cell;http://purl.obolibrary.org/obo/CL_0000000
+100;recording;recording;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000443
+100;brain region;brain region;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000706
+100;experiment;experiment;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000410
+100;size;size;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000307
+100;window;window;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000213
+100;count;count;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000413
+100;software;software;http://purl.obolibrary.org/obo/IAO_0000010
+100;electrode;electrode;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000441
+100;data set;data set;http://purl.obolibrary.org/obo/IAO_0000100
+100;process;process;http://purl.obolibrary.org/obo/BFO_0000015
+100;data file;data file;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000168
+100;sampling rate;sampling rate;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000034
+93;compute;computer;http://purl.obolibrary.org/obo/OBI_0400107
+93;synchronization;Synchronization;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001030
+83;Figure;figure;http://purl.obolibrary.org/obo/IAO_0000308
+76;behavioral;behavioral assay;http://purl.obolibrary.org/obo/ERO_0001116
+75;threshold;Spike threshold;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001500
+73;dataset;dataset file;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000553
+72;frequency;Firing frequency;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001022
+64;firing rate;Spontaneous firing rate;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001011
+64;movement;movement stimulus;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000382
+61;type;cell type;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000474
+61;wave;sine wave;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000727
+58;light;light source;http://purl.obolibrary.org/obo/OBI_0400065
+57;method;analysis method;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000145
+54;neural;neural structure;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000557
+54;number of recording;recording file;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000138
+52;depth;position depth;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000518
+47;level directory;extracellular recording;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000135
+42;content;information content entity;http://purl.obolibrary.org/obo/IAO_0000030
+40;spike sorting including;sliding window method;http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000332
