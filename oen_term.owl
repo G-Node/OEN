@@ -8831,6 +8831,1988 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000000"/>
     	<dc:source xml:lang="en">OEN native</dc:source>
     </owl:Class>
+    
+    
+    
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0000999 -->
+    
+    <owl:Class rdf:about="&oen_term;oen_0000999">
+        <rdfs:label xml:lang="en">electrophysiology concept</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:comment>20160127 ant1b, created to accomodate OEN concept branch temrs imported from Neurolex.</rdfs:comment>
+        <dc:source xml:lang="en">OEN native</dc:source>
+    </owl:Class>
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001237 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001237">
+    	<rdfs:label xml:lang="en">3 dB frequency</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The frequency at which the signal voltage at the output of the filter falls to SQRT(1/2) of the amplitude of the input signal</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">-3 dB frequency</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">cutoff frequency</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">corner frequency</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001212 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001212">
+    	<rdfs:label xml:lang="en">AC couple</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The continuous removal of DC shifts during signal recordings.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001004 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001004">
+    	<rdfs:label xml:lang="en">ADP amplitude</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Amplitude from first AP onset to maximum voltage, typically more depolarized that the resting membrane potential</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">after-depolarization potential amplitude</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">afterdepolarization potential amplitude</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">ADP magnitude</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">ADP amplitude</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">ADP size</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">ADP peak amplitude</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">ADP</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001003 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001003">
+    	<rdfs:label xml:lang="en">ADP duration</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Duration from first AP onset to maximum ADP</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">after-depolarization potential duration</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">afterdepolarization potential duration</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">ADP duration</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001016 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001016">
+    	<rdfs:label xml:lang="en">access resistance</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Sum of the electrode resistance and the resistance at the electrode-cell junction</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">access resistance</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">series resistance</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001092 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001092">
+    	<rdfs:label xml:lang="en">active dendrite</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Dendrites with active conductances which can influence the affects of synaptic inputs and are sometimes  capable of generating action potentials.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001091 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001091">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:3543</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">activity pattern</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">In neurons, neural circuits or neural models refers to spatial or temporal patterns (or both) of spiking activity.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001000 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001000">
+    	<rdfs:label xml:lang="en">adaptation ratio</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Ratio of durations between early and late AP inter-spike intervals</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">adaptation percent</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001099 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001099">
+    	<rdfs:label xml:lang="en">adequate stimulus</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The particular type of stimulus energy to which a sensory receptor cell is sensitive</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001101 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001101">
+    	<rdfs:label xml:lang="en">aggregate field theory</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A theory of brain function, which states that individual mental functions or behaviors are performed by the brain as a whole, rather than by discrete portions of the brain.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001236 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001236">
+    	<rdfs:label xml:lang="en">attenuation</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Attenuation is the reciprocal of gain. (adapted from the Axon Guide)</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001088 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001088">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:83539</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">attractor neural network</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001105 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001105">
+    	<rdfs:label xml:lang="en">auditory cortex</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Neocortical areas that are functionally activated predominantly to sound, with the shortest latency.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001170 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001170">
+    	<rdfs:label xml:lang="en">auditory map</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A representation of the audible sound spectrum in the auditory cortex.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001279 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001279">
+    	<rdfs:label xml:lang="en">augmentation</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A form of short-term synaptic plasticity associated with an increase in the number of synaptic vesicles that release their transmitter and acts at the second scale.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001117 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001117">
+    	<rdfs:label xml:lang="en">axoaxonic synapse</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The synapse made by an axon terminal of one neuron onto the axon of another.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">axo-axonic synapse</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001118 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001118">
+    	<rdfs:label xml:lang="en">axodendritic synapse</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The synapse made by an axon terminal of one neuron onto the dendrite of another.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">axo-dendritic synapse</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001187 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001187">
+    	<rdfs:label xml:lang="en">axon hillock</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Cone shaped elevation from which the axon originates;  in Nissl stained preparations, the axon hillock usually can be identified as a region of the perikaryon that is distinguished by a deficiency of Nissl substance (Peters, Palay and Webster, 1991).
+
+In physiology: A specialized component of the neuron, usually located in the initial segment of the axon where the action potential is initiated.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">trigger zone</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">action potential initial zone</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">initial segment</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001114 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001114">
+    	<rdfs:label xml:lang="en">axon transport</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The active movement of a neuron&amp;apos;s constituents within the axon.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">axon cargo transport</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">axonal transport</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001119 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001119">
+    	<rdfs:label xml:lang="en">axosomatic synapse</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The synapse made by an axon terminal of one neuron on the cell body of aanother.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">axo-somatic synapse</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001086 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001086">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:116857</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">biofeedback</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The process of becoming aware of various physiological functions using instruments that provide information on the activity of those same systems, with a goal of being able to manipulate them at will</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001215 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001215">
+    	<rdfs:label xml:lang="en">cable property</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A set of equations that describe the movement of electricity in a cable.  These equations also describe the movement of electricity in axons.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">cable properties</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001083 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001083">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:98012</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">calcium dynamics</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001024 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001024">
+    	<rdfs:label xml:lang="en">cell capacitance</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Neuron capacitance, typically measured by dividing membrane time constant by membrane resistance</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">cell_capacitance</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">cm</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">C</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">capacitance</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">whole cell capacitance</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001017 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001017">
+    	<rdfs:label xml:lang="en">cell diameter</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Diameter of the cell soma</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">diameter</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">soma diameter</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001013 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001013">
+    	<rdfs:label xml:lang="en">cell surface area</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Cross-sectional area of the cell</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">area</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">surface area</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001316 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001316">
+    	<rdfs:label xml:lang="en">cell-detached outside-out single-channel recording protocol</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001146 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001146">
+    	<rdfs:label xml:lang="en">cellular excitation</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The depolarization of a postsynaptic cell, increasing the likelihood that an action potential will be generated.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">excitation</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001121 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001121">
+    	<rdfs:label xml:lang="en">central pattern generator</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A network of neurons capable of generating rhythmic motor activity without any afferent activity or other source of rhythmic external drive., A network of neurons capable of generating rhythmic motor activity without any afferent activity or other source of rhythmic external drive., A network of neurons capable of generating rhythmic motor activity without any afferent activity or other source of rhythmic external drive.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001122 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001122">
+    	<rdfs:label xml:lang="en">chemotropism</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The hypothesis that developing axons are attracted toward diffusible factors secreted by particular groups of target cells.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">chemoattraction</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001082 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001082">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:3632</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">coincidence detection</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Process by which a neuron, neural circuit or neural model detects simultaneous but spatially separate synaptic inputs.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">coincidence detector</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001224 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001224">
+    	<rdfs:label xml:lang="en">conductance</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Measure of how easily electricity flows along a certain path through an electrical element. The SI derived unit of conductance is the siemens.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001080 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001080">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:114307</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">conduction failure</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A failure of the action potential to propagate down the axon.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001129 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001129">
+    	<rdfs:label xml:lang="en">connectional specificity</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The principle that neurons form specific functional interconnections, based on three anatomical observations: 1. there is no cytoplasmic continuity between nerve cells; 2. neurons do not connect indiscriminately to one another or form random networks; 3. each cell communicates with specific postsynaptic cells but not with others, and always at specialized sites (synapses).</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001130 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001130">
+    	<rdfs:label xml:lang="en">connectionist model</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A model of neural function with parallel and distributed processing components.  Also neural net model.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">neural net model</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001079 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001079">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:114660</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">connectivity matrix</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001132 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001132">
+    	<rdfs:label xml:lang="en">convergence</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A pattern of connections between neurons in which several presynaptic neurons make a synaptic connection onto a common postsynaptic cell.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001314 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001314">
+    	<rdfs:label xml:lang="en">cut open oocyte voltage clamp recording protocol</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A technique to measure the ion currents across the membrane of oocytes, while holding the membrane voltage at a set level, while using two electrodes, one holds the membrane potential steady while the other measures current and the feedback circuit used to bridge the electrodes.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001230 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001230">
+    	<rdfs:label xml:lang="en">decade</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">a range of frequencies where the largest frequency is ten times the lowest frequency (adapted from the Axon Guide)</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001134 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001134">
+    	<rdfs:label xml:lang="en">decerebrate preparation</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Experimental animal in which the brain stem is cut at the level of the midbrain.  Used to study spinal reflexes.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001078 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001078">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:116944</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">deep brain stimulation</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A surgical treatment involving the implantation of a medical device called a brain pacemaker, which sends electrical impulses to specific parts of the brain.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">DBS</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001077 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001077">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:3629</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">dendritic action potential</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Action potentials generated in the dendrites of a neuron.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001116 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001116">
+    	<rdfs:label xml:lang="en">dendroaxonic synapse</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The synapse made by an axon terminal of one neuron onto the axon of another.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">dendro-axonic_synapse</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001137 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001137">
+    	<rdfs:label xml:lang="en">depolarization</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A decrease in the negative membrane potential of a cell.  Depolarization increases the likelihood that a cell will fire an action potential.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001076 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001076">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:121254</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">depolarization block</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Process wherea depolarization blocking agent or drug inhibits the depolarization of the membrane potential due to an external signa, for example, by blocking the channels responsible for depolarization or by opening K+ channels.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001138 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001138">
+    	<rdfs:label xml:lang="en">desensitization</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The process whereby the binding of a ligand to a receptor leads to the decreased effectiveness of the receptor.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001073 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001073">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:116907</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">direction selectivity</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001178 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001178">
+    	<rdfs:label xml:lang="en">discontinuous single cell voltage clamp</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">An experimental protocol that prevents the opening and closing of voltage-gated channels and removes their influence on the membrane potential.  A direct measure of membrane current can be obtained with this technique by recording the current that must be generated by the voltage clamp to keep the membrane potential from changing.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001139 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001139">
+    	<rdfs:label xml:lang="en">distributed processing</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Routing of information to a number of different areas in the brain</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001131 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001131">
+    	<rdfs:label xml:lang="en">divergence</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A pattern of conncetions between neurons in which a simgle presynaptic neuron forms synapses on several different postsynaptic cells.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001141 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001141">
+    	<rdfs:label xml:lang="en">dynamic polarization</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The principle that information within a neuron flows in a predictable and consistent direction.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">the principle of dynamic polarization</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001140 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001140">
+    	<rdfs:label xml:lang="en">dysmetria</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Error in the range and force of movement</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001232 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001232">
+    	<rdfs:label xml:lang="en">electical overshoot</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">When the phase shift in the pass band is not linearly dependent on the frequency of the sinusoidal component, the filtered signal generally exhibits overshoot. (adapted from the Axon Guide)</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001213 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001213">
+    	<rdfs:label xml:lang="en">electrical drift</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A gradual shift in DC potential during a recording period, seemingly unrelated to biological phenomena rather an artifact.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">drift</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001211 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001211">
+    	<rdfs:label xml:lang="en">electrical offset</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">DC shift in input voltage required to produce a zero output voltage when no signal is applied to an amplifier.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">zeroing</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001210 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001210">
+    	<rdfs:label xml:lang="en">electrical saturation</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">When the output voltage goes to either the extreme maximum or minimum end of its range, disallowing further discrimination of the signal.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">saturation</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001218 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001218">
+    	<rdfs:label xml:lang="en">electromotive force</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A source of electrical potential, suh as an ionic gradient.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">emf</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">electromotance</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001313 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001313">
+    	<rdfs:label xml:lang="en">electrophysiology theory</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Any theory that attempts to explain an aspect of neuronal function.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001128 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001128">
+    	<rdfs:label xml:lang="en">electrotonic conduction</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The passive spread of voltage changes between different regions of the neuronal membrane.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001276 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001276">
+    	<rdfs:label xml:lang="en">electrotonic potential</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">a passive or analog electrical potential, that decays in space and time according to the time and space constants.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">subthreshold potential</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001072 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001072">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:64175</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">electrotonus</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Passive spread of charge within a neuron.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001275 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001275">
+    	<rdfs:label xml:lang="en">end-plate potential</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">synaptic potential recorded from the muscle cells.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">EPP</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">muscle potential</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001274 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001274">
+    	<rdfs:label xml:lang="en">equilibrium potential</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The specific membrane potential for a given ion species at which the electrical force, due to the charge on the membrane is equal and oppositely directed to the chemical driving force resulting from the concentration gradient, so that no net movement of charge occurs.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">nernst potential</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">reversal potential</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001219 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001219">
+    	<rdfs:label xml:lang="en">equivalent circuit</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Representation of the electrical properties of individual neurons or groups of neurons in a conventional electrical circuit consisting only of conductors, resistors, batteries and capacitors.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001273 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001273">
+    	<rdfs:label xml:lang="en">evoked potential</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The recorded electrical responses from nerve, muscle, SENSORY RECEPTOR, or area of the CENTRAL NERVOUS SYSTEM following stimulation. They range from less than a microvolt to several microvolts. The evoked potential can be auditory (EVOKED POTENTIALS, AUDITORY), somatosensory (EVOKED POTENTIALS, SOMATOSENSORY), visual (EVOKED POTENTIALS, VISUAL), or motor (EVOKED POTENTIALS, MOTOR), or other modalities that have been reported. Often used synonymously to event-related potentials which are associated with higher level cognitive processes.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">event related potentials</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001145 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001145">
+    	<rdfs:label xml:lang="en">excitatory</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Said of a neuron, synapse, or synaptic potential that produces depolarization of the postsynaptic cell.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001262 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001262">
+    	<rdfs:label xml:lang="en">excitatory post synaptic potential</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A temporary change in postsynaptic membrane potential, usually a depolarization, resulting from presynaptic release of neurotransmitter. This is usually due to the flow of positively charged ions into the postsynaptic cell, but can also be due to a reduction in negatively charged ionic current or the turning off of a potassium current.  An EPSP generally increases the likelihood of action potential discharge in the postsynaptic neuron.  In common usage, the EPSP typically refers to an evoked EPSP.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">excitatory post-synaptic potential</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">excitatory postsynaptic potential</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001070 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001070">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:84598</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">extracellular field potential</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A potential difference in voltage between two spatial regions, both outside of cellular membrane.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">extracellular field</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001012 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001012">
+    	<rdfs:label xml:lang="en">FI slope</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The slope of the current-discharge relationship from discharge threshold</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">slope of FI curve</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">FR vs. I slope</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001069 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001069">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:22010</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">facilitation</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Facilitation Increase in the probability that an event of interest happens. Typically related to the probability of spiking in response to stimulation or to an increase in the efficacy of synaptic input.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001010 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001010">
+    	<rdfs:label xml:lang="en">fast afterhyperpolarization amplitude</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Amplitude from first AP onset to minimum voltage, explictly refered to as fast</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">fAHP size</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">fAHP amp</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">fAHP amplitude</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">fast AHP amplitude</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">fast AHP size</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001008 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001008">
+    	<rdfs:label xml:lang="en">fast afterhyperpolarization duration</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Duration from first AP onset to minimum voltage, explictly refered to as fast</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">fAHP duration</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">fAHP time</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">fast AHP duration</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">fast AHP time</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001263 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001263">
+    	<rdfs:label xml:lang="en">fast potential</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A class of synaptic potential that persists over the millisecond time scale.  Typical fast potentials have direct mechanisms such as activation of transmitter-gated ion channels.  The term is found in older electrophysiology literature.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001154 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001154">
+    	<rdfs:label xml:lang="en">feed-forward inhibition</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">An inhibitory circuit in which a neuron both directly excites a target and indirectly inhibits it by exciting an interposed inhibtory neuron.  This type of circuit, common in the reciprocal innervation activated by monosynaptic reflex systems, coordinates competing the inhibition of an extensor muscle.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">reciprocal inhibition</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001022 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001022">
+    	<rdfs:label xml:lang="en">firing frequency</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">AP discharge rate</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">firing rate</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">FR</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001001 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001001">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:97752</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">first spike latency</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Duration to first AP following a depolarizing current step of fixed amplitude; Time lag between the start of the input to a neuron or model of a neuron and the occurance of the first action potential.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">1st AP time</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">spike latency</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001124 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001124">
+    	<rdfs:label xml:lang="en">frequency code</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A method of coding whereby the strength of the stimulus is coded by the firing rate of a neuron</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001147 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001147">
+    	<rdfs:label xml:lang="en">G-protein gated channel</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A type of ligand gated channel, sensitive to intracellular G-protein binding</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001152 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001152">
+    	<rdfs:label xml:lang="en">gating</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The active transition of an ion channel between open and closed states.  Gating can be direct or indirect.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001206 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001206">
+    	<rdfs:label xml:lang="en">hebb synapse</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">&amp;quot;When an axon of cell A is near enough to excite a cell B and repeatedly or persistently takes part in firing it, some growth process or metabolic change takes place in one or both cells such that A&amp;apos;s efficiency, as one of the cells firing B is increased.&amp;quot;</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">hebbian synapse</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">hebb&amp;apos;s rule</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001216 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001216">
+    	<rdfs:label xml:lang="en">hydration sphere</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A cloud of water molecules that surrounds an ion in solution.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">waters of hydration</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001136 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001136">
+    	<rdfs:label xml:lang="en">hyperpolarization</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">An increasae in the negative membrane potential of a cell.  Hyperpolarization decreases the likelihood that a cell will fire an action potential.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001310 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001310">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:243</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">I L high threshold</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">&amp;quot;Long-lasting&amp;quot;; slowly inactivating; threshold around -20 mV</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">I calcium</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001309 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001309">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:244</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">I N</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">&amp;quot;Neither&amp;quot;; rapidly inactivating; threshold around -20 mV</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">I calcium</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001067 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001067">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:3640</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">influence of dendritic geometry</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The impact that the morphology or shape of the dendrites has on the propagation of electrical signals within a neuron.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001144 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001144">
+    	<rdfs:label xml:lang="en">inhibition</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The process by which a response (neural or behavioral) is diminished.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001143 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001143">
+    	<rdfs:label xml:lang="en">inhibitory</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A synapse in which an action potential in the presynaptic cell reduces the probability of an action potential occurring in the postsynaptic cell.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001023 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001023">
+    	<rdfs:label xml:lang="en">input resistance</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Input resistance at steady-state (steady-state of voltage response to current injection)</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">R&amp;lt;sub&amp;gt;in&amp;lt;/sub&amp;gt;</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">R&amp;lt;sub&amp;gt;N&amp;lt;/sub&amp;gt;</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">maximum R&amp;lt;sub&amp;gt;in&amp;lt;/sub&amp;gt;</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">R&amp;lt;sub&amp;gt;input&amp;lt;/sub&amp;gt;</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">rin</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">RN</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001159 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001159">
+    	<rdfs:label xml:lang="en">integrative zone</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The initial segment of the axon where the decision is made to initiate an action potential.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001065 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001065">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:3631</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">ion channel kinetics</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001156 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001156">
+    	<rdfs:label xml:lang="en">junctional fold</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The specialized membrane in folding at the end plate of a muscle fiber in the region of the motor nerve terminal</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001123 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001123">
+    	<rdfs:label xml:lang="en">labeled line code</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A method of coding information based on specific neuronal pathways, or private lines that distinguish activity in one pathway from that in another pathway.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001155 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001155">
+    	<rdfs:label xml:lang="en">lateral inhibition</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">the capacity of an excited neuron to reduce the activity of its neighbors.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">feedback inhibition</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">lateral inhibition</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001126 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001126">
+    	<rdfs:label xml:lang="en">leakage conductance</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The total conductance of a population of resting ion channels.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001175 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001175">
+    	<rdfs:label xml:lang="en">local circuit role</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A series of connections between neurons that constitute a functional unit</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">pathway</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">small circuit</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001100 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001100">
+    	<rdfs:label xml:lang="en">localization theory</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A theory of brain function, which states that individual mental functions or behaviors are performed by specific parts of brain, rather than by the brain as a whole.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001063 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001063">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:88214</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">long-qt</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A condition that is characterized by episodes of fainting (SYNCOPE) and varying degree of ventricular arrhythmia as indicated by the prolonged QT interval. The inherited forms are caused by mutation of genes encoding cardiac ion channel proteins</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001062 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001062">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:3647</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">long-term synaptic plasticity</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001315 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001315">
+    	<rdfs:label xml:lang="en">macropatch voltage clamp recording protocol</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001166 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001166">
+    	<rdfs:label xml:lang="en">map reorganization</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Changes to a map after a learning or a traumatic event, for example PMID: 2118613</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001149 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001149">
+    	<rdfs:label xml:lang="en">mechanically gated channel</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">An ion channel that transduces mechanical stimuli into electrical responses.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">stretch receptor channel</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001172 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001172">
+    	<rdfs:label xml:lang="en">motor map</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A homunculus measured in the motor cortex.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001163 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001163">
+    	<rdfs:label xml:lang="en">motor unit</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">An alpha motor neuron with its axon and the muscle fibers which it supplies. (Brodal, P., Neurological Anatomy, 1981, Oxford University Press, pg 151)
+
+In Physiology: A single motor neuron and all fibers of the several muscles that it innervates.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001182 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001182">
+    	<rdfs:label xml:lang="en">neural coding</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001174 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001174">
+    	<rdfs:label xml:lang="en">neural encoding</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The process by which a neuron translates physical energy of a stimulus into electrical activity representing features of the stimulus</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001120 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001120">
+    	<rdfs:label xml:lang="en">neuronal birthday</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The time that a neuronal progenitor cell leaves the cell cycle and gives rise to a postmitotic neuron.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001055 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001055">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:122331</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">noise sensitivity</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Measure of the relative changes in a variable of interest as a function of noise.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001148 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001148">
+    	<rdfs:label xml:lang="en">non-gated channel</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">An ion channel that passively conducts ions across the cell membrane.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">resting channel</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">leak channel</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001127 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001127">
+    	<rdfs:label xml:lang="en">nonsynaptic conduction</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">current flow through an area of postsynaptic membrane that surrounds a region containing synaptically activated ion channels.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001231 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001231">
+    	<rdfs:label xml:lang="en">octave</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">a range of frequencies where the largest frequency is double the lowest frequency (adapted from the Axon Guide)</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001180 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001180">
+    	<rdfs:label xml:lang="en">parallel processing</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">deployment of several parallel neuronal pathways to convey similar information or to process different components of a common sensory modality, eg., processing of form and motion in vision.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001054 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001054">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:3637</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">parameter fitting</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001053 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001053">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:116962</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">parameter sensitivity</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">In neural modeling, refers to how model results vary as model parameters are changed.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001235 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001235">
+    	<rdfs:label xml:lang="en">pass band</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Frequency region below the 3DB frequency (adapted from the Axon Guide)</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001179 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001179">
+    	<rdfs:label xml:lang="en">patch clamp technique</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A method for recording the electrical activity of neurons or small pathes of membrane by forming a tight seal between electrode and membrane</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">patching</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">patch</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001051 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001051">
+    	<rdfs:label xml:lang="en">pathophysiology</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Used with organs and diseases for disordered function in disease states.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001050 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001050">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:3542</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">pattern recognition</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001049 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001049">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:113658</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">perceptual categories</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A process that involves higher-level neural processing of continuous sensory information into discrete categories, e.g. resolving wavelengths of light into hues of color, or gradual differences of auditory frequencies into musical intervals.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001233 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001233">
+    	<rdfs:label xml:lang="en">phase shift</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">the phase of sinusoidal componens of the input signal is shifted by the filer. (adapted from the Axon Guide)</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001048 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001048">
+    	<rdfs:label xml:lang="en">place cell</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Cells that spike to indicate a specific spatial location in the environment. The spatial locations that results in place cell spiking are called place fields.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">place field</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001125 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001125">
+    	<rdfs:label xml:lang="en">population code</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A method of coding the properties of a stimulus strength or quality in terms of number of responding neurons.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001095 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001095">
+    	<rdfs:label xml:lang="en">population spike</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Is an extracellular voltage shift, representing of a group of cells firing action potentials at the same instance in time.  In hippocampus, when recording from the cell body region the population spike is a strong, fast onset negative shift in voltage cutting through a positive field-EPSP.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001047 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001047">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:22011</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">post-tetanic potentiation</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">is a form of short-term synaptic plasticity resulting from an increased calcium concentration in the presynaptic terminal during relatively high frequency activation of the axon.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">posttetanic potentiation</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">post tetanic potentiation</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">PTP</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001157 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001157">
+    	<rdfs:label xml:lang="en">postsynaptic inhibition</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The hyperpolarization of a postsynaptic cell, reducing the likelihood of or preventing an action potential in the postsynaptic cell</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001259 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001259">
+    	<rdfs:label xml:lang="en">presynaptic facilitation</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Action by a presynaptic neuron at an axo-axonic synapse increasing the amount of neurotransmitter released by the postsynaptic cell onto a third cell.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001158 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001158">
+    	<rdfs:label xml:lang="en">presynaptic inhibition</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">action by a presynaptic cell at an axo-axonic synapse to reduce the communication of the postsynaptic cell with any downstream cell.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">axo-axonic inhibition</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001186 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001186">
+    	<rdfs:label xml:lang="en">pruning</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A process by which some neuronal elements are removed during development.  Typically a function of sensory experience.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001185 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001185">
+    	<rdfs:label xml:lang="en">quantal transmission</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Transmission of information from pre-synaptic axons to post-synaptic elements, which occurs in steps or quanta.  Quanta have generally been though of as vesicles releasing their content.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001165 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001165">
+    	<rdfs:label xml:lang="en">recapitulation</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Changes to a map consistent with an earlier or embryonic representation.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001184 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001184">
+    	<rdfs:label xml:lang="en">receptive field</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The area of the receptor sheet that excites a neuron.  For example, an area of skin or retina.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001205 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001205">
+    	<rdfs:label xml:lang="en">refractory state</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A period of time, usually after the firing of an action potential, where the cell is less likely to fire a subsequent action potential</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001045 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001045">
+    	<rdfs:label xml:lang="en">reinforcement learning</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">In neural modeling, a learning method where a neural network changes based on a positive or negative reward. The reward is an input to the network which depends on the model&amp;apos;s behavior as it explores a solution space.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001044 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001044">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:116858</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">reward-modulated STDP</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001018 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001018">
+    	<rdfs:label xml:lang="en">rheobase</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Current threshold to discharge APs during a ramp depolarization.  Minimum current required to fire an action potential during very slow increases in current.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">current threshold</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">I thresh</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">I&amp;lt;sub&amp;gt;thresh&amp;lt;/sub&amp;gt;</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">AP rheobase</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001035 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001035">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:87578</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">STDP</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Changes in the efficacy of a synapse due to precise timing differences in the presynaptic and postsynaptic activity.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">spike timing dependent plasticity</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001015 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001015">
+    	<rdfs:label xml:lang="en">sag ratio</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Ratio between exponentially extrapolated voltage and steady-state voltage</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">sag-ratio</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">sag index</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">sag</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001183 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001183">
+    	<rdfs:label xml:lang="en">saltatory conduction</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A form of conduction found in myelinated nerves, whereby the action potential jumps rapidly from one node of Ranvier to another</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001214 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001214">
+    	<rdfs:label xml:lang="en">sampling rate</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The rate at which a point is taken and recorded in a digital system.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001193 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001193">
+    	<rdfs:label xml:lang="en">sensory threshold</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The minimum amount of stimulus energy necessary to elicit a sensory response.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001042 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001042">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:3644</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">short-term synaptic plasticity</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Changes in the Input(presynaptic cell APs)/Output(firing pattern or sub-threshold voltage responses) of a cell reflecting changes in the strength of the connection between cells or changed ionic conductances of the postsynaptic cell (usually over a half second to second).</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">STP</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001041 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001041">
+    	<rdfs:label xml:lang="en">signaling pathway</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The molecular interactions that lead to the concentration of one molecule being converted to the chemical concentration or activation of another.  In some cases the transduction occurs through a membrane bound protein, in others the molecules share the same compartment.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001202 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001202">
+    	<rdfs:label xml:lang="en">size principle</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The order of recruitment of motor neuron by the size of the cell</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001007 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001007">
+    	<rdfs:label xml:lang="en">slow afterhyperpolarization amplitude</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Amplitude from first AP onset to minimum voltage, explictly refered to as slow</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">sAHP size</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">sAHP amp</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">sAHP amplitude</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">slow AHP amplitude</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">slow AHP size</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001006 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001006">
+    	<rdfs:label xml:lang="en">slow afterhyperpolarization duration</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Duration from first AP onset to minimum voltage, explictly refered to as slow</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">sAHP duration</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">sAHP time</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">slow AHP duration</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">slow AHP time</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001038 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001038">
+    	<rdfs:label xml:lang="en">sodium pump</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Transporter protein that uses ATP to move sodium against its electrochemical gradient.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">sodium-potassium pump</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">na+/k+-atpase</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">na+/k+ pump</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001167 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001167">
+    	<rdfs:label xml:lang="en">somatomotor map</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001171 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001171">
+    	<rdfs:label xml:lang="en">somatosensory map</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A homunculus measured in the somatosensory cortex.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">humunculus</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001196 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001196">
+    	<rdfs:label xml:lang="en">spatial summation</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Addition of two or more individual currents, which have distinct locations.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001037 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001037">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:3636</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">spatio-temporal activity pattern</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">In neural tissue or in models of neural networks, patterns of spiking activity that change over both space and time.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001036 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001036">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:116951</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">spike frequency adaptation</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Repetitive spiking that decreases in frequency over time. Eventually, spiking activity may cease.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001019 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001019">
+    	<rdfs:label xml:lang="en">spike half-width</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Average time for first AP half amp to the same voltage during offset</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">spike halfwidth</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">half-width of spike</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">half-width of action potential</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">half amplitude duration</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">spike half width</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">spike half duration</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001014 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001014">
+    	<rdfs:label xml:lang="en">spike overshoot</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Difference between the peak of the action potential and 0 mV</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">action potential overshoot</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">overshoot</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">AP overshoot</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001002 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001002">
+    	<rdfs:label xml:lang="en">spike peak</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Maximum voltage of AP</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">AP peak</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001500 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001500">
+    	<rdfs:label xml:lang="en">spike threshold</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Membrane potential required to initiate an action potential.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">action potential threshold</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001005 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001005">
+    	<rdfs:label xml:lang="en">spike width</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Duration of AP, not explictly refered to as half-width</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">AP width</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">action potential width</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">AP duration</obo:IAO_0000118>
+    	<obo:IAO_0000118 xml:lang="en">spike duration</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001011 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001011">
+    	<rdfs:label xml:lang="en">spontaneous firing rate</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">AP discharge rate in the absence of current injection or a stimulus</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">spontaneous firing frequency</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001200 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001200">
+    	<rdfs:label xml:lang="en">stimulus transduction</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Encoding and movement of sensory information.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001234 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001234">
+    	<rdfs:label xml:lang="en">stop band</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Frequency region above the 3DB frequency (adapted from the Axon Guide)</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001034 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001034">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:97751</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">stuttering</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">In neurons, rythmic high frequency bursts of action potentials with unpredictable periods of quiescence.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001197 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001197">
+    	<rdfs:label xml:lang="en">summation</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Addition of two or more individual currents.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">summation</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001033 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001033">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:64174</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">synaptic integration</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Integration of postsynaptic currents.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001031 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001031">
+    	<rdfs:label xml:lang="en">synaptic plasticity</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Refers to capability for change in synaptic efficacy.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001280 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001280">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:22012</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">synaptic depression</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The weakening of the connection between two nerve cells.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001032 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001032">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:41934</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">synaptic modulation of active current</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Modification of channel-mediated currents that follows postsynaptic activation.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001030 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001030">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:3635</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">synchronization</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Simultaneous occurance of neural events such as coincident spiking or in phase oscillations in activity in neurons or neuronal networks.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001228 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001228">
+    	<rdfs:label xml:lang="en">T(10-90)</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">the time it takes for a signal to rise from 10% of its final value to 90% of its final value.  For a signal passing through a low pass filter, t(10-90) increases as the -3 dB frequency of the filter is lowered.  (adapted from the Axon Guide)</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">10-90% rise time</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001029 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001029">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:3633</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">temporal pattern generation</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Refers to process where networks of neurons or neural network models exhibit patterns of activity (membrane potential or actional potentials) that vary over time. Single neurons or neuron models may also exhibit temporal patterns of activity such as changes in action potential frequency.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001195 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001195">
+    	<rdfs:label xml:lang="en">temporal summation</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Addition of two or more individual currents, which are distinct in time but not necessarily space.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001189 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001189">
+    	<rdfs:label xml:lang="en">tetanus</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A pattern of stimuli that are generally close in time and relatively intense.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001028 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001028">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:13855</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">therapeutic</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Treatment and care to combat disease or alleviate pain or injury.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001097 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001097">
+    	<rdfs:label xml:lang="en">threshold stimulus</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The level of stimulus energy that is just sufficient to elicit a response at the receptor, or brain area of study.  Note, in most sensory systems the threshold value will differ depending on the level of sensory system.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001027 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001027">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:104624</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">timothy syndrome</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A rare autosomal dominant disorder characterized by physical malformations, as well as neurological and developmental defects, including heart QT-prolongation, heart arrhythmias, structural heart defects, syndactyly (webbing of fingers and toes) and autism spectrum disorders.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001173 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001173">
+    	<rdfs:label xml:lang="en">topographic map</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">The orderly arrangement of neurons at successive levels of information processing in a pathway, such that the spatial relationships of stimuli are preserved from the organ of perception to the brain.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">neural map</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001151 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001151">
+    	<rdfs:label xml:lang="en">transmitter gated channel</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">An ion channel whose opening and closing is regulated by the binding of a chemical messenger such as a neurotransmitter.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">ligand gated channel</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001221 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001221">
+    	<rdfs:label xml:lang="en">tuning curve</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">An input output function used in the sensory systems where the average firing rate of the neuron as a function of relevant stimulus parameters is plotted.  For example, the tuning of a neuron is 2000 Hz if the neuron fires at a maximum frequency to the 2000 Hz tone presentation, while firing less to a 1800 Hz or 2200 Hz tone.  Similarly, a somatosensory neuron is tuned to the left index finger if it fires more intensely to touch of the left index finger, than other fingers.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001177 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001177">
+    	<rdfs:label xml:lang="en">two electrode voltage clamp recording protocol</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A technique to measure the ion currents across the membrane of excitable cells, such as neurons, while holding the membrane voltage at a set level, while using two electrodes, one holds the membrane potential steady while the other measures current and the feedback circuit used to bridge the electrodes.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    	<obo:IAO_0000118 xml:lang="en">two electrode voltage clamp</obo:IAO_0000118>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001026 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001026">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:83538</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">unsupervised learning</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Approaches for organizing data where the learner is given only unlabeled examples.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001169 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001169">
+    	<rdfs:label xml:lang="en">visual map</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">A representation of the retina in the visual cortex.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001150 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001150">
+    	<rdfs:label xml:lang="en">voltage gated channel</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">An ion channel that opens and closes in response to depolarization of the membrane potential.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/incf/ontology/ExperimentalNeurophysiology/oen_term.owl/oen_0001025 -->
+
+    <owl:Class rdf:about="&oen_term;oen_0001025">
+    	<obo:IAO_0000119 xml:lang="en">ModelDB:83540</obo:IAO_0000119>
+    	<rdfs:label xml:lang="en">winner-take-all</rdfs:label>
+    	<obo:IAO_0000115 xml:lang="en">Computational approach where after some time only one neuron in a network remains active corresponding to the largest of a set of inputs.</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="&oen_term;oen_0000999"/>
+    </owl:Class>
 
 
 </rdf:RDF>
